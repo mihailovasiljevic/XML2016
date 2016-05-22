@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+    <display-name>XML2016</display-name>
+    
+    <module>
+        <web>
+            <web-uri>XML2016.war</web-uri>
+            <context-root>/XML2016</context-root>
+        </web>
+    </module>
+
+    <module>
+        <ejb>XML2016.jar</ejb>
+    </module>
+</application>
