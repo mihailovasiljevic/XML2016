@@ -62,7 +62,7 @@
 	      </zipfileset>
 	      <classes dir="build">
 	         <include name="rs/ac/uns/ftn/informatika/mbs2/vezbe09/primer01/server/servlet/*.class"/>
-	       <include name="xml2016/server/entity/*.class"/>
+	       <include name="server/*.class"/>
 	      	<include name="messages/*.properties"/>  
 	      	<include name="log4j.properties"/>
 	      </classes>
@@ -78,7 +78,7 @@
 			</zipfileset>			
 			<zipfileset dir="${build}">
 				<include name="rs/ac/uns/ftn/informatika/mbs2/vezbe09/primer01/server/session/*.class"/>
-				<include name="xml2016/server/entity/*.class"/>
+				<include name="server/*.class"/>
 			</zipfileset>					
 		</jar>
 	</target>
