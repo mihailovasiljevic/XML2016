@@ -13,6 +13,8 @@ import org.h2.constant.SysProperties;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import database.XMLPartialUpdate;
+import database.Util;
 import models.Player;
 
 public class Application extends Controller {
@@ -36,6 +38,13 @@ public class Application extends Controller {
 		try {
 			player = mapper.readValue(result, Player.class);
 			players.add(player);
+			
+			XMLPartialUpdate update = new XMLPartialUpdate();
+			String patch = "\t<player>\n\t\t<name>"+player.getName()+"</name>\n"
+					+ "\t\t<surname>"+player.getSurname()+"</surname>\n"
+					+"\t\t<club>"+player.getClub()+"</club>\n"
+					+"\t</player>";
+			update.run(Util.loadProperties(), patch);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
