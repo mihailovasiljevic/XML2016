@@ -15,7 +15,9 @@ angular.module('user').controller('inputCtrl1', ['$scope','$state','User',
 
 angular.module('user').controller('viewCtrl1', ['$scope','$state','User',
  	 function($scope,$state,User) {
-		
+
+	$state.go("view.main");
+	
 	User.query(function(response) {
 		$scope.users = response;
 	}); 
@@ -23,5 +25,8 @@ angular.module('user').controller('viewCtrl1', ['$scope','$state','User',
 	$scope.back = function() {
 		$state.go("input");
 	}
+	
+
+	
 	
 }]);

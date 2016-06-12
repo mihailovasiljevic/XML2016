@@ -11,5 +11,13 @@ angular.module('user').config(['$urlRouterProvider','$stateProvider',
         url: '/view',
         templateUrl: 'public/user/views/view.html',
       })
+      .state('view.addAct', {
+    	  url:'/addAct',
+    	  templateUrl: 'public/act/views/addAct.html'
+      })
+      .state('view.main', {
+    	  url:'/main',
+    	  templateUrl: 'public/act/views/main.html'
+      })
     
 }]);
