@@ -1,4 +1,4 @@
-var mainApplicationModuleName = 'players';
+var mainApplicationModuleName = 'users';
 
-var mainApplicationModule = angular.module(mainApplicationModuleName,['ngResource','ui.router','player']);
+var mainApplicationModule = angular.module(mainApplicationModuleName,['ngResource','ui.router','user']);
 
