@@ -4,9 +4,10 @@
 
 # Home page
 GET     /                                       Application.index
+GET     /                                       Application.index1
 
-POST	/api/player								Application.save
-GET		/api/player								Application.getPlayers
+POST	/api/user								Application.saveUsers
+GET		/api/user								Application.getUsers
 
 GET     /input									Redirection.toForm
 

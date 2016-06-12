@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div ng-controller="viewCtrl1" align="center">
+<div ng-repeat="user in users" align="center">
+	Username: {{user.username}}<br>
+	Password: {{user.password}}<br>
+	Ime: {{user.ime}}<br>
+	Prezime: {{user.prezime}}<br>
+	Email: {{user.email}}<br>
+</div>
+<input type="button" value="Back" ng-click="back()">
+</div>
+</body>
+</html>

@@ -6,6 +6,8 @@ import java.util.Properties;
 
 import com.marklogic.client.DatabaseClientFactory.Authentication;
 
+import database.Util.ConnectionProperties;
+
 /**
  * Utilities to support and simplify examples.
  */
@@ -62,4 +64,6 @@ public class Util {
 	public static InputStream openStream(String fileName) throws IOException {
 		return Util.class.getClassLoader().getResourceAsStream(fileName);
 	}
+
+
 }

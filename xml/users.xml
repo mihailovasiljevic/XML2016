@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Korisnici xmlns="http://www.ftn.uns.ac.rs/korisnici">
+    <Korisnik>
+        <KorisnickoIme>wq</KorisnickoIme>
+        <Lozinka>www</Lozinka>
+        <Ime>dsa</Ime>
+        <Prezime>dd</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>fd</Email>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>tggttg</KorisnickoIme>
+        <Lozinka>gffg</Lozinka>
+        <Ime>dds</Ime>
+        <Prezime>dads</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>dsadas</Email>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>gg</KorisnickoIme>
+        <Lozinka>dsa</Lozinka>
+        <Ime>afr</Ime>
+        <Prezime>sda</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>dsa</Email>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>e</KorisnickoIme>
+        <Lozinka>e</Lozinka>
+        <Ime>e</Ime>
+        <Prezime>e</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>e</Email>
+    </Korisnik>
+</Korisnici>
