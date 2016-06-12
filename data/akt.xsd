@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    targetNamespace="http://www.ftn.uns.ac.rs/pravniAkt"
+    xmlns:akt="http://www.ftn.uns.ac.rs/pravniAkt">
+    <xs:element name="Propis">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Preambula">
+                    <xs:complexType mixed="true">
+                        <xs:sequence maxOccurs="unbounded">
+                            <xs:choice minOccurs="0">
+                                <xs:element name="MaterijalniPravniOsnovZaDonosenje"
+                                    type="xs:string"/>
+                                <xs:element name="FormalniPravniOsnovZaDonosenje" type="xs:string"/>
+                                <xs:element name="NazivOrganaDonosioca" type="xs:string"/>
+                                <xs:element minOccurs="0" name="NazivOrganaSaglasnog"
+                                    type="xs:string"/>
+                                <xs:element minOccurs="0" name="NaznakaOSaglasnosti"
+                                    type="xs:string"/>
+                            </xs:choice>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SimbolickiNaziv" type="xs:string"/>
+                <xs:element name="Naziv" type="xs:string"/>
+                <xs:element name="UvodniDeo" type="akt:UvodniDeo"/>
+                <xs:element name="GlavniDeo" type="akt:GlavniDeo"/>
+                <xs:element name="ZavrsniDeo" type="akt:ZavrsniDeo"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="UvodniDeo">
+        <xs:complexContent>
+            <xs:extension base="akt:Deo">
+                <xs:sequence>
+                    <xs:element name="PredmetUredjivanja" type="xs:string"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="Definicija"
+                        type="xs:string"/>
+                </xs:sequence>
+                <xs:attribute name="tipUvodnogDela">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="saNacelima"/>
+                            <!--Уводне одредбе-->
+                            <xs:enumeration value="bezNacela"/>
+                            <!--Основне одредбе -->
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="GlavniDeo">
+        <xs:complexContent>
+            <xs:extension base="akt:Deo"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ZavrsniDeo">
+        <xs:complexContent>
+            <xs:extension base="akt:Deo"/>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="Prilog">
+        <xs:sequence>
+            <xs:element name="RedniBrojPriloga" type="xs:integer"/>
+            <xs:element name="NazivPriloga" type="xs:string"/>
+            <xs:element name="PutanjaDoPriloga" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType abstract="true" name="Deo">
+        <xs:sequence>
+            <xs:element name="RedniBrojDela" type="xs:integer"/>
+            <xs:element name="SimbolickiNazivDela" type="xs:string"/>
+            <xs:element form="qualified" name="NazivDela" nillable="true" type="xs:string"/>
+            <xs:element name="Glava" type="akt:Glava"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Glava">
+        <xs:sequence>
+            <xs:element name="RedniBrojGlave" type="xs:integer"/>
+            <xs:element name="SimbolickiNazivGlave" type="xs:string"/>
+            <xs:element name="NazivGlave" type="xs:string"/>
+            <xs:element name="OdeljakIliClan" type="akt:OdeljakIliClan" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="tipOznacavanjaGlave">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="bezTacke"/>
+                    <!--Глава I-->
+                    <xs:enumeration value="saTackom"/>
+                    <!--I. УВОДНЕ ОДРЕДБЕ-->
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="OdeljakIliClan">
+        <xs:choice>
+            <xs:element name="Clan" type="akt:Clan"/>
+            <xs:element name="Odeljak" type="akt:Odeljak"/>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="Odeljak">
+        <xs:sequence>
+            <xs:element name="RedniBrojOdeljka" type="xs:integer"/>
+            <xs:element name="SimbolickiNazivOdeljka" type="xs:string"/>
+            <xs:element name="NazivOdeljka" type="xs:string"/>
+            <xs:element name="PododeljakOdsekIliClan" type="akt:PododeljakOdsekIliClan"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="PododeljakOdsekIliClan">
+        <xs:choice>
+            <xs:element name="Clan" type="akt:Clan"/>
+            <xs:element name="Pododeljak" type="akt:Pododeljak"/>
+            <xs:element name="Odsek" type="akt:Odsek"/>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="Pododeljak">
+        <xs:sequence>
+            <xs:element name="RednoSlovoPododeljka" type="xs:string"/>
+            <xs:element name="NazivPododeljka" type="xs:string"/>
+            <xs:element name="Clan" type="akt:Clan"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Odsek">
+        <xs:sequence>
+            <xs:element name="RedniBrojOdseka" type="xs:integer"/>
+            <xs:element name="SimbolickiNazivOdseka" type="xs:string"/>
+            <xs:element name="NazivOdseka"/>
+            <xs:element name="Clan" type="akt:Clan"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Clan">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="NazivClana" type="xs:string"/>
+            <xs:element name="RedniBrojClana" type="xs:string"/>
+            <xs:element name="SimbolickiNazivClana" type="xs:string"/>
+            <xs:element maxOccurs="unbounded" name="StavClana">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="TekstStava" type="xs:string"/>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="TackaStavaClana">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="RedniBrojTacke" type="xs:integer"/>
+                                    <xs:element name="TekstTacke" type="xs:string"/>
+                                    <xs:element maxOccurs="unbounded" minOccurs="0" name="Podtacka">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="RedniBrojPodtacke"/>
+                                                <xs:element name="TekstPodtacke"/>
+                                                <xs:element maxOccurs="unbounded" minOccurs="0"
+                                                  name="Alineja" type="xs:string"/>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

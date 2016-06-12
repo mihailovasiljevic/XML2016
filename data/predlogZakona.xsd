@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    targetNamespace="http://www.ftn.uns.ac.rs/preglogZakona"
+    xmlns="http://www.ftn.uns.ac.rs/preglogZakona" xmlns:akt="http://www.ftn.uns.ac.rs/pravniAkt">
+    <xs:import namespace="http://www.ftn.uns.ac.rs/pravniAkt" schemaLocation="akt.xsd"/>
+    <xs:element name="PredlogZakona">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="akt:Propis"/>
+                <xs:element name="Obrazlozenje">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="UstavniOsnovZaDonosenjeZakona" type="StandardniTekst"/>
+                            <xs:element name="RazloziZaDonosenjeZakona" type="StandardniTekst"/>
+                            <xs:element name="ObjasnjenjePravnihInstitutaIPojedinacnihResenja"
+                                type="StandardniTekst"/>
+                            <xs:element name="ProcenaFinansijskihSredstava" type="StandardniTekst"/>
+                            <xs:element minOccurs="0" name="OpstiInteresPovratnoSredstvo"
+                                type="StandardniTekst"/>
+                            <xs:element minOccurs="0" name="RazloziZaDonosenjePoHitnomPostupku"
+                                type="StandardniTekst"/>
+                            <xs:element minOccurs="0" name="IzjavaOUskladjenostiSaPropisimaEU"
+                                type="akt:Prilog"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="StandardniTekst">
+        <xs:sequence>
+            <xs:element name="Naslov" type="xs:string"/>
+            <xs:element name="Tekst">
+                <xs:complexType mixed="true">
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" minOccurs="0" name="Paragraf"
+                            type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

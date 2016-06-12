@@ -92,5 +92,8 @@
 	<classpathentry kind="lib" path="lib/mimepull-1.6.jar"/>
 	<classpathentry kind="lib" path="lib/mimepull-1.9.4.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-api-1.7.4.jar"/>
+	<classpathentry kind="lib" path="lib/jaxb-api-2.2.5.jar"/>
+	<classpathentry kind="lib" path="lib/jaxb-impl-2.2.5.1.jar"/>
+	<classpathentry kind="lib" path="lib/jaxb-xjc-2.2.5.1.jar"/>
 	<classpathentry kind="output" path="eclipse/classes"/>
 </classpath>
