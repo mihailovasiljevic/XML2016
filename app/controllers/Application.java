@@ -4,7 +4,11 @@ import play.*;
 import play.cache.Cache;
 import play.mvc.*;
 import rs.ac.uns.ftn.pravniakt.Propis;
+import security.EncryptKEK;
+import security.KeyStoreReader;
+import security.SignEnveloped;
 import util.FileUtil;
+import database.FileWriterReader;
 import xquery.XMLReader;
 import xquery.XMLWriter;
 
@@ -13,6 +17,7 @@ import org.json.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.security.cert.Certificate;
 import java.util.*;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -25,6 +30,7 @@ import jaxb.Korisnik;
 import jaxb.Marshalling;
 import jaxb.XMLValidation;
 import net.sf.ezmorph.ObjectMorpher;
+
 
 
 
@@ -55,6 +61,7 @@ public class Application extends Controller {
 	private static ArrayList<Player> players = new ArrayList<Player>();
 	private static ArrayList<User> users = new ArrayList<User>();
 	private static  String IN_FILE = FilePaths.korisnici;
+	private static  String certificate = "sgns";
 	
 	/** Ukoliko je potrebno koristiti sesiju to je moguce uz pomoc objekta session na sledeci nacin:
 	 * session.put(key, value). Sesija se preuzima sa session.get(value). 
@@ -152,6 +159,10 @@ public class Application extends Controller {
 						 System.out.println("Uspesan LOGIN");
 						 
 					 }
+					 		
+					 		
+					 		
+
 
 					System.out.println("Staff id : " + eElement.getAttribute("id"));
 					System.out.println("KorisnickoIme : " + eElement.getElementsByTagName("KorisnickoIme").item(0).getTextContent());
@@ -163,6 +174,7 @@ public class Application extends Controller {
 
 				}
 			}
+			
 		    } catch (Exception e) {
 			e.printStackTrace();
 		    }
@@ -213,6 +225,7 @@ public class Application extends Controller {
 	 		String ime = user.getIme();
 	 		String prezime = user.getPrezime();
 	 		String email = user.getEmail();
+	 //		String certificate = user.getCertificate();
 	 		
 	 		if(password.equalsIgnoreCase(repeat_password)){
 		 		 Korisnik kor = new Korisnik();
@@ -223,15 +236,81 @@ public class Application extends Controller {
 				    kor.setUloga("gradjanin");
 				    kor.setEmail(email);
 				    
-				    Marshalling marsh = new Marshalling();
+				    /*Integer rbr = FileWriterReader.read("rbr.txt");
+				    
+				    kor.setRbrPoruke(rbr);
+				    rbr++;
+				    FileWriterReader.write("rbr.txt", rbr);*/
+				    
+				    Date date = new Date();
+				    kor.setTimeStamp(date.toString());
+				    	Marshalling marsh = new Marshalling();
+				    	try {
+							marsh.test(kor);
+						} catch (Exception e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+				    	
+		
+				    	
+				    if(new File(FilePaths.keystores+certificate+".jks").exists()){
+
+				    	boolean povucen = false;
+				    	File f = new File(FilePaths.keystores+"sgns-revoked.jks");
+							if(f.exists() && !f.isDirectory()) {
+								System.out.println("EEEEEEEEEEEE");
+								 KeyStoreReader ksr = new KeyStoreReader();
+								    ksr.setKeyStoreFile(FilePaths.keystores+"sgns-revoked.jks");
+								    ksr.setPassword("sgns-revoked".toCharArray());
+								    ksr.setKeyPass("test10".toCharArray());
+								    HashMap<String,Certificate> sertifikati = ksr.readKeyStore();
+								    Iterator it =  sertifikati.keySet().iterator();
+								    while(it.hasNext())
+								    {
+								    	String sert = it.next().toString();
+								    	
+								    	if(sert.equals(certificate)){
+								    		System.out.println("SERTIFIKAT JE POVUCEN!!!");
+								    		povucen = true;
+								    		break;
+								    	}
+								    }
+							}
+							
+							
+							if(!povucen){
+							    SignEnveloped sign = new SignEnveloped();
+							    sign.setIN_FILE(FilePaths.korisnici);
+							    sign.setOUT_FILE(FilePaths.korisnici);
+							    sign.setKEY_STORE_FILE(FilePaths.keystores+certificate+".jks");
+							    sign.setName(certificate);
+							    sign.setPass(certificate);
+							    sign.testIt();
+							}
+								
+					
+					    	EncryptKEK enc = new EncryptKEK();
+						    enc.setIN_FILE(FilePaths.korisnici);
+						    enc.setOUT_FILE(FilePaths.korisnici);
+						    //   enc.setKEY_STORE_FILE(FilePaths.keystores+certificate+".jks");
+						    enc.testIt();
+				   
+				   
+				  
+				    }
+				    
+				   /* Marshalling marsh1 = new Marshalling();
 			    	try {
-						marsh.test(kor);
+						marsh1.test(kor);
 					} catch (Exception e) {
 						// TODO Auto-generated catch block
 						e.printStackTrace();
-					}
+					}*/
 		 		
 			    	 XMLWriter.run(Util.loadProperties());
+	 		}else{
+	 			renderTemplate("@Application.register", user);
 	 		}
 	 		
 	 		

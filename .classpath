@@ -95,5 +95,6 @@
 	<classpathentry kind="lib" path="lib/slf4j-api-1.7.4.jar"/>
 	<classpathentry kind="lib" path="lib/json-20160212.jar"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/BSEP2016/lib/xmlsec-1.4.2.jar"/>
 	<classpathentry kind="output" path="eclipse/classes"/>
 </classpath>

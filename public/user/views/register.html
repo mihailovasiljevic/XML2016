@@ -10,7 +10,8 @@ angular.module('user').controller('inputCtrl1', ['$scope',
 </script>
 
 <div ng-controller="inputCtrl1">
-<table align="center">
+<table align="center" border="1">
+<tr><th colspan="2">Register</th></tr>
 <tr><td>Username:</td><td><input type="text" ng-model="user.username"></td></tr>
 <tr><td>Password:</td><td><input type="text" ng-model="user.password"></td></tr>
 <tr><td>Repeat password:</td><td><input type="text" ng-model="user.repeat_password"></td></tr>

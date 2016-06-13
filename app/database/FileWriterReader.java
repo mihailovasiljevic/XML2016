@@ -7,13 +7,22 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import controllers.Application;
+
 
 public class FileWriterReader {
-	public static String path = FilePaths.keystores;
+//	public static String path = FilePaths.keystores;
+	
+	public static String path = Application.projectPath;
+	
+	
+	
+	
 	
 
 	//OVERWRITE, ID
 	public static int write(String string, Integer id) {
+		System.out.println(path);
 		try(FileWriter fw = new FileWriter(path+"/"+string, false);
 			    BufferedWriter bw = new BufferedWriter(fw);
 			    PrintWriter out = new PrintWriter(bw))

@@ -3,9 +3,9 @@ angular.module('user').config(['$urlRouterProvider','$stateProvider',
 
 	$urlRouterProvider.otherwise('/');
     $stateProvider
-      .state('input', {
-        url: '/input',
-        templateUrl: 'public/user/views/input.html',
+      .state('register', {
+        url: '/register',
+        templateUrl: 'public/user/views/register.html',
       })
       .state('login', {
         url: '/login',
@@ -25,3 +25,8 @@ angular.module('user').config(['$urlRouterProvider','$stateProvider',
       })
     
 }]);
+
+
+
+
+
