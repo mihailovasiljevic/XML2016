@@ -3,9 +3,11 @@ package controllers;
 import play.*;
 import play.cache.Cache;
 import play.mvc.*;
+import rs.ac.uns.ftn.pravniakt.Propis;
+import util.FileUtil;
 import xquery.XMLReader;
 import xquery.XMLWriter;
-
+import org.json.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -19,7 +21,9 @@ import javax.xml.parsers.ParserConfigurationException;
 import jaxb.Korisnici;
 import jaxb.Korisnik;
 import jaxb.Marshalling;
+import jaxb.XMLValidation;
 import net.sf.ezmorph.ObjectMorpher;
+
 
 import org.h2.constant.SysProperties;
 import org.w3c.dom.Document;
@@ -33,6 +37,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import database.FilePaths;
 import database.XMLPartialUpdate;
+import database.XMLWriterUriTemplate;
 import database.Util;
 import models.Player;
 import models.User;
@@ -216,6 +221,53 @@ public class Application extends Controller {
     public static void getUsers() {
 
     	renderJSON(users);
+    }
+    
+    
+    public static void saveAct(){
+    	
+    	System.out.println("SAVE ACT");
+    	String requestBody = params.get("body");
+   
+    	JSONObject obj = new JSONObject(requestBody);
+    	String text =obj.getString("text");
+    	
+			
+    	
+    	try {
+			FileUtil.writeFile("./data/temp.xml", text);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    
+    	XMLValidation isValid = new XMLValidation();
+    	boolean xmlValid = isValid.test("./data/akt.xsd");
+    	if(xmlValid)
+    		System.out.println("XML JE VALIDAN");
+    	else 
+    		System.out.println("XML NIJE VALIDAN");
+    	
+    	
+    	
+    	if(xmlValid){
+    		try {
+				XMLWriterUriTemplate.run(Util.loadProperties());
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+    	}
+    		
+    	
+    	}
+	
+		
+    
+    
+    public static void getAct(){
+    	System.out.println("GET ACT");
+    
     }
 
 }

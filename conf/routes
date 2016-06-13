@@ -9,6 +9,9 @@ GET     /                                       Application.index1
 POST	/api/user								Application.saveUsers
 GET		/api/user								Application.getUsers
 
+POST	/api/act								Application.saveAct
+GET		/api/act								Application.getAct
+
 GET     /input									Redirection.toForm
 
 # Ignore favicon requests
