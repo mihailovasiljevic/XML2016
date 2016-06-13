@@ -44,6 +44,8 @@ import models.User;
 
 public class Application extends Controller {
 
+	public static String projectPath;
+	
 	private static ArrayList<Player> players = new ArrayList<Player>();
 	private static ArrayList<User> users = new ArrayList<User>();
 	private static  String IN_FILE = FilePaths.korisnici;
@@ -130,19 +132,17 @@ public class Application extends Controller {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}*/
-	    	 
-
-	     	
-		
-		
-		
-		
-		
-		
 	}
 	
     public static void index() {
     	System.out.println("Server je uspesno pokrenut");
+    	File file = new File(".");
+    	try {
+			projectPath = file.getCanonicalPath().toString();
+		} catch (IOException e) {
+			System.out.println("Project path is not valid");
+			e.printStackTrace();
+		}
     	render();
     }
     
@@ -235,14 +235,14 @@ public class Application extends Controller {
 			
     	
     	try {
-			FileUtil.writeFile("./data/temp.xml", text);
+			FileUtil.writeFile(Application.projectPath+"/XML2016/data/temp.xml", text);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
     
     	XMLValidation isValid = new XMLValidation();
-    	boolean xmlValid = isValid.test("./data/akt.xsd");
+    	boolean xmlValid = isValid.test(Application.projectPath+"/XML2016/data/akt.xsd");
     	if(xmlValid)
     		System.out.println("XML JE VALIDAN");
     	else 
