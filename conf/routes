@@ -4,15 +4,19 @@
 
 # Home page
 GET     /                                       Application.index
+GET     /                                       Application.index1
 
 POST	/api/user								Application.login
 GET		/api/user								Application.getUsers
 
 
-POST	/api/act								ActServices.saveAct
-GET		/api/act								ActServices.getAct
+POST	/api/act								Application.saveAct
+GET		/api/act								Application.getAct
 
-GET		/api/changeState						ActServices.changeStateOfAct
+#Acts
+GET		/api/acts								Act.listActs
+GET   	/api/acts/{uri}         				Act.getAct(uri)
+POST	/api/acts/{uri}							Act.updateAct(uri)
 
 GET     /input									Redirection.toForm
 
