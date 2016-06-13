@@ -5,21 +5,22 @@
     <xs:element name="propis">
         <xs:complexType>
             <xs:sequence>
+                <xs:element name="status">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="predlozen"/>
+                            <xs:enumeration value="nacelo"/>
+                            <xs:enumeration value="pojedinost"/>
+                            <xs:enumeration value="celina"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
                 <xs:element name="oznaka" type="xs:int"/>
                 <xs:element name="naziv" type="xs:string"/>
                 <xs:element name="predlagac" type="xs:string"/>
                 <xs:element name="deo" type="akt:deo"/>
             </xs:sequence>
-            <xs:attribute name="status">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:enumeration value="predlozen"/>
-                        <xs:enumeration value="nacelo"/>
-                        <xs:enumeration value="pojedinost"/>
-                        <xs:enumeration value="celina"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:attribute>
+
         </xs:complexType>
         <xs:key name="PK">
             <xs:selector xpath="akt:propis"/>
