@@ -94,7 +94,11 @@
 	<classpathentry kind="lib" path="lib/mimepull-1.9.4.jar"/>
 	<classpathentry kind="lib" path="lib/slf4j-api-1.7.4.jar"/>
 	<classpathentry kind="lib" path="lib/json-20160212.jar"/>
+<<<<<<< HEAD
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="/BSEP2016/lib/xmlsec-1.4.2.jar"/>
+=======
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_79"/>
+>>>>>>> f7f22a1e4c39be122ba3dc0e749b6e107460b5da
 	<classpathentry kind="output" path="eclipse/classes"/>
 </classpath>
