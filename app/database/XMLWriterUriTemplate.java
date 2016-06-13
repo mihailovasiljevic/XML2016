@@ -11,6 +11,7 @@ import com.marklogic.client.DatabaseClientFactory;
 import com.marklogic.client.document.DocumentDescriptor;
 import com.marklogic.client.document.DocumentUriTemplate;
 import com.marklogic.client.document.XMLDocumentManager;
+import com.marklogic.client.io.DocumentMetadataHandle;
 import com.marklogic.client.io.InputStreamHandle;
 
 import controllers.Application;
@@ -62,9 +63,16 @@ public class XMLWriterUriTemplate {
 		// Create an input stream handle to hold XML content.
 		InputStreamHandle handle = new InputStreamHandle(new FileInputStream(Application.projectPath+"/XML2016/data/temp.xml"));
 		
+		
+		DocumentMetadataHandle metadata = new DocumentMetadataHandle();
+		metadata.getCollections().add("/acts");
+		
 		// Write the document to the database
-		System.out.println("[INFO] Inserting \"data/temp.xml\" to \"Documents\" database.");
-		DocumentDescriptor desc = xmlManager.create(template, handle);
+		System.out.println("[INFO] Inserting \"" + template.getDirectory() + "\" to \"" + props.database + "\" database.");
+		DocumentDescriptor desc = xmlManager.create(template, metadata, handle);
+		
+		// Write the document to the database
+		
 		
 		System.out.println("[INFO] Generated URI: " + desc.getUri());
 		System.out.print("[INFO] Verify the content at: ");
