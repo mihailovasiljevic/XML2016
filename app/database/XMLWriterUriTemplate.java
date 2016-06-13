@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 
+
 import com.marklogic.client.DatabaseClient;
 import com.marklogic.client.DatabaseClientFactory;
 import com.marklogic.client.document.DocumentDescriptor;
@@ -12,6 +13,7 @@ import com.marklogic.client.document.DocumentUriTemplate;
 import com.marklogic.client.document.XMLDocumentManager;
 import com.marklogic.client.io.InputStreamHandle;
 
+import controllers.Application;
 import database.Util.ConnectionProperties;
 
 /**
@@ -58,7 +60,7 @@ public class XMLWriterUriTemplate {
 		template.setDirectory("/acts/");
 		
 		// Create an input stream handle to hold XML content.
-		InputStreamHandle handle = new InputStreamHandle(new FileInputStream("./data/temp.xml"));
+		InputStreamHandle handle = new InputStreamHandle(new FileInputStream(Application.projectPath+"/XML2016/data/temp.xml"));
 		
 		// Write the document to the database
 		System.out.println("[INFO] Inserting \"data/temp.xml\" to \"Documents\" database.");

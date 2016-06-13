@@ -10,6 +10,7 @@ import javax.xml.validation.SchemaFactory;
 
 import org.xml.sax.SAXException;
 
+import controllers.Application;
 import rs.ac.uns.ftn.pravniakt.Propis;
 
 /** 
@@ -43,7 +44,7 @@ public class XMLValidation {
             unmarshaller.setEventHandler(new MyValidationEventHandler());
 			
             // Test: proširiti XML fajl nepostojećim elementom (npr. <test></test>)
-            Propis propis = (Propis) unmarshaller.unmarshal(new File("./data/temp.xml"));
+            Propis propis = (Propis) unmarshaller.unmarshal(new File(Application.projectPath+"/XML2016/data/temp.xml"));
 
             // Ispis sadržaja objektnog modela, nakon uspešne validacije
             //printStudent(student);
