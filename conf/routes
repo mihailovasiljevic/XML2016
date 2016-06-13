@@ -9,6 +9,7 @@ GET     /                                       Application.index
 POST	/api/user						   		Application.saveUsers
 GET		/api/user								Application.getUsers
 
+POST	/api/user						   		Application.login
 
 POST	/api/act								Application.saveAct
 GET		/api/act								Application.getAct

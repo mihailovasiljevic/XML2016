@@ -168,7 +168,7 @@ public class Encrypt {
 			xmlCipher.init(XMLCipher.ENCRYPT_MODE, key);
 			
 			//trazi se element ciji sadrzaj se kriptuje
-			NodeList odseci = doc.getElementsByTagName("Lozinka");
+			NodeList odseci = doc.getElementsByTagName("Email");
 			Element odsek = (Element) odseci.item(0);
 			
 			xmlCipher.doFinal(doc, odsek, true); //kriptuje sa sadrzaj

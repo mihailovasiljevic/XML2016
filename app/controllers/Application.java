@@ -157,6 +157,7 @@ public class Application extends Controller {
 					if(username.equals(eElement.getElementsByTagName("KorisnickoIme").item(0).getTextContent()) && password.equals(eElement.getElementsByTagName("Lozinka").item(0).getTextContent() )){
 						 
 						 System.out.println("Uspesan LOGIN");
+						 session.put("korisnik", user);
 						 
 					 }
 					 		
@@ -259,7 +260,6 @@ public class Application extends Controller {
 				    	boolean povucen = false;
 				    	File f = new File(FilePaths.keystores+"sgns-revoked.jks");
 							if(f.exists() && !f.isDirectory()) {
-								System.out.println("EEEEEEEEEEEE");
 								 KeyStoreReader ksr = new KeyStoreReader();
 								    ksr.setKeyStoreFile(FilePaths.keystores+"sgns-revoked.jks");
 								    ksr.setPassword("sgns-revoked".toCharArray());
