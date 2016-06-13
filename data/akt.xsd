@@ -11,12 +11,14 @@
                 <xs:element name="deo" type="akt:deo"/>
             </xs:sequence>
             <xs:attribute name="status">
-                <xs:restriction base="xs:string">
-                    <xs:enumeration value="predlozen"/>
-                    <xs:enumeration value="nacelo"/>
-                    <xs:enumeration value="pojedinost"/>
-                    <xs:enumeration value="celina"/>
-                </xs:restriction>
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="predlozen"/>
+                        <xs:enumeration value="nacelo"/>
+                        <xs:enumeration value="pojedinost"/>
+                        <xs:enumeration value="celina"/>
+                    </xs:restriction>
+                </xs:simpleType>
             </xs:attribute>
         </xs:complexType>
         <xs:key name="PK">
