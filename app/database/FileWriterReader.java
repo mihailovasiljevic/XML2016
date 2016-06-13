@@ -11,7 +11,7 @@ import java.io.PrintWriter;
 public class FileWriterReader {
 	public static String path = FilePaths.keystores;
 	
-/*
+
 	//OVERWRITE, ID
 	public static int write(String string, Integer id) {
 		try(FileWriter fw = new FileWriter(path+"/"+string, false);
@@ -47,5 +47,5 @@ public class FileWriterReader {
 		
 		return null;
 	}
-	*/
+	
 }

@@ -28,6 +28,7 @@ import net.sf.ezmorph.ObjectMorpher;
 import org.h2.constant.SysProperties;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
@@ -83,57 +84,73 @@ public class Application extends Controller {
 	public static void login() throws FileNotFoundException, IOException {
 		
 		System.out.println("login");
-		System.out.println(IN_FILE);
-		 XMLReader.run(Util.loadProperties());
-	
 		
-		Document doc = loadDocument(IN_FILE);
-		NodeList odseci = doc.getElementsByTagName("Lozinka");
-		Element odsek = (Element) odseci.item(0);
-		
-		System.out.println(doc);
-		System.out.println(odsek.toString());
-		
-		//		Korisnici users=doc.getElementsByTagName("KorisnickoIme");
-		
-		System.out.println("save");
-    	String result = params.get("body");
-    	ObjectMapper mapper = new ObjectMapper();
-    	User user;
-    	
-    	/*
-			try {
-				user = mapper.readValue(result, User.class);
-				users.add(user);
+		try {
+
+	//		File fXmlFile = new File("/XML2016/xml/users.xml");
+			File fXmlFile = new File(Application.projectPath+"/XML2016/xml/users.xml");
+			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+			Document doc = dBuilder.parse(fXmlFile);
+			
+			
+			String result = params.get("body");
+	    	ObjectMapper mapper = new ObjectMapper();
+	    	User user;
+	    	
+	    	
 				
-				 System.out.println(user);
-				
-				String username = user.getUsername();
-		 		String password = user.getPassword();
-				
-				 for(Korisnik us : users){
-					 
-					 System.out.println("for");
-					 if(username.equals(us.getKorisnickoIme()) && password.equals(us.getLozinka()) ){
+					user = mapper.readValue(result, User.class);
+					
+					
+					String username = user.getUsername();
+			 		String password = user.getPassword();
+			 		
+			 		System.out.println(username);
+			 		System.out.println(password);
+					
+					
+			//optional, but recommended
+			//read this - http://stackoverflow.com/questions/13786607/normalization-in-dom-parsing-with-java-how-does-it-work
+			doc.getDocumentElement().normalize();
+
+			System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
+					
+			NodeList nList = doc.getElementsByTagName("Korisnik");
+					
+			System.out.println("----------------------------");
+
+			for (int temp = 0; temp < nList.getLength(); temp++) {
+
+				Node nNode = nList.item(temp);
+						
+				System.out.println("\nCurrent Element :" + nNode.getNodeName());
+						
+				if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+
+					Element eElement = (Element) nNode;
+					
+					if(username.equals(eElement.getElementsByTagName("KorisnickoIme").item(0).getTextContent()) && password.equals(eElement.getElementsByTagName("Lozinka").item(0).getTextContent() )){
 						 
 						 System.out.println("Uspesan LOGIN");
 						 
 					 }
-					 
-				 }
-				 
-			} catch (JsonParseException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (JsonMappingException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}*/
-	}
-	
+
+					System.out.println("Staff id : " + eElement.getAttribute("id"));
+					System.out.println("KorisnickoIme : " + eElement.getElementsByTagName("KorisnickoIme").item(0).getTextContent());
+					System.out.println("Lozinka : " + eElement.getElementsByTagName("Lozinka").item(0).getTextContent());
+					System.out.println("Ime : " + eElement.getElementsByTagName("Ime").item(0).getTextContent());
+					System.out.println("Prezime : " + eElement.getElementsByTagName("Prezime").item(0).getTextContent());
+					System.out.println("Uloga : " + eElement.getElementsByTagName("Uloga").item(0).getTextContent());
+					System.out.println("Email : " + eElement.getElementsByTagName("Email").item(0).getTextContent());
+
+				}
+			}
+		    } catch (Exception e) {
+			e.printStackTrace();
+		    }
+		 }
+
     public static void index() {
     	System.out.println("Server je uspesno pokrenut");
     	File file = new File(".");

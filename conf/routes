@@ -6,8 +6,9 @@
 GET     /                                       Application.index
 GET     /                                       Application.index1
 
-POST	/api/user								Application.saveUsers
+POST	/api/user								Application.login
 GET		/api/user								Application.getUsers
+
 
 POST	/api/act								Application.saveAct
 GET		/api/act								Application.getAct

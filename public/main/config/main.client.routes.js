@@ -9,6 +9,7 @@ angular.module('main').config(['$urlRouterProvider','$stateProvider',
       .state('main.search', {
         url: 'search',
         templateUrl: 'public/main/views/search.html'
-      });
+      })
+     ;
   }
 ]);

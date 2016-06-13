@@ -7,6 +7,10 @@ angular.module('user').config(['$urlRouterProvider','$stateProvider',
         url: '/input',
         templateUrl: 'public/user/views/input.html',
       })
+      .state('login', {
+        url: '/login',
+        templateUrl: 'public/user/views/login.html',
+      })
       .state('view', {
         url: '/view',
         templateUrl: 'public/user/views/view.html',

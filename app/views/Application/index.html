@@ -4,7 +4,8 @@
 </head>
 <body>
 
-<section  ng-controller="MainController as main"></section>    
+ <section  ng-controller="MainController as main"></section>    
+<!-- <section  ng-controller="users"></section>  -->   
 <div ui-view></div>
 
 <script type="text/javascript" src="@{'/public/lib/angular/angular.js'}"></script>
@@ -15,6 +16,21 @@
 <script type="text/javascript" src="@{'/public/main/config/main.client.routes.js'}"></script>
 <script type="text/javascript" src="@{'/public/main/services/main.client.services.js'}"></script>
 <script type="text/javascript" src="@{'/public/main/controllers/main.client.controllers.js'}"></script>
+
+<script type="text/javascript" src="@{'/public/player/player.module.js'}"></script>
+<script type="text/javascript" src="@{'/public/player/config/player.routes.js'}"></script>
+<script type="text/javascript" src="@{'/public/player/services/player.services.js'}"></script>
+<script type="text/javascript" src="@{'/public/player/controllers/player.controllers.js'}"></script>
+
+<script type="text/javascript" src="@{'/public/user/user.module.js'}"></script>
+<script type="text/javascript" src="@{'/public/user/config/user.routes.js'}"></script>
+<script type="text/javascript" src="@{'/public/user/services/user.services.js'}"></script>
+<script type="text/javascript" src="@{'/public/user/controllers/user.controllers.js'}"></script>
+
+<script type="text/javascript" src="@{'/public/act/act.client.module.js'}"></script>
+<script type="text/javascript" src="@{'/public/act/config/act.client.routes.js'}"></script>
+<script type="text/javascript" src="@{'/public/act/services/act.client.services.js'}"></script>
+<script type="text/javascript" src="@{'/public/act/controllers/act.client.controllers.js'}"></script>
 
 <script type="text/javascript" src="@{'/public/application.js'}"></script>
 
