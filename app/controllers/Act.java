@@ -41,7 +41,7 @@ public class Act extends Controller {
 
 	public static void listActs() {
 
-		LinkedHashMap<String, String> documentsURIs = new LinkedHashMap<>();
+		LinkedHashMap<String, String> documentsURIs = new LinkedHashMap<String, String>();
 		try {
 			client = DatabaseClientFactory.newClient(Util.loadProperties().host, Util.loadProperties().port,
 					Util.loadProperties().database, Util.loadProperties().user, Util.loadProperties().password,
