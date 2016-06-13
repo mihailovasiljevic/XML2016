@@ -7,7 +7,9 @@ import rs.ac.uns.ftn.pravniakt.Propis;
 import util.FileUtil;
 import xquery.XMLReader;
 import xquery.XMLWriter;
+
 import org.json.*;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -25,6 +27,7 @@ import jaxb.XMLValidation;
 import net.sf.ezmorph.ObjectMorpher;
 
 
+
 import org.h2.constant.SysProperties;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -35,6 +38,7 @@ import org.xml.sax.SAXException;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.marklogic.client.DatabaseClient;
 
 import database.FilePaths;
 import database.XMLPartialUpdate;
@@ -46,6 +50,7 @@ import models.User;
 public class Application extends Controller {
 
 	public static String projectPath;
+	public static DatabaseClient client;
 	
 	private static ArrayList<Player> players = new ArrayList<Player>();
 	private static ArrayList<User> users = new ArrayList<User>();
@@ -58,6 +63,18 @@ public class Application extends Controller {
 	/**
 	 * Kreira DOM od XML dokumenta
 	 */
+	
+	static {
+    	File file = new File(".");
+    	try {
+			projectPath = file.getCanonicalPath().toString();
+			System.out.println("projectPath " +  projectPath);
+		} catch (IOException e) {
+			System.out.println("Project path is not valid");
+			e.printStackTrace();
+		}
+	}
+	
 	private static Document loadDocument(String file) {
 		try {
 			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
@@ -153,14 +170,6 @@ public class Application extends Controller {
 
     public static void index() {
     	System.out.println("Server je uspesno pokrenut");
-    	File file = new File(".");
-    	try {
-			projectPath = file.getCanonicalPath().toString();
-			System.out.println("projectPath " +  projectPath);
-		} catch (IOException e) {
-			System.out.println("Project path is not valid");
-			e.printStackTrace();
-		}
     	render();
     }
     

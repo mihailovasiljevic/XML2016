@@ -1,15 +1,23 @@
 package controllers;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Unmarshaller;
 
 import jaxb.XMLValidation;
 
 import org.json.JSONObject;
+import org.w3c.dom.Document;
 
 import database.Util;
+import database.XMLReader;
 import database.XMLWriterUriTemplate;
 import play.mvc.Controller;
+import rs.ac.uns.ftn.pravniakt.Propis;
 import util.FileUtil;
 
 public class ActServices extends Controller {
@@ -51,8 +59,31 @@ public class ActServices extends Controller {
     }
 	
 	public static void changeStateOfAct() {
+		String actNum = "8505319148387349153";
+		String state = "nacelo";
 		
-		
+		try {
+			Document doc = XMLReader.run(Util.loadProperties(), "/acts/8505319148387349153.xml");
+			JAXBContext context;
+			try {
+				context = JAXBContext.newInstance("rs.ac.uns.ftn.pravniakt");
+				Unmarshaller unmarshaller = context.createUnmarshaller();
+				Propis propis = (Propis) unmarshaller.unmarshal(doc);
+				System.out.println("prosao");
+				propis.setStatus(state);
+				
+			} catch (JAXBException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		
 	}
 	

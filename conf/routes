@@ -12,6 +12,8 @@ GET		/api/user								Application.getUsers
 POST	/api/act								ActServices.saveAct
 GET		/api/act								ActServices.getAct
 
+GET		/api/changeState						ActServices.changeStateOfAct
+
 GET     /input									Redirection.toForm
 
 # Ignore favicon requests
