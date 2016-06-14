@@ -1,8 +1,11 @@
 *.class
-/temp/*
+/tmp/*
 # Package Files #
 *.war
 *.ear
 
 #bower libraries
 /public/lib
+
+#ignore lib
+/lib
