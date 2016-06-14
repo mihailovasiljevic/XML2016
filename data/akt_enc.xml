@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><Propis xmlns="http://www.ftn.uns.ac.rs/pravniAkt" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ftn.uns.ac.rs/pravniAkt file:/C:/Users/Milos/Documents/busep/schema/akt.xsd">
+    <Preambula/>
+    <SimbolickiNaziv/>
+    <Naziv/>
+    <UvodniDeo>
+        <RedniBrojDela>1</RedniBrojDela>
+        <SimbolickiNazivDela/>
+        <NazivDela/>
+        <Glava>
+            <RedniBrojGlave>1</RedniBrojGlave>
+            <SimbolickiNazivGlave/>
+            <NazivGlave/>
+            <OdeljakIliClan><Clan>
+                <RedniBrojClana/>
+                <SimbolickiNazivClana/>
+                <StavClana>
+                    <TekstStava/>
+                </StavClana>
+            </Clan></OdeljakIliClan>
+        </Glava>
+        <PredmetUredjivanja/>
+    </UvodniDeo>
+    <GlavniDeo><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:KeyName>Kriptovani tajni kljuc</ds:KeyName>
+<xenc:EncryptedKey xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-1_5" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"/><xenc:CipherData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"><xenc:CipherValue xmlns:xenc="http://www.w3.org/2001/04/xmlenc#">MxaM0TfQiMiij5uMc5Kiw24GegR3Yj4mEyQzwIZb6qw9o7YrNwR8xvdAdXWcMhoQlZyp1Q6id9h6
+zVRwa/W6DpgNKAF07xrsEFbNRZRb/8r6wxAkezhpsl2vIg5mJ6fYs2SXkj1Vpciwk+Eno4pWV66e
+Qqn+U5NVEVe9W9WEJUc=</xenc:CipherValue></xenc:CipherData></xenc:EncryptedKey></ds:KeyInfo><xenc:CipherData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"><xenc:CipherValue xmlns:xenc="http://www.w3.org/2001/04/xmlenc#">omvsaxuTXgF4KFUrS0LvWtE+Eirua11sls/mu8B5Ooom+YyQhB1Dzo8G9r+RUlIC+77VOo6TZ+Vl
+W1/TnI1AeIzjL9LgfTH+8b90B8r7PPt1IDXAPCd2PkiY50inkPbdng3X2LRcfij2r8l4DSL/rHUN
+nOe31VjKARwgBrqfv1lf5PZwgIEZTGCo5BjKYIOkfFNAb+ojxTLhQiSKNI6wiFMnrF+bY3A2waYU
+iLxWJQfx6B3dUoGG2j0wLNBGEZbbn8aQEvFfJGTB9ln2+uPxPBBXvc3LnObOZvUJxdLT6EgCVciR
+sfi3QxHSdZwpsxxz2VyVS9P10oMBT+SGRYOqdKmACLcGiDXZ3sGD5pc6m9UDvSppiE+Caxzh57FF
+SeHl417H6Q/S+9hKOLlF55uasp4abhiTGARTDPxmYskjY5i+zOXHdVab3HS1K9mwlhUqmq+/FcLe
+KFgoT7W0TFIGV2y1JKBuq9ImESmavUS89sht3mZu3/d8nwLdLcZrSaZMAfivQfugyAEskYTbUB1a
+hRsGeJOw+R/CAMgMNt/BVMs73uyKW4NwECdCikKv794DV375r8zqk204dkZHg6Zu+9O4mPOIqtry
+Z+f++1/JOttBifVGtUQjELyD+rx5fAeWbf67UzxDd1b4ok2DZWGHD2sL5geBtcRxJ6OSUJAZLAz0
+USe2HZo0+yl+3n4iPRRYh/lyFPw6HcmsbdFNngWHSPQ3n1nnvChsl5SEcbmVDlVBFWEcHhabJ4tZ
+IP+Vpol2c4c4it27dP6DyxWs3/v6k41iVtSug+PCR8/PTC7+TAQM5BKrn8PyCcKaVZHj8AV9a05c
+JJYg1Ji80M4Lk498m37YzXXDyia0wA/ONvcxT9D19ItuVBGK0shM8SqFJkHTcmbEKB2i6BldUw/r
+BySCC+tTFK2VK9zZVjjeuwtge5Q=</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></GlavniDeo>
+    <ZavrsniDeo>
+        <RedniBrojDela>1</RedniBrojDela>
+        <SimbolickiNazivDela/>
+        <NazivDela/>
+        <Glava>
+            <RedniBrojGlave>1</RedniBrojGlave>
+            <SimbolickiNazivGlave/>
+            <NazivGlave/>
+            <OdeljakIliClan><Clan>
+                <RedniBrojClana/>
+                <SimbolickiNazivClana/>
+                <StavClana>
+                    <TekstStava/>
+                </StavClana>
+            </Clan></OdeljakIliClan>
+        </Glava>
+    </ZavrsniDeo>
+</Propis>
