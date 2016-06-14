@@ -1,32 +1,32 @@
-angular.module('user').controller('mainCtrl1', ['$scope','$state',
+angular.module('user1').controller('mainCtrl11', ['$scope','$state',
     function($scope,$state) {
 		$state.go("input");
 }]);
 
-angular.module('user').controller('inputCtrl1', ['$scope','$state','User',
+angular.module('user1').controller('inputCtrl11', ['$scope','$state','User',
 	 function($scope,$state,User) {
 		$scope.user = new User();
 		$scope.create = function() {
 			$scope.user.$save(function() {
-				$state.go("main.show");
+				$state.go("main.show1");
 			});
 		}
  }]);
 
-angular.module('user').controller('inputCtrl2', ['$scope','$state','User',
+angular.module('user1').controller('inputCtrl22', ['$scope','$state','User',
   function($scope,$state,User) {
 	$scope.user = new User();
 	$scope.create = function() {
 		$scope.user.$save(function() {
-			$state.go("main.show");
+			$state.go("main.show1");
 		});
 	}
 }]);                                           	
 
-angular.module('user').controller('viewCtrl1', ['$scope','$state','User',
+angular.module('user1').controller('viewCtrl11', ['$scope','$state','User',
  	 function($scope,$state,User) {
 
-	$state.go("view.main");
+	$state.go("view.main1");
 	
 	User.query(function(response) {
 		$scope.users = response;

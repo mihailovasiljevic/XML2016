@@ -108,6 +108,7 @@ public class Application extends Controller {
 	public static void login() throws FileNotFoundException, IOException {
 		
 		System.out.println("login");
+		boolean provera=false;
 		
 		try {
 
@@ -157,6 +158,7 @@ public class Application extends Controller {
 					if(username.equals(eElement.getElementsByTagName("KorisnickoIme").item(0).getTextContent()) && password.equals(eElement.getElementsByTagName("Lozinka").item(0).getTextContent() )){
 						 
 						 System.out.println("Uspesan LOGIN");
+						 provera=true;
 						 session.put("korisnik", user);
 						 
 					 }
@@ -175,6 +177,9 @@ public class Application extends Controller {
 
 				}
 			}
+			
+			if(provera==false)
+			login();
 			
 		    } catch (Exception e) {
 			e.printStackTrace();
@@ -215,6 +220,7 @@ public class Application extends Controller {
     	String result = params.get("body");
     	ObjectMapper mapper = new ObjectMapper();
     	User user;
+    	boolean provera=false;
     	
 		try {
 			user = mapper.readValue(result, User.class);
@@ -229,6 +235,9 @@ public class Application extends Controller {
 	 //		String certificate = user.getCertificate();
 	 		
 	 		if(password.equalsIgnoreCase(repeat_password)){
+	 			
+	 			provera=true;
+	 			
 		 		 Korisnik kor = new Korisnik();
 				    kor.setKorisnickoIme(username);
 				    kor.setLozinka(password);
@@ -309,10 +318,10 @@ public class Application extends Controller {
 					}*/
 		 		
 			    	 XMLWriter.run(Util.loadProperties());
-	 		}else{
-	 			renderTemplate("@Application.register", user);
 	 		}
 	 		
+	 		if(provera==false)
+	 			saveUsers();
 	 		
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -330,6 +339,4 @@ public class Application extends Controller {
     }
     
     
-
-
 }

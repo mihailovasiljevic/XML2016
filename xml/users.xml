@@ -2,11 +2,19 @@
 <Korisnici xmlns="http://www.ftn.uns.ac.rs/korisnici">
     <Korisnik>
         <KorisnickoIme>wq</KorisnickoIme>
+<<<<<<< HEAD
+        <Lozinka/>
+=======
         <Lozinka>www</Lozinka>
+>>>>>>> 3ab489ad78a31ced89b50e5429b0c0cdbbc4129c
         <Ime>dsa</Ime>
         <Prezime>dd</Prezime>
         <Uloga>gradjanin</Uloga>
-        <Email>fd</Email>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:KeyName>Kriptovani tajni kljuc</ds:KeyName>
+<xenc:EncryptedKey xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-1_5" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"/><xenc:CipherData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"><xenc:CipherValue xmlns:xenc="http://www.w3.org/2001/04/xmlenc#">syeo+xxx8ZzTH/lXz0CwppVzhgaNVc0/azxzpCSzcedo4BLay0+E68Vr1tWGAB4lcoPxy2j26NNR
+xxnL8JVnPCvUMMi8PS+57bJVKNKVeDMC2UNfhnKqJ8p036B1uOdsbrNJTjS+ij4bi55qeADHXPX1
+XSgC+fkjcMaBj6G9N6k=</xenc:CipherValue></xenc:CipherData></xenc:EncryptedKey></ds:KeyInfo><xenc:CipherData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"><xenc:CipherValue xmlns:xenc="http://www.w3.org/2001/04/xmlenc#">+9itenpk/K9BG7UVifDssA==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
     </Korisnik>
     <Korisnik>
         <KorisnickoIme>tggttg</KorisnickoIme>
@@ -32,4 +40,377 @@
         <Uloga>gradjanin</Uloga>
         <Email>e</Email>
     </Korisnik>
+<<<<<<< HEAD
+    <Korisnik>
+        <KorisnickoIme>d</KorisnickoIme>
+        <Lozinka>d</Lozinka>
+        <Ime>d</Ime>
+        <Prezime>d</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>d</Email>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>d</KorisnickoIme>
+        <Lozinka>d</Lozinka>
+        <Ime>d</Ime>
+        <Prezime>d</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>d</Email>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>hi</KorisnickoIme>
+        <Lozinka>hi</Lozinka>
+        <Ime>hi</Ime>
+        <Prezime>hi</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>hi</Email>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>k</KorisnickoIme>
+        <Lozinka>k</Lozinka>
+        <Ime>k</Ime>
+        <Prezime>k</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>k</Email>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>k</KorisnickoIme>
+        <Lozinka>kkk</Lozinka>
+        <Ime>g</Ime>
+        <Prezime>t</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>j</Email>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>sda</KorisnickoIme>
+        <Lozinka>as</Lozinka>
+        <Ime>sdadsa</Ime>
+        <Prezime>dasdsa</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>asddsa</Email>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>dsasda</KorisnickoIme>
+        <Lozinka>asa</Lozinka>
+        <Ime>dsads</Ime>
+        <Prezime>dsadsa</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>dsdassda</Email>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>sd</KorisnickoIme>
+        <Lozinka>g</Lozinka>
+        <Ime>dfs</Ime>
+        <Prezime>sdff</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>d</Email>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>gg</KorisnickoIme>
+        <Lozinka>ss</Lozinka>
+        <Ime>as</Ime>
+        <Prezime>sa</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>sad</Email>
+        <TimeStamp>Mon Jun 13 23:44:09 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>gg</KorisnickoIme>
+        <Lozinka>ss</Lozinka>
+        <Ime>as</Ime>
+        <Prezime>sa</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>sad</Email>
+        <TimeStamp>Mon Jun 13 23:44:09 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>ggggg</KorisnickoIme>
+        <Lozinka>ss</Lozinka>
+        <Ime>aaa</Ime>
+        <Prezime>sa</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>sa</Email>
+        <TimeStamp>Mon Jun 13 23:47:58 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>gg54321</KorisnickoIme>
+        <Lozinka>aa</Lozinka>
+        <Ime>ss</Ime>
+        <Prezime>dd</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>aa</Email>
+        <TimeStamp>Tue Jun 14 00:07:02 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>hh</KorisnickoIme>
+        <Lozinka>aa</Lozinka>
+        <Ime>dd</Ime>
+        <Prezime>aa</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>aa</Email>
+        <TimeStamp>Tue Jun 14 00:09:56 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>gg</KorisnickoIme>
+        <Lozinka>aa</Lozinka>
+        <Ime>ss</Ime>
+        <Prezime>dda</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>aa</Email>
+        <TimeStamp>Tue Jun 14 00:15:14 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>hh32</KorisnickoIme>
+        <Lozinka>dsdasdsa</Lozinka>
+        <Ime>fg</Ime>
+        <Prezime>gf</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>gf</Email>
+        <TimeStamp>Tue Jun 14 00:19:56 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>gffg</KorisnickoIme>
+        <Lozinka>aa</Lozinka>
+        <Ime>sss</Ime>
+        <Prezime>aa</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>dsa</Email>
+        <TimeStamp>Tue Jun 14 00:21:45 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>fds</KorisnickoIme>
+        <Lozinka>aa</Lozinka>
+        <Ime>ssdsa</Ime>
+        <Prezime>aa</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>dsaa</Email>
+        <TimeStamp>Tue Jun 14 00:39:41 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>dd</KorisnickoIme>
+        <Lozinka>aa</Lozinka>
+        <Ime>ss</Ime>
+        <Prezime>ss</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>dd</Email>
+        <TimeStamp>Tue Jun 14 00:52:08 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>hh</KorisnickoIme>
+        <Lozinka>hh</Lozinka>
+        <Ime>hh</Ime>
+        <Prezime>hh</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>hh</Email>
+        <TimeStamp>Tue Jun 14 01:19:44 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>qwer</KorisnickoIme>
+        <Lozinka>as</Lozinka>
+        <Ime>sas</Ime>
+        <Prezime>ddsa</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>das</Email>
+        <TimeStamp>Tue Jun 14 01:23:53 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>hh</KorisnickoIme>
+        <Lozinka>hh</Lozinka>
+        <Ime>hh</Ime>
+        <Prezime>hh</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>hh</Email>
+        <TimeStamp>Tue Jun 14 08:57:49 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>bb</KorisnickoIme>
+        <Lozinka>ss</Lozinka>
+        <Ime>dd</Ime>
+        <Prezime>aa</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>hh</Email>
+        <TimeStamp>Tue Jun 14 09:11:37 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>gg</KorisnickoIme>
+        <Lozinka>a</Lozinka>
+        <Ime>a</Ime>
+        <Prezime>a</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>a</Email>
+        <TimeStamp>Tue Jun 14 09:17:09 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>bb</KorisnickoIme>
+        <Lozinka>ss</Lozinka>
+        <Ime>aa</Ime>
+        <Prezime>aa</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>aa</Email>
+        <TimeStamp>Tue Jun 14 09:18:14 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>hh</KorisnickoIme>
+        <Lozinka>nn</Lozinka>
+        <Ime>sa</Ime>
+        <Prezime>sa</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>as</Email>
+        <TimeStamp>Tue Jun 14 09:20:47 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>hh1</KorisnickoIme>
+        <Lozinka>nn</Lozinka>
+        <Ime>sa</Ime>
+        <Prezime>sa</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>as</Email>
+        <TimeStamp>Tue Jun 14 09:21:04 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>hh1</KorisnickoIme>
+        <Lozinka>nn</Lozinka>
+        <Ime>sa</Ime>
+        <Prezime>sa</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>as</Email>
+        <TimeStamp>Tue Jun 14 09:21:08 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>hh1</KorisnickoIme>
+        <Lozinka>nn</Lozinka>
+        <Ime>sa</Ime>
+        <Prezime>sa</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>as</Email>
+        <TimeStamp>Tue Jun 14 09:21:09 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>hh1</KorisnickoIme>
+        <Lozinka>nn</Lozinka>
+        <Ime>sa</Ime>
+        <Prezime>sa</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>as</Email>
+        <TimeStamp>Tue Jun 14 09:21:09 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>b</KorisnickoIme>
+        <Lozinka>b</Lozinka>
+        <Ime>b</Ime>
+        <Prezime>b</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>b</Email>
+        <TimeStamp>Tue Jun 14 09:21:20 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>zz</KorisnickoIme>
+        <Lozinka>zz</Lozinka>
+        <Ime>zz</Ime>
+        <Prezime>zz</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>zz</Email>
+        <TimeStamp>Tue Jun 14 09:23:00 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>aaas</KorisnickoIme>
+        <Lozinka>sdad</Lozinka>
+        <Ime>dsa</Ime>
+        <Prezime>da</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>da</Email>
+        <TimeStamp>Tue Jun 14 10:09:25 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>fd</KorisnickoIme>
+        <Lozinka>fgfg</Lozinka>
+        <Ime>fg</Ime>
+        <Prezime>gf</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>fg</Email>
+        <TimeStamp>Tue Jun 14 10:09:48 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>n</KorisnickoIme>
+        <Lozinka>nn</Lozinka>
+        <Ime>n</Ime>
+        <Prezime>n</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>n</Email>
+        <TimeStamp>Tue Jun 14 10:19:06 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>gfdg</KorisnickoIme>
+        <Lozinka>d</Lozinka>
+        <Ime>dg</Ime>
+        <Prezime>df</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>d</Email>
+        <TimeStamp>Tue Jun 14 10:55:56 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>kk</KorisnickoIme>
+        <Lozinka>kk</Lozinka>
+        <Ime>kk</Ime>
+        <Prezime>kk</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>kk</Email>
+        <TimeStamp>Tue Jun 14 11:31:23 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>pp</KorisnickoIme>
+        <Lozinka>pp</Lozinka>
+        <Ime>ppp</Ime>
+        <Prezime>pp</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>pp</Email>
+        <TimeStamp>Tue Jun 14 12:00:14 CEST 2016</TimeStamp>
+    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<ds:Reference URI="">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+<ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ds:DigestValue>oInChDN0EO0Ov6ROT3DosDoMWOY=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>
+iHL5gAojx25PKwAavumx8jxgnsd5Q2Khii3RXH9JHhG3d+bQlkmR8UsDMwDLjOHvTYZvA/gUwOQB
+73rC9m8vpA0Fucbxd770LDjO7+YOjOoAAPAuENlA37JUvM3vAqwQTTqYo+P9A+6K5Z99LdOJ+Mfj
+9f6oPziswYN198amKNo=
+</ds:SignatureValue>
+<ds:KeyInfo>
+<ds:KeyValue>
+<ds:RSAKeyValue>
+<ds:Modulus>
+jJ7rxPHF9I5Hc6qistTXv0MkTSshXJFzurB/6HEDilVVSAN1Xpk8CHZCi4xp9S/G8NpnDj2yJiga
+yjvud0zxizi4eCLvtnlzcG7s6au+XSzEd86Dr+1rwRlFRGXXl4ysiknsUHTxwrIQu6Ku8cXVS4/H
+uCAF2dmNbqzxY+/Mzzc=
+</ds:Modulus>
+<ds:Exponent>AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+<ds:X509Data>
+<ds:X509Certificate>
+MIICFjCCAX+gAwIBAgIBATANBgkqhkiG9w0BAQsFADBRMQ0wCwYDVQQDDARTR05TMQ0wCwYDVQQK
+DARzZ25zMQ0wCwYDVQQLDARzZ25zMQ8wDQYDVQQGEwZTZXJiaWExETAPBgoJkiaJk/IsZAEBDAEx
+MB4XDTE2MDYwNzIyMTIyM1oXDTE2MDcwNzIyMTIyM1owUTENMAsGA1UEAwwEU0dOUzENMAsGA1UE
+CgwEc2duczENMAsGA1UECwwEc2duczEPMA0GA1UEBhMGU2VyYmlhMREwDwYKCZImiZPyLGQBAQwB
+MTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAjJ7rxPHF9I5Hc6qistTXv0MkTSshXJFzurB/
+6HEDilVVSAN1Xpk8CHZCi4xp9S/G8NpnDj2yJigayjvud0zxizi4eCLvtnlzcG7s6au+XSzEd86D
+r+1rwRlFRGXXl4ysiknsUHTxwrIQu6Ku8cXVS4/HuCAF2dmNbqzxY+/MzzcCAwEAATANBgkqhkiG
+9w0BAQsFAAOBgQAYGwqiPfhcbvEBw/V9PzMj1vhVCYRby/oH2ZFYXa1QK4upNRUyIkCFh/DIC6HY
+nuzqwGQ9kfwRalIPq3zsX6sgjGyecSN+cIvLs3mjgKQYsVkEIq9OyT5SxEVmrOUy09USih1qNRBj
+U7SVVIEPYb9dwpOW6Iz+EYTlJGpyqOh2jg==
+</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+</ds:Signature></Korisnik>
 </Korisnici>
+=======
+</Korisnici>
+>>>>>>> 3ab489ad78a31ced89b50e5429b0c0cdbbc4129c
