@@ -1,7 +1,7 @@
 angular.module('main').factory('Main',['$resource',
     function($resource){
-        return $resource('/api/main/:userId', {
-            userId: '@_id'
+        return $resource('/api/acts/:uri', {
+            uri: '@_id'
         }, {
             update: {
                 method: 'PUT'

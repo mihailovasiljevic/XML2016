@@ -11,5 +11,15 @@ angular.module('main').config(['$urlRouterProvider','$stateProvider',
         url: 'search',
         templateUrl: 'public/main/views/search.html'
       })
-  
-}]);
+      .state('main.act', {
+        url: 'acts/propose',
+        templateUrl: 'public/act/views/addAct.html'
+      })
+      .state('main.acts', {
+        url: 'acts',
+        templateUrl: 'public/act/views/listActs.html'
+      });
+     ;
+  }
+]);
+

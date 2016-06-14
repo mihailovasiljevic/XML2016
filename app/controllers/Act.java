@@ -30,9 +30,12 @@ import com.marklogic.client.query.StringQueryDefinition;
 import com.marklogic.client.util.EditableNamespaceContext;
 
 import database.Util;
+import database.XMLWriterUriTemplate;
+import jaxb.XMLValidation;
 import play.mvc.Controller;
 import play.mvc.Http;
 import rs.ac.uns.ftn.pravniakt.Propis;
+import util.FileUtil;
 import xquery.XMLReader;
 
 public class Act extends Controller {
@@ -41,7 +44,7 @@ public class Act extends Controller {
 
 	public static void listActs() {
 
-		LinkedHashMap<String, String> documentsURIs = new LinkedHashMap<String, String>();
+		ArrayList<LinkedHashMap<String, String>> documentsURIs = new ArrayList<LinkedHashMap<String, String>>();
 		try {
 			client = DatabaseClientFactory.newClient(Util.loadProperties().host, Util.loadProperties().port,
 					Util.loadProperties().database, Util.loadProperties().user, Util.loadProperties().password,
@@ -63,7 +66,7 @@ public class Act extends Controller {
 			MatchDocumentSummary result = null;
 			MatchLocation locations[];
 			String text;
-
+			LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
 			for (int i = 0; i < matches.length; i++) {
 				result = matches[i];
 				System.out.println((i + 1) + ". RESULT DETAILS: ");
@@ -76,8 +79,12 @@ public class Act extends Controller {
 				Propis propis = (Propis) unmarshaller.unmarshal(doc);
 				System.out.println("prosao");
 				String name = propis.getNaziv();
-				documentsURIs.put(name, result.getUri());
+				map.clear();
+				map.put("name", name);
+				map.put("uri", result.getUri());
+				documentsURIs.add(map);
 			}
+			System.out.println(new JSONObject(documentsURIs));
 			if (documentsURIs.isEmpty())
 				renderJSON(new JSONObject("{'failure':'Lista je pazna'}"));
 			else
@@ -161,4 +168,37 @@ public class Act extends Controller {
 		// Release the client
 		client.release();
 	}
+	
+    public static void saveAct(){
+    	
+    	System.out.println("SAVE ACT");
+    	String requestBody = params.get("body");
+   
+    	JSONObject obj = new JSONObject(requestBody);
+    	String text =obj.getString("text");
+
+    	try {
+			FileUtil.writeFile(Application.projectPath+"/XML2016/data/temp.xml", text);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+    
+    	XMLValidation isValid = new XMLValidation();
+    	boolean xmlValid = isValid.test(Application.projectPath+"/XML2016/data/akt.xsd");
+    	if(xmlValid)
+    		System.out.println("XML JE VALIDAN");
+    	else 
+    		renderJSON(new JSONObject("{'error':'XML dokument nije validan.'}"));
+
+    	if(xmlValid){
+    		try {
+				XMLWriterUriTemplate.run(Util.loadProperties());
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+    	}
+	}
+
 }
