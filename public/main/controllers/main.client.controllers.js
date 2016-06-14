@@ -5,4 +5,15 @@ angular.module('main')
         //go on mainPage
         $state.go('main');
         //show documents
+        $scope.propose = function(){
+            $state.go('main.act');
+        }
+
+        $scope.find = function(){
+            $scope.acts = Main.query();
+        };
+
+        $scope.showAct = function(uri){
+            console.log(uri);
+        };
     }]);

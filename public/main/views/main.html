@@ -1,16 +1,16 @@
-<section  ng-controller="MainController as main">
+<section  ng-controller="MainController as main" ng-init="find()">
 
 <!--Top_content-->
-<section id="top_content" class="top_cont_outer">
+<section id="top_content" class="top_cont_outer" >
   <div class="top_cont_inner">
     <div class="container">
       <div class="top_content">
         <div class="row">
           <div>
-            <div class="top_left_cont flipInY wow animated">
+            <div class="top_left_cont flipInY wow animated"  ui-view>
               <h3>AKTI</h3>
               <h2>Pregled akata</h2>
-                <div class="container" ui-view>
+                <div class="container">
                     <div class="row">
 
                         <section class="content">
@@ -26,13 +26,13 @@
                                         <div class="table-container">
                                             <table class="table table-filter">
                                                 <tbody>
-                                                    <tr class="selected">
+                                                    <tr class="selected" ng-repeat="act in acts">
                                                         <td>
                                                             <div class="media">
                                                                 <div class="media-body">
                                                                     <span class="media-meta pull-right" ng-bind=""></span>
-                                                                    <h4 class="title">
-                                                                        Lorem Impsum
+                                                                    <h4>
+                                                                        <span ng-bind="act.name" ng-click="showAct(act.uri)"></span>
                                                                         <span class="pull-right pagado" ng-bind=""></span>
                                                                     </h4>
                                                                     <p class="summary" ng-bind=""></p>

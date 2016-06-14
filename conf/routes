@@ -10,13 +10,11 @@ POST	/api/user								Application.login
 GET		/api/user								Application.getUsers
 
 
-POST	/api/act								Application.saveAct
-GET		/api/act								Application.getAct
-
 #Acts
 GET		/api/acts								Act.listActs
 GET   	/api/acts/{uri}         				Act.getAct(uri)
-POST	/api/acts/{uri}							Act.updateAct(uri)
+PUT		/api/acts/{uri}							Act.updateAct(uri)
+POST	/api/act								Act.saveAct
 
 GET     /input									Redirection.toForm
 

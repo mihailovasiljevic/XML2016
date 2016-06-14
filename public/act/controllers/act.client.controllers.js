@@ -8,10 +8,13 @@ angular.module('act').controller('actCtrl', ['$scope','$state','Propis',
 		
 		$scope.sendAct = function(){
 			
-			$scope.act.$save(function() {
-			
-				$state.go("view");
-				
+			$scope.act.$save(function(response) {
+				console.log(response);
+				if(response.map.error)
+					$scope.error = response.map.error;
 			});
+		}
+		$scope.showForm = function(){
+			$state.go("act");
 		}
 }]);
