@@ -21,6 +21,8 @@ PUT		/api/acts/{uri}							Act.updateAct(uri)
 POST	/api/act								Act.saveAct
 POST	/api/acts/search						Act.search
 
+GET		/api/genPdf								Act.genPdf
+
 GET     /input									Redirection.toForm
 
 # Ignore favicon requests

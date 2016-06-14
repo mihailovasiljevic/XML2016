@@ -18,7 +18,7 @@
                 <xs:element name="oznaka" type="xs:int"/>
                 <xs:element name="naziv" type="xs:string"/>
                 <xs:element name="predlagac" type="xs:string"/>
-                <xs:element name="deo" type="akt:deo"/>
+                <xs:element name="deo" type="akt:deo" maxOccurs="unbounded"/>
             </xs:sequence>
 
         </xs:complexType>
@@ -43,7 +43,10 @@
             <xs:element form="qualified" name="naziv" nillable="true" type="xs:string"/>
             <!-- NAZIV DELA -->
             <xs:sequence maxOccurs="unbounded">
-                <xs:element name="glava" type="akt:Glava"/>
+                <xs:choice>
+                    <xs:element name="clan" type="akt:clan"/>
+                    <xs:element name="glava" type="akt:Glava"/>
+                </xs:choice>
             </xs:sequence>
         </xs:sequence>
     </xs:complexType>

@@ -22,6 +22,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
+import org.xml.sax.SAXException;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.marklogic.client.DatabaseClient;
@@ -52,6 +53,7 @@ import play.mvc.Http;
 import rs.ac.uns.ftn.pravniakt.Propis;
 import util.FileUtil;
 import xquery.XMLReader;
+import xslfo.XSLFOTransformer;
 
 public class Act extends Controller {
 	private static String collectionName;
@@ -344,4 +346,21 @@ public class Act extends Controller {
 		}
 	}
 
+	public static void genPdf() {
+		String actId = "nebitno";
+		System.out.println("ulaz");
+
+		 try {
+			new XSLFOTransformer().test();
+		} catch (SAXException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		System.out.println("izlaz");
+	}
+	
 }
