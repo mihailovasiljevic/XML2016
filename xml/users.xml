@@ -2,11 +2,7 @@
 <Korisnici xmlns="http://www.ftn.uns.ac.rs/korisnici">
     <Korisnik>
         <KorisnickoIme>wq</KorisnickoIme>
-<<<<<<< HEAD
-        <Lozinka/>
-=======
         <Lozinka>www</Lozinka>
->>>>>>> 3ab489ad78a31ced89b50e5429b0c0cdbbc4129c
         <Ime>dsa</Ime>
         <Prezime>dd</Prezime>
         <Uloga>gradjanin</Uloga>
@@ -40,7 +36,6 @@ XSgC+fkjcMaBj6G9N6k=</xenc:CipherValue></xenc:CipherData></xenc:EncryptedKey></d
         <Uloga>gradjanin</Uloga>
         <Email>e</Email>
     </Korisnik>
-<<<<<<< HEAD
     <Korisnik>
         <KorisnickoIme>d</KorisnickoIme>
         <Lozinka>d</Lozinka>
@@ -411,6 +406,3 @@ U7SVVIEPYb9dwpOW6Iz+EYTlJGpyqOh2jg==
 </ds:KeyInfo>
 </ds:Signature></Korisnik>
 </Korisnici>
-=======
-</Korisnici>
->>>>>>> 3ab489ad78a31ced89b50e5429b0c0cdbbc4129c
