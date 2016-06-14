@@ -7,7 +7,8 @@ angular.module('act').controller('actCtrl', ['$scope','$state','Propis',
 		$scope.act = new Propis();
 		
 		$scope.sendAct = function(){
-			
+			if(!$scope.act.text)
+				$scope.error = "Polje ne sme biti prazno. Molim vas unesite dokument.";
 			$scope.act.$save(function(response) {
 				console.log(response);
 				if(response.map.error)

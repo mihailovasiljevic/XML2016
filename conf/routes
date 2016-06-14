@@ -16,6 +16,7 @@ GET		/api/acts								Act.listActs
 GET   	/api/acts/{uri}         				Act.getAct(uri)
 PUT		/api/acts/{uri}							Act.updateAct(uri)
 POST	/api/act								Act.saveAct
+POST	/api/acts/search						Act.search
 
 GET     /input									Redirection.toForm
 

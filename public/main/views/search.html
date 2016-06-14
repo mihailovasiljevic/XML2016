@@ -1,25 +1,18 @@
- <section  ng-controller="MainController as main">
 
+<h3>AKTI</h3>
+<h2>Pretraga akata</h2>
 <div>
-    <button ng-click="alert()">PrikaziAlert</button>
+<button type="button" class="btn btn-default btn-filter" ng-click="propose();" disabled>Po sadržaju</button>
+<button type="button" class="btn btn-info btn-filter" ng-click="search()">Po metapodacima</button>
 </div>
+<div class="container" ng-controller="actCtrl" ui-view>
+    <div class="row">
 
-</section>
-
-<!-- <script>
-
-angular.module('main').controller('MainController1', ['$scope',
-    function($scope) {
-		alert("hej usao jeste");
-}]);
-
-</script>
-
-
-
-<div ng-controller="MainController1">
-<input type="button" value="Submit" ng-click="create()">
-</div> -->
-
-
-
+        <section class="content">
+            <input ng-model="criteria" class="input-text" type="text" name="" value="Unesite termin za pretragu" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+            <input type="button" value="Pretraži" ng-click="searchActs();" class="input-btn">
+            <span ng-bind="error" style="color:red; font-weight:bold; font-size:20px; padding-left:30px;"></span>
+        </section>
+        
+    </div>
+</div> 

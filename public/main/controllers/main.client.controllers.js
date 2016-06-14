@@ -8,6 +8,10 @@ angular.module('main')
         $scope.propose = function(){
             $state.go('main.act');
         }
+    
+        $scope.search = function(){
+            $state.go('main.search');
+        }
 
         $scope.find = function(){
             $scope.acts = Main.query();
@@ -16,5 +20,9 @@ angular.module('main')
         $scope.showAct = function(uri){
             console.log(uri);
         };
+        $scope.criteria = "";
+        $scope.searchActs = function(){
+            
+        }
     }]);
 
