@@ -23,6 +23,11 @@ angular.module('user').config(['$urlRouterProvider','$stateProvider',
     	  url:'/main',
     	  templateUrl: 'public/act/views/main.html'
       })
+      
+      .state('main.show', {
+    	  url:'/show',
+    	  templateUrl: 'public/main/views/main.html'
+      })
     
 }]);
 
