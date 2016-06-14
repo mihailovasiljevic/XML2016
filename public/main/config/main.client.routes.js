@@ -18,6 +18,10 @@ angular.module('main').config(['$urlRouterProvider','$stateProvider',
       .state('main.acts', {
         url: 'acts',
         templateUrl: 'public/act/views/listActs.html'
+      })
+      .state('main.search.results', {
+        url: 'search',
+        templateUrl: 'public/main/views/searchResults.html'
       });
      ;
   }

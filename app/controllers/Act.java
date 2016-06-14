@@ -18,6 +18,7 @@ import javax.xml.transform.TransformerFactoryConfigurationError;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
@@ -45,6 +46,7 @@ import com.marklogic.client.util.EditableNamespaceContext;
 import database.Util;
 import database.XMLWriterUriTemplate;
 import jaxb.XMLValidation;
+import play.exceptions.JavaExecutionException;
 import play.mvc.Controller;
 import play.mvc.Http;
 import rs.ac.uns.ftn.pravniakt.Propis;
@@ -193,30 +195,35 @@ public class Act extends Controller {
     	String requestBody = params.get("body");
    
     	JSONObject obj = new JSONObject(requestBody);
-    	String text =obj.getString("text");
+    	try{
+    		String text =obj.getString("text");
+    		
+        	try {
+    			FileUtil.writeFile(Application.projectPath+"/XML2016/data/temp.xml", text);
+    		} catch (FileNotFoundException e) {
+    			// TODO Auto-generated catch block
+    			e.printStackTrace();
+    		}
+        
+        	XMLValidation isValid = new XMLValidation();
+        	boolean xmlValid = isValid.test(Application.projectPath+"/XML2016/data/akt.xsd");
+        	if(xmlValid)
+        		System.out.println("XML JE VALIDAN");
+        	else 
+        		renderJSON(new JSONObject("{'error':'XML dokument nije validan.'}"));
 
-    	try {
-			FileUtil.writeFile(Application.projectPath+"/XML2016/data/temp.xml", text);
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-    
-    	XMLValidation isValid = new XMLValidation();
-    	boolean xmlValid = isValid.test(Application.projectPath+"/XML2016/data/akt.xsd");
-    	if(xmlValid)
-    		System.out.println("XML JE VALIDAN");
-    	else 
-    		renderJSON(new JSONObject("{'error':'XML dokument nije validan.'}"));
-
-    	if(xmlValid){
-    		try {
-				XMLWriterUriTemplate.run(Util.loadProperties());
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+        	if(xmlValid){
+        		try {
+    				XMLWriterUriTemplate.run(Util.loadProperties());
+    			} catch (IOException e) {
+    				// TODO Auto-generated catch block
+    				e.printStackTrace();
+    			}
+        	}    		
+    	}catch(JavaExecutionException ex){
+    		renderJSON((new JSONObject("{'error':'Morate uneti tekst!'}")));
     	}
+
 	}
     
     public static void search(){
@@ -259,16 +266,38 @@ public class Act extends Controller {
 				result = matches[i];
 				System.out.println((i + 1) + ". RESULT DETAILS: ");
 				System.out.println("Result URI: " + result.getUri());
+				
+				Document doc = database.XMLReader.run(Util.loadProperties(), result.getUri());
+				JAXBContext context;
+				context = JAXBContext.newInstance("rs.ac.uns.ftn.pravniakt");
+				Unmarshaller unmarshaller = context.createUnmarshaller();
+				Propis propis = (Propis) unmarshaller.unmarshal(doc);
+				
+				String name = propis.getNaziv();				
+				
 				map.clear();
 				map.put("uri", result.getUri());
+				map.put("name", name);
 				map.put("criteria", criteria);
 				map.put("fitness", result.getFitness()+"");
 				documentsInfo.add(map);
 			}
 			
-			
-			
-			renderJSON(documentsInfo);
+			if(documentsInfo.size() == 0){
+				renderJSON(new JSONObject("{'error':'Za dati kriterijume nema rezultata pretrage.'}"));
+			}else{
+				JSONArray array = new JSONArray();
+				for(LinkedHashMap<String, String> hm : documentsInfo){
+					JSONObject object = new JSONObject();
+					for(String key : hm.keySet()){
+						object.put(key, hm.get(key));
+					}
+					array.put(object);
+				}
+				System.out.println(array);
+				System.out.println(new JSONObject("{'data':"+ array +"}"));
+				renderJSON(array);
+			}
 			
 			// Release the client
 			client.release();

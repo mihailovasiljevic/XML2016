@@ -1,9 +1,9 @@
 angular.module('main')
-  .controller('MainController', ['$scope', '$rootScope', '$timeout','$location','$state','Main',
-    function($scope,$rootScope, $timeout,$location,$state, Main){
+  .controller('MainController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search',
+    function($scope,$rootScope, $timeout,$location,$state, Main, Search){
 
         //go on mainPage
-        $state.go("main");
+        //$state.go("main");
         //show documents
         $scope.propose = function(){
             $state.go('main.act');
@@ -21,8 +21,36 @@ angular.module('main')
             console.log(uri);
         };
         $scope.criteria = "";
+
+
         $scope.searchActs = function(){
             
+            if(!$scope.criteria){
+                $scope.error = "Morate uneti tekst pretrage.";
+                return;
+            }
+            var searchCriteria = new Search({
+                criteria: $scope.criteria
+            });
+            searchCriteria.$save(function(response){
+                if(response.map){
+                    if(response.map.error){
+                        if($scope.results) $scope.results = [];
+                        $scope.error = response.map.error;
+                        return;                   
+                    }
+                }
+                else{
+                    $scope.error = "";
+                    $scope.results = response.myArrayList;
+
+                }
+            })
         }
+    }])
+    .controller('SearchResultsController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search',
+    function($scope,$rootScope, $timeout,$location,$state, Main, Search){
+
+        $scope.results = $scope.$parent.results
     }]);
 

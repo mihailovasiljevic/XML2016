@@ -1,0 +1,22 @@
+<section ng-controller="SearchResultsController">    
+    <div class="table-container">
+        <table class="table table-filter">
+            <tbody>
+                <tr class="selected" ng-repeat="act in results">
+                    <td>
+                        <div class="media">
+                            <div class="media-body">
+                                <span class="media-meta pull-right" ng-bind=""></span>
+                                <h4>
+                                    <span ng-bind="act.map.uri" ng-click="showAct(act.uri)"></span>
+                                    <span class="pull-right pagado" ng-bind=""></span>
+                                </h4>
+                                <p class="summary" ng-bind=""></p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>

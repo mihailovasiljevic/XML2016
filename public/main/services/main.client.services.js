@@ -7,5 +7,9 @@ angular.module('main').factory('Main',['$resource',
                 method: 'PUT'
             }
         });
+    }])
+    .factory('Search',['$resource',
+    function($resource){
+        return $resource('/api/acts/search');
     }]);
     
