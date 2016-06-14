@@ -12,6 +12,9 @@ public class User implements Serializable{
 	private String uloga;
 	private String email;
 
+	
+
+
 	public User(String username, String password, String repeat_password,
 			String ime, String prezime, String uloga, String email) {
 		super();
@@ -22,6 +25,7 @@ public class User implements Serializable{
 		this.prezime = prezime;
 		this.uloga = uloga;
 		this.email = email;
+
 	}
 
 	public String getRepeat_password() {
@@ -81,5 +85,5 @@ public class User implements Serializable{
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
+	
 }

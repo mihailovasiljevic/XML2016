@@ -4,11 +4,12 @@
 
 # Home page
 GET     /                                       Application.index
-GET     /                                       Application.index1
 
-POST	/api/user								Application.login
+
+POST	/api/user						   		Application.saveUsers
 GET		/api/user								Application.getUsers
 
+POST	/api/user						   		Application.login
 
 #Acts
 GET		/api/acts								Act.listActs

@@ -3,7 +3,7 @@ angular.module('main')
     function($scope,$rootScope, $timeout,$location,$state, Main){
 
         //go on mainPage
-        $state.go('main');
+        $state.go("main");
         //show documents
         $scope.propose = function(){
             $state.go('main.act');
@@ -17,3 +17,4 @@ angular.module('main')
             console.log(uri);
         };
     }]);
+
