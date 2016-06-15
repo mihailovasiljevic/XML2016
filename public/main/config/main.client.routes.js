@@ -30,6 +30,10 @@ angular.module('main').config(['$urlRouterProvider','$stateProvider',
       .state('main.search.results', {
         url: 'search',
         templateUrl: 'public/main/views/searchResults.html'
+      })
+      .state('main.session', {
+        url: 'session',
+        templateUrl: 'public/session/views/session.html'
       });
      ;
   }
