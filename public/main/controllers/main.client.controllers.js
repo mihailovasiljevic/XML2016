@@ -1,6 +1,6 @@
 angular.module('main')
-  .controller('MainController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search','Propis','Xhtml', 'Pdf',
-    function($scope,$rootScope, $timeout,$location,$state, Main, Search,Propis, Xhtml, Pdf){
+  .controller('MainController', ['$scope', '$rootScope', '$timeout','$location','$state','$window','Main','Search','Propis','Xhtml', 'Pdf',
+    function($scope,$rootScope, $timeout,$location,$state,$window, Main, Search,Propis, Xhtml, Pdf){
 
         //go on mainPage
         //$state.go("main");
@@ -91,7 +91,13 @@ angular.module('main')
                 console.log(response);
             });
         }
-
+        $scope.pdf = function(uri){
+            var pdf = new Pdf();
+            pdf.$get({uri: uri}, function(response){
+                $scope.path = response.map.path;
+                $window.location.href = 'http://localhost:9000'+response.map.path;
+            });
+        }
     }])
     .controller('SearchResultsController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search',
     function($scope,$rootScope, $timeout,$location,$state, Main, Search){

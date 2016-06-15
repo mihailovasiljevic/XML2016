@@ -369,7 +369,11 @@ public class Act extends Controller {
 		String text = XMLReader.getPropisText(docId);
 		
 		 try {
-			new XSLFOTransformer().transform(text, uri);
+			 XSLFOTransformer trans = new XSLFOTransformer();
+			String path = trans.transform(text, uri);
+			JSONObject obj = new JSONObject();
+			obj.put("path", path);
+			renderJSON(obj);
 
 		} catch (SAXException e) {
 			e.printStackTrace();

@@ -17,12 +17,14 @@ import javax.xml.transform.sax.SAXResult;
 import javax.xml.transform.stream.StreamSource;
 
 import net.sf.saxon.TransformerFactoryImpl;
+import play.mvc.results.RenderJson;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.fop.apps.FOUserAgent;
 import org.apache.fop.apps.Fop;
 import org.apache.fop.apps.FopFactory;
 import org.apache.fop.apps.MimeConstants;
+import org.json.JSONObject;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
@@ -49,7 +51,7 @@ public class XSLFOTransformer {
 		transformerFactory = new TransformerFactoryImpl();
 	}
 
-	public void transform(String text, String actId) throws Exception {
+	public String transform(String text, String actId) throws Exception {
 
 		System.out.println("[INFO] " + XSLFOTransformer.class.getSimpleName());
 		
@@ -93,15 +95,14 @@ public class XSLFOTransformer {
 		xslFoTransformer.transform(source, res);
 		
 		// Generate PDF file
-		File pdfFile = new File("XML2016/acts/act_"+actId+".pdf");
+		File pdfFile = new File("XML2016/public/tmp/pdf/act_"+actId+".pdf");
 		OutputStream out = new BufferedOutputStream(new FileOutputStream(pdfFile));
 		out.write(outStream.toByteArray());
 	
 		System.out.println("[INFO] File \"" + pdfFile.getCanonicalPath() + "\" generated successfully.");
 		out.close();
-		
 		System.out.println("[INFO] End.");
-
+		return "/public/tmp/pdf/act_"+actId+".pdf";
 	}
 
 }
