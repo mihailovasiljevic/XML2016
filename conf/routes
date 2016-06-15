@@ -18,6 +18,7 @@ POST	/api/act								Act.saveAct
 POST	/api/acts/search						Act.search
 
 GET		/api/act/genPdf/{uri}					Act.genPdfAct(uri)
+GET		/api/act/getXHTML/{uri}					Act.getXHTML(uri)
 
 GET     /input									Redirection.toForm
 
