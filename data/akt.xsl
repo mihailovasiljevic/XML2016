@@ -4,7 +4,7 @@
 	xmlns:fo="http://www.w3.org/1999/XSL/Format" version="2.0">
 
     <xsl:template match="/">
-        <fo:root>
+        <fo:root font-family="Arial">
             <fo:layout-master-set>
                 <fo:simple-page-master master-name="bookstore-page">
                     <fo:region-body margin="1px"/>
