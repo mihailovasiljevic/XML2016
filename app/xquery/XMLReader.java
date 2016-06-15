@@ -1,4 +1,4 @@
-package xquery;
+package database;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -15,8 +15,6 @@ import javax.xml.transform.stream.StreamResult;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
-
-import database.Util;
 
 
 
@@ -48,7 +46,7 @@ public class XMLReader {
 		transformerFactory = TransformerFactory.newInstance();
 	}
 	
-	public static void run(ConnectionProperties props) throws FileNotFoundException {
+	public static Document run(ConnectionProperties props, String path) throws FileNotFoundException {
 		
 		System.out.println("[INFO] " + XMLReader.class.getSimpleName());
 		
@@ -71,7 +69,7 @@ public class XMLReader {
 		DocumentMetadataHandle metadata = new DocumentMetadataHandle();
 		
 		// A document URI identifier. 
-		String docId = "/users.xml";
+		String docId = path;
 		
 		// Write the document to the database
 		System.out.println("[INFO] Retrieving \"" + docId + "\" from "
@@ -82,7 +80,8 @@ public class XMLReader {
 
 		// Retrieving a document node form DOM handle.
 		Document doc = content.get();
-		
+		client.release();
+		return doc;
 		/*
 		 * A collection defines a set of documents in the database. You can set
 		 * documents to be in any number of collections either at the time the
@@ -91,16 +90,15 @@ public class XMLReader {
 		 */
 		
 		// Reading metadata
-		System.out.println("[INFO] Assigned collections: " + metadata.getCollections());
+		//System.out.println("[INFO] Assigned collections: " + metadata.getCollections());
 
 		// Serializing DOM tree to standard output.
-		System.out.println("[INFO] Retrieved content:");
-		transform(doc, System.out);
+		//System.out.println("[INFO] Retrieved content:");
+		//transform(doc, System.out);
 		
 		// Release the client
-		client.release();
 		
-		System.out.println("[INFO] End.");
+
 	}
 	
 	/**
@@ -137,10 +135,6 @@ public class XMLReader {
 		} catch (TransformerException e) {
 			e.printStackTrace();
 		}
-	}
-
-	public static void main(String[] args) throws IOException {
-		run(Util.loadProperties());
 	}
 
 }
