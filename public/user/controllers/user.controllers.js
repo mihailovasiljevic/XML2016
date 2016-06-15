@@ -7,7 +7,39 @@ angular.module('user').controller('inputCtrl1', ['$scope','$state','User',
 	 function($scope,$state,User) {
 		$scope.user = new User();
 		$scope.create = function() {
-			$scope.user.$save(function() {
+			if(!$scope.user.username){
+				$scope.error = "Polje ne sme biti prazno. Unesite Username.";
+				return;
+			}
+			if(!$scope.user.password){
+				$scope.error = "Polje ne sme biti prazno. Unesite Password.";
+				return;
+			}
+			
+			if(!$scope.user.repeat_password){
+				$scope.error = "Polje ne sme biti prazno. Unesite Repeat Password.";
+				return;
+			}
+			
+			if(!$scope.user.ime){
+				$scope.error = "Polje ne sme biti prazno. Unesite Ime.";
+				return;
+			}
+			if(!$scope.user.prezime){
+				$scope.error = "Polje ne sme biti prazno. Unesite Prezime.";
+				return;
+			}
+			
+			if(!$scope.user.email){
+				$scope.error = "Polje ne sme biti prazno. Unesite Email.";
+				return;
+			}
+			
+			$scope.user.$save(function(response) {
+				/*if(response.map.error){
+					console.log('usao1');
+					$scope.error = response.map.error;		
+				}*/
 				$state.go("main.show");
 			});
 		}
@@ -17,9 +49,25 @@ angular.module('user').controller('inputCtrl2', ['$scope','$state','User',
   function($scope,$state,User) {
 	$scope.user = new User();
 	$scope.create = function() {
-		$scope.user.$save(function() {
-			$state.go("main.show");
+		if(!$scope.user.username){
+			$scope.error = "Polje ne sme biti prazno. Unesite Username.";
+			return;
+		}
+		if(!$scope.user.password){
+			$scope.error = "Polje ne sme biti prazno. Unesite Password.";
+			return;
+		}
+				
+		$scope.user.$save(function(response) {
+			
+			/*if(response.map.error){
+				console.log('usao1');
+				$scope.error = response.map.error;		
+			}*/	
+			$state.go("main.show");				
 		});
+		
+	
 	}
 }]);                                           	
 

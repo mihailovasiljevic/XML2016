@@ -4,7 +4,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import database.FilePaths;
 import database.Util;
 import database.Util.ConnectionProperties;
 
@@ -12,6 +11,8 @@ import com.marklogic.client.DatabaseClient;
 import com.marklogic.client.DatabaseClientFactory;
 import com.marklogic.client.document.XMLDocumentManager;
 import com.marklogic.client.io.InputStreamHandle;
+
+import controllers.Application;
 
 /**
  * 
@@ -59,7 +60,7 @@ public class XMLWriter {
 		String testDocId = "./data/probaaa3.xml";
 		
 		// Create an input stream handle to hold XML content.
-		InputStreamHandle handle = new InputStreamHandle(new FileInputStream(FilePaths.korisnici));
+		InputStreamHandle handle = new InputStreamHandle(new FileInputStream(Application.projectPath+"/XML2016/xml/users.xml"));
 		
 		// Write the document to the database
 		System.out.println("[INFO] Inserting \"" + docId + "\" to \"" + props.database + "\" database.");

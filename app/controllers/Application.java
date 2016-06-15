@@ -31,9 +31,6 @@ import jaxb.Marshalling;
 import jaxb.XMLValidation;
 import net.sf.ezmorph.ObjectMorpher;
 
-
-
-
 import org.h2.constant.SysProperties;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -46,7 +43,6 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.marklogic.client.DatabaseClient;
 
-import database.FilePaths;
 import database.XMLPartialUpdate;
 import database.XMLWriterUriTemplate;
 import database.Util;
@@ -60,7 +56,7 @@ public class Application extends Controller {
 	
 	private static ArrayList<Player> players = new ArrayList<Player>();
 	private static ArrayList<User> users = new ArrayList<User>();
-	private static  String IN_FILE = FilePaths.korisnici;
+//	private static  String IN_FILE = FilePaths.korisnici;
 	private static  String certificate = "sgns";
 	
 	/** Ukoliko je potrebno koristiti sesiju to je moguce uz pomoc objekta session na sledeci nacin:
@@ -108,7 +104,8 @@ public class Application extends Controller {
 	public static void login() throws FileNotFoundException, IOException {
 		
 		System.out.println("login");
-		boolean provera=false;
+		boolean provera_username=false;
+		boolean provera_password=false;
 		
 		try {
 
@@ -155,15 +152,20 @@ public class Application extends Controller {
 
 					Element eElement = (Element) nNode;
 					
-					if(username.equals(eElement.getElementsByTagName("KorisnickoIme").item(0).getTextContent()) && password.equals(eElement.getElementsByTagName("Lozinka").item(0).getTextContent() )){
+					if(username.equals(eElement.getElementsByTagName("KorisnickoIme").item(0).getTextContent()) ){
+						 provera_username=true;
+						
+						if(password.equals(eElement.getElementsByTagName("Lozinka").item(0).getTextContent() )){
 						 
 						 System.out.println("Uspesan LOGIN");
-						 provera=true;
+						 provera_password=true;
 						 session.put("korisnik", user);
-						 
-					 }
+						 break;
+
+						}
+					}
 					 		
-					 		
+				
 					 		
 
 
@@ -178,8 +180,22 @@ public class Application extends Controller {
 				}
 			}
 			
-			if(provera==false)
-			login();
+			/*if(provera_username==false){
+				
+				renderJSON(new JSONObject("{'error':'Pogresan username.'}"));
+	
+			}*/
+			
+			if(provera_password==false){
+				
+			//	renderJSON(new JSONObject("{'error':'Pogresan password.'}"));
+				login();
+			}
+			
+			
+			
+			
+			
 			
 		    } catch (Exception e) {
 			e.printStackTrace();
@@ -220,7 +236,7 @@ public class Application extends Controller {
     	String result = params.get("body");
     	ObjectMapper mapper = new ObjectMapper();
     	User user;
-    	boolean provera=false;
+    	boolean provera_password=false;
     	
 		try {
 			user = mapper.readValue(result, User.class);
@@ -236,7 +252,7 @@ public class Application extends Controller {
 	 		
 	 		if(password.equalsIgnoreCase(repeat_password)){
 	 			
-	 			provera=true;
+	 			provera_password=true;
 	 			
 		 		 Korisnik kor = new Korisnik();
 				    kor.setKorisnickoIme(username);
@@ -264,13 +280,13 @@ public class Application extends Controller {
 				    	
 		
 				    	
-				    if(new File(FilePaths.keystores+certificate+".jks").exists()){
+				    if(new File(Application.projectPath+"/XML2016/data/"+certificate+".jks").exists()){
 
 				    	boolean povucen = false;
-				    	File f = new File(FilePaths.keystores+"sgns-revoked.jks");
+				    	File f = new File(Application.projectPath+"/XML2016/data/"+"sgns-revoked.jks");
 							if(f.exists() && !f.isDirectory()) {
 								 KeyStoreReader ksr = new KeyStoreReader();
-								    ksr.setKeyStoreFile(FilePaths.keystores+"sgns-revoked.jks");
+								    ksr.setKeyStoreFile(Application.projectPath+"/XML2016/data/"+"sgns-revoked.jks");
 								    ksr.setPassword("sgns-revoked".toCharArray());
 								    ksr.setKeyPass("test10".toCharArray());
 								    HashMap<String,Certificate> sertifikati = ksr.readKeyStore();
@@ -290,9 +306,9 @@ public class Application extends Controller {
 							
 							if(!povucen){
 							    SignEnveloped sign = new SignEnveloped();
-							    sign.setIN_FILE(FilePaths.korisnici);
-							    sign.setOUT_FILE(FilePaths.korisnici);
-							    sign.setKEY_STORE_FILE(FilePaths.keystores+certificate+".jks");
+							    sign.setIN_FILE(Application.projectPath+"/XML2016/xml/users.xml");
+							    sign.setOUT_FILE(Application.projectPath+"/XML2016/xml/users.xml");
+							    sign.setKEY_STORE_FILE(Application.projectPath+"/XML2016/data/"+certificate+".jks");
 							    sign.setName(certificate);
 							    sign.setPass(certificate);
 							    sign.testIt();
@@ -300,8 +316,8 @@ public class Application extends Controller {
 								
 					
 					    	EncryptKEK enc = new EncryptKEK();
-						    enc.setIN_FILE(FilePaths.korisnici);
-						    enc.setOUT_FILE(FilePaths.korisnici);
+						    enc.setIN_FILE(Application.projectPath+"/XML2016/xml/users.xml");
+						    enc.setOUT_FILE(Application.projectPath+"/XML2016/xml/users.xml");
 						    //   enc.setKEY_STORE_FILE(FilePaths.keystores+certificate+".jks");
 						    enc.testIt();
 				   
@@ -320,8 +336,10 @@ public class Application extends Controller {
 			    	 XMLWriter.run(Util.loadProperties());
 	 		}
 	 		
-	 		if(provera==false)
+	 		if(provera_password==false){
 	 			saveUsers();
+	 	//		renderJSON(new JSONObject("{'error':'Sifre se moraju poklapati.'}"));
+	 		}
 	 		
 		} catch (IOException e) {
 			e.printStackTrace();
