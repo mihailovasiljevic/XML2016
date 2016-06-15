@@ -6,6 +6,8 @@ angular.module('session')
             criteria: 'predlozen'
         });
 
+        $scope.sessionStarted = false;
+
         $scope.find = function(){
             var searchCriteria = new Search({
                 criteria: "predlozen"
@@ -21,6 +23,9 @@ angular.module('session')
                 else{
                     $scope.error = "";
                     $scope.results = response.myArrayList;
+                    for(var i = 0; i < $scope.results.length; i++){
+                      $scope.results[i].sessionStarted = false;
+                    }
                 }
             })
         };
@@ -30,6 +35,9 @@ angular.module('session')
             var today = date.getDay()+"."+date.getMonth()+"."+date.getFullYear()+".";
             var hour = date.getHours()+":"+date.getMinutes();
             $scope.sessionDescription = "Počela sednica za dan " + today + " u "+hour+" . Na glasanje se mogu staviti sledeći akti: ";
+            for(var i = 0; i < $scope.results.length; i++){
+                $scope.results[i].sessionStarted = true;
+            }
         }
 
     }]);
