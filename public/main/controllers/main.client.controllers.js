@@ -1,6 +1,6 @@
 angular.module('main')
-  .controller('MainController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search','Propis',
-    function($scope,$rootScope, $timeout,$location,$state, Main, Search,Propis){
+  .controller('MainController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search','Propis','Xhtml', 'Pdf',
+    function($scope,$rootScope, $timeout,$location,$state, Main, Search,Propis, Xhtml, Pdf){
 
         //go on mainPage
         //$state.go("main");
@@ -64,7 +64,7 @@ angular.module('main')
                     }
             }
 
-        }
+        };
         
         
         
@@ -83,8 +83,14 @@ angular.module('main')
 				//	$scope.error = response.map.error;
 			});
         	 });
+        };
+        $scope.xhtml = function(uri){
+            var xhtml = new Xhtml();
+            xhtml.$get({uri: uri}, function(response){
+                $scope.xhtmlDoc = response.map.html;
+                console.log(response);
+            });
         }
-
 
     }])
     .controller('SearchResultsController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search',

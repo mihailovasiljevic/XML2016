@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.io.StringWriter;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 import javax.xml.bind.JAXBContext;
@@ -22,6 +23,7 @@ import javax.xml.transform.TransformerFactoryConfigurationError;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
+import org.apache.commons.collections.map.HashedMap;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.w3c.dom.Document;
@@ -29,6 +31,7 @@ import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.JsonObject;
 import com.marklogic.client.DatabaseClient;
 import com.marklogic.client.DatabaseClientFactory;
 import com.marklogic.client.document.DocumentPatchBuilder;
@@ -382,7 +385,12 @@ public class Act extends Controller {
 		String docId = "/acts/"+uri+".xml";
 		String text = XMLReader.getPropisText(docId);
 		String response = XSLTransformer.transform(text);
-		renderHtml(response);
+		
+		HashMap<String, String> map = new HashMap<String, String>();
+		JSONObject obj = new JSONObject();
+		obj.put("html", response);
+		
+		renderJSON(obj);
 		System.out.println("xhtml is genereted.");
 	}
 	

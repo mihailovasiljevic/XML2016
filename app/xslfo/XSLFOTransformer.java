@@ -26,7 +26,6 @@ import org.apache.fop.apps.MimeConstants;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 
-import sun.io.CharacterEncoding;
 import controllers.Application;
 
 /**
