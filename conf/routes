@@ -21,7 +21,7 @@ PUT		/api/acts/{uri}							Act.updateAct(uri)
 POST	/api/act								Act.saveAct
 POST	/api/acts/search						Act.search
 
-GET		/api/genPdf								Act.genPdf
+GET		/api/act/genPdf/{uri}					Act.genPdfAct(uri)
 
 GET     /input									Redirection.toForm
 

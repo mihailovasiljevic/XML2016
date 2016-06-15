@@ -94,7 +94,7 @@ public class Act extends Controller {
 				System.out.println((i + 1) + ". RESULT DETAILS: ");
 				System.out.println("Result URI: " + result.getUri());
 
-				Document doc = database.XMLReader.run(Util.loadProperties(), result.getUri());
+				Document doc = xquery.XMLReader.run(Util.loadProperties(), result.getUri());
 				JAXBContext context;
 				context = JAXBContext.newInstance("rs.ac.uns.ftn.pravniakt");
 				Unmarshaller unmarshaller = context.createUnmarshaller();
@@ -126,7 +126,7 @@ public class Act extends Controller {
 		String docUri = "/acts/" + uri + ".xml";
 		Document doc;
 		try {
-			doc = database.XMLReader.run(Util.loadProperties(), docUri);
+			doc = xquery.XMLReader.run(Util.loadProperties(), docUri);
 			JAXBContext context;
 			context = JAXBContext.newInstance("rs.ac.uns.ftn.pravniakt");
 			Unmarshaller unmarshaller = context.createUnmarshaller();
@@ -151,7 +151,6 @@ public class Act extends Controller {
 			client = DatabaseClientFactory.newClient(Util.loadProperties().host, Util.loadProperties().port, Util.loadProperties().database, Util.loadProperties().user, Util.loadProperties().password,
 					Util.loadProperties().authType);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -170,12 +169,6 @@ public class Act extends Controller {
 		DocumentPatchBuilder patchBuilder = xmlManager.newPatchBuilder();
 		patchBuilder.setNamespaces(namespaces);
 
-		// Creating an XML patch
-		/*
-		 * <b:book category="TEST"> <b:title lang=\"en\">Test book</b:title>
-		 * <b:author>Test Author</b:author> <b:year>2016</b:year>
-		 * <b:price>59.99</b:price> </b:book>
-		 */
 		String patch = "\t<b:status>nacelo</b:status>\n";
 
 		// Defining XPath context
@@ -269,7 +262,7 @@ public class Act extends Controller {
 				System.out.println((i + 1) + ". RESULT DETAILS: ");
 				System.out.println("Result URI: " + result.getUri());
 				
-				Document doc = database.XMLReader.run(Util.loadProperties(), result.getUri());
+				Document doc = xquery.XMLReader.run(Util.loadProperties(), result.getUri());
 				JAXBContext context;
 				context = JAXBContext.newInstance("rs.ac.uns.ftn.pravniakt");
 				Unmarshaller unmarshaller = context.createUnmarshaller();
@@ -346,10 +339,21 @@ public class Act extends Controller {
 		}
 	}
 
-	public static void genPdf() {
-		String actId = "nebitno";
+	public static void genPdfAct(String uri) {
+		
 		System.out.println("ulaz");
-
+		System.out.println(uri);
+		
+		try {
+			client = DatabaseClientFactory.newClient(Util.loadProperties().host, Util.loadProperties().port, Util.loadProperties().database, Util.loadProperties().user, Util.loadProperties().password,
+					Util.loadProperties().authType);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		XMLDocumentManager xmlManager = client.newXMLDocumentManager();
+		
 		 try {
 			new XSLFOTransformer().test();
 		} catch (SAXException e) {

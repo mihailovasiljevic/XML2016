@@ -14,11 +14,11 @@ import org.json.JSONObject;
 import org.w3c.dom.Document;
 
 import database.Util;
-import database.XMLReader;
 import database.XMLWriterUriTemplate;
 import play.mvc.Controller;
 import rs.ac.uns.ftn.pravniakt.Propis;
 import util.FileUtil;
+import xquery.XMLReader;
 
 public class ActServices extends Controller {
 

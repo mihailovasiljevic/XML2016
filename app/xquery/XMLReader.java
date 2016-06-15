@@ -1,4 +1,4 @@
-package database;
+package xquery;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -18,12 +18,14 @@ import org.w3c.dom.Node;
 
 
 
+
 import com.marklogic.client.DatabaseClient;
 import com.marklogic.client.DatabaseClientFactory;
 import com.marklogic.client.document.XMLDocumentManager;
 import com.marklogic.client.io.DOMHandle;
 import com.marklogic.client.io.DocumentMetadataHandle;
 
+import database.Util;
 import database.Util.ConnectionProperties;
 
 /**

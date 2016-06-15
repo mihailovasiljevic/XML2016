@@ -21,6 +21,8 @@ import org.apache.fop.apps.FopFactory;
 import org.apache.fop.apps.MimeConstants;
 import org.xml.sax.SAXException;
 
+import controllers.Application;
+
 /**
  * 
  * Primer demonstrira koriscenje programskog API-a za 
@@ -35,7 +37,7 @@ public class XSLFOTransformer {
 	
 	public XSLFOTransformer() throws SAXException, IOException {
 		
-		File file = new File("C:/Users/Nemanja/Desktop/XML/Vezbe/work1/XML2016/app/xslfo/fop.xconf");
+		File file = new File(Application.projectPath+"/XML2016/app/xslfo/fop.xconf");
 		fopFactory = FopFactory.newInstance(file);
 		
 		// Setup the XSLT transformer factory

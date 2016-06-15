@@ -1,1 +1,37 @@
-asdasdasdasd
+<?xml version="1.0" encoding="UTF-8"?>
+<propis xmlns="http://www.ftn.uns.ac.rs/pravniAkt"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.ftn.uns.ac.rs/pravniAkt file:/C:/Users/Nemanja/Desktop/Scheme/pinf_xws_docs/xml/schema/akt.xsd">
+    <status>predlozen</status>
+    <oznaka>842547790</oznaka>
+    <naziv>З А К О Н О ИЗВРШЕЊУ И ОБЕЗБЕЂЕЊУ</naziv>
+    <predlagac>MTYOGL2.IaH</predlagac>
+    <deo>
+        <redniBroj>-2042767452</redniBroj>
+        <simbolickiNaziv>ДЕО ПРВИДЕО ПРВИ</simbolickiNaziv>
+        <naziv>OSNOVNE ODREDBE</naziv>
+        <glava>
+            <redniBroj>-2042767452</redniBroj>
+            <simbolickiNaziv>GLAVA I</simbolickiNaziv>
+            <naziv>NAZIV GLAVE</naziv>
+            <odeljak>
+                <redniBroj>645645</redniBroj>
+                <simbolickiNaziv>SIMB_NAZIV ODELJKA</simbolickiNaziv>
+                <naziv>NAZIV ODELJKA</naziv>
+                <pododeljak>
+                    <rednoSlovo>a</rednoSlovo>
+                    <naziv>PodOdeljak</naziv>
+                    <clan>
+                        <naziv>Predmet zakona</naziv>
+                        <redniBroj>191263624</redniBroj>
+                        <simbolickiNaziv>Član 1.</simbolickiNaziv>
+                        <stav>
+                            <redniBroj>-82779679</redniBroj>
+                            <tekst>Ovim zakonom uređuje se postupak u kome sudovi i javni izvršitelji prinudno namiruju potraživanja izvršnih poverilaca zasnovana na izvršnim i verodostojnim ispravama (izvršni postupak), postupak obezbeđenja potraživanja i položaj javnih izvršitelja.</tekst>
+                        </stav>
+                    </clan>
+                </pododeljak>
+            </odeljak>
+        </glava>
+    </deo>
+</propis>
