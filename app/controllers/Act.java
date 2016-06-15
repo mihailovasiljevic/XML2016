@@ -359,15 +359,14 @@ public class Act extends Controller {
 		}
 	}
 
-	public static void genPdfAct(String uri) {
+	public static void pdf(String uri) {
 
-		/*
+		
 		String docId = "/acts/"+uri+".xml";
-		//String text = XMLReader.getPropisText(docId);
-		System.out.println(text.toString());
+		String text = XMLReader.getPropisText(docId);
 		
 		 try {
-			new XSLFOTransformer().test(text);
+			new XSLFOTransformer().transform(text);
 		} catch (SAXException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -375,17 +374,17 @@ public class Act extends Controller {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-*/
-		System.out.println("izlaz");
+		System.out.println("pdf is genereted. It can be found in \"gen\" directory.");
 	}
 	
-	public static void getXHTML(String uri) {
+	public static void xhtml(String uri) {
 		String docId = "/acts/"+uri+".xml";
 		//String text = XMLReader.getPropisText(docId);
 		//System.out.println(text.toString());
 
 		//String response = XSLTransformer.transform(text);
 		renderJSON(response);
+		System.out.println("xhtml is genereted.");
 	}
 	
 }
