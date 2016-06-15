@@ -17,6 +17,9 @@ PUT		/api/acts/{uri}							Act.updateAct(uri)
 POST	/api/act								Act.saveAct
 POST	/api/acts/search						Act.search
 
+POST	/api/amendment							AmendmentServices.saveAmendment
+GET 	/api/amendment							AmendmentServices.getAmendment
+
 GET		/api/act/genPdf/{uri}					Act.genPdfAct(uri)
 
 GET     /input									Redirection.toForm
