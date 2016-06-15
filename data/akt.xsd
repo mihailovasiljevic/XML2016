@@ -26,6 +26,7 @@
             <xs:selector xpath="akt:propis"/>
             <xs:field xpath="akt:propis/akt:oznaka"/>
         </xs:key>
+
     </xs:element>
     <xs:complexType name="Prilog">
         <xs:sequence>
@@ -111,7 +112,13 @@
             <xs:element name="simbolickiNaziv" type="xs:string"/>
             <xs:sequence maxOccurs="unbounded">
                 <xs:choice>
-                    <xs:element name="tekst" type="xs:string"/>
+                    <xs:element name="tekst">
+                        <xs:complexType mixed="true">
+                            <xs:sequence maxOccurs="unbounded" minOccurs="0">
+                                <xs:element name="referenca" type="akt:referenca"/>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
                     <xs:element maxOccurs="unbounded" name="stav">
                         <xs:complexType>
                             <xs:sequence>
@@ -121,20 +128,47 @@
                                         <xs:field xpath="akt:clan/akt:stav/akt:redniBroj"/>
                                     </xs:unique>
                                 </xs:element>
-                                <xs:element name="tekst" type="xs:string"/>
+                                <xs:element name="tekst">
+                                    <xs:complexType mixed="true">
+                                        <xs:sequence maxOccurs="unbounded" minOccurs="0">
+                                            <xs:element name="referenca" type="akt:referenca"/>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
                                 <xs:element maxOccurs="unbounded" minOccurs="0" name="tacka">
                                     <xs:complexType>
                                         <xs:sequence>
                                             <xs:element name="redniBroj" type="xs:integer"/>
-                                            <xs:element name="tekst" type="xs:string"/>
+                                            <xs:element name="tekst">
+                                                <xs:complexType mixed="true">
+                                                  <xs:sequence maxOccurs="unbounded" minOccurs="0">
+                                                  <xs:element name="referenca" type="akt:referenca"
+                                                  />
+                                                  </xs:sequence>
+                                                </xs:complexType>
+                                            </xs:element>
                                             <xs:element maxOccurs="unbounded" minOccurs="0"
                                                 name="podtacka">
                                                 <xs:complexType>
                                                   <xs:sequence>
                                                   <xs:element name="redniBroj" type="xs:integer"/>
-                                                  <xs:element name="tekst" type="xs:string"/>
+                                                  <xs:element name="tekst">
+                                                  <xs:complexType mixed="true">
+                                                  <xs:sequence maxOccurs="unbounded" minOccurs="0">
+                                                  <xs:element name="referenca" type="akt:referenca"
+                                                  />
+                                                  </xs:sequence>
+                                                  </xs:complexType>
+                                                  </xs:element>
                                                   <xs:element maxOccurs="unbounded" minOccurs="0"
-                                                  name="alineja" type="xs:string"/>
+                                                  name="alineja">
+                                                  <xs:complexType mixed="true">
+                                                  <xs:sequence maxOccurs="unbounded" minOccurs="0">
+                                                  <xs:element name="referenca" type="akt:referenca"
+                                                  />
+                                                  </xs:sequence>
+                                                  </xs:complexType>
+                                                  </xs:element>
                                                   </xs:sequence>
                                                 </xs:complexType>
                                             </xs:element>
@@ -147,5 +181,8 @@
                 </xs:choice>
             </xs:sequence>
         </xs:sequence>
+    </xs:complexType>
+    <xs:complexType mixed="true" name="referenca">
+        <xs:attribute name="href"/>
     </xs:complexType>
 </xs:schema>

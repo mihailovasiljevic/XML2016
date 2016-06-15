@@ -101,9 +101,12 @@ public class Act extends Controller {
 				Propis propis = (Propis) unmarshaller.unmarshal(doc);
 				System.out.println("prosao");
 				String name = propis.getNaziv();
+				String status = propis.getStatus();
+				System.out.println("Status: " + status);
 				LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
 				map.put("name", name);
 				map.put("uri", result.getUri());
+				map.put("status", status);
 				documentsURIs.add(map);
 			}
 			System.out.println(new JSONObject(documentsURIs));
