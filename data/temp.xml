@@ -1,1 +1,37 @@
-fefe
+<?xml version="1.0" encoding="UTF-8"?>
+<AmandНА</organ>
+        <predlagac>MHQa2rtleCawOTT3MNAIN</predlagac>
+        <mesto>oH.8r7A3cst9XcbdObfJa9O</mesto>
+    </zaglavlje>
+    <uvod>
+        <naslov>ПРЕДСЕДНИКУ НАРОДНЕ СКУПШТИНЕ</naslov>
+        <tekst>ot_NV2fQD.Mk.c9UdAG7se87hshJU</tekst>
+    </uvod>
+    <glavniDeo>
+        <naslov>АМАНДМАН</naslov>
+        <sadrzaj>
+            <tekst>
+                <tacka>
+                </tacka>
+                <stav>
+                </stav>
+                <operacija>dopunjujeSe</operacija>
+            </tekst>
+            <tekst>
+                <stav>
+                </stav>
+                <clan>
+                </clan>
+                <operacija>menjaSe</operacija>
+            </tekst>
+        </sadrzaj>
+    </glavniDeo>
+    <obrazlozenje>
+        <naslov>p7BbE3SCjlj8x9W7Fg7BJd</naslov>
+        <tekst>aGUU0081a1nh1wU2CY3nR</tekst>
+    </obrazlozenje>
+    <potpis>
+        <funkcija>_c5oc08</funkcija>
+        <imeIPrezime>du4Bc</imeIPrezime>
+    </potpis>
+</Amandman>

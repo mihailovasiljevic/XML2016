@@ -6,26 +6,25 @@
 //
 
 
-package rs.ac.uns.ftn.pravniakt;
+package rs.ac.uns.ftn.amandman;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.XmlValue;
 
 
 /**
- * <p>Java class for referenca complex type.
+ * <p>Java class for akt complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="referenca">
+ * &lt;complexType name="akt">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;attribute name="href" type="{http://www.w3.org/2001/XMLSchema}anySimpleType" />
+ *       &lt;attribute name="href" type="{http://www.w3.org/2001/XMLSchema}int" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
@@ -34,16 +33,15 @@ import javax.xml.bind.annotation.XmlValue;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "referenca", propOrder = {
+@XmlType(name = "akt", propOrder = {
     "content"
 })
-public class Referenca {
+public class Akt {
 
     @XmlValue
     protected String content;
     @XmlAttribute(name = "href")
-    @XmlSchemaType(name = "anySimpleType")
-    protected String href;
+    protected Integer href;
 
     /**
      * Gets the value of the content property.
@@ -74,10 +72,10 @@ public class Referenca {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link Integer }
      *     
      */
-    public String getHref() {
+    public Integer getHref() {
         return href;
     }
 
@@ -86,10 +84,10 @@ public class Referenca {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link Integer }
      *     
      */
-    public void setHref(String value) {
+    public void setHref(Integer value) {
         this.href = value;
     }
 
