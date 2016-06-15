@@ -88,7 +88,7 @@ public class Act extends Controller {
 			MatchDocumentSummary result = null;
 			MatchLocation locations[];
 			String text;
-			LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
+			
 			for (int i = 0; i < matches.length; i++) {
 				result = matches[i];
 				System.out.println((i + 1) + ". RESULT DETAILS: ");
@@ -101,7 +101,7 @@ public class Act extends Controller {
 				Propis propis = (Propis) unmarshaller.unmarshal(doc);
 				System.out.println("prosao");
 				String name = propis.getNaziv();
-				map.clear();
+				LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
 				map.put("name", name);
 				map.put("uri", result.getUri());
 				documentsURIs.add(map);

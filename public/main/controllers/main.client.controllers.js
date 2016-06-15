@@ -72,5 +72,24 @@ angular.module('main')
     function($scope,$rootScope, $timeout,$location,$state, Main, Search){
 
         $scope.results = $scope.$parent.results
+    }])
+    .controller('filterActsController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search',
+    function($scope,$rootScope, $timeout,$location,$state, Main, Search){
+
+        $scope.acts = $scope.$parent.acts;
+
+        $scope.selected = "";
+
+        $scope.filter = function(){
+
+            $scope.$parent.listForShowing = [];
+
+            for(var i = 0; i < $scope.acts.length; i++){
+                    if($scope.acts[i].status == $scope.selected){
+                       $scope.$parent.listForShowing.push($scope.acts[i]);
+                    }
+            }
+
+        }
     }]);
 

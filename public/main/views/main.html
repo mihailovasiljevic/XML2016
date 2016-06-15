@@ -12,7 +12,7 @@
               <h3>AKTI</h3>
               <h2>Pregled akata</h2>
                 <div class="container">
-                    <div class="row">
+                    <div class="row" ng-controller="filterActsController">
                         <input type="radio" name="predlozen" value="predlozen" ng-click="filter()" ng-model="selected"> <span>Predložen</span>
                         <input type="radio" name="nacelo" value="nacelo" ng-model="selected" ng-click="filter()"> <span>Usvojen u načelu</span>
                         <input type="radio" name="celost" value="celost" ng-model="selected" ng-click="filter()"> <span>Usvojen u celosti</span>
