@@ -16,7 +16,12 @@ angular.module('main')
         $scope.find = function(){
             $scope.acts = Main.query(
                 function(response){
-                     $scope.listForShowing = $scope.acts;
+                	$scope.listForShowing = [];
+                	for(var i = 0; i < response.length; i++) {
+                		if(response[i].status != "povucen") {
+                			$scope.listForShowing.push(response[i]);
+                		}
+                	}
             });
            
         };
@@ -53,9 +58,9 @@ angular.module('main')
         };
 
         $scope.selected = "";
-
+       
         $scope.filter = function(){
-
+        	
             $scope.listForShowing = [];
 
             for(var i = 0; i < $scope.acts.length; i++){
