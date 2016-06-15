@@ -5,7 +5,7 @@ angular.module('act').factory('Propis', ['$resource',
 			actId : '@_id'
 		  }, {
 		    update : {
-		      method: 'PUT',
+		      method: 'PUT'
 		    }
 		  });
 
