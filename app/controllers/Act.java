@@ -379,11 +379,9 @@ public class Act extends Controller {
 	
 	public static void xhtml(String uri) {
 		String docId = "/acts/"+uri+".xml";
-		//String text = XMLReader.getPropisText(docId);
-		//System.out.println(text.toString());
-
-		//String response = XSLTransformer.transform(text);
-		renderJSON(response);
+		String text = XMLReader.getPropisText(docId);
+		String response = XSLTransformer.transform(text);
+		renderHtml(response);
 		System.out.println("xhtml is genereted.");
 	}
 	
