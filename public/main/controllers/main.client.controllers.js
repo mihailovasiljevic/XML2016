@@ -14,7 +14,11 @@ angular.module('main')
         }
 
         $scope.find = function(){
-            $scope.acts = Main.query();
+            $scope.acts = Main.query(
+                function(response){
+                     $scope.listForShowing = $scope.acts;
+            });
+           
         };
 
         $scope.showAct = function(uri){
@@ -46,7 +50,23 @@ angular.module('main')
 
                 }
             })
+        };
+
+        $scope.selected = "";
+
+        $scope.filter = function(){
+
+            $scope.listForShowing = [];
+
+            for(var i = 0; i < $scope.acts.length; i++){
+                    if($scope.acts[i].status == $scope.selected){
+                        $scope.listForShowing.push($scope.acts[i]);
+                    }
+            }
+
         }
+
+
     }])
     .controller('SearchResultsController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search',
     function($scope,$rootScope, $timeout,$location,$state, Main, Search){
