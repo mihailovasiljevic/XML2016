@@ -1,6 +1,8 @@
 package controllers;
 
+import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.StringWriter;
@@ -56,6 +58,7 @@ import rs.ac.uns.ftn.pravniakt.Propis;
 import util.FileUtil;
 import xquery.XMLReader;
 import xslfo.XSLFOTransformer;
+import xslfo.XSLTransformer;
 
 public class Act extends Controller {
 	private static String collectionName;
@@ -263,7 +266,6 @@ public class Act extends Controller {
 			MatchDocumentSummary result = null;
 			MatchLocation locations[];
 			String text;
-			LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
 			for (int i = 0; i < matches.length; i++) {
 				result = matches[i];
 				System.out.println((i + 1) + ". RESULT DETAILS: ");
@@ -277,7 +279,7 @@ public class Act extends Controller {
 				
 				String name = propis.getNaziv();				
 				
-				map.clear();
+				LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
 				map.put("uri", result.getUri());
 				map.put("name", name);
 				map.put("criteria", criteria);
@@ -350,9 +352,9 @@ public class Act extends Controller {
 
 	public static void genPdfAct(String uri) {
 
-		
+		/*
 		String docId = "/acts/"+uri+".xml";
-		String text = XMLReader.getPropisText(docId);
+		//String text = XMLReader.getPropisText(docId);
 		System.out.println(text.toString());
 		
 		 try {
@@ -364,8 +366,17 @@ public class Act extends Controller {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
+*/
 		System.out.println("izlaz");
+	}
+	
+	public static void getXHTML(String uri) {
+		String docId = "/acts/"+uri+".xml";
+		String text = XMLReader.getPropisText(docId);
+		//System.out.println(text.toString());
+
+		String response = XSLTransformer.transform(text);
+		renderJSON(response);
 	}
 	
 }

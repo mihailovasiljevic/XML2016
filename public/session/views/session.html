@@ -1,0 +1,41 @@
+
+<section ng-controller="SessionController as sc" ng-init="find();">
+    <h3>SEDNICA</h3>
+    <h2>Vođenje sednice</h2>    
+    <div class="container" ui-view>
+        <div class="row">
+        <div>
+          <button type="button" class="btn btn-success btn-filter" ng-click="start();">Započni sednicu</button>
+          <h3>{{sessionDescription}}</h3>
+        </div>
+            <div class="content">
+                
+                <span ng-bind="error" style="color:red; font-weight:bold; font-size:20px; padding-left:30px;"></span>
+  
+                    <div class="table-container">
+                        <table class="table table-filter">
+                            <tbody>
+                                <tr ng-repeat="act in results">
+                                    <td>
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <span class="media-meta pull-right" ng-bind=""></span>
+                                                <h4>
+                                                    <span ng-bind="act.map.name"></span>
+                                                    <span class="pull-right pagado"><button type="button" class="btn btn-info btn-filter" ng-click="vote(act.map.uri)" ng-disabled="!act.sessionStarted">stavi na glasanje</button></span>
+                                                </h4>
+                                                <p class="summary" ng-bind=""></p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+            </div>            
+
+        </div>
+    </div> 
+</section>

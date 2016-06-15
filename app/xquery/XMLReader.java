@@ -126,7 +126,6 @@ public class XMLReader {
 			Marshaller marshaller = context.createMarshaller();
 			sw = new StringWriter();
 			marshaller.marshal(propis, sw);
-			System.out.println(sw.toString());
 		} catch (JAXBException e1) {
 			e1.printStackTrace();
 		}

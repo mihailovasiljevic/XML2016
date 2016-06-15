@@ -21,6 +21,7 @@ POST	/api/amendment							AmendmentServices.saveAmendment
 GET 	/api/amendment							AmendmentServices.getAmendment
 
 GET		/api/act/genPdf/{uri}					Act.genPdfAct(uri)
+GET		/api/act/getXHTML/{uri}					Act.getXHTML(uri)
 
 GET     /input									Redirection.toForm
 
