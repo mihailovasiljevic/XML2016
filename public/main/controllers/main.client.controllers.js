@@ -100,7 +100,8 @@ angular.module('main')
             var pdf = new Pdf();
             pdf.$get({uri: uri}, function(response){
                 $scope.path = response.map.path;
-                $window.location.href = 'http://localhost:9000'+response.map.path;
+                $window.open('http://localhost:9000'+response.map.path, '_blank');
+                //$window.location.href = 'http://localhost:9000'+response.map.path;
             });
         }
     }])
