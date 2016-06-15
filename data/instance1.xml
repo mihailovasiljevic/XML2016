@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ama:Amandman xmlns:akt="http://www.ftn.uns.ac.rs/pravniAkt"
+ xmlns:ama="http://www.ftn.uns.ac.rs/amandman"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.ftn.uns.ac.rs/amandman file:/F:/Projects/XML/pinf_xws_docs/xml/schema/amandman.xsd">
+    <ama:oznaka>0</ama:oznaka>
+    <ama:zaglavlje>
+        <ama:drzava>РЕПУБЛИКА СРБИЈА</ama:drzava>
+        <ama:organ>НАРОДНА СКУПШТИНА</ama:organ>
+        <ama:predlagac>predlagac0</ama:predlagac>
+        <ama:mesto>mesto0</ama:mesto>
+    </ama:zaglavlje>
+    <ama:uvod>
+        <ama:naslov>ПРЕДСЕДНИКУ НАРОДНЕ СКУПШТИНЕ</ama:naslov>
+        <ama:tekst>tekst0</ama:tekst>
+    </ama:uvod>
+    <ama:glavniDeo>
+        <ama:naslov>АМАНДМАН</ama:naslov>
+        <ama:sadrzaj>
+            <ama:tekst>Iz stava <ama:stav>13</ama:stav> reci "ama" 
+                <ama:operacija>menjaSe</ama:operacija> recima "pera"
+            </ama:tekst>
+            <ama:tekst>
+                <ama:stav>
+                </ama:stav>
+                <ama:clan>
+                </ama:clan>
+                <ama:operacija>menjaSe</ama:operacija>
+            </ama:tekst>
+        </ama:sadrzaj>
+    </ama:glavniDeo>
+    <ama:obrazlozenje>
+        <ama:naslov>naslov0</ama:naslov>
+        <ama:tekst>tekst1</ama:tekst>
+    </ama:obrazlozenje>
+    <ama:potpis>
+        <ama:funkcija>funkcija0</ama:funkcija>
+        <ama:imeIPrezime>imeIPrezime0</ama:imeIPrezime>
+    </ama:potpis>
+</ama:Amandman>

@@ -38,7 +38,7 @@ public class AmendmentServices extends Controller {
     		}
         
         	XMLValidation isValid = new XMLValidation();
-        	boolean xmlValid = isValid.test(Application.projectPath+"/XML2016/data/amandman.xsd");
+        	boolean xmlValid = isValid.test(Application.projectPath+"/XML2016/data/amandman.xsd","amandman");
         	if(xmlValid)
         		System.out.println("XML JE VALIDAN");
         	else 
@@ -46,7 +46,7 @@ public class AmendmentServices extends Controller {
 
         	if(xmlValid){
         		try {
-    				XMLWriterUriTemplate.run(Util.loadProperties());
+    				XMLWriterUriTemplate.run(Util.loadProperties(),"amendments");
     			} catch (IOException e) {
     				// TODO Auto-generated catch block
     				e.printStackTrace();
