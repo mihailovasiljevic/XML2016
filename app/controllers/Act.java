@@ -1,6 +1,8 @@
 package controllers;
 
+import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.StringWriter;
@@ -56,6 +58,7 @@ import rs.ac.uns.ftn.pravniakt.Propis;
 import util.FileUtil;
 import xquery.XMLReader;
 import xslfo.XSLFOTransformer;
+import xslfo.XSLTransformer;
 
 public class Act extends Controller {
 	private static String collectionName;
@@ -361,6 +364,15 @@ public class Act extends Controller {
 		}
 */
 		System.out.println("izlaz");
+	}
+	
+	public static void getXHTML(String uri) {
+		String docId = "/acts/"+uri+".xml";
+		String text = XMLReader.getPropisText(docId);
+		//System.out.println(text.toString());
+
+		String response = XSLTransformer.transform(text);
+		renderJSON(response);
 	}
 	
 }
