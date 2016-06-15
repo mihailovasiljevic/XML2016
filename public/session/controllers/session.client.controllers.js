@@ -7,6 +7,7 @@ angular.module('session')
         });
 
         $scope.sessionStarted = false;
+        $scope.actForVoting= {};
 
         $scope.find = function(){
             var searchCriteria = new Search({
@@ -38,6 +39,24 @@ angular.module('session')
             for(var i = 0; i < $scope.results.length; i++){
                 $scope.results[i].sessionStarted = true;
             }
+            $scope.sessionStarted = true;
         }
 
+        $scope.stop = function(){
+            var date = new Date();
+            var today = date.getDay()+"."+date.getMonth()+"."+date.getFullYear()+".";
+            var hour = date.getHours()+":"+date.getMinutes();
+            $scope.sessionDescription = "Sednica završena dana " + today + " u "+hour+" . ";
+            for(var i = 0; i < $scope.results.length; i++){
+                $scope.results[i].sessionStarted = false;
+            }
+            $scope.sessionStarted = false;
+        }
+
+        $scope.vote = function(act){
+            $scope.actForVoting = act;
+            var uri = act.map.uri.trim();
+            alert(uri);
+            $state.go('main.session.voting',{actURI:act.map.uri});
+        }
     }]);
