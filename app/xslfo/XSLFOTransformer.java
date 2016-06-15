@@ -95,14 +95,14 @@ public class XSLFOTransformer {
 		xslFoTransformer.transform(source, res);
 		
 		// Generate PDF file
-		File pdfFile = new File("XML2016/public/tmp/pdf/act.pdf");
+		File pdfFile = new File("XML2016/public/tmp/pdf/act_"+actId+".pdf");
 		OutputStream out = new BufferedOutputStream(new FileOutputStream(pdfFile));
 		out.write(outStream.toByteArray());
 	
 		System.out.println("[INFO] File \"" + pdfFile.getCanonicalPath() + "\" generated successfully.");
 		out.close();
 		System.out.println("[INFO] End.");
-		return "/public/tmp/pdf/act.pdf";
+		return "/public/tmp/pdf/act_"+actId+".pdf";
 	}
 
 }
