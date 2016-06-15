@@ -1,17 +1,14 @@
-angular.module('main')
-  .controller('MainController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search',
+angular.module('amendment')
+  .controller('AmendmentController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search',
     function($scope,$rootScope, $timeout,$location,$state, Main, Search){
 
         //go on mainPage
         //$state.go("main");
         //show documents
         $scope.propose = function(){
-            $state.go('main.act');
+            $state.go('main.amendment');
         }
     
-        $scope.search = function(){
-            $state.go('main.search');
-        }
 
         $scope.find = function(){
             $scope.acts = Main.query(
@@ -68,28 +65,3 @@ angular.module('main')
 
 
     }])
-    .controller('SearchResultsController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search',
-    function($scope,$rootScope, $timeout,$location,$state, Main, Search){
-
-        $scope.results = $scope.$parent.results
-    }])
-    .controller('filterActsController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search',
-    function($scope,$rootScope, $timeout,$location,$state, Main, Search){
-
-        $scope.acts = $scope.$parent.acts;
-
-        $scope.selected = "";
-
-        $scope.filter = function(){
-
-            $scope.$parent.listForShowing = [];
-
-            for(var i = 0; i < $scope.acts.length; i++){
-                    if($scope.acts[i].status == $scope.selected){
-                       $scope.$parent.listForShowing.push($scope.acts[i]);
-                    }
-            }
-
-        }
-    }]);
-

@@ -1,7 +1,7 @@
 var mainApplicationModuleName = 'parliament';
 
 var mainApplicationModule = angular.module(mainApplicationModuleName,
-  ['ngResource','ui.router','main','user','act']);
+  ['ngResource','ui.router','main','user','act','user1','amendment']);
 
 //tell search engine crawlers that this is single page application
 //in order to wait rendering to be done Hashbangs.Hashbangs routing scheme

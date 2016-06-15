@@ -1,5 +1,5 @@
 
-<section  ng-controller="MainController as main" ng-init="find()">
+<section  ng-controller="AmendmentController as amendment" ng-init="find()">
 
 <!--Top_content-->
 <section id="top_content" class="top_cont_outer" >
@@ -9,38 +9,31 @@
         <div class="row">
           <div>
             <div class="top_left_cont flipInY wow animated"  ui-view>
-              <h3>AKTI</h3>
-              <h2>Pregled akata</h2>
+              <h3>Amandmani</h3>
+              <h2>Pregled amandmana</h2>
                 <div class="container">
-                    <div class="row" ng-controller="filterActsController">
-                        <input type="radio" name="predlozen" value="predlozen" ng-click="filter()" ng-model="selected"> <span>Predložen</span>
-                        <input type="radio" name="nacelo" value="nacelo" ng-model="selected" ng-click="filter()"> <span>Usvojen u načelu</span>
-                        <input type="radio" name="celina" value="celina" ng-model="selected" ng-click="filter()"> <span>Usvojen u celosti</span>
-                    </div>
                     <div class="row">
-                        
+
                         <section class="content">
                             <div >
                                 <div class="panel panel-default">
                                     <div class="panel-body">
                                         <div class="pull-right">
                                             <div class="btn-group">
-                                                <button type="button" class="btn btn-success btn-filter" ng-click="propose();">Predloži akt</button>
-                                                <button type="button" class="btn btn-default btn-filter" ng-click="search()">Pretraži akte</button>
+                                                <button type="button" class="btn btn-success btn-filter" ng-click="propose();">Predloži amandman</button>
                                             </div>
                                         </div>
                                         <div class="table-container">
                                             <table class="table table-filter">
-
                                                 <tbody>
-                                                    <tr ng-repeat="act in listForShowing" style="border-bottom:1px white;">
+                                                    <tr class="selected" ng-repeat="act in acts">
                                                         <td>
                                                             <div class="media">
                                                                 <div class="media-body">
+                                                                    <span class="media-meta pull-right" ng-bind=""></span>
                                                                     <h4>
                                                                         <span ng-bind="act.name" ng-click="showAct(act.uri)"></span>
-                                                                        <span class="pull-right pendiente"> <button type="button" class="btn btn-info btn-filter" ng-click="search()">pogledaj akt</button> </span>
-                                                                        <span class="pull-right pendiente" ng-bind="act.status" style="padding-right:40px;font-weight:bold;font-size:18px;color:blue;"></span>
+                                                                        <span class="pull-right pagado" ng-bind=""></span>
                                                                     </h4>
                                                                     <p class="summary" ng-bind=""></p>
                                                                 </div>

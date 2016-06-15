@@ -19,6 +19,14 @@ angular.module('main').config(['$urlRouterProvider','$stateProvider',
         url: 'acts',
         templateUrl: 'public/act/views/listActs.html'
       })
+      .state('main.amendment',{
+    	  url:'amendments/propose',
+    	  templateUrl: 'public/amendment/views/addAmendment.html'
+      })
+      .state('main.amandmans',{
+    	  url: 'amendments',
+    	  templateUrl: 'public/amendment/views/listAmendments.html'
+      })
       .state('main.search.results', {
         url: 'search',
         templateUrl: 'public/main/views/searchResults.html'
