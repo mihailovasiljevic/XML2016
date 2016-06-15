@@ -5,7 +5,8 @@
     <div class="container" ui-view>
         <div class="row">
         <div>
-          <button type="button" class="btn btn-success btn-filter" ng-click="start();">Započni sednicu</button>
+          <button type="button" class="btn btn-success btn-filter" ng-click="start();" ng-if="!sessionStarted">Započni sednicu</button>
+          <button type="button" class="btn btn-danger btn-filter" ng-click="stop();" ng-if="sessionStarted">Završi sednicu</button>
           <h3>{{sessionDescription}}</h3>
         </div>
             <div class="content">
@@ -22,7 +23,7 @@
                                                 <span class="media-meta pull-right" ng-bind=""></span>
                                                 <h4>
                                                     <span ng-bind="act.map.name"></span>
-                                                    <span class="pull-right pagado"><button type="button" class="btn btn-info btn-filter" ng-click="vote(act.map.uri)" ng-disabled="!act.sessionStarted">stavi na glasanje</button></span>
+                                                    <span class="pull-right pagado"><button type="button" class="btn btn-info btn-filter" ng-click="vote(act)" ng-disabled="!act.sessionStarted">stavi na glasanje</button></span>
                                                 </h4>
                                                 <p class="summary" ng-bind=""></p>
                                             </div>

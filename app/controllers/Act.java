@@ -111,7 +111,7 @@ public class Act extends Controller {
 				System.out.println("Status: " + status);
 				LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
 				map.put("name", name);
-				map.put("uri", result.getUri());
+				map.put("uri", prepareURI(result.getUri()));
 				map.put("status", status);
 				documentsURIs.add(map);
 			}
@@ -152,6 +152,14 @@ public class Act extends Controller {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	private static String prepareURI(String uri){
+		uri = uri.replace(".", "/");
+		String[] splitted = uri.split("/");
+		System.out.println(splitted[2]);
+
+		return splitted[2];
 	}
 
 	public static void updateAct(String uri) {
@@ -281,7 +289,7 @@ public class Act extends Controller {
 				String name = propis.getNaziv();				
 				
 				LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
-				map.put("uri", result.getUri());
+				map.put("uri", prepareURI(result.getUri()));
 				map.put("name", name);
 				map.put("criteria", criteria);
 				map.put("fitness", result.getFitness()+"");
@@ -373,10 +381,10 @@ public class Act extends Controller {
 	
 	public static void getXHTML(String uri) {
 		String docId = "/acts/"+uri+".xml";
-		String text = XMLReader.getPropisText(docId);
+		//String text = XMLReader.getPropisText(docId);
 		//System.out.println(text.toString());
 
-		String response = XSLTransformer.transform(text);
+		//String response = XSLTransformer.transform(text);
 		renderJSON(response);
 	}
 	
