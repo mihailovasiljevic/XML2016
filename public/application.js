@@ -7,7 +7,7 @@ underscore.factory('_', ['$window', function() {
 
 var mainApplicationModule = angular.module(mainApplicationModuleName,
 		
-  ['ngResource','ui.router','ngCookies','underscore','main','user','act','user1','amendment','session','angular-loading-bar']);
+  ['ngResource','ui.router','ngCookies','underscore','main','user','act','amendment','session','angular-loading-bar']);
 
 
 //tell search engine crawlers that this is single page application
