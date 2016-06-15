@@ -6,13 +6,9 @@
 GET     /                                       Application.index
 
 
-POST	/api/user						   		Application.saveUsers
+POST	/api/user						   		Application.login
 GET		/api/user								Application.getUsers
 
-POST	/api/user1						   		Application.saveUsers
-GET		/api/user1								Application.getUsers
-
-POST	/api/user						   		Application.login
 
 #Acts
 GET		/api/acts								Act.listActs
