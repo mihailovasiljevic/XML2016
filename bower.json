@@ -9,9 +9,8 @@
     "angular-cookies": "latest",
     "angular-ui-router": "^0.2.18",
     "angular-component-router": "^0.2.1",
-    "angular-material": "^1.0.9",
-    "ng-dialog": "^0.6.1",
-    "angular-modal-service": "^0.9.10",
-    "ngModal": "^1.2.2"
+    "angular-loading-bar": "^0.9.0",
+    "underscore": "^1.8.3",
+    "angular-underscore-module": "^1.0.3"
   }
 }

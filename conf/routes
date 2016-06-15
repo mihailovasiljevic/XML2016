@@ -20,6 +20,8 @@ POST	/api/acts/search						Act.search
 POST	/api/amendment							AmendmentServices.saveAmendment
 GET 	/api/amendment							AmendmentServices.getAmendment
 
+GET		/api/acts/sending/{uri}					Act.sendingAct(uri)
+
 GET		/api/acts/pdf/{uri}						Act.pdf(uri)
 GET		/api/acts/xhtml/{uri}					Act.xhtml(uri)
 
