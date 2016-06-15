@@ -366,7 +366,7 @@ public class Act extends Controller {
 		String text = XMLReader.getPropisText(docId);
 		
 		 try {
-			new XSLFOTransformer().transform(text);
+			new XSLFOTransformer().transform(text, uri);
 		} catch (SAXException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -383,6 +383,10 @@ public class Act extends Controller {
 		String response = XSLTransformer.transform(text);
 		renderHtml(response);
 		System.out.println("xhtml is genereted.");
+	}
+	
+	public static void sendingAct(String uri) {
+		redirect("http://localhost:7000/sendingAct/"+uri);
 	}
 	
 }

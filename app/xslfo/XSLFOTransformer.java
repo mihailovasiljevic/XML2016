@@ -50,7 +50,7 @@ public class XSLFOTransformer {
 		transformerFactory = new TransformerFactoryImpl();
 	}
 
-	public void transform(String text) throws Exception {
+	public void transform(String text, String actId) throws Exception {
 
 		System.out.println("[INFO] " + XSLFOTransformer.class.getSimpleName());
 		
@@ -94,7 +94,7 @@ public class XSLFOTransformer {
 		xslFoTransformer.transform(source, res);
 		
 		// Generate PDF file
-		File pdfFile = new File("XML2016/gen/akt.pdf");
+		File pdfFile = new File("XML2016/acts/act_"+actId+".pdf");
 		OutputStream out = new BufferedOutputStream(new FileOutputStream(pdfFile));
 		out.write(outStream.toByteArray());
 	
