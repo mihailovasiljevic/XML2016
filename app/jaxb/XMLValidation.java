@@ -37,7 +37,8 @@ public class XMLValidation {
 				context = JAXBContext.newInstance("rs.ac.uns.ftn.amandman");
 			// Unmarshaller je objekat zadužen za konverziju iz XML-a u objektni model
 			Unmarshaller unmarshaller = context.createUnmarshaller();
-			
+			System.out.println(schemaPath);
+			System.out.println(context);
 			// XML schema validacija "./data/akt.xsd"
 			SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
 			Schema schema = schemaFactory.newSchema(new File(schemaPath));
@@ -55,8 +56,7 @@ public class XMLValidation {
             	amandman = (Amandman)unmarshaller.unmarshal(new File(Application.projectPath+"/XML2016/data/temp.xml"));
             // Ispis sadržaja objektnog modela, nakon uspešne validacije
             //printStudent(student);
-			System.out.println(schemaPath);
-			System.out.println(context);
+			
 		} catch (JAXBException e) {
 			e.printStackTrace();
 			isValid = false;

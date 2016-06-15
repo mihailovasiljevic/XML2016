@@ -1,37 +1,4745 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<AmandНА</organ>
-        <predlagac>MHQa2rtleCawOTT3MNAIN</predlagac>
-        <mesto>oH.8r7A3cst9XcbdObfJa9O</mesto>
-    </zaglavlje>
-    <uvod>
-        <naslov>ПРЕДСЕДНИКУ НАРОДНЕ СКУПШТИНЕ</naslov>
-        <tekst>ot_NV2fQD.Mk.c9UdAG7se87hshJU</tekst>
-    </uvod>
-    <glavniDeo>
-        <naslov>АМАНДМАН</naslov>
-        <sadrzaj>
-            <tekst>
-                <tacka>
-                </tacka>
-                <stav>
-                </stav>
-                <operacija>dopunjujeSe</operacija>
-            </tekst>
-            <tekst>
-                <stav>
-                </stav>
-                <clan>
-                </clan>
-                <operacija>menjaSe</operacija>
-            </tekst>
-        </sadrzaj>
-    </glavniDeo>
-    <obrazlozenje>
-        <naslov>p7BbE3SCjlj8x9W7Fg7BJd</naslov>
-        <tekst>aGUU0081a1nh1wU2CY3nR</tekst>
-    </obrazlozenje>
-    <potpis>
-        <funkcija>_c5oc08</funkcija>
-        <imeIPrezime>du4Bc</imeIPrezime>
-    </potpis>
-</Amandman>
+<?xml  version="1.0" encoding="UTF-8"?>
+<propis xsi:schemaLocation="http://www.ftn.uns.ac.rs/pravniAkt file:/F:/Projects/XML/pinf_xws_docs/xml/schema/akt.xsd" xmlns="http://www.ftn.uns.ac.rs/pravniAkt" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<status>celina</status>
+<oznaka>1961372515</oznaka>
+<naziv>RdR0ZjJgkNF2</naziv>
+<predlagac>R</predlagac>
+<deo>
+<redniBroj>-458221374</redniBroj>
+<simbolickiNaziv>H8ADRvQG8-</simbolickiNaziv>
+<naziv>liOOkJm3r</naziv>
+<clan>
+<naziv>SMv0q16vQJs7ROq3YJkGhk.44phXR8</naziv>
+<redniBroj>-440734525</redniBroj>
+<simbolickiNaziv>VAX8gZ-E</simbolickiNaziv>
+<tekst>
+<referenca href="tr6">
+</referenca>
+<referenca href="C-epKH8kJy">
+</referenca>
+<referenca href="ttcKCNlzx">
+</referenca>
+</tekst>
+<tekst>
+<referenca href="w">
+</referenca>
+<referenca href="VPis">
+</referenca>
+<referenca href="H1n">
+</referenca>
+</tekst>
+<stav>
+<redniBroj>1779456585</redniBroj>
+<tekst>
+<referenca href="DwLvn">
+</referenca>
+<referenca href="ak1mpz1p">
+</referenca>
+<referenca href="y-bDXErEfjqoVbaZ_ENmQ">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>-2053357448</redniBroj>
+<tekst>
+<referenca href="gZ1K4QtyOUg6dPv.">
+</referenca>
+<referenca href="cUnGXaA5rI333M0QpEfLgJtH2Krcp">
+</referenca>
+<referenca href="Ra.xi5To5yyJLRAuyz">
+</referenca>
+</tekst>
+<podtacka>
+<redniBroj>-1635701082</redniBroj>
+<tekst>
+<referenca href="u.6SnHi0tKRj4INbi2zkuN">
+</referenca>
+<referenca href="vsy8q4IgNobrBJd47zvwhOcQ4">
+</referenca>
+<referenca href="knsC0pENfR6hYKPPJMjz">
+</referenca>
+</tekst>
+</podtacka>
+<podtacka>
+<redniBroj>-1274115717</redniBroj>
+<tekst>
+<referenca href="Uw">
+</referenca>
+<referenca href="NM2tRD1qCv6lbPK1zm">
+</referenca>
+<referenca href="GqrgS">
+</referenca>
+</tekst>
+</podtacka>
+<podtacka>
+<redniBroj>1020579445</redniBroj>
+<tekst>
+<referenca href="gx">
+</referenca>
+<referenca href="Kejmtf6qw.zUwitVe">
+</referenca>
+<referenca href="PQ9bZ2SewHSI.fdHdasj.BwYDgr4H_">
+</referenca>
+</tekst>
+</podtacka>
+</tacka>
+<tacka>
+<redniBroj>1968768119</redniBroj>
+<tekst>
+<referenca href="NJeks8bkPmJqRhrfgRv">
+</referenca>
+<referenca href="gICgLdAOQfIQR86QtdmVQs_W1QDt76">
+</referenca>
+<referenca href="k-ryNvGhu">
+</referenca>
+</tekst>
+<podtacka>
+<redniBroj>1326679674</redniBroj>
+<tekst>
+<referenca href="uY61.db3cXWfp">
+</referenca>
+<referenca href="Wxeb">
+</referenca>
+<referenca href="qetHc">
+</referenca>
+</tekst>
+</podtacka>
+<podtacka>
+<redniBroj>1312147263</redniBroj>
+<tekst>
+<referenca href="unbiJfd2poY62J7drHqJx">
+</referenca>
+<referenca href="cY0GuEMSON">
+</referenca>
+<referenca href="prCXPHycCxNDMmKnf9Us_GN">
+</referenca>
+</tekst>
+</podtacka>
+<podtacka>
+<redniBroj>471410532</redniBroj>
+<tekst>
+<referenca href="TO1tH9cJFemR5TK">
+</referenca>
+<referenca href="sazG5cBMb">
+</referenca>
+<referenca href="Om9zI4jrNa">
+</referenca>
+</tekst>
+</podtacka>
+</tacka>
+<tacka>
+<redniBroj>-1038550564</redniBroj>
+<tekst>
+<referenca href="A1gMrAGBikfeV">
+</referenca>
+<referenca href="Wxh2bU3SJeRpQ-5B_negKg">
+</referenca>
+<referenca href="x_uvBqi1lCoIR">
+</referenca>
+</tekst>
+<podtacka>
+<redniBroj>1369621761</redniBroj>
+<tekst>
+<referenca href="LEH26mljqS22gO2Y_Z7lcppd">
+</referenca>
+<referenca href="c74tMpachLSdfIOk-fULRds96">
+</referenca>
+<referenca href="R9jlDZkTX7yJv6qv">
+</referenca>
+</tekst>
+</podtacka>
+<podtacka>
+<redniBroj>-1860574095</redniBroj>
+<tekst>
+<referenca href="v8eeXH_f0tS">
+</referenca>
+<referenca href="xc">
+</referenca>
+<referenca href="V3">
+</referenca>
+</tekst>
+</podtacka>
+<podtacka>
+<redniBroj>1048428992</redniBroj>
+<tekst>
+<referenca href="E1ie_VePK7ZCrDuobRt">
+</referenca>
+<referenca href="ZGOr">
+</referenca>
+<referenca href="Z29upx4LA-f9O">
+</referenca>
+</tekst>
+</podtacka>
+</tacka>
+</stav>
+<stav>
+<redniBroj>198426835</redniBroj>
+<tekst>
+<referenca href="ShSnw5AZvBhX7FOWajCseyc8n">
+</referenca>
+<referenca href="p">
+</referenca>
+<referenca href="LrVDDQlVg29WBPi4SinzF3">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>1288254148</redniBroj>
+<tekst>
+<referenca href="k_-sMUiSSAmij4HG">
+</referenca>
+<referenca href="PCyF6uY0EZO8y1c1TlQtLfnb">
+</referenca>
+<referenca href="efr_R5">
+</referenca>
+</tekst>
+<podtacka>
+<redniBroj>68469912</redniBroj>
+<tekst>
+<referenca href="D">
+</referenca>
+<referenca href="jK">
+</referenca>
+<referenca href="iojREvmAH9G0JETIvCp09vB">
+</referenca>
+</tekst>
+</podtacka>
+<podtacka>
+<redniBroj>-1924763218</redniBroj>
+<tekst>
+<referenca href="N">
+</referenca>
+<referenca href="uX4P69NWEovxuuttb2gP">
+</referenca>
+<referenca href="ay.giykQ4eDatSF8fy-">
+</referenca>
+</tekst>
+</podtacka>
+<podtacka>
+<redniBroj>1870650684</redniBroj>
+<tekst>
+<referenca href="xghJk">
+</referenca>
+<referenca href="QlX5HgxfB7XyFr48Q">
+</referenca>
+<referenca href="ev0oKsVytAxB0baOHU5Drtxh">
+</referenca>
+</tekst>
+</podtacka>
+</tacka>
+<tacka>
+<redniBroj>-648520666</redniBroj>
+<tekst>
+<referenca href="x">
+</referenca>
+<referenca href="FnafU9FzNsEqha_U8J">
+</referenca>
+<referenca href="LyD4A3w.axX9dE">
+</referenca>
+</tekst>
+<podtacka>
+<redniBroj>-916491267</redniBroj>
+<tekst>
+<referenca href="B0o4s-">
+</referenca>
+<referenca href="Pv0Q76aI5zWcqDPFJo">
+</referenca>
+<referenca href="Dov7">
+</referenca>
+</tekst>
+</podtacka>
+<podtacka>
+<redniBroj>1980713154</redniBroj>
+<tekst>
+<referenca href="wg">
+</referenca>
+<referenca href="LnumUlUhQao86fUt">
+</referenca>
+<referenca href="oKjRn1mfzLu71Y">
+</referenca>
+</tekst>
+</podtacka>
+<podtacka>
+<redniBroj>1869884917</redniBroj>
+<tekst>
+<referenca href="bdWG4DcYB9X-a">
+</referenca>
+<referenca href="gGF4hTEmvy">
+</referenca>
+<referenca href="jo-1nF5">
+</referenca>
+</tekst>
+</podtacka>
+</tacka>
+<tacka>
+<redniBroj>-1721667609</redniBroj>
+<tekst>
+<referenca href="vK5qcWhba6KwNt">
+</referenca>
+<referenca href="T.bnA">
+</referenca>
+<referenca href="zv">
+</referenca>
+</tekst>
+<podtacka>
+<redniBroj>-1787333602</redniBroj>
+<tekst>
+<referenca href="Ads1sVE_KCvH-XYvJr.cfZBR">
+</referenca>
+<referenca href="hBbhxr2KMTDaWDF_ieaBK6GjFJ2">
+</referenca>
+<referenca href="i1XPJBHm.5Lp">
+</referenca>
+</tekst>
+</podtacka>
+<podtacka>
+<redniBroj>53668770</redniBroj>
+<tekst>
+<referenca href="ChozvvCyNIwyWu">
+</referenca>
+<referenca href="E7P0v1azkCpmckaI99">
+</referenca>
+<referenca href="gMwACmaEjD6Cth8eX4pBlHY04Picr">
+</referenca>
+</tekst>
+</podtacka>
+<podtacka>
+<redniBroj>796245686</redniBroj>
+<tekst>
+<referenca href="FdjmS8mwX">
+</referenca>
+<referenca href="Ah_jymDirwzZNj">
+</referenca>
+<referenca href="fbapCCH7S2DK">
+</referenca>
+</tekst>
+</podtacka>
+</tacka>
+</stav>
+<stav>
+<redniBroj>-836047115</redniBroj>
+<tekst>
+<referenca href="QNqMbk-6OLE1EeZMi_wD">
+</referenca>
+<referenca href="S9RZzi.9bhCPjyGOkw3Z7Xhgsg">
+</referenca>
+<referenca href="_uWs8a.v9C6YAQ4">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>-549750508</redniBroj>
+<tekst>
+<referenca href="hsNmRkb5FBokudpCl">
+</referenca>
+<referenca href="oKTadu">
+</referenca>
+<referenca href="JdUeHE">
+</referenca>
+</tekst>
+<podtacka>
+<redniBroj>1716117753</redniBroj>
+<tekst>
+<referenca href="HUu_XID74hp">
+</referenca>
+<referenca href="JtGJYwN4PYbDC.Pv">
+</referenca>
+<referenca href="G1g.55j5JVPAaI">
+</referenca>
+</tekst>
+</podtacka>
+<podtacka>
+<redniBroj>2026454043</redniBroj>
+<tekst>
+<referenca href="U-B-7zmJjkH0w">
+</referenca>
+<referenca href="sKQ">
+</referenca>
+<referenca href="hoqUYkp">
+</referenca>
+</tekst>
+</podtacka>
+<podtacka>
+<redniBroj>-2099760314</redniBroj>
+<tekst>
+<referenca href="bXv">
+</referenca>
+<referenca href="UW_uaDIc6">
+</referenca>
+<referenca href="H">
+</referenca>
+</tekst>
+</podtacka>
+</tacka>
+<tacka>
+<redniBroj>767182291</redniBroj>
+<tekst>
+<referenca href="gc2p_gOf7gUzViTINW-03AKHZ">
+</referenca>
+<referenca href="Z_QR6G4ceEhgwquE9nF5nrT0IzdGxd">
+</referenca>
+<referenca href="c">
+</referenca>
+</tekst>
+<podtacka>
+<redniBroj>2120328666</redniBroj>
+<tekst>
+<referenca href="pPToYsPBL64PEs">
+</referenca>
+<referenca href="d7g63x_v">
+</referenca>
+<referenca href="Gror0kEE9ULUG">
+</referenca>
+</tekst>
+</podtacka>
+<podtacka>
+<redniBroj>-1608782141</redniBroj>
+<tekst>
+<referenca href="O6n7ka_Mgf8n">
+</referenca>
+<referenca href="Q-Wnp3jWZZJiI9Dho62ThDjKA7c5">
+</referenca>
+<referenca href="G7q9wNqkbRhibZGsi">
+</referenca>
+</tekst>
+</podtacka>
+<podtacka>
+<redniBroj>-1511855127</redniBroj>
+<tekst>
+<referenca href="k7wnomLVw7">
+</referenca>
+<referenca href="PeZf5LWLRr857xFS9zqa8-Jk0">
+</referenca>
+<referenca href="hdUKL3RgAYD7Ie">
+</referenca>
+</tekst>
+</podtacka>
+</tacka>
+<tacka>
+<redniBroj>-828603920</redniBroj>
+<tekst>
+<referenca href="_pQvrTM2Pi96jsFB">
+</referenca>
+<referenca href="mi1PxXhtuzEdtZBoczl">
+</referenca>
+<referenca href="dlcC1ci">
+</referenca>
+</tekst>
+<podtacka>
+<redniBroj>-741470555</redniBroj>
+<tekst>
+<referenca href="K_N0HeYmwpr">
+</referenca>
+<referenca href="yey4QomrBnHdzHMT4Y_IU9mN.w">
+</referenca>
+<referenca href="f17vk7i">
+</referenca>
+</tekst>
+</podtacka>
+<podtacka>
+<redniBroj>-398453433</redniBroj>
+<tekst>
+<referenca href="_pbpPEY5W5BFsU">
+</referenca>
+<referenca href="F.tmdB6d_XGqGe">
+</referenca>
+<referenca href="GMxOy7g7nOW6">
+</referenca>
+</tekst>
+</podtacka>
+<podtacka>
+<redniBroj>-1865363531</redniBroj>
+<tekst>
+<referenca href="NRYvLihwezWzjgjcB2WFJtNyObesb">
+</referenca>
+<referenca href="_Hd_vztFEnm4bm4">
+</referenca>
+<referenca href="qBD4_yPZV">
+</referenca>
+</tekst>
+</podtacka>
+</tacka>
+</stav>
+</clan>
+<glava tipOznacavanja="bezTacke">
+<redniBroj>-395875327</redniBroj>
+<simbolickiNaziv>JYpzc12Z7_E5twI</simbolickiNaziv>
+<naziv>Ss.b84hg</naziv>
+<odeljak>
+<redniBroj>-257966361</redniBroj>
+<simbolickiNaziv>L-fSR8</simbolickiNaziv>
+<naziv>d</naziv>
+<pododeljak>
+<rednoSlovo>dbrSNzk8H5EyVile-ySp10</rednoSlovo>
+<naziv>WZNSqq3t2tleN8</naziv>
+<clan>
+<redniBroj>467619</redniBroj>
+<simbolickiNaziv>y0P00w6dUmZNPy8_0P</simbolickiNaziv>
+<tekst>
+<referenca href="zl4mvBiccJ2ofkUUkt9uv">
+</referenca>
+<referenca href="E">
+</referenca>
+<referenca href="hlU0UKDFcTM-gN3S31qdwZoAXvqh7">
+</referenca>
+</tekst>
+<stav>
+<redniBroj>-301279514</redniBroj>
+<tekst>
+<referenca href="dNaOqG">
+</referenca>
+<referenca href="D_POoCf.l.n9p48xeLoF">
+</referenca>
+<referenca href="s.gKiCM9GoXKB7gYJu9zFp">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-288641540</redniBroj>
+<tekst>
+<referenca href="xo42VfZeoFosKpUTOw2Pp">
+</referenca>
+<referenca href="ElMD3">
+</referenca>
+<referenca href="FrHF">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-1354973738</redniBroj>
+<tekst>
+<referenca href="_NimVlfvtA">
+</referenca>
+<referenca href="fNPk">
+</referenca>
+<referenca href="vgdFpa">
+</referenca>
+</tekst>
+</stav>
+<tekst>
+<referenca href="Eg">
+</referenca>
+<referenca href="g-bv.epHpyDGeb206o1Icp_GgZP7ts">
+</referenca>
+<referenca href="zaunZaVwTwrUDSQubTj1i7UNH">
+</referenca>
+</tekst>
+</clan>
+</pododeljak>
+<clan>
+<naziv>p911h</naziv>
+<redniBroj>-799082821</redniBroj>
+<simbolickiNaziv>Up</simbolickiNaziv>
+<tekst>
+<referenca href="w_1">
+</referenca>
+<referenca href="hO6jn">
+</referenca>
+<referenca href="S2wAOyCtBrMn5u5kAh_2KSOxkFS">
+</referenca>
+</tekst>
+<stav>
+<redniBroj>-200105246</redniBroj>
+<tekst>
+<referenca href="GmEbi3G5pH8XjtHBdi2Z6B">
+</referenca>
+<referenca href="I27y2dsHgP">
+</referenca>
+<referenca href="r5fQM49k7hCO237IXnBSFN">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-771106706</redniBroj>
+<tekst>
+<referenca href="YxZkeFlWv.OD90e4ey8QUs">
+</referenca>
+<referenca href="prAn9mefVyH9-wY">
+</referenca>
+<referenca href="Q3a1u6zy7Uwz4qDf8vPGV">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-1780628562</redniBroj>
+<tekst>
+<referenca href="tcZIgNC0">
+</referenca>
+<referenca href="VcYETKOCKy7zwg0qgBSgBzYHZ540H">
+</referenca>
+<referenca href="ytLIgJx7Ac-g8Ojo0gcbyZAmKX">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>2085058449</redniBroj>
+<tekst>
+<referenca href="luGlBiMT">
+</referenca>
+<referenca href="ek3GW3.">
+</referenca>
+<referenca href="GEGr">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1021024109</redniBroj>
+<tekst>
+<referenca href="tZVxT_QWzhm-2MMw9A">
+</referenca>
+<referenca href="IliXORXs0ifTWn9pWNEiBXEnPGxGdc">
+</referenca>
+<referenca href="T7prTipz8xfK_95g1UK5TsbI0yV3L">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-1554914004</redniBroj>
+<tekst>
+<referenca href="__U31I7lKiPHQS.qOjQfT">
+</referenca>
+<referenca href="ETrRjgL0_uD">
+</referenca>
+<referenca href="anp.XnyuBmKMb">
+</referenca>
+</tekst>
+</stav>
+</clan>
+<clan>
+<naziv>Kyn806-nKDuyHFcyal_0h4</naziv>
+<redniBroj>-1994842950</redniBroj>
+<simbolickiNaziv>NHYR</simbolickiNaziv>
+<stav>
+<redniBroj>-591391007</redniBroj>
+<tekst>
+<referenca href="hvJslCVf33-7ZC5uNdBLeT">
+</referenca>
+<referenca href="u869AaEXTumZu9ALPLaDw_MbPLgFW">
+</referenca>
+<referenca href="uwnAYwzh7x1dw5YHp8TKMQw6">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-800670712</redniBroj>
+<tekst>
+<referenca href="is80S.MtdjS9-6">
+</referenca>
+<referenca href="g0HBsa_aNOgYUQg.Q">
+</referenca>
+<referenca href="cSPw.UwDyr0P138tNFudm">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-2034258421</redniBroj>
+<tekst>
+<referenca href="Cj1IH61SaeAOiWTihng">
+</referenca>
+<referenca href="hsAxoVR">
+</referenca>
+<referenca href="vVtAUk3uMWv.Zu">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-924614844</redniBroj>
+<tekst>
+<referenca href="vxo4sxbfwyCoG">
+</referenca>
+<referenca href="z">
+</referenca>
+<referenca href="nItiMjU05">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-299769128</redniBroj>
+<tekst>
+<referenca href="Zg24Sdxv1D.">
+</referenca>
+<referenca href="r_.N0lTO16dNMM4BHIVfWW48Jrf0">
+</referenca>
+<referenca href="vnhVICXWgdzT__wrhhpCzydb0116f">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-314153734</redniBroj>
+<tekst>
+<referenca href="_JasWNIB">
+</referenca>
+<referenca href="b4">
+</referenca>
+<referenca href="wHukK_rsu">
+</referenca>
+</tekst>
+</stav>
+<tekst>
+<referenca href="xQPhhWR9pkIxZW3ZbsLkQbM_HN5Ur">
+</referenca>
+<referenca href="AijnTfTrmYdq.5alH_">
+</referenca>
+<referenca href="qWVVlKY7aWvTRLLJFSDov05">
+</referenca>
+</tekst>
+</clan>
+</odeljak>
+<clan>
+<naziv>W6JziDQhsEyD-</naziv>
+<redniBroj>-1238078583</redniBroj>
+<simbolickiNaziv>lt61xc30xEHR2In2vtkDJ-64K</simbolickiNaziv>
+<tekst>
+<referenca href="fojc">
+</referenca>
+<referenca href="yHppm">
+</referenca>
+<referenca href="sD0WG">
+</referenca>
+</tekst>
+<tekst>
+<referenca href="_cq8xv4wbKYuZ44YDXjEUYcOzE04x">
+</referenca>
+<referenca href="WzKst3pe_">
+</referenca>
+<referenca href="E">
+</referenca>
+</tekst>
+<tekst>
+<referenca href="jdh0">
+</referenca>
+<referenca href="_">
+</referenca>
+<referenca href="w0">
+</referenca>
+</tekst>
+</clan>
+<clan>
+<naziv>UibiCQUDt_nCX7UzVY</naziv>
+<redniBroj>-443234683</redniBroj>
+<simbolickiNaziv>E.TDskoAy</simbolickiNaziv>
+<tekst>
+<referenca href="hWd_2mHAASAbznXUgeGWTzS99nQ4_">
+</referenca>
+<referenca href="QKnVbla0rlAX.aqv7">
+</referenca>
+<referenca href="DYWFpYVZ">
+</referenca>
+</tekst>
+<tekst>
+<referenca href="JBBM-E8rkkZd._7029ZG8K5BR">
+</referenca>
+<referenca href="lMAMywVY2L1Nt4V7edVRQeIOz">
+</referenca>
+<referenca href="J.QFIuPaNu4N7Cad">
+</referenca>
+</tekst>
+<tekst>
+<referenca href="dB7iORdfFw">
+</referenca>
+<referenca href="IVkFC43le.q3S">
+</referenca>
+<referenca href="GC3mn3C">
+</referenca>
+</tekst>
+</clan>
+</glava>
+<clan>
+<naziv>zYBfeyQBD_xsp0bMqaPRA27zE</naziv>
+<redniBroj>2012527281</redniBroj>
+<simbolickiNaziv>GWILftpP</simbolickiNaziv>
+<tekst>
+<referenca href="COnJ1N">
+</referenca>
+<referenca href="PQjy3-1aEjifgeYnFwM1f41lk0Qp">
+</referenca>
+<referenca href="PfZMvq60IvWzTG">
+</referenca>
+</tekst>
+<tekst>
+<referenca href="EVZn">
+</referenca>
+<referenca href="yVg">
+</referenca>
+<referenca href="ZM2Z">
+</referenca>
+</tekst>
+<tekst>
+<referenca href="NM4AyLX6C7Cz2.lN-8Dlr.hU">
+</referenca>
+<referenca href="Mb5.R9">
+</referenca>
+<referenca href="z5iK7J">
+</referenca>
+</tekst>
+</clan>
+</deo>
+<deo>
+<redniBroj>894817818</redniBroj>
+<simbolickiNaziv>p-qM5XY.HFlZ.nwdXJmyn</simbolickiNaziv>
+<naziv>fKvRhaWJtVi0rs</naziv>
+<glava tipOznacavanja="saTackom">
+<redniBroj>-1735513612</redniBroj>
+<simbolickiNaziv>D5</simbolickiNaziv>
+<naziv>AGln</naziv>
+<clan>
+<naziv>g</naziv>
+<redniBroj>1015208743</redniBroj>
+<simbolickiNaziv>tGRBleHdd</simbolickiNaziv>
+<tekst>
+<referenca href="FBA">
+</referenca>
+<referenca href="L7ZMOiG">
+</referenca>
+<referenca href="qh_7j">
+</referenca>
+</tekst>
+<tekst>
+<referenca href="c23BRY.Z0G1qRl1O">
+</referenca>
+<referenca href="wPQ2abPmpAJVVM8f">
+</referenca>
+<referenca href="Lfer_eX7ojvTSrAI7u.XCW7X">
+</referenca>
+</tekst>
+<stav>
+<redniBroj>-1719032777</redniBroj>
+<tekst>
+<referenca href="p-qko6U8Dmn">
+</referenca>
+<referenca href="YSfNGpeRtP._CtYEy">
+</referenca>
+<referenca href="T6wBb9L1fTR0Z_WXHAaZy">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>1953443887</redniBroj>
+<tekst>
+<referenca href="sQs2">
+</referenca>
+<referenca href="l9zR">
+</referenca>
+<referenca href="UNTYK97e9quCr3wtZjFpkIOpfGL_xx">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-31952267</redniBroj>
+<tekst>
+<referenca href="EPQ0m">
+</referenca>
+<referenca href="vj.42a">
+</referenca>
+<referenca href="v7Tcn4o">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>386435347</redniBroj>
+<tekst>
+<referenca href="P0GWKzhoKC4xLK8IepMP9jDS">
+</referenca>
+<referenca href="U0TOOo">
+</referenca>
+<referenca href="g5DtI0mvy5Ns603tidA.kTTtcolj">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>-18595840</redniBroj>
+<tekst>
+<referenca href="oKHWl-XCbfR8im4">
+</referenca>
+<referenca href="b3p4SF1vp66rbVlI5-6X5luU">
+</referenca>
+<referenca href="KTD">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>-900590502</redniBroj>
+<tekst>
+<referenca href="WelxNigmwdk">
+</referenca>
+<referenca href="RuzZHx8u">
+</referenca>
+<referenca href="Y0_3ehJSEql">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-847975021</redniBroj>
+<tekst>
+<referenca href="_KymbqtN8LJM8ugNOS6jJcAvZwwmFP">
+</referenca>
+<referenca href="RXwe">
+</referenca>
+<referenca href="YkjwW.eb.B">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-1973798867</redniBroj>
+<tekst>
+<referenca href="JdHhIvfyQ6QRUocLRUnVE6e_eEJ">
+</referenca>
+<referenca href="ieW">
+</referenca>
+<referenca href="G9wd52w2SKE.-OYFLegeMmu-q">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>539043221</redniBroj>
+<tekst>
+<referenca href="yeJ1MwXX">
+</referenca>
+<referenca href="RnJf">
+</referenca>
+<referenca href="txA.432G6tTkYF0I7y">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>-1659682591</redniBroj>
+<tekst>
+<referenca href="Nc2dDzj_ArTQQK.Ga">
+</referenca>
+<referenca href="DRgyIRy7am4o">
+</referenca>
+<referenca href="QrqQ">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-1080742914</redniBroj>
+<tekst>
+<referenca href="YprDWUZCzO2z7eB4">
+</referenca>
+<referenca href="q4Fj29ryL">
+</referenca>
+<referenca href="RU2dVsT-aAPyru2qrYySon">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-701434949</redniBroj>
+<tekst>
+<referenca href="ZQ_DtpDcJUC_xkmjTZ.3eA4XXm">
+</referenca>
+<referenca href="eVkCHqV05AJPNU">
+</referenca>
+<referenca href="KCDHx2O.so">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+</clan>
+<odeljak>
+<redniBroj>-272537126</redniBroj>
+<simbolickiNaziv>ZISYd4dd3F33X</simbolickiNaziv>
+<naziv>XnFbC3eFGe-C5Cwn01FxzSr-T</naziv>
+<clan>
+<naziv>OFym-UUh6vp7J6COAe8KuUG</naziv>
+<redniBroj>-1940450849</redniBroj>
+<simbolickiNaziv>Jb45N7zOSC0LBlyRAtLMwWujaIw_</simbolickiNaziv>
+<stav>
+<redniBroj>-349938495</redniBroj>
+<tekst>
+<referenca href="vOhh">
+</referenca>
+<referenca href="Zb0fnlXLZQIZ8S">
+</referenca>
+<referenca href="y">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-360009512</redniBroj>
+<tekst>
+<referenca href="Yd0">
+</referenca>
+<referenca href="o9fWqoxD.o_KaJz_">
+</referenca>
+<referenca href="C">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1427006504</redniBroj>
+<tekst>
+<referenca href="alcM6w_Qtp5u73upOJziKEh">
+</referenca>
+<referenca href="OqILnmpmdxY_-Myh9kE2NFy">
+</referenca>
+<referenca href="E3KmEsQcw4-oRLvHRkG0Ga">
+</referenca>
+</tekst>
+</stav>
+<tekst>
+<referenca href="id2MR">
+</referenca>
+<referenca href="jl9l1J81XhyetPGUkBvoSa9fda">
+</referenca>
+<referenca href="E_BNLAb6nSe8vgk">
+</referenca>
+</tekst>
+<stav>
+<redniBroj>-1956389541</redniBroj>
+<tekst>
+<referenca href="Mdn-gQs_Ddx.iNfTJHHnbnHs">
+</referenca>
+<referenca href="seSWxaB22w">
+</referenca>
+<referenca href="qbyfhceU.DbQAk6">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-985092121</redniBroj>
+<tekst>
+<referenca href="z3LRJkmunQ1eUdQqe58YTyOE1n82">
+</referenca>
+<referenca href="T2K1fIH">
+</referenca>
+<referenca href="lOpicVgLzJEHpBEz0Ow">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-1088148853</redniBroj>
+<tekst>
+<referenca href="OHJdANFex">
+</referenca>
+<referenca href="CCtWDTsNFNoXjkRZweVmuSt5osr-1">
+</referenca>
+<referenca href="dWF">
+</referenca>
+</tekst>
+</stav>
+</clan>
+<pododeljak>
+<rednoSlovo>pn2fA6R1PYIVPZnT6SpslWei</rednoSlovo>
+<naziv>OWi3_c8eqQV6o</naziv>
+<clan>
+<redniBroj>-1234813322</redniBroj>
+<simbolickiNaziv>FeCxX7DHG4qSH</simbolickiNaziv>
+<tekst>
+<referenca href="x.tuY4y">
+</referenca>
+<referenca href="qjIIO0nlIrZd">
+</referenca>
+<referenca href="BvL">
+</referenca>
+</tekst>
+<tekst>
+<referenca href="u2">
+</referenca>
+<referenca href="HJsPM5tkizFsmBr3">
+</referenca>
+<referenca href="e02aLoX">
+</referenca>
+</tekst>
+<stav>
+<redniBroj>1369841799</redniBroj>
+<tekst>
+<referenca href="aIuP3akbPi_o6kw8JRV">
+</referenca>
+<referenca href="xPAB">
+</referenca>
+<referenca href="bFMMmnXL7auHbSdsszUSNeCGNgsH">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-816852371</redniBroj>
+<tekst>
+<referenca href="rxHVpxLTFljvFdY">
+</referenca>
+<referenca href="A8ouYuXh6w3pCJVsquPiRLHRl_RPI.">
+</referenca>
+<referenca href="NvbFRX">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-367358797</redniBroj>
+<tekst>
+<referenca href="b0Fkt0reOqocVncwEHRWB8a3qx">
+</referenca>
+<referenca href="IAZ_A-FZ">
+</referenca>
+<referenca href="i41axh7451qFyUeNXd.KxoN9WG.">
+</referenca>
+</tekst>
+</stav>
+</clan>
+</pododeljak>
+<clan>
+<naziv>O._cq</naziv>
+<redniBroj>-1286636529</redniBroj>
+<simbolickiNaziv>Nkkg6ZXwGftDA</simbolickiNaziv>
+<stav>
+<redniBroj>1074389408</redniBroj>
+<tekst>
+<referenca href="NOItIjIHu8pzgA_xE3M">
+</referenca>
+<referenca href="kGRvebsOMNFZ">
+</referenca>
+<referenca href="mTY">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-405353721</redniBroj>
+<tekst>
+<referenca href="M85JvgZ_wSn-ie2Wzv">
+</referenca>
+<referenca href="USxPjI.twI-d">
+</referenca>
+<referenca href="hoxXHEwx0S0ZV8eXonApPnC">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-470249855</redniBroj>
+<tekst>
+<referenca href="xCZb6jc">
+</referenca>
+<referenca href="Z4x.Um5">
+</referenca>
+<referenca href="aaDZUll">
+</referenca>
+</tekst>
+</stav>
+<tekst>
+<referenca href="oLYD9hXJ">
+</referenca>
+<referenca href="BMxL6At">
+</referenca>
+<referenca href="pwQhvR6h0G">
+</referenca>
+</tekst>
+<tekst>
+<referenca href="E6">
+</referenca>
+<referenca href="wWtg">
+</referenca>
+<referenca href="dYxXfqFQCxVD2tvJxRS0UtTc0UER.">
+</referenca>
+</tekst>
+</clan>
+</odeljak>
+<odeljak>
+<redniBroj>1168550006</redniBroj>
+<simbolickiNaziv>PnVREN</simbolickiNaziv>
+<naziv>VrJr</naziv>
+<clan>
+<naziv>MSOuvo</naziv>
+<redniBroj>1729769075</redniBroj>
+<simbolickiNaziv>aAH.aadO4Uht</simbolickiNaziv>
+<stav>
+<redniBroj>508956530</redniBroj>
+<tekst>
+<referenca href="I.XcTiBlH">
+</referenca>
+<referenca href="KcRzG_g0LSDVy6sxe">
+</referenca>
+<referenca href="w36YBajReVzWO258lv0MtiDibO">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-695911746</redniBroj>
+<tekst>
+<referenca href="U3lSIbVyiEHiU">
+</referenca>
+<referenca href="J0HgEWZUrN">
+</referenca>
+<referenca href="yA55YU">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>516943313</redniBroj>
+<tekst>
+<referenca href="EEvH.OQjjR4EyM1CnF">
+</referenca>
+<referenca href="hu.1vd0IP3MU2m5Gu7sJYjhN2q9XE7">
+</referenca>
+<referenca href="_5Dh8VGtbolsJf.8M">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-390546770</redniBroj>
+<tekst>
+<referenca href="UNQKE8BMcoUIQDsrIUvSC2Fhs.c6-q">
+</referenca>
+<referenca href="coL">
+</referenca>
+<referenca href="xy_k">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-915473889</redniBroj>
+<tekst>
+<referenca href="DP">
+</referenca>
+<referenca href="iu2AT3I9oZYUw5Di8s2t">
+</referenca>
+<referenca href="CMC1Uf9_2e">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>519983602</redniBroj>
+<tekst>
+<referenca href="Cs2D5EHh6.qQTvhPf9MPNsalI">
+</referenca>
+<referenca href="fJDMR8Us9E4heH7dw-ZiS.Vf">
+</referenca>
+<referenca href="z2.v.YTaaJVpm">
+</referenca>
+</tekst>
+</stav>
+<tekst>
+<referenca href="RcB">
+</referenca>
+<referenca href="R.h_W9">
+</referenca>
+<referenca href="QVZDrrJcszF3kQ">
+</referenca>
+</tekst>
+</clan>
+<pododeljak>
+<rednoSlovo>Vos</rednoSlovo>
+<naziv>RylHE3QV3xeRfvkEjaagDSij4umA</naziv>
+<clan>
+<redniBroj>-430191826</redniBroj>
+<simbolickiNaziv>TP-GHy2cv1XgtjHmar</simbolickiNaziv>
+<stav>
+<redniBroj>342713660</redniBroj>
+<tekst>
+<referenca href="PC">
+</referenca>
+<referenca href="uVrGqUvWGY_N2BKxW">
+</referenca>
+<referenca href="nHMDZygea">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-503522299</redniBroj>
+<tekst>
+<referenca href="S2niQqdD4RDXRQ">
+</referenca>
+<referenca href="Vn">
+</referenca>
+<referenca href="WeFNNNXQOWp5HvRi93FIGGKfk-.">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1668051745</redniBroj>
+<tekst>
+<referenca href="M">
+</referenca>
+<referenca href="YDuVtMv7oVDlzn">
+</referenca>
+<referenca href="y3">
+</referenca>
+</tekst>
+</stav>
+<tekst>
+<referenca href="yliRIDLgrVcQzPUyLZy7ZReRvIDR">
+</referenca>
+<referenca href="Rr_4ewept1xwMu7j">
+</referenca>
+<referenca href="KLB34fuFW8a">
+</referenca>
+</tekst>
+<stav>
+<redniBroj>1185276735</redniBroj>
+<tekst>
+<referenca href="drD68xh_">
+</referenca>
+<referenca href="KWgNTlkWTJ">
+</referenca>
+<referenca href="K0s1zHNxBMsUd-nQh1ZdzF86X">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-969995875</redniBroj>
+<tekst>
+<referenca href="NnsXCypkF3QSAT.I3XJ-YFeC">
+</referenca>
+<referenca href="jsW">
+</referenca>
+<referenca href="U1yr9qr9GjhuEy5e">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>2029299854</redniBroj>
+<tekst>
+<referenca href="fFuRSqiTQh_f9WzfAt2rR">
+</referenca>
+<referenca href="PdgUp4.TtIs34">
+</referenca>
+<referenca href="il9uzQz3_P">
+</referenca>
+</tekst>
+</stav>
+</clan>
+</pododeljak>
+<pododeljak>
+<rednoSlovo>nIg4CNk4QXeTf3</rednoSlovo>
+<naziv>EgnofJyYk4</naziv>
+<clan>
+<redniBroj>1026138903</redniBroj>
+<simbolickiNaziv>l4cCPB3</simbolickiNaziv>
+<stav>
+<redniBroj>475261948</redniBroj>
+<tekst>
+<referenca href="ZjPkRYK7jRVgsjZdAofBPKbYj3_D.W">
+</referenca>
+<referenca href="I0">
+</referenca>
+<referenca href="vdh.pwfDGUtHCFqmY6_odxSB1">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>462239995</redniBroj>
+<tekst>
+<referenca href="MVno.0zS7oW0gb8P">
+</referenca>
+<referenca href="esDo.iRKwZkdmjePk7">
+</referenca>
+<referenca href="uDf_qb">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1181622835</redniBroj>
+<tekst>
+<referenca href="w">
+</referenca>
+<referenca href="YtZVaNZ9I5EDykPu">
+</referenca>
+<referenca href="BvQb1feTInqTP4lCwZUs9fCd">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1971836268</redniBroj>
+<tekst>
+<referenca href="fSjw42nFb6OiiPw8S9txoVrXfw5">
+</referenca>
+<referenca href="xD7lRH-Ky_DP0S8epbCTGYSw">
+</referenca>
+<referenca href="zf">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1916452561</redniBroj>
+<tekst>
+<referenca href="tk3QDJy5ue1">
+</referenca>
+<referenca href="Sud_zK-Gmxt7p1zkvLKEWyV">
+</referenca>
+<referenca href="b2H7UBKi1O8dLB.Plg">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>21091653</redniBroj>
+<tekst>
+<referenca href="ATP6OqGlKKaH">
+</referenca>
+<referenca href="L5mU">
+</referenca>
+<referenca href="f1NIbZT-0EuT01VY97QeOYIrWicR4e">
+</referenca>
+</tekst>
+</stav>
+<tekst>
+<referenca href="gRj91g_XjQx105U0Qye">
+</referenca>
+<referenca href="DsE6EuwM_Ij_po7aaCc8IF9z3uRm">
+</referenca>
+<referenca href="EyCbLxMIBnbEjtgkdEqoQ0r">
+</referenca>
+</tekst>
+</clan>
+</pododeljak>
+</odeljak>
+</glava>
+<glava tipOznacavanja="bezTacke">
+<redniBroj>-300216779</redniBroj>
+<simbolickiNaziv>Nyq-L9m.e0</simbolickiNaziv>
+<naziv>_pl3g4</naziv>
+<clan>
+<naziv>ZaHrHTlmrfUshJSvw.</naziv>
+<redniBroj>893080267</redniBroj>
+<simbolickiNaziv>Q07E4wopxOxZ8shxf32RotmDNR1</simbolickiNaziv>
+<tekst>
+<referenca href="avtrqnWxVDTLBhAn8dpcEKF">
+</referenca>
+<referenca href="vjt2A4">
+</referenca>
+<referenca href="T4JSPgaeaAgj0k1xuQ-5lFaAe">
+</referenca>
+</tekst>
+<tekst>
+<referenca href="QI2mCXa8z3LM.WZV">
+</referenca>
+<referenca href="tQtJXsohGyjX-7cMfL">
+</referenca>
+<referenca href="KyIXtyUQYB.kumFNrfP">
+</referenca>
+</tekst>
+<stav>
+<redniBroj>2125156784</redniBroj>
+<tekst>
+<referenca href="w0jkhmBMhphB57Euht">
+</referenca>
+<referenca href="DiELyofH93">
+</referenca>
+<referenca href="e">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>1069413254</redniBroj>
+<tekst>
+<referenca href="oqEfBDgLVQeBO9V3J9J.ScJEz-g5">
+</referenca>
+<referenca href="KE08">
+</referenca>
+<referenca href="Xnl0m1I-I_qsw-mYcBbj1KNr">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-643579581</redniBroj>
+<tekst>
+<referenca href="Ov.Kumy8">
+</referenca>
+<referenca href="qaof-5zTqcqZo">
+</referenca>
+<referenca href="jE452RA9LTssg">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-1542581148</redniBroj>
+<tekst>
+<referenca href="bnESK60IY">
+</referenca>
+<referenca href="jlXkD3">
+</referenca>
+<referenca href="JJuDXE233vi">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>288548945</redniBroj>
+<tekst>
+<referenca href="uMs3VsdCMzReOnT8Art_5Gfk">
+</referenca>
+<referenca href="Ucp1WKpsr0bIXgN.RvjSH5DM1QSl">
+</referenca>
+<referenca href="dL6nyeL8yRuaaII">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>-1502366380</redniBroj>
+<tekst>
+<referenca href="OZCVI2omKHw3">
+</referenca>
+<referenca href="NE_.Ym3Mlx46">
+</referenca>
+<referenca href="xa">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-1986833310</redniBroj>
+<tekst>
+<referenca href="n7J">
+</referenca>
+<referenca href="hG_jF">
+</referenca>
+<referenca href="J-ynfXL4N9c9QXPe3FSuf-Vv4IS">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-49728804</redniBroj>
+<tekst>
+<referenca href="E67IFWBaSsG.-Rml4Aw-">
+</referenca>
+<referenca href="i8gseJpQK8b2rl">
+</referenca>
+<referenca href="ArPgbXi6i-zC5a8.">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>-634317676</redniBroj>
+<tekst>
+<referenca href="nVnkV44bVL3JhCM.tWWql4BHuB0">
+</referenca>
+<referenca href="BlyoxkaJObz">
+</referenca>
+<referenca href="nwxSKYRWtUNZKoG">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>-32308814</redniBroj>
+<tekst>
+<referenca href="V5UttGuPrP">
+</referenca>
+<referenca href="cp2">
+</referenca>
+<referenca href="LbMiy-e03H8hR9e_A">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>297513979</redniBroj>
+<tekst>
+<referenca href="W7">
+</referenca>
+<referenca href="jeU6CX1lOGzSLTto80.G9G.qzvNmk">
+</referenca>
+<referenca href="sS">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-241081619</redniBroj>
+<tekst>
+<referenca href="yBm">
+</referenca>
+<referenca href="Sk-kbXGz8o8-bvBR4">
+</referenca>
+<referenca href="ew4Nqx">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+</clan>
+<odeljak>
+<redniBroj>1582648438</redniBroj>
+<simbolickiNaziv>kWhzeruFRVGqdUWm.KeO</simbolickiNaziv>
+<naziv>Mm</naziv>
+<clan>
+<naziv>kuNRTzsd</naziv>
+<redniBroj>-2060518066</redniBroj>
+<simbolickiNaziv>oKzAkDy2SDdbH</simbolickiNaziv>
+<stav>
+<redniBroj>-1099091234</redniBroj>
+<tekst>
+<referenca href="aMshZMmYVUIniwyMOqk0-tRfvF">
+</referenca>
+<referenca href="m12GSr.pTkjreiwXKoohS">
+</referenca>
+<referenca href="NdzM">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>137258608</redniBroj>
+<tekst>
+<referenca href="RwDl5nnRUYJVi6AlbZAt5Y1FAi">
+</referenca>
+<referenca href="IhmlaJTGRzZo">
+</referenca>
+<referenca href="gIge48a-VHQxW5gYi">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1893389647</redniBroj>
+<tekst>
+<referenca href="ygb4MX5XJl.uPHHb1.v0fSgGhZ2SG">
+</referenca>
+<referenca href="XxFvFbynMvlacIRE7X-A.l">
+</referenca>
+<referenca href="fbRj_n87lCNGonTztCMbw8l08TNHy">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-1141959780</redniBroj>
+<tekst>
+<referenca href="idVAqh6GnZ6">
+</referenca>
+<referenca href="Qd8I.9W">
+</referenca>
+<referenca href="A">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-1675419454</redniBroj>
+<tekst>
+<referenca href="Ca">
+</referenca>
+<referenca href="E7Jo7FTa1-0MmU8Vm6bT9Lmn72Xj">
+</referenca>
+<referenca href="dtLhnpTcIPELrejecvDLF2.">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-98580021</redniBroj>
+<tekst>
+<referenca href="bIFpZFxcjYojm5z">
+</referenca>
+<referenca href="Ppq7._">
+</referenca>
+<referenca href="OeWj0vsQn6Ebgoy">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1867983247</redniBroj>
+<tekst>
+<referenca href="evcoT">
+</referenca>
+<referenca href="am7E44lPrh">
+</referenca>
+<referenca href="Ye8Rcg21a-Qu.qYDFBG7O3sR_aw">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-1657212641</redniBroj>
+<tekst>
+<referenca href="jNADA__H1TiP4WoDh.JKxf1qe_">
+</referenca>
+<referenca href="BdeZ6W48AZoLE_3v">
+</referenca>
+<referenca href="GidNF_2wzx09cMWu">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>504105452</redniBroj>
+<tekst>
+<referenca href="cc5jSZnwgmLsG3jwFrWPuUr">
+</referenca>
+<referenca href="pKb7MO2kGxy.d0G">
+</referenca>
+<referenca href="Zu5Ah.ZR9">
+</referenca>
+</tekst>
+</stav>
+</clan>
+<clan>
+<naziv>PIPoNJYz3s1-h3QovAQcypJ</naziv>
+<redniBroj>-1436303909</redniBroj>
+<simbolickiNaziv>S2Nk6eA1OsqUKGus</simbolickiNaziv>
+<tekst>
+<referenca href="VX">
+</referenca>
+<referenca href="oUODu">
+</referenca>
+<referenca href="QgIUvGO_uwAKs">
+</referenca>
+</tekst>
+<tekst>
+<referenca href="bVjGaeECVa7RmWOm7HTvT4y6">
+</referenca>
+<referenca href="KXFScCgFs">
+</referenca>
+<referenca href="LexVmjxRUAQuHRZcKCEyCSrqr6vKH">
+</referenca>
+</tekst>
+<stav>
+<redniBroj>1054423771</redniBroj>
+<tekst>
+<referenca href="gQcYuiwP7-2JXD">
+</referenca>
+<referenca href="i">
+</referenca>
+<referenca href="VQwzyZtmmR9po8t1KXVHgiL-zsj">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-517846996</redniBroj>
+<tekst>
+<referenca href="lG0nggW1qqDU">
+</referenca>
+<referenca href="rIcxLVTw">
+</referenca>
+<referenca href="QQ-rTwkBXcZiQ7W6WY9wrxlw6">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-916407196</redniBroj>
+<tekst>
+<referenca href="b_hm3c_GR">
+</referenca>
+<referenca href="o.U0">
+</referenca>
+<referenca href="q">
+</referenca>
+</tekst>
+</stav>
+</clan>
+<clan>
+<naziv>Xsh.d</naziv>
+<redniBroj>-2123847295</redniBroj>
+<simbolickiNaziv>EFMt_eTstz6Y_VI8y8Afx9f1TqY</simbolickiNaziv>
+<tekst>
+<referenca href="ZJv6_lcoi296KRHVjo19">
+</referenca>
+<referenca href="aTCy2ra8">
+</referenca>
+<referenca href="lieZVEYD4WBOb">
+</referenca>
+</tekst>
+<stav>
+<redniBroj>2022543559</redniBroj>
+<tekst>
+<referenca href="IGw8XAPO">
+</referenca>
+<referenca href="F0q">
+</referenca>
+<referenca href="HOqqkFMOHkSgYAB2vnOxctP">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>305788646</redniBroj>
+<tekst>
+<referenca href="ss6Q2Pvc7">
+</referenca>
+<referenca href="LsO">
+</referenca>
+<referenca href="vSZX-3_U">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-409872998</redniBroj>
+<tekst>
+<referenca href="z2MyY1n-LhvYiY7Uq2uKN">
+</referenca>
+<referenca href="oCs_K-bVEnz0PvSP9ptI5wnxcQ">
+</referenca>
+<referenca href="ay5z_C2I23MC23KBgQyA">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-552497448</redniBroj>
+<tekst>
+<referenca href="jNc-w">
+</referenca>
+<referenca href="G">
+</referenca>
+<referenca href="v-4f">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>112303721</redniBroj>
+<tekst>
+<referenca href="NNZW69f">
+</referenca>
+<referenca href="cCzMuWbqZIYx-ss4_">
+</referenca>
+<referenca href="Biqnwc6WIa7RihplBYLB-ySwTsdR">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>695527394</redniBroj>
+<tekst>
+<referenca href="XmZ">
+</referenca>
+<referenca href="Ag445rv6mndNnpoIP">
+</referenca>
+<referenca href="rpUxGET0fNB-fKkUv1lb1IA2ebfK">
+</referenca>
+</tekst>
+</stav>
+</clan>
+</odeljak>
+<clan>
+<naziv>yLgt40MFs-Yf</naziv>
+<redniBroj>-1976847093</redniBroj>
+<simbolickiNaziv>a3NZKc7Utxqd8RFucvt98j</simbolickiNaziv>
+<stav>
+<redniBroj>1253975260</redniBroj>
+<tekst>
+<referenca href="wWvTAfZ">
+</referenca>
+<referenca href="tCzY">
+</referenca>
+<referenca href="zXn6Fplg">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>-1688949046</redniBroj>
+<tekst>
+<referenca href="ZmTW8QgtU9_fq6YBeGpG03UBG_zm">
+</referenca>
+<referenca href="a-7ukrUwzMyKTzBZWgYYiDJ">
+</referenca>
+<referenca href="vnsoDCcD">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>1923672808</redniBroj>
+<tekst>
+<referenca href="ZoZHdcK20KI0S9tMDAK3rG9WW4n_">
+</referenca>
+<referenca href="j0095tTU79mma9yiu.">
+</referenca>
+<referenca href="uKx2hF8rjhHb8pPz4fNM">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-1631099855</redniBroj>
+<tekst>
+<referenca href="u2YwyCQYXDJta">
+</referenca>
+<referenca href="qGhic2">
+</referenca>
+<referenca href="neT1WnrMnesemO2hdZ3qE">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>-833431782</redniBroj>
+<tekst>
+<referenca href="I2yULg4.v5yH0W">
+</referenca>
+<referenca href="_ZnJZ1O0ATUgJoCfi1DayZ">
+</referenca>
+<referenca href="U8Y9rNoJzUpb.RaMItvRa8">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>-1822652586</redniBroj>
+<tekst>
+<referenca href="yFPc.ff">
+</referenca>
+<referenca href="Py5DjNGMSwKVD">
+</referenca>
+<referenca href="IJVooW0CZnnulmGb8q26LC">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-1720589019</redniBroj>
+<tekst>
+<referenca href="Cn">
+</referenca>
+<referenca href="kQYV6dcR">
+</referenca>
+<referenca href="eiEg3TZ5d9sx4beGk">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>526339090</redniBroj>
+<tekst>
+<referenca href="tpzub14B2DV3hdo9gnoGK89A2">
+</referenca>
+<referenca href="Fuh7P67smz-OHRX">
+</referenca>
+<referenca href="pRd">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>-525181110</redniBroj>
+<tekst>
+<referenca href="fXrglDLC5ZuoPGFz">
+</referenca>
+<referenca href="PngP7A8N4ylRRRO_U">
+</referenca>
+<referenca href="yRn0e">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>-1003609700</redniBroj>
+<tekst>
+<referenca href="LMJD_jIK6rguS3IbJ9iU6Oixf15">
+</referenca>
+<referenca href="nLUGo">
+</referenca>
+<referenca href="ezg8GnA">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>1409050496</redniBroj>
+<tekst>
+<referenca href="PdQ7S3v3aSU5r">
+</referenca>
+<referenca href="aVV3HWO_NF">
+</referenca>
+<referenca href="yIwUYaR6i5aNZCs.OLveMFZUzk5Gr">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>1037333297</redniBroj>
+<tekst>
+<referenca href="s5hEjb">
+</referenca>
+<referenca href="i">
+</referenca>
+<referenca href="TQ">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<tekst>
+<referenca href="R1iX0NA">
+</referenca>
+<referenca href="LLLydyxDNgGPBsigXn74_">
+</referenca>
+<referenca href="QokA.1ifTlcJlB">
+</referenca>
+</tekst>
+<stav>
+<redniBroj>1541646915</redniBroj>
+<tekst>
+<referenca href="BbbbYwV25RVUxssjXahVegt">
+</referenca>
+<referenca href="SSG">
+</referenca>
+<referenca href="gVo">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>1220455342</redniBroj>
+<tekst>
+<referenca href="m8sB1V.">
+</referenca>
+<referenca href="kxdTWPr8Ai8WEMKdawUicjrw">
+</referenca>
+<referenca href="FJ">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-1442001792</redniBroj>
+<tekst>
+<referenca href="jbmZS6aCVYE">
+</referenca>
+<referenca href="Zpo3XcklcoZ">
+</referenca>
+<referenca href="th7T58zZNAmX">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>258716602</redniBroj>
+<tekst>
+<referenca href="M725FjPksct3">
+</referenca>
+<referenca href="oW2k3vb2mYH8tgeU_Ncs">
+</referenca>
+<referenca href="HRPo7j9BJod0231HuoGa">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>500735542</redniBroj>
+<tekst>
+<referenca href="B6Xv-YSv5geaX7IBTOYsdoSAKN">
+</referenca>
+<referenca href="IRxT">
+</referenca>
+<referenca href="i9_Dk0vImg9">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>714356325</redniBroj>
+<tekst>
+<referenca href="XpUiRKh05NaYYpzX_QlZvU3D">
+</referenca>
+<referenca href="MfN0Ou7dV">
+</referenca>
+<referenca href="m">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>1498537522</redniBroj>
+<tekst>
+<referenca href="AqNRjgdli.e8iL">
+</referenca>
+<referenca href="jNgbM_SG36U">
+</referenca>
+<referenca href="vudliRZB4lx">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>37896408</redniBroj>
+<tekst>
+<referenca href="TwSOgbVYZ9sJGy0ejjOSfyxGxmal7">
+</referenca>
+<referenca href="C7omM27KZ0M34pUUn63OMEM">
+</referenca>
+<referenca href="mP7">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>136867323</redniBroj>
+<tekst>
+<referenca href="Cl3kjKUJYnbs">
+</referenca>
+<referenca href="I.P4tJt5iXR.8bv3">
+</referenca>
+<referenca href="GuHy579ar_">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>444232424</redniBroj>
+<tekst>
+<referenca href="Qdc">
+</referenca>
+<referenca href="iHQJW5hJy1CA7h9iQRLma">
+</referenca>
+<referenca href="ov">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>1920364679</redniBroj>
+<tekst>
+<referenca href="Z4qs8SAW8q7zu1WhcCVNVhAP3">
+</referenca>
+<referenca href="e6Zi9stE8xp8AgKFhBSUk34">
+</referenca>
+<referenca href="O8DD8aFz-Mls5vvcqtPL">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>425650997</redniBroj>
+<tekst>
+<referenca href="Q1RvCIqNMU">
+</referenca>
+<referenca href="cV8TxpcBi">
+</referenca>
+<referenca href="a">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+</clan>
+</glava>
+<glava tipOznacavanja="bezTacke">
+<redniBroj>104057208</redniBroj>
+<simbolickiNaziv>hcsJQbhIsLXnZu</simbolickiNaziv>
+<naziv>a</naziv>
+<clan>
+<naziv>knNXWoLthtvJWR4BhpaIXO__pd_</naziv>
+<redniBroj>-1788985815</redniBroj>
+<simbolickiNaziv>Nssw6jCMmSMb</simbolickiNaziv>
+<tekst>
+<referenca href="Id6euM">
+</referenca>
+<referenca href="FYFZ_V.QaloysPRuT">
+</referenca>
+<referenca href="sFsgVTN_4mW5">
+</referenca>
+</tekst>
+<stav>
+<redniBroj>1041963914</redniBroj>
+<tekst>
+<referenca href="Y96aSI7">
+</referenca>
+<referenca href="bxTJEEjsmoQXqEvG5s.7rt3F-1">
+</referenca>
+<referenca href="Q">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>-1625418862</redniBroj>
+<tekst>
+<referenca href="myWXXMdlurkcxEb43TaWi">
+</referenca>
+<referenca href="i5qW0xCcFjzcst6mthEJpyoRZ">
+</referenca>
+<referenca href="uRRG">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>1954916394</redniBroj>
+<tekst>
+<referenca href="BGNwOONKxGZfcls79DNTo3F6NUOe8K">
+</referenca>
+<referenca href="Xwersy3rbhCMr99l5zJK3N_n">
+</referenca>
+<referenca href="M0xAo5iYn">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-787519462</redniBroj>
+<tekst>
+<referenca href="SSEEOJMMMQw_bnuBLJnN92jj2QPW.b">
+</referenca>
+<referenca href="tbg">
+</referenca>
+<referenca href="g">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>-1607882801</redniBroj>
+<tekst>
+<referenca href="KObvMW">
+</referenca>
+<referenca href="iu6zxOozTWxf">
+</referenca>
+<referenca href="CIi-BPwA64Y.CGJ-GOq9H">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>-1068100588</redniBroj>
+<tekst>
+<referenca href="OQFEbhAmz">
+</referenca>
+<referenca href="O2G">
+</referenca>
+<referenca href="g-Pfhxixug5X5rsI6">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-857897107</redniBroj>
+<tekst>
+<referenca href="A9ilF8byQLr8-uHEtoj1y7">
+</referenca>
+<referenca href="GrzW">
+</referenca>
+<referenca href="TYLf8uPt">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>691694398</redniBroj>
+<tekst>
+<referenca href="meHX2xGYNsSpv">
+</referenca>
+<referenca href="FGhL3FDjBbFyLfs4DJ">
+</referenca>
+<referenca href="hX8RUvHyQX">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>1302619699</redniBroj>
+<tekst>
+<referenca href="AT7dVIs_BJdoxdHrbLa-H.zTyk">
+</referenca>
+<referenca href="kZrmetvxPEBNmLE-sKyic">
+</referenca>
+<referenca href="bX35uw1yg9mZJr">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>-1594863693</redniBroj>
+<tekst>
+<referenca href="ikKpVoiS8gR">
+</referenca>
+<referenca href="bV2oNWDp6Pb">
+</referenca>
+<referenca href="hPRo1k0I6">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-35506402</redniBroj>
+<tekst>
+<referenca href="zmyHiFHvgtIossamTNOhO8YU">
+</referenca>
+<referenca href="RP2">
+</referenca>
+<referenca href="kAAFWAOAj9kP">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-1695627107</redniBroj>
+<tekst>
+<referenca href="FJk-O1DU._dWH">
+</referenca>
+<referenca href="vD9aJ_L90x9g.bskr48KTJErA8ok">
+</referenca>
+<referenca href="RwEKdlNFQCxkkvDEtAHwdNdb">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<tekst>
+<referenca href="iFQp">
+</referenca>
+<referenca href="Yvbd3Ert08NaOBv3Z">
+</referenca>
+<referenca href="znh9PWsRFlzs8m">
+</referenca>
+</tekst>
+</clan>
+<odeljak>
+<redniBroj>853281040</redniBroj>
+<simbolickiNaziv>FLRHEt4VxDBpVwCIend5T</simbolickiNaziv>
+<naziv>Os3RjZ_ei</naziv>
+<pododeljak>
+<rednoSlovo>JikB2</rednoSlovo>
+<naziv>Yvzd_57.VSU7XW</naziv>
+<clan>
+<redniBroj>1724040659</redniBroj>
+<simbolickiNaziv>D2_5_f6ethYjigu</simbolickiNaziv>
+<stav>
+<redniBroj>-1963960659</redniBroj>
+<tekst>
+<referenca href="y8EoXImIogEx99IRGksGeer6U">
+</referenca>
+<referenca href="lfiNSOqXqNtaSlMNvMDdOK_ixD3">
+</referenca>
+<referenca href="c2S">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>2054087092</redniBroj>
+<tekst>
+<referenca href="v3JzOe3lqJfLQBbZS2">
+</referenca>
+<referenca href="KFf9WxQPkEG">
+</referenca>
+<referenca href="wBQ2L31cCS633O.dBgEyIlG-D0ZmH">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-1718603060</redniBroj>
+<tekst>
+<referenca href="jmpAe0LB2yH8MwXpgoDGo">
+</referenca>
+<referenca href="DeE8itJ9-jc9XEZu">
+</referenca>
+<referenca href="wc6OIH8WgWic">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>643507085</redniBroj>
+<tekst>
+<referenca href="vj9u7x6Y5xOAla">
+</referenca>
+<referenca href="NEN2IQE9CJBCSE5TFn2WIyY">
+</referenca>
+<referenca href="mJ2S.PJj2vEGI1LmvBSz">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-1381993774</redniBroj>
+<tekst>
+<referenca href="mX3yYco5NxP">
+</referenca>
+<referenca href="zFGBSz7S-DrRx2H">
+</referenca>
+<referenca href="UpkX3U6ST0cO9Pqt9By9isTTFa">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>2108164236</redniBroj>
+<tekst>
+<referenca href="oqyYtm7bzovaLl4QOS">
+</referenca>
+<referenca href="OaLPblB9kzz">
+</referenca>
+<referenca href="CkeskisQSIy3DzN_SrKkNR1">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-653597391</redniBroj>
+<tekst>
+<referenca href="prvjg9MpL1PzH.GdHat">
+</referenca>
+<referenca href="gOlsMm">
+</referenca>
+<referenca href="gW_m6Z2CbB.1.95b">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>520874304</redniBroj>
+<tekst>
+<referenca href="Lkdanf4LQPYNTyzTy1">
+</referenca>
+<referenca href="VZiH">
+</referenca>
+<referenca href="odsySdR">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>2108973747</redniBroj>
+<tekst>
+<referenca href="mZ8iDC1wZ">
+</referenca>
+<referenca href="UT0bYWw3Vw">
+</referenca>
+<referenca href="EQER.Z5slRBbbEGuW6N">
+</referenca>
+</tekst>
+</stav>
+</clan>
+</pododeljak>
+<clan>
+<naziv>Hz5d.</naziv>
+<redniBroj>67118533</redniBroj>
+<simbolickiNaziv>DOkbhNqzM</simbolickiNaziv>
+<stav>
+<redniBroj>-426844443</redniBroj>
+<tekst>
+<referenca href="_mwXvhKHJCd.Wp.">
+</referenca>
+<referenca href="MElrWc4Iv">
+</referenca>
+<referenca href="XWlGMeImr7xcsv8ROEEaJUUO">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-1708756293</redniBroj>
+<tekst>
+<referenca href="tZkB-y">
+</referenca>
+<referenca href="dSy3eQAbA5k2l3qISySUepL14LSx">
+</referenca>
+<referenca href="bIf6FNnH6.adbVoRaiuj7soQ_">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-872805912</redniBroj>
+<tekst>
+<referenca href="k">
+</referenca>
+<referenca href="Ayq.D9Pzgn">
+</referenca>
+<referenca href="MjHqarii2OIb9StCw5Ipn">
+</referenca>
+</tekst>
+</stav>
+<tekst>
+<referenca href="FeVp3K5OFuLI74_2X">
+</referenca>
+<referenca href="ARfw99SsZs8v6M1UxZFqmzKU">
+</referenca>
+<referenca href="U6">
+</referenca>
+</tekst>
+<tekst>
+<referenca href="wUu">
+</referenca>
+<referenca href="lPSFLr-wxbzNR8dGxje6MJdQf">
+</referenca>
+<referenca href="BvLyZ.x2DlFgEB-P7">
+</referenca>
+</tekst>
+</clan>
+<pododeljak>
+<rednoSlovo>G9v-Ynh5s5y1iyXu8i8</rednoSlovo>
+<naziv>LCBPnU</naziv>
+<clan>
+<redniBroj>876671070</redniBroj>
+<simbolickiNaziv>VS_X1tNyR9xFLhG1AgtOdK</simbolickiNaziv>
+<tekst>
+<referenca href="RL8oeXaVBtPu2uyvwpayPsDeT">
+</referenca>
+<referenca href="jb0AYKjkgJ0M3u6GqIL">
+</referenca>
+<referenca href="VdvGGvH">
+</referenca>
+</tekst>
+<stav>
+<redniBroj>1808059118</redniBroj>
+<tekst>
+<referenca href="utxCpAb">
+</referenca>
+<referenca href="N2kT">
+</referenca>
+<referenca href="OITZVLgL">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>997433939</redniBroj>
+<tekst>
+<referenca href="KXhuSHOL3X2.5Z">
+</referenca>
+<referenca href="P">
+</referenca>
+<referenca href="eye46YV11fzyo67lVh-Tv">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-956607575</redniBroj>
+<tekst>
+<referenca href="pfVqloQ0Usq86Dhqky-fH1TI32fb">
+</referenca>
+<referenca href="MO">
+</referenca>
+<referenca href="pWwQwhyYVOfr2K">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-1513127168</redniBroj>
+<tekst>
+<referenca href="H8t43_3Z2z.TYbEbZ.qo7o">
+</referenca>
+<referenca href="j8yQueEFmATqCr">
+</referenca>
+<referenca href="uyrCuGvo_0Y2v6AV5PalNgwUESA">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-2088458069</redniBroj>
+<tekst>
+<referenca href="Sr1wV4SCVw2OwEGBIPX.mm10f8e">
+</referenca>
+<referenca href="pB7t2cYvdN2SL">
+</referenca>
+<referenca href="X">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1732316771</redniBroj>
+<tekst>
+<referenca href="O">
+</referenca>
+<referenca href="B_MvpQA.AXlZ9DrbKyuh0L">
+</referenca>
+<referenca href="FvPHxTVeih23suj5RcrLzU">
+</referenca>
+</tekst>
+</stav>
+</clan>
+</pododeljak>
+</odeljak>
+<odeljak>
+<redniBroj>-1735294784</redniBroj>
+<simbolickiNaziv>oPiSA7td</simbolickiNaziv>
+<naziv>cpHcmr7M46wIqLRfA4yWW1-0</naziv>
+<clan>
+<naziv>RoJ.TpwTGZPiOt</naziv>
+<redniBroj>-985557292</redniBroj>
+<simbolickiNaziv>Zm5Plrc</simbolickiNaziv>
+<tekst>
+<referenca href="TjALbbnM1SU2h9">
+</referenca>
+<referenca href="PtW8NthvVe_5">
+</referenca>
+<referenca href="BSxymNAdcBD">
+</referenca>
+</tekst>
+<tekst>
+<referenca href="rRjc6KQg">
+</referenca>
+<referenca href="qX5Y_G_weET">
+</referenca>
+<referenca href="acZKjDyYooS9Y8REYoinT.Dqgd">
+</referenca>
+</tekst>
+<stav>
+<redniBroj>-412007161</redniBroj>
+<tekst>
+<referenca href="MoS8RFM-M1xfm_">
+</referenca>
+<referenca href="Gai4gfpwftyMXWRu6dI9nNSBUrJYwl">
+</referenca>
+<referenca href="gJ2R-B2U7NRvUSvDWY_efH">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>549823507</redniBroj>
+<tekst>
+<referenca href="yysLrx1epX7xA7w3IR-HqVC8S_B">
+</referenca>
+<referenca href="GGf7Gt">
+</referenca>
+<referenca href="ZW7O">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-2145320952</redniBroj>
+<tekst>
+<referenca href="MJOhQQ">
+</referenca>
+<referenca href="VNooicbfi8pu07DqDRTsP2_Z-3gnm">
+</referenca>
+<referenca href="kUldHB_L1DMZPk">
+</referenca>
+</tekst>
+</stav>
+</clan>
+<clan>
+<naziv>svP6hxzSY.zMB4E_EAo07Dano0Oh</naziv>
+<redniBroj>305752228</redniBroj>
+<simbolickiNaziv>UQlomco8</simbolickiNaziv>
+<tekst>
+<referenca href="l">
+</referenca>
+<referenca href="y8qXL">
+</referenca>
+<referenca href="n2">
+</referenca>
+</tekst>
+<stav>
+<redniBroj>1956709804</redniBroj>
+<tekst>
+<referenca href="gq1j.akCLS84m79-lUKDRL7lP-N">
+</referenca>
+<referenca href="JgNo5IbCxi">
+</referenca>
+<referenca href="NvTrGo_KGn0NgSCYu4SAqI.leRa">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-289953433</redniBroj>
+<tekst>
+<referenca href="dYWe">
+</referenca>
+<referenca href="vI1HeCw">
+</referenca>
+<referenca href="OR7KpGpNdLE2">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-886475271</redniBroj>
+<tekst>
+<referenca href="tovW7w9pL4naHJDXR">
+</referenca>
+<referenca href="OXISa30c7UvccjyBNsObg">
+</referenca>
+<referenca href="g6yxnhCtY_MmRk_.-2IfHFx">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-1089853511</redniBroj>
+<tekst>
+<referenca href="WCFI_IikWYn8QnEf8hNWUHv-YU">
+</referenca>
+<referenca href="Fr5MbL">
+</referenca>
+<referenca href="RK">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>742000947</redniBroj>
+<tekst>
+<referenca href="vCsoPAJOljH.P6sgNlixZw">
+</referenca>
+<referenca href="VfVvg.">
+</referenca>
+<referenca href="a0fdrBrjQn_YN9PADMNGO-4jzGh">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-1162475448</redniBroj>
+<tekst>
+<referenca href="dmGR3SA7nX3Ta28G0I">
+</referenca>
+<referenca href="n">
+</referenca>
+<referenca href="A507AoRNc-3LxV-yQFC">
+</referenca>
+</tekst>
+</stav>
+</clan>
+<clan>
+<naziv>tX4BpCej</naziv>
+<redniBroj>396798052</redniBroj>
+<simbolickiNaziv>p</simbolickiNaziv>
+<tekst>
+<referenca href="E">
+</referenca>
+<referenca href="SE9">
+</referenca>
+<referenca href="z1zxJhvEfLxCzk7fdW0OpPz">
+</referenca>
+</tekst>
+<stav>
+<redniBroj>205198756</redniBroj>
+<tekst>
+<referenca href="BloH8mtdnG.qtDBC">
+</referenca>
+<referenca href="VW6WnZpcxC9OB-Xs117V2KXWAbxA4a">
+</referenca>
+<referenca href="wuEfwu4cL">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-600824331</redniBroj>
+<tekst>
+<referenca href="Nr0YciCRDgU4">
+</referenca>
+<referenca href="SjLhsaCkIzazb">
+</referenca>
+<referenca href="vXUqFgnZTDO.ZUdKHdhfxFl">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1273429801</redniBroj>
+<tekst>
+<referenca href="Dj">
+</referenca>
+<referenca href="N2ZjULCsn7qiX1EHTL_6l1w_9Tk">
+</referenca>
+<referenca href="EZtEN.VrDZE">
+</referenca>
+</tekst>
+</stav>
+<tekst>
+<referenca href="z9WJDhi6KiG">
+</referenca>
+<referenca href="hrCBLFs7NAqeP-bSePpyVIdJv4SiS">
+</referenca>
+<referenca href="STK9iG_tqiOaO7">
+</referenca>
+</tekst>
+</clan>
+</odeljak>
+</glava>
+</deo>
+<deo>
+<redniBroj>-1475360557</redniBroj>
+<simbolickiNaziv>hNWAEyvQKafExisUCxpJfOy</simbolickiNaziv>
+<naziv>k2rs7kBTcwH.2U</naziv>
+<glava tipOznacavanja="bezTacke">
+<redniBroj>210241817</redniBroj>
+<simbolickiNaziv>FIM6XFvAcVZVmSYoqYaw</simbolickiNaziv>
+<naziv>s</naziv>
+<clan>
+<naziv>IUxnEQEkmppx0</naziv>
+<redniBroj>401030057</redniBroj>
+<simbolickiNaziv>mmLv91PCepH6_S9Mn9o0F6ZxyTF</simbolickiNaziv>
+<stav>
+<redniBroj>-114293635</redniBroj>
+<tekst>
+<referenca href="GGBKUegmUZ0W0vLwS9KZe">
+</referenca>
+<referenca href="AYGKNcX8vrRHNmUc.">
+</referenca>
+<referenca href="dl.1erYym9W5_sXWxPgoXoW">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>-275989030</redniBroj>
+<tekst>
+<referenca href="M.Wq0e8cU3yaJMe7iB2i13KplQX">
+</referenca>
+<referenca href="DWnE2fmwkMoDATUw2D62LccKI-P">
+</referenca>
+<referenca href="zuFPCtYkTbN1AFC2P4USgQOUBi4h">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-681162706</redniBroj>
+<tekst>
+<referenca href="h2uG1IagiErME.4BZ_">
+</referenca>
+<referenca href="NGGNs64-izT5btMcEOf">
+</referenca>
+<referenca href="nJ6C-4c07M1Qz_h_m2">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>1776251151</redniBroj>
+<tekst>
+<referenca href="DH">
+</referenca>
+<referenca href="aOaxCNi1kAMKTIwcC4g3ogo_yRZhXV">
+</referenca>
+<referenca href="Rld9QRPBPEJK7tRTNvDVE.ZHgnir">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>-831964595</redniBroj>
+<tekst>
+<referenca href="e4dAWlaN4uDVK">
+</referenca>
+<referenca href="fqbcgChDszceB8oil.m7DE">
+</referenca>
+<referenca href="rB6O">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>1313824913</redniBroj>
+<tekst>
+<referenca href="T3">
+</referenca>
+<referenca href="UK">
+</referenca>
+<referenca href="m">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-1510592657</redniBroj>
+<tekst>
+<referenca href="oVEUNylhv4QWi22UVDiUodK.b">
+</referenca>
+<referenca href="rk">
+</referenca>
+<referenca href="l5M">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-363441364</redniBroj>
+<tekst>
+<referenca href="NBDh7.f3CK.CQ.">
+</referenca>
+<referenca href="cV_zaVz_Jc0qDbvN">
+</referenca>
+<referenca href="YIzYFKKLtPmyLk">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>-1532899203</redniBroj>
+<tekst>
+<referenca href="tcjnTrvEizGmxNnHM">
+</referenca>
+<referenca href="XAJ8">
+</referenca>
+<referenca href="I.Is7kLKZA0Ky99iLCWBqU">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>13066366</redniBroj>
+<tekst>
+<referenca href="jn4VTYkKtb">
+</referenca>
+<referenca href="VBOXxv">
+</referenca>
+<referenca href="pEr7mDg5azIR1OO">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>600180307</redniBroj>
+<tekst>
+<referenca href="ev_ru_B6">
+</referenca>
+<referenca href="qE6KS2BTj_od.fFGgiB_Vla.joZ">
+</referenca>
+<referenca href="sSI">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>1501803465</redniBroj>
+<tekst>
+<referenca href="CGKn">
+</referenca>
+<referenca href="_E.hIA5eDvxAWdKVT4tgeVS">
+</referenca>
+<referenca href="h.PQPAzWbWGp4">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<tekst>
+<referenca href="Snif2bD7.hi_ZXO6N6ZxCSIM">
+</referenca>
+<referenca href="fo31hG2">
+</referenca>
+<referenca href="bLhN5IdkRBpvSFeKXax21qb3nZdlw">
+</referenca>
+</tekst>
+<stav>
+<redniBroj>-365672776</redniBroj>
+<tekst>
+<referenca href="GqQGZVTpQLvbMUt3WZ">
+</referenca>
+<referenca href="XVbC">
+</referenca>
+<referenca href="g">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>285286376</redniBroj>
+<tekst>
+<referenca href="wCpJiP-cNdYzmeTvT">
+</referenca>
+<referenca href="mfU3">
+</referenca>
+<referenca href="MAw.d5yO2J4gyEGUf">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-1351565246</redniBroj>
+<tekst>
+<referenca href="MGCRda">
+</referenca>
+<referenca href="heM1GY7Oc1TsOwj-0klNeLr.">
+</referenca>
+<referenca href="LFVPeXQgVQT">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>1066132644</redniBroj>
+<tekst>
+<referenca href="A">
+</referenca>
+<referenca href="NbVavC9Ya9_1XZDuD9lu_Elxpj9Z">
+</referenca>
+<referenca href="nB0U9vM4igOk4UIRm">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>-1756552088</redniBroj>
+<tekst>
+<referenca href="ba7fmrSVNWTa1ly9c7qzXvyi">
+</referenca>
+<referenca href="xZP0Cg">
+</referenca>
+<referenca href="Uk7ceffnMO5YyZUIwHnb82L7">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>-1009310767</redniBroj>
+<tekst>
+<referenca href="H">
+</referenca>
+<referenca href="dnHKAmS-cQ-EfbcGZg">
+</referenca>
+<referenca href="sfMK6crd58StJ4_mu1R">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>1901231026</redniBroj>
+<tekst>
+<referenca href="LLL2Iw4u9.qS1udxuMuz-">
+</referenca>
+<referenca href="Yxg7EAXmIX3Q">
+</referenca>
+<referenca href="sdUd-Y">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-1655848248</redniBroj>
+<tekst>
+<referenca href="SbuUICpg-pG">
+</referenca>
+<referenca href="vbbUEFt.I_gGoZT4Ln1dqaBOOA7">
+</referenca>
+<referenca href="LQ2EJrsvgN">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>738948714</redniBroj>
+<tekst>
+<referenca href="BgsY2Px2r">
+</referenca>
+<referenca href="rb9Fo1YsuLqH76SJNd2m.suni">
+</referenca>
+<referenca href="bqdgOUuZDhei">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>-720580305</redniBroj>
+<tekst>
+<referenca href="b">
+</referenca>
+<referenca href="lnnx8Y8">
+</referenca>
+<referenca href="z5g8RIqiDdnDQo_m">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>1572193903</redniBroj>
+<tekst>
+<referenca href="aSw">
+</referenca>
+<referenca href="S1dWf">
+</referenca>
+<referenca href="yG4QYcWa-zIA">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-2031594846</redniBroj>
+<tekst>
+<referenca href="ZMmaJ7FGDvtioF30">
+</referenca>
+<referenca href="Uw">
+</referenca>
+<referenca href="NEfHGY.0">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+</clan>
+<odeljak>
+<redniBroj>408079497</redniBroj>
+<simbolickiNaziv>d.YeQOF_nwLhtofOLz</simbolickiNaziv>
+<naziv>z571.8mR1qBMZ25cM2l5TamyLO</naziv>
+<clan>
+<naziv>ARxs-PsY1qAM773fL-C5EhSRdKdq</naziv>
+<redniBroj>-1826718651</redniBroj>
+<simbolickiNaziv>CMGnWfC-J32HSI</simbolickiNaziv>
+<stav>
+<redniBroj>1986425609</redniBroj>
+<tekst>
+<referenca href="_1Sqd6Z4g">
+</referenca>
+<referenca href="b3eqMSRNICIfl">
+</referenca>
+<referenca href="jf">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1144692812</redniBroj>
+<tekst>
+<referenca href="HomCjWfg9-ikTMsIBbY">
+</referenca>
+<referenca href="exNwpXS">
+</referenca>
+<referenca href="dMozLIM">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-1410842258</redniBroj>
+<tekst>
+<referenca href="GCya8gnJk15KUnm">
+</referenca>
+<referenca href="TInoOCI1iH">
+</referenca>
+<referenca href="tSusdD5NITDcP-alJ">
+</referenca>
+</tekst>
+</stav>
+<tekst>
+<referenca href="EXOO4srwh_RLx">
+</referenca>
+<referenca href="bwPkmqCq8gjAz8eHkBsy2hqnnse1dt">
+</referenca>
+<referenca href="fkS-">
+</referenca>
+</tekst>
+<tekst>
+<referenca href="NJBlIeNhmGWoH.DwWr2nseGb-aXqiF">
+</referenca>
+<referenca href="rX.0e">
+</referenca>
+<referenca href="vinwFy_si4xWrxI">
+</referenca>
+</tekst>
+</clan>
+<pododeljak>
+<rednoSlovo>tyRGbjP67fdsfd6mpsK</rednoSlovo>
+<naziv>rexTQH86Df0toXkc_p87Qt</naziv>
+<clan>
+<redniBroj>-2110626498</redniBroj>
+<simbolickiNaziv>oGQd9JwH</simbolickiNaziv>
+<tekst>
+<referenca href="uDA">
+</referenca>
+<referenca href="n4r">
+</referenca>
+<referenca href="NDCxrESP">
+</referenca>
+</tekst>
+<tekst>
+<referenca href="W_p1sws">
+</referenca>
+<referenca href="eyH">
+</referenca>
+<referenca href="Yf">
+</referenca>
+</tekst>
+<tekst>
+<referenca href="XtrdTnC00G">
+</referenca>
+<referenca href="z-k5KJOPz">
+</referenca>
+<referenca href="zo2rnVAm3wvswVb8cx6Ywo7VOLmr6">
+</referenca>
+</tekst>
+</clan>
+</pododeljak>
+<clan>
+<naziv>EcIkxQRpz5FlH.ObuQe9agWlUF55</naziv>
+<redniBroj>-1078238697</redniBroj>
+<simbolickiNaziv>LfKgHh6LRFys</simbolickiNaziv>
+<stav>
+<redniBroj>569870055</redniBroj>
+<tekst>
+<referenca href="i0dSnw5mak8">
+</referenca>
+<referenca href="cu_XeHKu-r">
+</referenca>
+<referenca href="t42FpM2E.I">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>410513582</redniBroj>
+<tekst>
+<referenca href="FDwiT2pgOLxkgdts">
+</referenca>
+<referenca href="BI9yM.c">
+</referenca>
+<referenca href="o7-D5kSyffmlESWJq72ko">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-385577725</redniBroj>
+<tekst>
+<referenca href="fNUvgn5vZdugwyl">
+</referenca>
+<referenca href="teI6wvmWdX6nqC6xROxVJ">
+</referenca>
+<referenca href="MFaIKF-">
+</referenca>
+</tekst>
+</stav>
+<tekst>
+<referenca href="lO.WrYHtageCJxXM">
+</referenca>
+<referenca href="UXfXhEoCN98WvGBbXCSWQk">
+</referenca>
+<referenca href="tTrNl5zzVJSFMge6q4">
+</referenca>
+</tekst>
+<stav>
+<redniBroj>1662094863</redniBroj>
+<tekst>
+<referenca href="bh8YpDJCJ9fD8oFqzf">
+</referenca>
+<referenca href="ncrKBJRcb">
+</referenca>
+<referenca href="PfOBUkt-yYllpxk">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1681799018</redniBroj>
+<tekst>
+<referenca href="V3xgz9pZi5IuWBjxh">
+</referenca>
+<referenca href="_N1.hJ0x2mTPhLNZUMkBxsLN5Hvl">
+</referenca>
+<referenca href="QCgwC9tt_.C.oTSphrUa7aAZG">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>854621467</redniBroj>
+<tekst>
+<referenca href="tNgmzd7DA">
+</referenca>
+<referenca href="EvMlXwXjFHz.i11_EI8">
+</referenca>
+<referenca href="LZYiLFD93X9-vtLBXEvPKXnz_a">
+</referenca>
+</tekst>
+</stav>
+</clan>
+</odeljak>
+<odeljak>
+<redniBroj>-742148157</redniBroj>
+<simbolickiNaziv>XCXG1AGwlgV3eyhO.XvBbMar4u</simbolickiNaziv>
+<naziv>n5G3kBjlbODFaXUznHDNCw</naziv>
+<clan>
+<naziv>v</naziv>
+<redniBroj>316827836</redniBroj>
+<simbolickiNaziv>fTJT1</simbolickiNaziv>
+<tekst>
+<referenca href="_e0bfe2KY8.YqwkLm-Wj5lbQ.4u">
+</referenca>
+<referenca href="Cb7nv6fl">
+</referenca>
+<referenca href="xq00657h4_bFT">
+</referenca>
+</tekst>
+<stav>
+<redniBroj>1994857671</redniBroj>
+<tekst>
+<referenca href="JY1k">
+</referenca>
+<referenca href="cYp7_7st8Yxy_bisw0">
+</referenca>
+<referenca href="H2q">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-751922114</redniBroj>
+<tekst>
+<referenca href="Ejicq3KStf2vrNk">
+</referenca>
+<referenca href="ksViz8uyW">
+</referenca>
+<referenca href="AiLd">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1673213161</redniBroj>
+<tekst>
+<referenca href="fa-i5nQZnP0L9cFK7ypeAjqqVsT014">
+</referenca>
+<referenca href="ZSZOl83K9usiZs2bdzKY">
+</referenca>
+<referenca href="Y-iXG.0g9MX-nC3MReZVpVufLkn7">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-554742422</redniBroj>
+<tekst>
+<referenca href="y_GjeCzlznQRHdQ8">
+</referenca>
+<referenca href="VGXeD">
+</referenca>
+<referenca href="Evokb">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-1993600987</redniBroj>
+<tekst>
+<referenca href="PJuqq7-u.Nq6y3qcOvTqqsdUc6GPgr">
+</referenca>
+<referenca href="ctfDB-Uebtt.4P8GtyBeong">
+</referenca>
+<referenca href="Is5attxNlGcnkbHaZLJi55ae9m">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-1384877499</redniBroj>
+<tekst>
+<referenca href="Y8UiFR">
+</referenca>
+<referenca href="MF0PgvYxeuO2egVmaPX3-pzGU1sO">
+</referenca>
+<referenca href="YXRxBJH0ZbTVPZ6KJ25.P">
+</referenca>
+</tekst>
+</stav>
+</clan>
+<clan>
+<naziv>RR3wnit</naziv>
+<redniBroj>204412925</redniBroj>
+<simbolickiNaziv>u_hYT3ycT-hRv3_SCtfWr5t_</simbolickiNaziv>
+<stav>
+<redniBroj>-280502666</redniBroj>
+<tekst>
+<referenca href="Xb46GFFjPiY2O1Xkf">
+</referenca>
+<referenca href="_eXTf3nBidaLvl6Z">
+</referenca>
+<referenca href="JJorTb24rf5l3iyqM4">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1658035921</redniBroj>
+<tekst>
+<referenca href="HQxPFD_VhWf6u-.S7j2hTF1Oy">
+</referenca>
+<referenca href="bGrJVRIcsFH_yQ_yoDjMS2">
+</referenca>
+<referenca href="X1pl.OCO2fFz_evjGrb30">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1790969225</redniBroj>
+<tekst>
+<referenca href="A7BoEWpYtfz4p6bw73T">
+</referenca>
+<referenca href="euPHPuPEHix">
+</referenca>
+<referenca href="si9">
+</referenca>
+</tekst>
+</stav>
+<tekst>
+<referenca href="N7LMOw3aHSnwfjxd">
+</referenca>
+<referenca href="e">
+</referenca>
+<referenca href="PoJi1Ll9FA0etBrru249r6ecikaY2">
+</referenca>
+</tekst>
+<tekst>
+<referenca href="b0e">
+</referenca>
+<referenca href="tufEmJJB">
+</referenca>
+<referenca href="bMFhLWRaW_SX6">
+</referenca>
+</tekst>
+</clan>
+<clan>
+<naziv>WVUcaB1Amh2</naziv>
+<redniBroj>1929716421</redniBroj>
+<simbolickiNaziv>YpHnrP2u31sozG-67</simbolickiNaziv>
+<stav>
+<redniBroj>-17774916</redniBroj>
+<tekst>
+<referenca href="TjpnwEYhpy">
+</referenca>
+<referenca href="dYGm3Fio1-b8Knh5Y7cNbK7DQkf">
+</referenca>
+<referenca href="mJHMH">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>635389522</redniBroj>
+<tekst>
+<referenca href="aG">
+</referenca>
+<referenca href="EO1CJ7JycvdtcI1jEQ7lxT3iQlC">
+</referenca>
+<referenca href="sqEsES0IdMfiDHsbnJQ2IorcjmI_">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1742371817</redniBroj>
+<tekst>
+<referenca href="txS6-MunDw">
+</referenca>
+<referenca href="CBJMi.ZdeTRV">
+</referenca>
+<referenca href="Wk8JZwx5SdwS">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-1875627025</redniBroj>
+<tekst>
+<referenca href="q3Suow5ehNG">
+</referenca>
+<referenca href="CDYjIk_omygDNfrFXAm">
+</referenca>
+<referenca href="OE4X7MWvHVnGCiOsAKCRIkDF">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-86333791</redniBroj>
+<tekst>
+<referenca href="EyJ4S1KaHVvL.eVmYM">
+</referenca>
+<referenca href="t4">
+</referenca>
+<referenca href="Qe8">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-914151289</redniBroj>
+<tekst>
+<referenca href="NmRLNkk60FY.YzW-u-JIUI8.Mo">
+</referenca>
+<referenca href="H.FvwTvwrkJv8BGwriDTw7Z">
+</referenca>
+<referenca href="vD">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-2048674036</redniBroj>
+<tekst>
+<referenca href="k">
+</referenca>
+<referenca href="npKX9.6_aUh0uowF.">
+</referenca>
+<referenca href="uY0CY-896_rQz">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1032182966</redniBroj>
+<tekst>
+<referenca href="n15JjHBnJg.iDKsrH.vKVV7n1">
+</referenca>
+<referenca href="UGl.Rm1BKbEZmaGApG0YgRVA7EZ">
+</referenca>
+<referenca href="ebHMMlDvAAauz">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>920713127</redniBroj>
+<tekst>
+<referenca href="M33iO5KiwywGHikp">
+</referenca>
+<referenca href="D5T6m3fq">
+</referenca>
+<referenca href="OF">
+</referenca>
+</tekst>
+</stav>
+</clan>
+</odeljak>
+</glava>
+<glava tipOznacavanja="saTackom">
+<redniBroj>547532935</redniBroj>
+<simbolickiNaziv>sUotyr</simbolickiNaziv>
+<naziv>j_3</naziv>
+<clan>
+<naziv>dCq80riOffJKqySKj</naziv>
+<redniBroj>732075301</redniBroj>
+<simbolickiNaziv>YDCbLZ</simbolickiNaziv>
+<tekst>
+<referenca href="NhMbaEYklgGTljjSPrBI">
+</referenca>
+<referenca href="Mpz3J">
+</referenca>
+<referenca href="VT.IOtHCcSI">
+</referenca>
+</tekst>
+<tekst>
+<referenca href="ip.l5EQx4UwdradKI.W_AoR9E">
+</referenca>
+<referenca href="cdhcVhixUsNQj">
+</referenca>
+<referenca href="zVHndzA8G_k241Gd56g">
+</referenca>
+</tekst>
+<tekst>
+<referenca href="yeK3VdBE.hJbkFq4DY9X">
+</referenca>
+<referenca href="cJrFM4zmz7JAWF0hmL-Vze2Fb69Hru">
+</referenca>
+<referenca href="qcz5fsEvPh7SYg4D0IY_">
+</referenca>
+</tekst>
+</clan>
+<odeljak>
+<redniBroj>740236000</redniBroj>
+<simbolickiNaziv>jlWUGtAqUcAaXmzs5BUR_3NZmM</simbolickiNaziv>
+<naziv>XE0DVP0_ynCzA</naziv>
+<pododeljak>
+<rednoSlovo>hmhXyi2bVwpK_ls7dg</rednoSlovo>
+<naziv>nZK51pPrv</naziv>
+<clan>
+<redniBroj>989903908</redniBroj>
+<simbolickiNaziv>N</simbolickiNaziv>
+<tekst>
+<referenca href="i8q.PA3-j1Z-5CyMkEk0kfT">
+</referenca>
+<referenca href="TmCgq8DaNFU1LZ0hfrOpMx1">
+</referenca>
+<referenca href="Stw-1-9aW">
+</referenca>
+</tekst>
+<stav>
+<redniBroj>-1187954679</redniBroj>
+<tekst>
+<referenca href="kSDrm5wfE4UH.">
+</referenca>
+<referenca href="hf">
+</referenca>
+<referenca href="b2uqcR.3iroPiF.hip">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-1178600877</redniBroj>
+<tekst>
+<referenca href="O">
+</referenca>
+<referenca href="L5fkcN6Uu1VSVi9y5ou8S2.">
+</referenca>
+<referenca href="XRaMaLLJ6607phWpR06zZj3">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>632714951</redniBroj>
+<tekst>
+<referenca href="GUf_W2zkjFbRGi">
+</referenca>
+<referenca href="wpAmTBbwL">
+</referenca>
+<referenca href="F4j3cGjkh">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1659231531</redniBroj>
+<tekst>
+<referenca href="TD8tRPR7hAq.O1jOG">
+</referenca>
+<referenca href="qQVCr">
+</referenca>
+<referenca href="OhXzDjHwpTng4lN">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1510267733</redniBroj>
+<tekst>
+<referenca href="EaM.JP6Ah6x2Y8CF3b9FFu1">
+</referenca>
+<referenca href="Dd7sl8CxWHSfcFU3k1">
+</referenca>
+<referenca href="An6CyCRA3Oo">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>803220644</redniBroj>
+<tekst>
+<referenca href="H">
+</referenca>
+<referenca href="ipdnAUQ5v0IAfD.iEPSeRi9HezkK">
+</referenca>
+<referenca href="sBXi8O_">
+</referenca>
+</tekst>
+</stav>
+</clan>
+</pododeljak>
+<clan>
+<naziv>l9QpOWKtXaDdO</naziv>
+<redniBroj>782293920</redniBroj>
+<simbolickiNaziv>tsJ2vDeTtrH9g5XwOK5ou-BGTo8G.5</simbolickiNaziv>
+<stav>
+<redniBroj>-383244845</redniBroj>
+<tekst>
+<referenca href="W9">
+</referenca>
+<referenca href="gmWe">
+</referenca>
+<referenca href="h">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-746542662</redniBroj>
+<tekst>
+<referenca href="PuwbRBYsuLIglURDczmT_HyHb">
+</referenca>
+<referenca href="pXJ0Rc0iOoZCIxka1HcEjDyeuEeXeP">
+</referenca>
+<referenca href="m">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1798236806</redniBroj>
+<tekst>
+<referenca href="cU7AmS">
+</referenca>
+<referenca href="hVD1EU.c2_zpj6ELiufpxj3n3vMQ">
+</referenca>
+<referenca href="ZC">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-2041642062</redniBroj>
+<tekst>
+<referenca href="xsceIvIVnbam1s">
+</referenca>
+<referenca href="pDuxpoFHbMZ16j45U10Knjxn">
+</referenca>
+<referenca href="CaUCRA1NNV">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-1351161544</redniBroj>
+<tekst>
+<referenca href="JjOMAQ5TfXGeQ">
+</referenca>
+<referenca href="OtfZ-.whNFWYXqaOu">
+</referenca>
+<referenca href="p4QrdjnuYhOiTZozOueZu.">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>770529120</redniBroj>
+<tekst>
+<referenca href="DiCtYmxBYq5r9FLArz">
+</referenca>
+<referenca href="ocqaUm.cokQWzqq5cjoxEmE">
+</referenca>
+<referenca href="VdGwAvwFr3aTlF_29u65jbcDViilSH">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-862288015</redniBroj>
+<tekst>
+<referenca href="Hlj-deLagHY4xjESqWVkkanBF8B">
+</referenca>
+<referenca href="RnEPleDZ1Dz6dhF6KxiPG">
+</referenca>
+<referenca href="RBV0JX14-">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-302947547</redniBroj>
+<tekst>
+<referenca href="yZv_7LrGbvkCOvQgZyZZStLER">
+</referenca>
+<referenca href="RhV3CIn">
+</referenca>
+<referenca href="ULBV8">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-810839926</redniBroj>
+<tekst>
+<referenca href="o.wxuPxg07bBjFTf9W1CL">
+</referenca>
+<referenca href="k0nUWM">
+</referenca>
+<referenca href="r8daUpJa">
+</referenca>
+</tekst>
+</stav>
+</clan>
+<pododeljak>
+<rednoSlovo>kFHB0b4gYAtomRoMx_xHCxHPL</rednoSlovo>
+<naziv>o</naziv>
+<clan>
+<redniBroj>939005763</redniBroj>
+<simbolickiNaziv>GIFzUv</simbolickiNaziv>
+<stav>
+<redniBroj>578927910</redniBroj>
+<tekst>
+<referenca href="JMbSKW3NNAS4bcm8q">
+</referenca>
+<referenca href="yCS8y6v3B.NMYJYb">
+</referenca>
+<referenca href="Z">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-1828746681</redniBroj>
+<tekst>
+<referenca href="O9">
+</referenca>
+<referenca href="sWvlwcLc10YwtB8m">
+</referenca>
+<referenca href="mH5C_J37lTwQyDWXy">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1125410267</redniBroj>
+<tekst>
+<referenca href="cAl">
+</referenca>
+<referenca href="R6YUt88sxYbJ7dHxlZ">
+</referenca>
+<referenca href="_u-uDBVq4FsIlT">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>961022860</redniBroj>
+<tekst>
+<referenca href="rzH8vl9y.9SYYzqHcbUVGh">
+</referenca>
+<referenca href="S8L">
+</referenca>
+<referenca href="VS0dHOxlbCNU7hYbpK3ab">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1316517552</redniBroj>
+<tekst>
+<referenca href="OxbLEgne">
+</referenca>
+<referenca href="mek3DCkokE0PkEOyHO">
+</referenca>
+<referenca href="aapMTA4SMKC">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>823285928</redniBroj>
+<tekst>
+<referenca href="ofkOpUxII2PAZm3wZ7CS0pLh">
+</referenca>
+<referenca href="emjlg0cTsgpt-CAF47YYy1">
+</referenca>
+<referenca href="uYen">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-1626268147</redniBroj>
+<tekst>
+<referenca href="I5x9xIMpt">
+</referenca>
+<referenca href="AC61vo">
+</referenca>
+<referenca href="A">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-1647361892</redniBroj>
+<tekst>
+<referenca href="fyzQKBWzbh-cy3oMc">
+</referenca>
+<referenca href="QZRX4jMTaAgaNr_nkoN9Xvg">
+</referenca>
+<referenca href="Yvj1iR">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>269131207</redniBroj>
+<tekst>
+<referenca href="L3">
+</referenca>
+<referenca href="Be3Gv-">
+</referenca>
+<referenca href="QJuW.CHMd1G8jxqEy5G4bOZyJeM_r2">
+</referenca>
+</tekst>
+</stav>
+</clan>
+</pododeljak>
+</odeljak>
+<clan>
+<naziv>J73ZhablnlsmB1NJ0DkxDRM</naziv>
+<redniBroj>786376940</redniBroj>
+<simbolickiNaziv>jN-_7UxV00LT2X9M4jXOlzyvuKGRg</simbolickiNaziv>
+<stav>
+<redniBroj>-399985939</redniBroj>
+<tekst>
+<referenca href="vzs3LY2qA">
+</referenca>
+<referenca href="WtoWSBMxCu.X1xczQL9vxNC.">
+</referenca>
+<referenca href="Nof2">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>-1108130782</redniBroj>
+<tekst>
+<referenca href="VWsla7R">
+</referenca>
+<referenca href="Khn9">
+</referenca>
+<referenca href="ynG">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>102291901</redniBroj>
+<tekst>
+<referenca href="f7QXGuT09FoGsOY-m6uWOhctyK.j">
+</referenca>
+<referenca href="S87npax">
+</referenca>
+<referenca href="PntbcYg9PuVQ">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>346782822</redniBroj>
+<tekst>
+<referenca href="aL-P7aOd2Wa0VO3r582smFVFb">
+</referenca>
+<referenca href="W1kv7Eg.3l8XLyfkvusYiMK">
+</referenca>
+<referenca href="LSLd7X_9um.t4sFiyQh-.">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>1272733416</redniBroj>
+<tekst>
+<referenca href="RhjeqsDKdft">
+</referenca>
+<referenca href="pMNpsi.">
+</referenca>
+<referenca href="Hkpuj2elzraOU9">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>-1308239319</redniBroj>
+<tekst>
+<referenca href="pxFR0DoInTAlDo6Sq.h1AQeplTzk.U">
+</referenca>
+<referenca href="BtWA6vwlzCpT-JIPf.GVcZ5">
+</referenca>
+<referenca href="X8aaNm1OuDM">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>244534421</redniBroj>
+<tekst>
+<referenca href="i3tHRITI6HwrUg_dCuf">
+</referenca>
+<referenca href="JlZsyM_dii_O0GFd5Xfx">
+</referenca>
+<referenca href="Jn">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-1863325822</redniBroj>
+<tekst>
+<referenca href="pzzHfM0poe33npQQ.-">
+</referenca>
+<referenca href="GuHUZ">
+</referenca>
+<referenca href="KC9z7JAlJ">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>-1244764212</redniBroj>
+<tekst>
+<referenca href="MAhmgGq9A">
+</referenca>
+<referenca href="TbT0ygNgHZAZ7eIAwzM">
+</referenca>
+<referenca href="uEw79bVPtO1mvYpfIvsw.9q">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>-1818527972</redniBroj>
+<tekst>
+<referenca href="neGioQDTEWm1ND7vXUo">
+</referenca>
+<referenca href="H7YfmHi">
+</referenca>
+<referenca href="egmHafNlpbW0Fyhls9wuVm0hi">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-608551862</redniBroj>
+<tekst>
+<referenca href="MM1fvaVzNLyxwBvUCV5d">
+</referenca>
+<referenca href="VSv">
+</referenca>
+<referenca href="SKE.rT">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-619071724</redniBroj>
+<tekst>
+<referenca href="VhXDtFoHsz3xmz2">
+</referenca>
+<referenca href="rODA7pN28CuAyjT">
+</referenca>
+<referenca href="PKFwrf">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>-775491329</redniBroj>
+<tekst>
+<referenca href="GNN6gkJXrf5dCl">
+</referenca>
+<referenca href="WzSwcMKGF4l-xGutmmg5-G6EpO">
+</referenca>
+<referenca href="O4r16a0-FDajVnD6o4">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>1528671380</redniBroj>
+<tekst>
+<referenca href="JStNtgTdQNlp6yFo_lSZo6he_Fo">
+</referenca>
+<referenca href="zayja">
+</referenca>
+<referenca href="D6qE58">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-429726399</redniBroj>
+<tekst>
+<referenca href="NIR8bjq_p.aiPYn.">
+</referenca>
+<referenca href="OYayQ4IpKYVXVTCrT1">
+</referenca>
+<referenca href="tsTMNi">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>2099782610</redniBroj>
+<tekst>
+<referenca href="Mr9NH7fJ3JvtFeEXvY">
+</referenca>
+<referenca href="Kk.Yg5fTyxK4Q26gVBVjqIDJIC2">
+</referenca>
+<referenca href="IbANjeeC6ZpWf9jyr5Mk">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>955102351</redniBroj>
+<tekst>
+<referenca href="lfdE49nBaY2vSIlUaFv">
+</referenca>
+<referenca href="LpDeZv3bVc">
+</referenca>
+<referenca href="wt5RWwSsY0cc0fLIgs">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>1794220790</redniBroj>
+<tekst>
+<referenca href="Pgy">
+</referenca>
+<referenca href="e3csA">
+</referenca>
+<referenca href="uXXZUQicpJ3L8N3eU4k4RFKJ">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-189262146</redniBroj>
+<tekst>
+<referenca href="Lx">
+</referenca>
+<referenca href="HJu">
+</referenca>
+<referenca href="U4">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>65945603</redniBroj>
+<tekst>
+<referenca href="kHtPcKWXIeOkaqd_rAkKvYGyWVB5Ag">
+</referenca>
+<referenca href="xsOvwWuka9GY">
+</referenca>
+<referenca href="TtMIg0nn.Cz_3pDW9ztyj">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>-1762378475</redniBroj>
+<tekst>
+<referenca href="rFNSgZUPhQGJh">
+</referenca>
+<referenca href="ovz8">
+</referenca>
+<referenca href="D">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>-2063393520</redniBroj>
+<tekst>
+<referenca href="H5EPr">
+</referenca>
+<referenca href="N-emyXv7TzU">
+</referenca>
+<referenca href="I_ptKCs">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>1309066692</redniBroj>
+<tekst>
+<referenca href="N">
+</referenca>
+<referenca href="wDY_mH">
+</referenca>
+<referenca href="G8aScI">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-1063844326</redniBroj>
+<tekst>
+<referenca href="e">
+</referenca>
+<referenca href="VgORsFdYgo9">
+</referenca>
+<referenca href="h">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>-1977018539</redniBroj>
+<tekst>
+<referenca href="xQzVDM62Rn8.gppF">
+</referenca>
+<referenca href="XA4Mf">
+</referenca>
+<referenca href="MziqlW-gkpzrrFXPPrp_QKTJ_RBw3d">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>-1392829325</redniBroj>
+<tekst>
+<referenca href="fPJ98FKEGvhlt.Q8YBOChPcO7f3HL">
+</referenca>
+<referenca href="U0Lad5E7nMH6ACmkiNpo-dIPA1N">
+</referenca>
+<referenca href="Sgbmuza">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>1996634816</redniBroj>
+<tekst>
+<referenca href="jGtu">
+</referenca>
+<referenca href="roMLn">
+</referenca>
+<referenca href="BmfC5B">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-249702360</redniBroj>
+<tekst>
+<referenca href="j8ygJOQUF_8_">
+</referenca>
+<referenca href="rGTxau">
+</referenca>
+<referenca href="QN.mB">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>289082121</redniBroj>
+<tekst>
+<referenca href="QFQR1vp0P4WjOjsLif6UrwT-vbT">
+</referenca>
+<referenca href="D_eUQlwm5vU9GNb9x">
+</referenca>
+<referenca href="YBN4wQ9EZBQy">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>319727292</redniBroj>
+<tekst>
+<referenca href="fcT9J8DTQY4QEz6If">
+</referenca>
+<referenca href="Ie">
+</referenca>
+<referenca href="lKUCLq">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>795429983</redniBroj>
+<tekst>
+<referenca href="i.-dU5jQ_uOdfu">
+</referenca>
+<referenca href="cH0ZR6kD">
+</referenca>
+<referenca href="gmfxAtegbw04.Sg7CMvgrL">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-2002344602</redniBroj>
+<tekst>
+<referenca href="e4Y4Y55w">
+</referenca>
+<referenca href="A">
+</referenca>
+<referenca href="Dxd6p">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>1527074472</redniBroj>
+<tekst>
+<referenca href="pQ7gQ.DQ">
+</referenca>
+<referenca href="C8sszm41NBTBIN09leLvP6MIovbMq">
+</referenca>
+<referenca href="FOYy0t2GeZzm_Xu3XEi-Z_3IgL">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>777143748</redniBroj>
+<tekst>
+<referenca href="pP0Y2UU">
+</referenca>
+<referenca href="IcT">
+</referenca>
+<referenca href="TOi9P3">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>92934526</redniBroj>
+<tekst>
+<referenca href="I6hWrXl7sCDnelQcb1pxJ5">
+</referenca>
+<referenca href="Uy">
+</referenca>
+<referenca href="GX1xzzua-S3_U_cn">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-998514737</redniBroj>
+<tekst>
+<referenca href="NP97fS_I5cXtmNg8JHzaUZLOXZm5Ar">
+</referenca>
+<referenca href="HvRxTOy">
+</referenca>
+<referenca href="G6IxTrWe7Qnl0eE5rwxf1mCV5xqAS">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+</clan>
+</glava>
+<glava tipOznacavanja="saTackom">
+<redniBroj>959389292</redniBroj>
+<simbolickiNaziv>wqQZBtxKqNYk4</simbolickiNaziv>
+<naziv>BVWAY8rQzUGKh</naziv>
+<odeljak>
+<redniBroj>1376705862</redniBroj>
+<simbolickiNaziv>JRCWpN</simbolickiNaziv>
+<naziv>TIP</naziv>
+<pododeljak>
+<rednoSlovo>vQZp5VIj9LgMCmt</rednoSlovo>
+<naziv>_klf.gGYjJGFGn7Q-r0mV</naziv>
+<clan>
+<redniBroj>-1680622043</redniBroj>
+<simbolickiNaziv>Dd3X9yJJgVGuLMnKH3RmNJvE5DeuO</simbolickiNaziv>
+<stav>
+<redniBroj>-1887140241</redniBroj>
+<tekst>
+<referenca href="MiV">
+</referenca>
+<referenca href="W4X8UL4l8kiP345f">
+</referenca>
+<referenca href="bTh">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>686279879</redniBroj>
+<tekst>
+<referenca href="Irl5zpa-VZSX.yLqyF">
+</referenca>
+<referenca href="zc2q9">
+</referenca>
+<referenca href="kmH-UPWQ4_b0efIGF0j4">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-389243893</redniBroj>
+<tekst>
+<referenca href="hIItgVuu17gPl3kepbjK">
+</referenca>
+<referenca href="Bgcb">
+</referenca>
+<referenca href="Swx_J-idL">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-163702884</redniBroj>
+<tekst>
+<referenca href="h">
+</referenca>
+<referenca href="upHJyqJm">
+</referenca>
+<referenca href="q1UDNe7zg">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-502034040</redniBroj>
+<tekst>
+<referenca href="Q_qQ">
+</referenca>
+<referenca href="DLNt5EDJ3tbWgA">
+</referenca>
+<referenca href="zRC6MI_2KF">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1776276661</redniBroj>
+<tekst>
+<referenca href="YWUnf">
+</referenca>
+<referenca href="_eUOwNZXO">
+</referenca>
+<referenca href="nI4OvkF3_8pncF3Ybo_t.vbY7U">
+</referenca>
+</tekst>
+</stav>
+<tekst>
+<referenca href="ovJ">
+</referenca>
+<referenca href="RW14Ahzq2y">
+</referenca>
+<referenca href="zvvVAeLIK.0qED1allyCR5BpE6X0t">
+</referenca>
+</tekst>
+</clan>
+</pododeljak>
+<pododeljak>
+<rednoSlovo>ioG7FxIGqg5VaYzbVp</rednoSlovo>
+<naziv>Kotbzm0flakOokC</naziv>
+<clan>
+<redniBroj>1889038337</redniBroj>
+<simbolickiNaziv>dhLhsDBydIqbyLDgI4kAZ61889d</simbolickiNaziv>
+<stav>
+<redniBroj>-1920460801</redniBroj>
+<tekst>
+<referenca href="zGAndSg_0kMVt">
+</referenca>
+<referenca href="h4qpsyO">
+</referenca>
+<referenca href="HWuzPxCKylbW957cokWRr-1AixXt">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-813313374</redniBroj>
+<tekst>
+<referenca href="BOmnd.Kx">
+</referenca>
+<referenca href="unQ0vb1UBDLV18Ni_">
+</referenca>
+<referenca href="H8CmLrYS">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-1902139489</redniBroj>
+<tekst>
+<referenca href="Lp9jVTSi">
+</referenca>
+<referenca href="N7e8zm8STZvJCIfA-Hq4WU">
+</referenca>
+<referenca href="MeFn8TKY1">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-909711762</redniBroj>
+<tekst>
+<referenca href="vw8d">
+</referenca>
+<referenca href="uyCakvRclVe9DqOKGHdY">
+</referenca>
+<referenca href="Sbw">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>1334036124</redniBroj>
+<tekst>
+<referenca href="_F1QQ-o_cxf5FfpjuWEgi7THu">
+</referenca>
+<referenca href="ha-yXr4J6ccikrCG">
+</referenca>
+<referenca href="KSVMcZXV6mQrcUVA3zOlofJ">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>748865431</redniBroj>
+<tekst>
+<referenca href="puSQCblZgT9iUUcilqtxz">
+</referenca>
+<referenca href="YpNe.o9Y0cRuWra6pIE_UQW">
+</referenca>
+<referenca href="R7VM0g9PPDdQF8mJ4VqK5_Ox6YTd4">
+</referenca>
+</tekst>
+</stav>
+<tekst>
+<referenca href="G.RquhUQQ2g-E0">
+</referenca>
+<referenca href="pdTWBA1A">
+</referenca>
+<referenca href="TfMB">
+</referenca>
+</tekst>
+</clan>
+</pododeljak>
+<clan>
+<naziv>gYnMBJtIVSnwYMqrx.S-jO9C5KD</naziv>
+<redniBroj>-40249828</redniBroj>
+<simbolickiNaziv>sM</simbolickiNaziv>
+<tekst>
+<referenca href="P6">
+</referenca>
+<referenca href="lXmR-fFHkM21tWIDagpbYQfZ">
+</referenca>
+<referenca href="ASH">
+</referenca>
+</tekst>
+<stav>
+<redniBroj>729894605</redniBroj>
+<tekst>
+<referenca href="gyj9O1cwbV1AsRZ3v">
+</referenca>
+<referenca href="WWjIyoWBxZyvIePvi0aFJ">
+</referenca>
+<referenca href="jQUEjNoosf6gXz4v">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-768099390</redniBroj>
+<tekst>
+<referenca href="WhFlB">
+</referenca>
+<referenca href="rXit47m4Z_utGKvUXZw_dNo6NUp">
+</referenca>
+<referenca href="MsZ0ugMcero5WIUR3kf-gEKFI">
+</referenca>
+</tekst>
+</stav>
+<stav>
+<redniBroj>-2017345034</redniBroj>
+<tekst>
+<referenca href="nqVdzaPmI95.yISx">
+</referenca>
+<referenca href="YXz3zSiwiAiYmRWZ">
+</referenca>
+<referenca href="kI.B.-8a.R">
+</referenca>
+</tekst>
+</stav>
+<tekst>
+<referenca href="iLaVuhAQhqDoS">
+</referenca>
+<referenca href="C4PBoezSGXOX61EM8Pd86liTSWt5">
+</referenca>
+<referenca href="rMyo1HTVqXy">
+</referenca>
+</tekst>
+</clan>
+</odeljak>
+<clan>
+<naziv>TtIwV</naziv>
+<redniBroj>-1490046951</redniBroj>
+<simbolickiNaziv>l-K2ph.b_BxRJ0oL1fXgGsE6</simbolickiNaziv>
+<stav>
+<redniBroj>1388586419</redniBroj>
+<tekst>
+<referenca href="kuyNFNPu_U-w3Wrmr">
+</referenca>
+<referenca href="WN3rK">
+</referenca>
+<referenca href="IHHLQjE">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>-1350132249</redniBroj>
+<tekst>
+<referenca href="XAmtqi">
+</referenca>
+<referenca href="gzh6TBWaor8P2WlTh2uqY.A0uFdJ">
+</referenca>
+<referenca href="imdQ5mm0awfiFMNd">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-109290304</redniBroj>
+<tekst>
+<referenca href="QhZ8WIaV4iEPNJVg21rD9Q">
+</referenca>
+<referenca href="CE5Ad.yY">
+</referenca>
+<referenca href="YZlC">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-469903209</redniBroj>
+<tekst>
+<referenca href="EAH">
+</referenca>
+<referenca href="Tt8TVkbIb.b3">
+</referenca>
+<referenca href="Ws3THR8eb2pKfYRwvAn9T113OTZQy">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>-514085776</redniBroj>
+<tekst>
+<referenca href="s6GdDakwN">
+</referenca>
+<referenca href="c8aCg6hkz.V">
+</referenca>
+<referenca href="O6HRkCFLD5Ld9HvYOXxMP">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>-1937865850</redniBroj>
+<tekst>
+<referenca href="sszOZBQHc_IkjgMAqRXyK7uCEco3Dq">
+</referenca>
+<referenca href="Rg5OK_0h3wT8gBX">
+</referenca>
+<referenca href="AS4nJl.oeVLX9.wtldPUoSii">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>1263206876</redniBroj>
+<tekst>
+<referenca href="hTlhoW0ARJBBAHSVirOZ4L51Ubzn">
+</referenca>
+<referenca href="n4bz9rasiB1yQ74y">
+</referenca>
+<referenca href="JNtPpQjhvOCC_er9CaVTvoLtv1Zw">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>194914037</redniBroj>
+<tekst>
+<referenca href="I-l">
+</referenca>
+<referenca href="Bj4tYXXR">
+</referenca>
+<referenca href="vlquF0txPjC6WT0pUn8IhJKhluUs_F">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>355957894</redniBroj>
+<tekst>
+<referenca href="NLfwn">
+</referenca>
+<referenca href="Dvgzdg6L2C1QEkdsdZ">
+</referenca>
+<referenca href="RDy1hA587I.XDQ4TJYr4">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>909124011</redniBroj>
+<tekst>
+<referenca href="QROyDc_H">
+</referenca>
+<referenca href="ZbUrakPwY4s4CVFVkWhP">
+</referenca>
+<referenca href="g4ZaY">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>1779573425</redniBroj>
+<tekst>
+<referenca href="_X">
+</referenca>
+<referenca href="KZlV-LHpfEBMj9X.Tg1dDW0x1">
+</referenca>
+<referenca href="HtaP_FFWq9szwN.fimfTJ">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>512200790</redniBroj>
+<tekst>
+<referenca href="Hid6cxbSoJhqugxQq">
+</referenca>
+<referenca href="ksdb0L">
+</referenca>
+<referenca href="DT2pOFBXmgHIDQ">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<tekst>
+<referenca href="kM">
+</referenca>
+<referenca href="aNfoGkK3HOV2uti74-orVmIZuIop">
+</referenca>
+<referenca href="e8rC0nnrA07jlORhjaZ3yh">
+</referenca>
+</tekst>
+<tekst>
+<referenca href="q">
+</referenca>
+<referenca href="W-HO-FS0y.1Ew5LV">
+</referenca>
+<referenca href="y8dMIe4axktR7mYRhDh">
+</referenca>
+</tekst>
+</clan>
+<clan>
+<naziv>xyCmSEUbBurx0rMHDEMJTR</naziv>
+<redniBroj>-868313457</redniBroj>
+<simbolickiNaziv>R7bjIVTVAiz92RkQ</simbolickiNaziv>
+<stav>
+<redniBroj>1549985221</redniBroj>
+<tekst>
+<referenca href="LMicJyY-U">
+</referenca>
+<referenca href="EwqWRAvylr2aYU3vBOiM-0sVmg2p">
+</referenca>
+<referenca href="o-Il70UK-">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>36964846</redniBroj>
+<tekst>
+<referenca href="Q">
+</referenca>
+<referenca href="HGbK43_Z19.NR1aYRLWKc3">
+</referenca>
+<referenca href="BHqlMpoqqird">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-1426272806</redniBroj>
+<tekst>
+<referenca href="ke">
+</referenca>
+<referenca href="LV.F">
+</referenca>
+<referenca href="axYebjhgdEH8..VOquggLCXS-">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-903556546</redniBroj>
+<tekst>
+<referenca href="B">
+</referenca>
+<referenca href="P3_EfljIxhp_">
+</referenca>
+<referenca href="zlu2I.9xKnALZ3Drn2Z8hwEjiKXOqi">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>-1643973964</redniBroj>
+<tekst>
+<referenca href="WqKA8y7rmUbaU.8AqVNGzVdRKk">
+</referenca>
+<referenca href="EZruIP7Ye98ihs1XWhHQu7M">
+</referenca>
+<referenca href="IBPyVtvhwN3BPLIggWWqJV">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>-1070113179</redniBroj>
+<tekst>
+<referenca href="HiR.cqkT_Ameh">
+</referenca>
+<referenca href="H-5">
+</referenca>
+<referenca href="UXZYnwuazNgFFNehcgG9tw">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>1445401317</redniBroj>
+<tekst>
+<referenca href="QuD8l4s2UoipHRh8B.WT71ZP0PEWPD">
+</referenca>
+<referenca href="iZkducS7ceQjhR">
+</referenca>
+<referenca href="OY7TxvXniXxnylFH1X">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-467099888</redniBroj>
+<tekst>
+<referenca href="wd7">
+</referenca>
+<referenca href="x74hT9seQUZ9dfdxbGHbrJBcym">
+</referenca>
+<referenca href="qq4eeRgN">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>350962849</redniBroj>
+<tekst>
+<referenca href="AQ9D">
+</referenca>
+<referenca href="xZnzxpoVdRxx2QlA58c1evwXutI">
+</referenca>
+<referenca href="X4v7H">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>296229365</redniBroj>
+<tekst>
+<referenca href="Xpa17gPMA6n4tZ2.sMHHhGOeD0UbN">
+</referenca>
+<referenca href="dY">
+</referenca>
+<referenca href="xOv-0Bb7SO3SQH">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>320014021</redniBroj>
+<tekst>
+<referenca href="lBKKdnPXgfYP-eW">
+</referenca>
+<referenca href="mBNhtk5vzhjKul3vGa">
+</referenca>
+<referenca href="V2uCft_8.8Yf2JT6bsS1k">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-907931370</redniBroj>
+<tekst>
+<referenca href="uR4X94So.r">
+</referenca>
+<referenca href="RIYUmgx2NvVMIE8fuF">
+</referenca>
+<referenca href="RXW_oxW0d-Y7asw_">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>-226053097</redniBroj>
+<tekst>
+<referenca href="CkfwZo26PEb">
+</referenca>
+<referenca href="Oiu9hhp_m.Pr-dk">
+</referenca>
+<referenca href="l1O-6RgzhQ0FfPQTPWyUH_iBWNw-U">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>1648925256</redniBroj>
+<tekst>
+<referenca href="isMMu">
+</referenca>
+<referenca href="H7S9mCYsVwW0YvOucqhbFdiMQJjfR">
+</referenca>
+<referenca href="sgwjiQueRYUXGfmV-MyCpBkb">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-1984473385</redniBroj>
+<tekst>
+<referenca href="vkKEJar1kYKxw2oR59N">
+</referenca>
+<referenca href="nJGUjQmGSs7ViAG3OU9Q8PvE6pSN2">
+</referenca>
+<referenca href="Byyk.irRunkQ.ily0VNET5tNped4">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-1667537427</redniBroj>
+<tekst>
+<referenca href="aGHClfsKRCI1gZi_QkiHytzqz">
+</referenca>
+<referenca href="WVu_k.YAE-0cZxpy1zu">
+</referenca>
+<referenca href="FYsFyVul1Fb6JWwqsg2S8RxCqtu">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>794578447</redniBroj>
+<tekst>
+<referenca href="dqtWyiCJrs8jn1nMnf">
+</referenca>
+<referenca href="cB4.hW1SXe7Hwo4">
+</referenca>
+<referenca href="p_zT6G4x9SIRrtJvOSbyh">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>1240766271</redniBroj>
+<tekst>
+<referenca href="ziaowc-ucQ02ba2f_py8QjYC-">
+</referenca>
+<referenca href="ZSpUz.JKVrf4YWqodOh3.gGTu7">
+</referenca>
+<referenca href="CJQa8T3MGQ">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-822538954</redniBroj>
+<tekst>
+<referenca href="pEGf3">
+</referenca>
+<referenca href="m-EMyLBTj7PqKIUTW">
+</referenca>
+<referenca href="mUGQp3nclqwK7BfwJ-eeLgqAn">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-1730116889</redniBroj>
+<tekst>
+<referenca href="JQPtah-KC">
+</referenca>
+<referenca href="nEK0Zx">
+</referenca>
+<referenca href="eC6xWPye0hsD2fA60DrtT">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<stav>
+<redniBroj>448494304</redniBroj>
+<tekst>
+<referenca href="eiq.sGYMqDPrNnjfTop">
+</referenca>
+<referenca href="g86ZCfqqyAF8Y4">
+</referenca>
+<referenca href="qy.bfZcXnw_juWNnHfSSNob">
+</referenca>
+</tekst>
+<tacka>
+<redniBroj>1582922612</redniBroj>
+<tekst>
+<referenca href="K7dzFzOlzF0QD2eqbPeW.jR9G-">
+</referenca>
+<referenca href="CD-MVp8XN2nAbCVg">
+</referenca>
+<referenca href="gLNL">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>369417112</redniBroj>
+<tekst>
+<referenca href="MjQ77au7H6yQ">
+</referenca>
+<referenca href="drg0CKs_tJGozk">
+</referenca>
+<referenca href="wEny.SJ7Kw">
+</referenca>
+</tekst>
+</tacka>
+<tacka>
+<redniBroj>-2111143388</redniBroj>
+<tekst>
+<referenca href="JE6b7nKhFjIqvMos7nLtP15MO4pLPa">
+</referenca>
+<referenca href="GY1SdPny83YKxCcfBm">
+</referenca>
+<referenca href="a3a7MJEN">
+</referenca>
+</tekst>
+</tacka>
+</stav>
+<tekst>
+<referenca href="RDOyp4nCrttLFOPL">
+</referenca>
+<referenca href="lYXLFopx5Ft">
+</referenca>
+<referenca href="lyqBG3bOFcNY2iXh8yRcJJOJ">
+</referenca>
+</tekst>
+</clan>
+</glava>
+</deo>
+</propis>

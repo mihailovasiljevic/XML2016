@@ -163,7 +163,7 @@ public class Act extends Controller {
 		XMLDocumentManager xmlManager = client.newXMLDocumentManager();
 
 		// Define a URI value for a document.
-		String docId = "/acts/15982287759751844109.xml";
+		String docId = docUri;
 
 		// Defining namespace mappings
 		EditableNamespaceContext namespaces = new EditableNamespaceContext();
@@ -174,7 +174,7 @@ public class Act extends Controller {
 		DocumentPatchBuilder patchBuilder = xmlManager.newPatchBuilder();
 		patchBuilder.setNamespaces(namespaces);
 
-		String patch = "\t<b:status>nacelo</b:status>\n";
+		String patch = "\t<b:status>povucen</b:status>\n";
 
 		// Defining XPath context
 		String contextXPath1 = "/b:propis/b:status";
@@ -188,6 +188,8 @@ public class Act extends Controller {
 		// Release the client
 		client.release();
 	}
+	
+	
 	
     public static void saveAct(){
     	
@@ -307,6 +309,8 @@ public class Act extends Controller {
 		}
 		
     }
+    
+
     
 	/**
 	 * Serializes DOM tree to an arbitrary OutputStream.
