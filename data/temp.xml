@@ -1,8 +1,8 @@
 <?xml  version="1.0" encoding="UTF-8"?>
 <propis xsi:schemaLocation="http://www.ftn.uns.ac.rs/pravniAkt file:/C:/Users/Nemanja/Desktop/Scheme/pinf_xws_docs/xml/schema/akt.xsd" xmlns="http://www.ftn.uns.ac.rs/pravniAkt" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<status>povucen</status>
+<status>predlozen</status>
 <oznaka>842547790</oznaka>
-<naziv>З А К О Н О ИЗВРШЕЊУ И ОБЕЗБЕЂЕЊУ</naziv>
+<naziv>zakon test test</naziv>
 <predlagac>MTYOGL2.IaH</predlagac>
 <deo>
 <redniBroj>-2042767452</redniBroj>

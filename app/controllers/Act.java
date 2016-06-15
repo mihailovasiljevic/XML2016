@@ -84,16 +84,17 @@ public class Act extends Controller {
 
 			// Search within a specific collection
 			queryDefinition.setCollections(COLLECTION);
-
+			queryManager.setPageLength(500);
 			SearchHandle results = queryManager.search(queryDefinition, new SearchHandle());
-
+			
 			// Serialize search results to the standard output
 			MatchDocumentSummary matches[] = results.getMatchResults();
-
+		
 			MatchDocumentSummary result = null;
 			MatchLocation locations[];
 			String text;
-			
+			System.out.println("Length: " + matches.length);
+			System.out.println("Results" + results.getTotalResults());
 			for (int i = 0; i < matches.length; i++) {
 				result = matches[i];
 				System.out.println((i + 1) + ". RESULT DETAILS: ");
