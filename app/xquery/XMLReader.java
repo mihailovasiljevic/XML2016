@@ -3,7 +3,12 @@ package xquery;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.io.StringWriter;
 
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerConfigurationException;
@@ -18,6 +23,13 @@ import org.w3c.dom.Node;
 
 
 
+
+
+
+
+
+
+import rs.ac.uns.ftn.pravniakt.Propis;
 
 import com.marklogic.client.DatabaseClient;
 import com.marklogic.client.DatabaseClientFactory;
@@ -84,33 +96,47 @@ public class XMLReader {
 		Document doc = content.get();
 		client.release();
 		return doc;
-		/*
-		 * A collection defines a set of documents in the database. You can set
-		 * documents to be in any number of collections either at the time the
-		 * document is created or by updating it.
-		 * 
-		 */
-		
-		// Reading metadata
-		//System.out.println("[INFO] Assigned collections: " + metadata.getCollections());
-
-		// Serializing DOM tree to standard output.
-		//System.out.println("[INFO] Retrieved content:");
-		//transform(doc, System.out);
-		
-		// Release the client
-		
 
 	}
 	
-	/**
-	 * Serializes DOM tree to an arbitrary OutputStream.
-	 *
-	 * @param node a node to be serialized
-	 * @param out an output stream to write the serialized 
-	 * DOM representation to
-	 * 
-	 */
+	public static Propis getPropis(String docId) {
+		Propis propis = null;
+		try {
+			Document doc = XMLReader.run(Util.loadProperties(), docId);
+			JAXBContext context;
+			context = JAXBContext.newInstance("rs.ac.uns.ftn.pravniakt");
+			Unmarshaller unmarshaller = context.createUnmarshaller();
+			propis = (Propis) unmarshaller.unmarshal(doc);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (JAXBException e) {
+			e.printStackTrace();
+		}
+		return propis;
+	}
+	
+	public static String getPropisText(String docId) {
+		Propis propis = XMLReader.getPropis(docId);
+		JAXBContext context;
+		StringWriter sw = null;
+		try {
+			context = JAXBContext.newInstance("rs.ac.uns.ftn.pravniakt");
+			Marshaller marshaller = context.createMarshaller();
+			sw = new StringWriter();
+			marshaller.marshal(propis, sw);
+			System.out.println(sw.toString());
+		} catch (JAXBException e1) {
+			e1.printStackTrace();
+		}
+		if(sw != null) {
+			return sw.toString();
+		} else {
+			return null;
+		}
+	}
+	
 	private static void transform(Node node, OutputStream out) {
 		try {
 

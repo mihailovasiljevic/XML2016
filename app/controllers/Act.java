@@ -3,11 +3,13 @@ package controllers;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
@@ -340,22 +342,14 @@ public class Act extends Controller {
 	}
 
 	public static void genPdfAct(String uri) {
+
 		
-		System.out.println("ulaz");
-		System.out.println(uri);
-		
-		try {
-			client = DatabaseClientFactory.newClient(Util.loadProperties().host, Util.loadProperties().port, Util.loadProperties().database, Util.loadProperties().user, Util.loadProperties().password,
-					Util.loadProperties().authType);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		XMLDocumentManager xmlManager = client.newXMLDocumentManager();
+		String docId = "/acts/"+uri+".xml";
+		String text = XMLReader.getPropisText(docId);
+		System.out.println(text.toString());
 		
 		 try {
-			new XSLFOTransformer().test();
+			new XSLFOTransformer().test(text);
 		} catch (SAXException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
