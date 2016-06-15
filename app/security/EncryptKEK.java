@@ -40,7 +40,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import database.FilePaths;
+import controllers.Application;
 
 //Generise tajni kljuc
 //Kriptije sadrzaj elementa student tajnim kljucem
@@ -50,7 +50,7 @@ public class EncryptKEK {
 	
 	private  String IN_FILE = "./xml/akt.xml";
 	private  String OUT_FILE = "./xml/akt_enc.xml";
-	private static final  String KEY_STORE_FILE = FilePaths.keystores+"primer.jks";
+	private static final  String KEY_STORE_FILE = Application.projectPath+"/XML2016/data/"+"primer.jks";
 	public  String pass;
 	
     static {

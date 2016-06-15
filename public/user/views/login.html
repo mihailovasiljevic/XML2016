@@ -12,8 +12,9 @@ angular.module('user').controller('inputCtrl2', ['$scope',
 <div ng-controller="inputCtrl2">
 <table align="center" border="1">
 <tr><th colspan="2">Login</th></tr>
-<tr><td>Username:</td><td><input type="text" ng-model="user.username"></td></tr>
-<tr><td>Password:</td><td><input type="text" ng-model="user.password"></td></tr>
-<tr><td colspan="2" align="center"><input type="button" value="Submit" ng-click="create()"></td></tr>
+<tr><td>Username:</td><td><input type="text" ng-model="user.username" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"></td></tr>
+<tr><td>Password:</td><td><input type="text" ng-model="user.password" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"></td></tr>
+<tr><td colspan="2" align="center"><input type="button" value="Submit" ng-click="create() " class="input-btn"></td></tr>
 </table>
+<span ng-bind="error" style="color:red; font-weight:bold; font-size:20px; padding-left:450px;"></span>
 </div>

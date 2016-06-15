@@ -1,16 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<Korisnici xmlns="http://www.ftn.uns.ac.rs/korisnici">
+<?xml version="1.0" encoding="UTF-8"?><Korisnici xmlns="http://www.ftn.uns.ac.rs/korisnici">
     <Korisnik>
         <KorisnickoIme>wq</KorisnickoIme>
         <Lozinka>www</Lozinka>
-        <Ime>dsa</Ime>
+        <Ime/>
         <Prezime>dd</Prezime>
         <Uloga>gradjanin</Uloga>
-        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
 <ds:KeyName>Kriptovani tajni kljuc</ds:KeyName>
-<xenc:EncryptedKey xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-1_5" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"/><xenc:CipherData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"><xenc:CipherValue xmlns:xenc="http://www.w3.org/2001/04/xmlenc#">syeo+xxx8ZzTH/lXz0CwppVzhgaNVc0/azxzpCSzcedo4BLay0+E68Vr1tWGAB4lcoPxy2j26NNR
-xxnL8JVnPCvUMMi8PS+57bJVKNKVeDMC2UNfhnKqJ8p036B1uOdsbrNJTjS+ij4bi55qeADHXPX1
-XSgC+fkjcMaBj6G9N6k=</xenc:CipherValue></xenc:CipherData></xenc:EncryptedKey></ds:KeyInfo><xenc:CipherData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#"><xenc:CipherValue xmlns:xenc="http://www.w3.org/2001/04/xmlenc#">+9itenpk/K9BG7UVifDssA==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+<xenc:EncryptedKey><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-1_5"/><xenc:CipherData><xenc:CipherValue>uh8lBQAukI2ciHcqkSDzKdubK21I7yDBVYSAt7E6/eHnWg+8TNUgzw1vZQ9Rd+LYDv4FQK8I+Nxo
+Dot5g7t7hRBCdAjz4qp9fDdFQ4I2HD6n7N2cAd0ervi5e/t134j0X98DxNMXUU2AbnMl+XftI1Mp
+D4qsg4oztr//sk5WjcY=</xenc:CipherValue></xenc:CipherData></xenc:EncryptedKey></ds:KeyInfo><xenc:CipherData><xenc:CipherValue>zvKXH6VEZDCu1yevL1icvg==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
     </Korisnik>
     <Korisnik>
         <KorisnickoIme>tggttg</KorisnickoIme>
@@ -360,6 +359,42 @@ XSgC+fkjcMaBj6G9N6k=</xenc:CipherValue></xenc:CipherData></xenc:EncryptedKey></d
         <Uloga>gradjanin</Uloga>
         <Email>pp</Email>
         <TimeStamp>Tue Jun 14 12:00:14 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>e</KorisnickoIme>
+        <Lozinka>e</Lozinka>
+        <Ime>e</Ime>
+        <Prezime>e</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>e</Email>
+        <TimeStamp>Wed Jun 15 20:20:21 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>sad</KorisnickoIme>
+        <Lozinka>dsa</Lozinka>
+        <Ime>aa</Ime>
+        <Prezime>ad</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>dds</Email>
+        <TimeStamp>Wed Jun 15 20:25:08 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>uu</KorisnickoIme>
+        <Lozinka>uuu</Lozinka>
+        <Ime>uu</Ime>
+        <Prezime>uu</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>uu</Email>
+        <TimeStamp>Wed Jun 15 20:27:55 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>dsa</KorisnickoIme>
+        <Lozinka>e</Lozinka>
+        <Ime>das</Ime>
+        <Prezime>das</Prezime>
+        <Uloga>gradjanin</Uloga>
+        <Email>as</Email>
+        <TimeStamp>Wed Jun 15 20:37:46 CEST 2016</TimeStamp>
     <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
 <ds:SignedInfo>
 <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
@@ -370,13 +405,13 @@ XSgC+fkjcMaBj6G9N6k=</xenc:CipherValue></xenc:CipherData></xenc:EncryptedKey></d
 <ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"/>
 </ds:Transforms>
 <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-<ds:DigestValue>oInChDN0EO0Ov6ROT3DosDoMWOY=</ds:DigestValue>
+<ds:DigestValue>haOXxdZcM00mEKLjOpR6+gwe+EQ=</ds:DigestValue>
 </ds:Reference>
 </ds:SignedInfo>
 <ds:SignatureValue>
-iHL5gAojx25PKwAavumx8jxgnsd5Q2Khii3RXH9JHhG3d+bQlkmR8UsDMwDLjOHvTYZvA/gUwOQB
-73rC9m8vpA0Fucbxd770LDjO7+YOjOoAAPAuENlA37JUvM3vAqwQTTqYo+P9A+6K5Z99LdOJ+Mfj
-9f6oPziswYN198amKNo=
+d8KZx8kd/sChuEbKyq4X5PGVd1G0VIC3xdnThb9Kr85k745p9D7zxhBePc+dw4+xHKC6CsKr9Cj3
+8is9QdOQ88tOFgyf5eelzF5xXwISz9wwHUd0QSTQyh1Q6SCiMrAM1EDt3wmz5Q1ZNB+X5xdI8Ibw
+ghbighCQXEFFwHEr7ms=
 </ds:SignatureValue>
 <ds:KeyInfo>
 <ds:KeyValue>
