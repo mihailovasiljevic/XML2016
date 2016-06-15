@@ -12,6 +12,7 @@
                             <xs:enumeration value="nacelo"/>
                             <xs:enumeration value="pojedinost"/>
                             <xs:enumeration value="celina"/>
+                            <xs:enumeration value="povucen"/>
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:element>

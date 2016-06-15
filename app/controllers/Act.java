@@ -84,16 +84,17 @@ public class Act extends Controller {
 
 			// Search within a specific collection
 			queryDefinition.setCollections(COLLECTION);
-
+			queryManager.setPageLength(500);
 			SearchHandle results = queryManager.search(queryDefinition, new SearchHandle());
-
+			
 			// Serialize search results to the standard output
 			MatchDocumentSummary matches[] = results.getMatchResults();
-
+		
 			MatchDocumentSummary result = null;
 			MatchLocation locations[];
 			String text;
-			
+			System.out.println("Length: " + matches.length);
+			System.out.println("Results" + results.getTotalResults());
 			for (int i = 0; i < matches.length; i++) {
 				result = matches[i];
 				System.out.println((i + 1) + ". RESULT DETAILS: ");
@@ -110,7 +111,7 @@ public class Act extends Controller {
 				System.out.println("Status: " + status);
 				LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
 				map.put("name", name);
-				map.put("uri", result.getUri());
+				map.put("uri", prepareURI(result.getUri()));
 				map.put("status", status);
 				documentsURIs.add(map);
 			}
@@ -152,6 +153,14 @@ public class Act extends Controller {
 			e.printStackTrace();
 		}
 	}
+	
+	private static String prepareURI(String uri){
+		uri = uri.replace(".", "/");
+		String[] splitted = uri.split("/");
+		System.out.println(splitted[2]);
+
+		return splitted[2];
+	}
 
 	public static void updateAct(String uri) {
 		String docUri = "/acts/" + uri + ".xml";
@@ -166,7 +175,7 @@ public class Act extends Controller {
 		XMLDocumentManager xmlManager = client.newXMLDocumentManager();
 
 		// Define a URI value for a document.
-		String docId = "/acts/15982287759751844109.xml";
+		String docId = docUri;
 
 		// Defining namespace mappings
 		EditableNamespaceContext namespaces = new EditableNamespaceContext();
@@ -177,7 +186,7 @@ public class Act extends Controller {
 		DocumentPatchBuilder patchBuilder = xmlManager.newPatchBuilder();
 		patchBuilder.setNamespaces(namespaces);
 
-		String patch = "\t<b:status>nacelo</b:status>\n";
+		String patch = "\t<b:status>povucen</b:status>\n";
 
 		// Defining XPath context
 		String contextXPath1 = "/b:propis/b:status";
@@ -191,6 +200,8 @@ public class Act extends Controller {
 		// Release the client
 		client.release();
 	}
+	
+	
 	
     public static void saveAct(){
     	
@@ -278,7 +289,7 @@ public class Act extends Controller {
 				String name = propis.getNaziv();				
 				
 				LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
-				map.put("uri", result.getUri());
+				map.put("uri", prepareURI(result.getUri()));
 				map.put("name", name);
 				map.put("criteria", criteria);
 				map.put("fitness", result.getFitness()+"");
@@ -309,6 +320,8 @@ public class Act extends Controller {
 		}
 		
     }
+    
+
     
 	/**
 	 * Serializes DOM tree to an arbitrary OutputStream.
@@ -366,10 +379,10 @@ public class Act extends Controller {
 	
 	public static void xhtml(String uri) {
 		String docId = "/acts/"+uri+".xml";
-		String text = XMLReader.getPropisText(docId);
+		//String text = XMLReader.getPropisText(docId);
 		//System.out.println(text.toString());
 
-		String response = XSLTransformer.transform(text);
+		//String response = XSLTransformer.transform(text);
 		renderJSON(response);
 		System.out.println("xhtml is genereted.");
 	}

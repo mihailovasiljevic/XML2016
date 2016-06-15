@@ -14,7 +14,7 @@ GET		/api/user								Application.getUsers
 GET		/api/acts								Act.listActs
 GET   	/api/acts/{uri}         				Act.getAct(uri)
 PUT		/api/acts/{uri}							Act.updateAct(uri)
-POST	/api/act								Act.saveAct
+POST	/api/acts								Act.saveAct
 POST	/api/acts/search						Act.search
 
 POST	/api/amendment							AmendmentServices.saveAmendment

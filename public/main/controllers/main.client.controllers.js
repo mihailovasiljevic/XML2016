@@ -1,6 +1,6 @@
 angular.module('main')
-  .controller('MainController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search',
-    function($scope,$rootScope, $timeout,$location,$state, Main, Search){
+  .controller('MainController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search','Propis',
+    function($scope,$rootScope, $timeout,$location,$state, Main, Search,Propis){
 
         //go on mainPage
         //$state.go("main");
@@ -64,6 +64,25 @@ angular.module('main')
                     }
             }
 
+        }
+        
+        
+        
+        $scope.withdrawAct = function(act){
+        	act.uri=act.uri.replace('/acts/','');
+        	act.uri=act.uri.replace('.xml','');
+        	
+        	var index = $scope.acts.indexOf()
+        	
+        	 propis = Propis.get({actId:act.uri},function(response){ 
+        	response.$update({actId:act.uri},function(response) {
+        		act.status="povucen";
+				console.log(response);
+				//Popraviti ovo
+				//if(response.map.error)
+				//	$scope.error = response.map.error;
+			});
+        	 });
         }
 
 
