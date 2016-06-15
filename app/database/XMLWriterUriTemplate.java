@@ -42,7 +42,7 @@ public class XMLWriterUriTemplate {
 
 	private static DatabaseClient client;
 	
-	public static void run(ConnectionProperties props) throws FileNotFoundException {
+	public static void run(ConnectionProperties props,String collectionName) throws FileNotFoundException {
 		
 		// Initialize the database client
 		if (props.database.equals("")) {
@@ -58,14 +58,14 @@ public class XMLWriterUriTemplate {
 		
 		// Insert a document with generated URI (specifying the suffix and prefix)
 		DocumentUriTemplate template = xmlManager.newDocumentUriTemplate("xml");
-		template.setDirectory("/acts/");
+		template.setDirectory("/"+collectionName+"/");
 		
 		// Create an input stream handle to hold XML content.
 		InputStreamHandle handle = new InputStreamHandle(new FileInputStream(Application.projectPath+"/XML2016/data/temp.xml"));
 		
 		
 		DocumentMetadataHandle metadata = new DocumentMetadataHandle();
-		metadata.getCollections().add("/acts");
+		metadata.getCollections().add("/"+collectionName);
 		
 		// Write the document to the database
 		System.out.println("[INFO] Inserting \"" + template.getDirectory() + "\" to \"" + props.database + "\" database.");

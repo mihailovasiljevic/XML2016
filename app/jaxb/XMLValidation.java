@@ -11,6 +11,7 @@ import javax.xml.validation.SchemaFactory;
 import org.xml.sax.SAXException;
 
 import controllers.Application;
+import rs.ac.uns.ftn.amandman.Amandman;
 import rs.ac.uns.ftn.pravniakt.Propis;
 
 /** 
@@ -22,16 +23,18 @@ import rs.ac.uns.ftn.pravniakt.Propis;
  */
 public class XMLValidation {
 	
-	public boolean test(String schemaPath) {
+	public boolean test(String schemaPath,String type) {
 		boolean isValid = true;
 		try {
 			System.out.println("[INFO] Example 3: JAXB XML Schema validation .\n");
 			
 			// Definiše se JAXB kontekst (putanja do paketa sa JAXB bean-ovima)
 			
-			//DA LI BI OVO TREBALO DA JE PROMENLJIVO?
-			JAXBContext context = JAXBContext.newInstance("rs.ac.uns.ftn.pravniakt");
-
+			JAXBContext context = null;
+			if(type.equals("act"))
+			context = JAXBContext.newInstance("rs.ac.uns.ftn.pravniakt");
+			else if(type.equals("amandman"))
+				context = JAXBContext.newInstance("rs.ac.uns.ftn.amandman");
 			// Unmarshaller je objekat zadužen za konverziju iz XML-a u objektni model
 			Unmarshaller unmarshaller = context.createUnmarshaller();
 			
@@ -44,11 +47,16 @@ public class XMLValidation {
             unmarshaller.setEventHandler(new MyValidationEventHandler());
 			
             // Test: proširiti XML fajl nepostojećim elementom (npr. <test></test>)
-            Propis propis = (Propis) unmarshaller.unmarshal(new File(Application.projectPath+"/XML2016/data/temp.xml"));
-
+            Propis propis= new Propis();
+            Amandman amandman = new Amandman();
+            if(type.equals("act"))
+            propis = (Propis) unmarshaller.unmarshal(new File(Application.projectPath+"/XML2016/data/temp.xml"));
+            else if(type.equals("amandman"))
+            	amandman = (Amandman)unmarshaller.unmarshal(new File(Application.projectPath+"/XML2016/data/temp.xml"));
             // Ispis sadržaja objektnog modela, nakon uspešne validacije
             //printStudent(student);
-			
+			System.out.println(schemaPath);
+			System.out.println(context);
 		} catch (JAXBException e) {
 			e.printStackTrace();
 			isValid = false;

@@ -38,7 +38,7 @@ public class ActServices extends Controller {
 		}
     
     	XMLValidation isValid = new XMLValidation();
-    	boolean xmlValid = isValid.test(Application.projectPath+"/XML2016/data/akt.xsd");
+    	boolean xmlValid = isValid.test(Application.projectPath+"/XML2016/data/akt.xsd","akt");
     	if(xmlValid)
     		System.out.println("XML JE VALIDAN");
     	else 
@@ -46,7 +46,7 @@ public class ActServices extends Controller {
 
     	if(xmlValid){
     		try {
-				XMLWriterUriTemplate.run(Util.loadProperties());
+				XMLWriterUriTemplate.run(Util.loadProperties(),"acts");
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

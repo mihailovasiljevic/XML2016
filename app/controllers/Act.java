@@ -209,7 +209,7 @@ public class Act extends Controller {
     		}
         
         	XMLValidation isValid = new XMLValidation();
-        	boolean xmlValid = isValid.test(Application.projectPath+"/XML2016/data/akt.xsd");
+        	boolean xmlValid = isValid.test(Application.projectPath+"/XML2016/data/akt.xsd","act");
         	if(xmlValid)
         		System.out.println("XML JE VALIDAN");
         	else 
@@ -217,7 +217,7 @@ public class Act extends Controller {
 
         	if(xmlValid){
         		try {
-    				XMLWriterUriTemplate.run(Util.loadProperties());
+    				XMLWriterUriTemplate.run(Util.loadProperties(),"acts");
     			} catch (IOException e) {
     				// TODO Auto-generated catch block
     				e.printStackTrace();
@@ -264,7 +264,6 @@ public class Act extends Controller {
 			MatchDocumentSummary result = null;
 			MatchLocation locations[];
 			String text;
-			LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
 			for (int i = 0; i < matches.length; i++) {
 				result = matches[i];
 				System.out.println((i + 1) + ". RESULT DETAILS: ");
@@ -278,7 +277,7 @@ public class Act extends Controller {
 				
 				String name = propis.getNaziv();				
 				
-				map.clear();
+				LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
 				map.put("uri", result.getUri());
 				map.put("name", name);
 				map.put("criteria", criteria);
@@ -349,9 +348,9 @@ public class Act extends Controller {
 
 	public static void genPdfAct(String uri) {
 
-		
+		/*
 		String docId = "/acts/"+uri+".xml";
-		String text = XMLReader.getPropisText(docId);
+		//String text = XMLReader.getPropisText(docId);
 		System.out.println(text.toString());
 		
 		 try {
@@ -363,7 +362,7 @@ public class Act extends Controller {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
+*/
 		System.out.println("izlaz");
 	}
 	

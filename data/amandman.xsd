@@ -1,88 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
     targetNamespace="http://www.ftn.uns.ac.rs/amandman"
-    xmlns:ama="http://www.ftn.uns.ac.rs/amandman">
+    xmlns:ama="http://www.ftn.uns.ac.rs/amandman" xmlns:akt="http://www.ftn.uns.ac.rs/pravniAkt">
+    <xs:import namespace="http://www.ftn.uns.ac.rs/pravniAkt" schemaLocation="akt.xsd"/>
     <xs:element name="Amandman">
+
         <xs:complexType>
             <xs:sequence>
-                <xs:element maxOccurs="1" name="Kome">
+                <xs:element name="oznaka" type="xs:int"/>
+                <xs:element name="zaglavlje">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element default="PREDSEDNIK NARODNE SKUPSTINE" name="Naslov"
-                                type="xs:string"/>
-                            <xs:element name="Informacije">
-                                <xs:complexType mixed="true">
-                                    <xs:all>
-                                        <xs:element default="xs:string"
-                                            name="NazivPropisaKojiSeMenja"/>
-                                        <xs:element
-                                            name="BrojSluzbenogGlasilaUKojemJeObjavljenOsnovniTekst"
-                                            type="xs:string"/>
-                                        <xs:element maxOccurs="1" minOccurs="0"
-                                            name="BrojeviSvihSluzbenihGlasila" type="xs:string"/>
-                                    </xs:all>
-                                </xs:complexType>
-                            </xs:element>
+                            <xs:element default="РЕПУБЛИКА СРБИЈА" name="drzava" type="xs:string"/>
+                            <xs:element default="НАРОДНА СКУПШТИНА" name="organ" type="xs:string"/>
+                            <xs:element name="predlagac" type="xs:string"/>
+                            <xs:element maxOccurs="1" minOccurs="0" name="datum" type="xs:date"/>
+                            <xs:element name="mesto" type="xs:string"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="Opis">
-                    <xs:complexType mixed="false">
+                <xs:element name="uvod">
+                    <xs:complexType>
                         <xs:sequence>
-                            <xs:element default="AMANDMAN" name="Naslov" type="xs:string"/>
-                            <xs:element maxOccurs="unbounded" name="Detalji" minOccurs="0">
-                                <xs:complexType mixed="true">
-                                    <xs:sequence maxOccurs="unbounded" minOccurs="0">
-                                        <xs:choice>
-                                            <xs:element name="Clan" type="xs:integer"/>
-                                            <xs:element name="Stav" type="xs:integer"/>
-                                            <xs:element name="Tacka" type="xs:integer"/>
-                                            <xs:element name="Podtacka" type="xs:integer"/>
-                                            <xs:element name="BriseSe">
-                                                <xs:complexType>
-                                                  <xs:choice>
-                                                  <xs:element default="" name="BezReci"
-                                                  type="xs:string"/>
-                                                  <xs:element name="Rec" type="xs:string"/>
+                            <xs:element default="ПРЕДСЕДНИКУ НАРОДНЕ СКУПШТИНЕ" name="naslov"
+                                type="xs:string"/>
+                            <xs:sequence>
+                                <xs:choice>
+                                    <xs:element name="tekst" type="xs:string"/>
+                                    <xs:element name="akt" type="ama:akt"/>
+                                </xs:choice>
+                            </xs:sequence>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="glavniDeo">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element default="АМАНДМАН" name="naslov" type="xs:string"/>
+                            <xs:element name="sadrzaj">
+                                <xs:complexType>
+                                    <xs:sequence maxOccurs="unbounded">
+                                        <xs:element name="tekst">
+                                            <xs:complexType mixed="true">
+                                                <xs:sequence maxOccurs="1">
+                                                  <xs:choice maxOccurs="unbounded">
+                                                  <xs:element name="clan">
+                                                  <xs:complexType mixed="true">
+                                                  <xs:attribute name="href" type="xs:anyURI"/>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element minOccurs="1" name="stav">
+                                                  <xs:complexType mixed="true">
+                                                  <xs:attribute name="href" type="xs:anyURI"/>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element minOccurs="1" name="tacka">
+                                                  <xs:complexType mixed="true">
+                                                  <xs:attribute name="href" type="xs:anyURI"/>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element name="podtacka">
+                                                  <xs:complexType mixed="true">
+                                                  <xs:attribute name="href" type="xs:anyURI"/>
+                                                  </xs:complexType>
+                                                  </xs:element>
                                                   </xs:choice>
-                                                </xs:complexType>
-                                            </xs:element>
-                                            <xs:element name="MenjaSe">
-                                                <xs:complexType mixed="true">
-                                                  <xs:choice>
-                                                  <xs:element default="" name="tekstOdredbe"
-                                                  type="xs:string"/>
-                                                  <xs:sequence>
-                                                  <xs:element name="prvaRec" type="xs:string"/>
-                                                  <xs:element name="DrugaRec" type="xs:string"/>
-                                                  </xs:sequence>
-                                                  </xs:choice>
-                                                </xs:complexType>
-                                            </xs:element>
-                                        </xs:choice>
+                                                  <xs:element name="operacija" maxOccurs="1">
+                                                  <xs:simpleType>
+                                                  <xs:restriction base="xs:string">
+                                                  <xs:enumeration value="menjaSe"/>
+                                                  <xs:enumeration value="dopunjujeSe"/>
+                                                  <xs:enumeration value="briseSe"/>
+                                                  </xs:restriction>
+                                                  </xs:simpleType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="Obrazlozenje">
+                <xs:element name="obrazlozenje">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="Naslov" type="xs:string"/>
-                            <xs:element name="TekstObrazlozenja" type="xs:string"/>
+                            <xs:element name="naslov" type="xs:string"/>
+                            <xs:element name="tekst" type="xs:string"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="Predlagac">
+                <xs:element name="potpis">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="Funkcija" type="xs:string"/>
-                            <xs:element name="Naziv" type="xs:string"/>
+                            <xs:element name="funkcija" type="xs:string"/>
+                            <xs:element name="imeIPrezime" type="xs:string"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
         </xs:complexType>
+        <xs:key name="PK">
+            <xs:selector xpath="ama:Amandman"/>
+            <xs:field xpath="ama:Amandman/ama:oznaka"/>
+        </xs:key>
     </xs:element>
+    <xs:complexType mixed="true" name="akt">
+        <xs:attribute name="href" type="xs:int"/>
+    </xs:complexType>
 </xs:schema>

@@ -1,6 +1,6 @@
 angular.module('amendment')
-  .controller('AmendmentController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search',
-    function($scope,$rootScope, $timeout,$location,$state, Main, Search){
+  .controller('AmendmentController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search','Amandman',
+    function($scope,$rootScope, $timeout,$location,$state, Main, Search,Amandman){
 
         //go on mainPage
         //$state.go("main");
@@ -62,6 +62,19 @@ angular.module('amendment')
             }
 
         }
+        
+        
+        $scope.amendment = new Amandman();
+        $scope.sendAmendment = function(){
+			if(!$scope.amendment.text){
+				$scope.error = "Polje ne sme biti prazno. Molim vas unesite dokument.";
+				return;
+			}
+			$scope.amendment.$save(function(response) {
+				console.log(response);
+				if(response.map.error)
+					$scope.error = response.map.error;
+			});
 
-
-    }])
+        }
+    }]);
