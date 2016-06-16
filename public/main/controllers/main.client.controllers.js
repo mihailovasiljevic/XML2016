@@ -82,7 +82,14 @@ angular.module('main')
         	 propis = Propis.get({actId:act.uri},function(response){ 
         	response.$update({actId:act.uri},function(response) {
         		act.status="povucen";
-				console.log(response);
+        		for(var i=0; i<$scope.listForShowing.length; i++)
+        			{
+        			if($scope.listForShowing[i].status=="povucen")
+        				{
+        				$scope.listForShowing.splice(i,1);
+        				}
+        			}
+        		
 				//Popraviti ovo
 				//if(response.map.error)
 				//	$scope.error = response.map.error;
