@@ -11,6 +11,7 @@ public class User implements Serializable{
 	private String prezime;
 	private String uloga;
 	private String email;
+	private String certificate;
 
 	public User(String username, String password, String repeat_password,
 			String ime, String prezime, String uloga, String email) {
@@ -80,6 +81,15 @@ public class User implements Serializable{
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getCertificate() {
+		// TODO Auto-generated method stub
+		return certificate;
+	}
+
+	public void setCertificate(String certificate) {
+		this.certificate = certificate;
 	}
 
 }

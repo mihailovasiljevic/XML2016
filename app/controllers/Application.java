@@ -248,7 +248,7 @@ public class Application extends Controller {
 	 		String ime = user.getIme();
 	 		String prezime = user.getPrezime();
 	 		String email = user.getEmail();
-	 //		String certificate = user.getCertificate();
+	 		String certificate = user.getCertificate();
 	 		
 	 		if(password.equalsIgnoreCase(repeat_password)){
 	 			
@@ -262,11 +262,6 @@ public class Application extends Controller {
 				    kor.setUloga("gradjanin");
 				    kor.setEmail(email);
 				    
-				    /*Integer rbr = FileWriterReader.read("rbr.txt");
-				    
-				    kor.setRbrPoruke(rbr);
-				    rbr++;
-				    FileWriterReader.write("rbr.txt", rbr);*/
 				    
 				    Date date = new Date();
 				    kor.setTimeStamp(date.toString());
@@ -279,12 +274,12 @@ public class Application extends Controller {
 						}
 				    	
 		
-				    	
+				 
 				    if(new File(Application.projectPath+"/XML2016/data/"+certificate+".jks").exists()){
 
 				    	boolean povucen = false;
 				    	File f = new File(Application.projectPath+"/XML2016/data/"+"sgns-revoked.jks");
-							if(f.exists() && !f.isDirectory()) {
+						if(f.exists() && !f.isDirectory()) {
 								 KeyStoreReader ksr = new KeyStoreReader();
 								    ksr.setKeyStoreFile(Application.projectPath+"/XML2016/data/"+"sgns-revoked.jks");
 								    ksr.setPassword("sgns-revoked".toCharArray());

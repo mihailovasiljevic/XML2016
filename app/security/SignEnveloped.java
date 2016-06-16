@@ -17,6 +17,8 @@ import java.security.UnrecoverableKeyException;
 import java.security.cert.Certificate;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
+import java.util.HashMap;
+import java.util.Iterator;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -41,6 +43,8 @@ import org.w3c.dom.DOMException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
+
+import controllers.Application;
 
 //Potpisuje dokument, koristi se enveloped tip
 public class SignEnveloped {
@@ -223,7 +227,7 @@ public class SignEnveloped {
         
         try {
 			Element rootEl = doc.getDocumentElement();
-			rootEl = (Element) rootEl.getElementsByTagName("Korisnik").item(rootEl.getElementsByTagName("Korisnik").getLength()-1);
+			//rootEl = (Element) rootEl.getElementsByTagName("Korisnik").item(rootEl.getElementsByTagName("Korisnik").getLength()-1);
 			
 			//kreira se signature objekat
 			XMLSignature sig = new XMLSignature(doc, null, XMLSignature.ALGO_ID_SIGNATURE_RSA_SHA1);
@@ -263,6 +267,44 @@ public class SignEnveloped {
 		} catch (XMLSecurityException e) {
 			e.printStackTrace();
 			return null;
+		}
+	}
+	
+	public void sign(String certificate){
+		if(new File(Application.projectPath+"/XML2016/data/"+certificate+".jks").exists()){
+
+	    	boolean povucen = false;
+	    	File f = new File(Application.projectPath+"/XML2016/data/"+"sgns-revoked.jks");
+			if(f.exists() && !f.isDirectory()) {
+					 KeyStoreReader ksr = new KeyStoreReader();
+					    ksr.setKeyStoreFile(Application.projectPath+"/XML2016/data/"+"sgns-revoked.jks");
+					    ksr.setPassword("sgns-revoked".toCharArray());
+					    ksr.setKeyPass("test10".toCharArray());
+					    HashMap<String,Certificate> sertifikati = ksr.readKeyStore();
+					    Iterator it =  sertifikati.keySet().iterator();
+					    while(it.hasNext())
+					    {
+					    	String sert = it.next().toString();
+					    	
+					    	if(sert.equals(certificate)){
+					    		System.out.println("SERTIFIKAT JE POVUCEN!!!");
+					    		povucen = true;
+					    		break;
+					    	}
+					    }
+					    
+				}
+				
+				
+				if(!povucen){
+				  
+				   setIN_FILE(Application.projectPath+"/XML2016/data/temp.xml");
+				   setOUT_FILE(Application.projectPath+"/XML2016/data/temp.xml");
+				    setKEY_STORE_FILE(Application.projectPath+"/XML2016/data/"+certificate+".jks");
+				    setName(certificate);
+				    setPass(certificate);
+				    testIt();
+				}
 		}
 	}
 	

@@ -8,7 +8,7 @@ GET     /                                       Application.index
 
 POST	/api/user						   		Application.login
 GET		/api/user								Application.getUsers
-
+POST 	/api/userreg							Application.saveUsers
 
 #Acts
 GET		/api/acts								Act.listActs

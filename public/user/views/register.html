@@ -18,6 +18,7 @@ angular.module('user').controller('inputCtrl1', ['$scope',
 <tr><td>Ime:</td><td><input type="text" ng-model="user.ime" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"></td></tr>
 <tr><td>Prezime:</td><td><input type="text" ng-model="user.prezime" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"></td></tr>
 <tr><td>Email:</td><td><input type="text" ng-model="user.email" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"></td></tr>
+<tr><td>Certificate:</td><td><input type="text" ng-model="user.certificate" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"></td></tr>
 <tr><td colspan="2" align="center"><input type="button" value="Submit" ng-click="create()"></td></tr>
 </table>
 <span ng-bind="error" style="color:red; font-weight:bold; font-size:20px; padding-left:450px;"></span>
