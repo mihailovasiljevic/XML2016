@@ -247,6 +247,7 @@ public class Application extends Controller {
 	 		String repeat_password = user.getRepeat_password();
 	 		String ime = user.getIme();
 	 		String prezime = user.getPrezime();
+	 		String uloga = user.getUloga();
 	 		String email = user.getEmail();
 	 //		String certificate = user.getCertificate();
 	 		
@@ -259,7 +260,7 @@ public class Application extends Controller {
 				    kor.setLozinka(password);
 				    kor.setIme(ime);
 				    kor.setPrezime(prezime);
-				    kor.setUloga("gradjanin");
+				    kor.setUloga(uloga);
 				    kor.setEmail(email);
 				    
 				    /*Integer rbr = FileWriterReader.read("rbr.txt");

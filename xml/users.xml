@@ -7,9 +7,9 @@
         <Uloga>gradjanin</Uloga>
         <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
 <ds:KeyName>Kriptovani tajni kljuc</ds:KeyName>
-<xenc:EncryptedKey><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-1_5"/><xenc:CipherData><xenc:CipherValue>uh8lBQAukI2ciHcqkSDzKdubK21I7yDBVYSAt7E6/eHnWg+8TNUgzw1vZQ9Rd+LYDv4FQK8I+Nxo
-Dot5g7t7hRBCdAjz4qp9fDdFQ4I2HD6n7N2cAd0ervi5e/t134j0X98DxNMXUU2AbnMl+XftI1Mp
-D4qsg4oztr//sk5WjcY=</xenc:CipherValue></xenc:CipherData></xenc:EncryptedKey></ds:KeyInfo><xenc:CipherData><xenc:CipherValue>zvKXH6VEZDCu1yevL1icvg==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+<xenc:EncryptedKey><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-1_5"/><xenc:CipherData><xenc:CipherValue>wBCo0ybJI0hgMWyvtZEUplB5GHsWDof5IZI/hWpAwEncK3dtLawtB5TmOSRDJ+h9gQZ5d7Jk+7TF
+taOg5Jzsn40gUwFEsOLAX7izVKa328ZcFNK136kUPyzucNr6HKL2scVzUAYQAw0hcpIihjoLExTZ
+2ufiHDOrnSkbjOCgjzI=</xenc:CipherValue></xenc:CipherData></xenc:EncryptedKey></ds:KeyInfo><xenc:CipherData><xenc:CipherValue>8bb5169QbfEu2NOkxrLL5w==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
     </Korisnik>
     <Korisnik>
         <KorisnickoIme>tggttg</KorisnickoIme>
@@ -395,6 +395,51 @@ D4qsg4oztr//sk5WjcY=</xenc:CipherValue></xenc:CipherData></xenc:EncryptedKey></d
         <Uloga>gradjanin</Uloga>
         <Email>as</Email>
         <TimeStamp>Wed Jun 15 20:37:46 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>r</KorisnickoIme>
+        <Lozinka>r</Lozinka>
+        <Ime>r</Ime>
+        <Prezime>r</Prezime>
+        <Uloga>Odbornik</Uloga>
+        <Email>r</Email>
+        <TimeStamp>Thu Jun 16 19:01:24 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>m</KorisnickoIme>
+        <Lozinka>m</Lozinka>
+        <Ime>m</Ime>
+        <Prezime>m</Prezime>
+        <Uloga>Odbornik</Uloga>
+        <Email>gddf</Email>
+        <TimeStamp>Thu Jun 16 19:02:24 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>rr</KorisnickoIme>
+        <Lozinka>rterte</Lozinka>
+        <Ime>dfs</Ime>
+        <Prezime>sdf</Prezime>
+        <Uloga>Predsednik</Uloga>
+        <Email>dfs</Email>
+        <TimeStamp>Thu Jun 16 19:02:54 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>fgddf</KorisnickoIme>
+        <Lozinka>fds</Lozinka>
+        <Ime>fsd</Ime>
+        <Prezime>dsa</Prezime>
+        <Uloga>Predsednik</Uloga>
+        <Email>das</Email>
+        <TimeStamp>Thu Jun 16 19:03:12 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>dfssdf</KorisnickoIme>
+        <Lozinka>rr</Lozinka>
+        <Ime>sd</Ime>
+        <Prezime>dsa</Prezime>
+        <Uloga>Gradjanin</Uloga>
+        <Email>dsa</Email>
+        <TimeStamp>Thu Jun 16 19:03:46 CEST 2016</TimeStamp>
     <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
 <ds:SignedInfo>
 <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
@@ -405,13 +450,13 @@ D4qsg4oztr//sk5WjcY=</xenc:CipherValue></xenc:CipherData></xenc:EncryptedKey></d
 <ds:Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"/>
 </ds:Transforms>
 <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-<ds:DigestValue>haOXxdZcM00mEKLjOpR6+gwe+EQ=</ds:DigestValue>
+<ds:DigestValue>BtXVFDl/T/9w2UBHlVKiUU+M+Os=</ds:DigestValue>
 </ds:Reference>
 </ds:SignedInfo>
 <ds:SignatureValue>
-d8KZx8kd/sChuEbKyq4X5PGVd1G0VIC3xdnThb9Kr85k745p9D7zxhBePc+dw4+xHKC6CsKr9Cj3
-8is9QdOQ88tOFgyf5eelzF5xXwISz9wwHUd0QSTQyh1Q6SCiMrAM1EDt3wmz5Q1ZNB+X5xdI8Ibw
-ghbighCQXEFFwHEr7ms=
+LebEpLzKVD4wVP79TCF5XOX/ovC1V8qlFNpZsMMIPKbnDB0aB6ydU5tdqqWMqpnSJcZQAjU61iZX
+C/xM58e8BRwu6vrv4jDlQ7eqeljskDrR75ugV8yvMhLRru55t94PsIja9VF0NqUuOdcskouIalyC
+4fimXvhpAvA9KeXewJ4=
 </ds:SignatureValue>
 <ds:KeyInfo>
 <ds:KeyValue>
