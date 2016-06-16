@@ -162,10 +162,11 @@ public class Act extends Controller {
 			Unmarshaller unmarshaller = context.createUnmarshaller();
 			Propis propis = (Propis) unmarshaller.unmarshal(doc);
 			System.out.println("prosao");
-			try{
+			try {
 				renderJSON(propis);
-			}catch (Exception e) {
-				renderJSON(new JSONObject("{'naziv':'"+propis.getNaziv()+"'}"));
+			} catch (Exception e) {
+				renderJSON(new JSONObject("{'naziv':'" + propis.getNaziv() + "', 'status':'" + propis.getStatus()
+						+ "', 'oznaka':'" + propis.getOznaka() + "'}"));
 			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -177,6 +178,41 @@ public class Act extends Controller {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+
+
+	public static JSONObject getActObject(String uri) {
+		// String bodyParams = params.get("body");
+		// String url = Http.Request.current().path;
+		String docUri = "/acts/" + uri + ".xml";
+		Document doc;
+		try {
+			doc = xquery.XMLReader.run(Util.loadProperties(), docUri);
+			JAXBContext context;
+			context = JAXBContext.newInstance("rs.ac.uns.ftn.pravniakt");
+			Unmarshaller unmarshaller = context.createUnmarshaller();
+			Propis propis = (Propis) unmarshaller.unmarshal(doc);
+			System.out.println("prosao");
+			try {
+				System.out.println(new JSONObject(propis));
+				return new JSONObject(propis);
+			} catch (Exception e) {
+				System.out.println(new JSONObject("{'naziv':'" + propis.getNaziv() + "', 'status':'" + propis.getStatus()
+						+ "', 'oznaka':'" + propis.getOznaka() + "'}"));
+				return new JSONObject("{'naziv':'" + propis.getNaziv() + "', 'status':'" + propis.getStatus()
+						+ "', 'oznaka':'" + propis.getOznaka() + "'}");
+			}
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (JAXBException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return new JSONObject("'failure':'Nismo uspeli da dobavimo akt'");
 	}
 
 	private static String prepareURI(String uri) {
@@ -489,31 +525,45 @@ public class Act extends Controller {
 
 	}
 
-	private static void handleResults(JacksonHandle resultsHandle) {
+	private static void handleResults(JacksonHandle resultsHandle, JSONArray array) {
 
 		JsonNode tuples = resultsHandle.get().path("results").path("bindings");
 		Iterator<JsonNode> nodes;
 
 		for (JsonNode row : tuples) {
 			nodes = row.iterator();
-
+			boolean first = true;
 			while (nodes.hasNext()) {
-				System.out.println("\t" + nodes.next().path("value").asText());
+				if (first) {
+					String path = nodes.next().path("value").asText();
+					System.out.println("\t" + path);
+					path = path.substring(42);
+					path = "/acts/"+path;
+					path = prepareURI(path);
+					JSONObject obj = getActObject(path);
+					array.put(obj);
+					first = false;
+				}else{
+					String path = nodes.next().path("value").asText();
+					System.out.println("\t" + path);					
+				}
 			}
 			System.out.println();
 		}
+		
+		System.out.println("[ARRAY]: " + array);
 	}
-	
-	private static JSONObject findAktById(String path){
+
+	private static JSONObject findAktById(String path) {
 		JSONObject retVal = new JSONObject();
-		
+
 		path = path.substring(42);
-		
+
 		System.out.println("[PATH]: " + path);
 		return retVal;
-		
+
 	}
-	
+
 	public static void searchByMetaData() {
 		String body = params.get("body");
 
@@ -708,8 +758,9 @@ public class Act extends Controller {
 		
 
 		resultsHandle = sparqlQueryManager.executeSelect(sparqlQuery, resultsHandle);
-		handleResults(resultsHandle);
-	
+		JSONArray array = new JSONArray();
+		handleResults(resultsHandle, array);
+		renderJSON(array);
 		// Release the client
 		client.release();
 		
