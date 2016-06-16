@@ -51,6 +51,7 @@ angular.module('user').controller('inputCtrl2', ['$scope','$state','User',
   function($scope,$state,User) {
 	(User.get(function(response){
 		console.log(JSON.stringify(response));
+		$state.go('main');
 	}))
 	$scope.user = new User();
 	$scope.create = function() {

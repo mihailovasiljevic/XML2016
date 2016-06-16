@@ -106,7 +106,7 @@
 	<classpathentry kind="lib" path="lib/xercesImpl.jar"/>
 	<classpathentry kind="lib" path="lib/xml-apis.jar"/>
 	<classpathentry kind="lib" path="lib/xmlsec-1.4.2.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_79"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/avalon-framework-api-4.3.1.jar"/>
 	<classpathentry kind="lib" path="lib/avalon-framework-impl-4.3.1.jar"/>
 	<classpathentry kind="lib" path="lib/batik-all-1.8.jar"/>
