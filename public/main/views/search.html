@@ -1,10 +1,17 @@
 
-<section>
+<section ng-controller="MainController">
     <h3>AKTI</h3>
     <h2>Pretraga akata</h2>
     <div>
     <button type="button" class="btn btn-info btn-filter" ng-click="propose();" disabled>Po sadržaju</button>
-    <button type="button" class="btn btn-default btn-filter" ng-click="search()">Po metapodacima</button>
+    <button type="button" class="btn btn-default btn-filter" ng-click="metadata()">Po metapodacima</button>
+    </div>
+    <div>
+        <div class="row" ng-controller="filterSearchController">
+            <input type="radio" name="predlozen" value="predlozen" ng-click="filter()" ng-model="searchSelected"> <span>Predložen</span>
+            <input type="radio" name="nacelo" value="nacelo" ng-model="searchSelected" ng-click="filter()"> <span>Usvojen u načelu</span>
+            <input type="radio" name="celina" value="celina" ng-model="searchSelected" ng-click="filter()"> <span>Usvojen u celosti</span>
+        </div>
     </div>
     <div class="container" ui-view>
         <div class="row">
@@ -17,14 +24,20 @@
                     <div class="table-container">
                         <table class="table table-filter">
                             <tbody>
-                                <tr class="selected" ng-repeat="act in results">
+                                <tr ng-repeat="act in resultsForShowing">
                                     <td>
                                         <div class="media">
                                             <div class="media-body">
                                                 <span class="media-meta pull-right" ng-bind=""></span>
                                                 <h4>
                                                     <span ng-bind="act.map.name" ng-click="showAct(act.uri)"></span>
-                                                    <span class="pull-right pagado" ng-bind=""></span>
+                                                    <span class="pull-right-pendiente"> <button type="button" class="btn btn-info btn-filter" ng-click="withdrawAct(act)">Povuci akt</button></span>
+                                                    <span class="pull-right pendiente"> 
+                                                        <button type="button" class="btn btn-info btn-filter" ng-click="xhtml(act.map.uri)">XHTML</button>
+                                                        <button type="button" class="btn btn-info btn-filter" ng-click="pdf(act.map.uri)">PDF</button> 
+                                                    </span>
+                                                    <span class="pull-right pendiente" ng-bind="act.map.status" style="padding-right:40px;font-weight:bold;font-size:18px;color:blue;"></span>
+
                                                 </h4>
                                                 <p class="summary" ng-bind=""></p>
                                             </div>
@@ -34,7 +47,7 @@
                             </tbody>
                         </table>
                     </div>
-
+                    <div class="row" ng-bind-html="xhtmlDoc | unsafe" style="background-color:white;"></div>
 
             </section>
         </div>

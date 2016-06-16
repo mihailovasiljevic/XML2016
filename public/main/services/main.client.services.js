@@ -11,6 +11,10 @@ angular.module('main').factory('Main',['$resource',
     .factory('Search',['$resource',
     function($resource){
         return $resource('/api/acts/search');
+    }])
+     .factory('MetaData',['$resource',
+    function($resource){
+        return $resource('/api/acts/search/metaData');
     }]).factory('Xhtml',['$resource',
     function($resource){
         return $resource('/api/acts/xhtml/:uri', {

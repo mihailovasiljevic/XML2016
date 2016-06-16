@@ -162,7 +162,11 @@ public class Act extends Controller {
 			Unmarshaller unmarshaller = context.createUnmarshaller();
 			Propis propis = (Propis) unmarshaller.unmarshal(doc);
 			System.out.println("prosao");
-			renderJSON(propis);
+			try{
+				renderJSON(propis);
+			}catch (Exception e) {
+				renderJSON(new JSONObject("{'naziv':'"+propis.getNaziv()+"'}"));
+			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -320,6 +324,7 @@ public class Act extends Controller {
 				LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
 				map.put("uri", prepareURI(result.getUri()));
 				map.put("name", name);
+				map.put("status", propis.getStatus());
 				map.put("criteria", criteria);
 				map.put("fitness", result.getFitness() + "");
 				documentsInfo.add(map);
@@ -498,7 +503,17 @@ public class Act extends Controller {
 			System.out.println();
 		}
 	}
-
+	
+	private static JSONObject findAktById(String path){
+		JSONObject retVal = new JSONObject();
+		
+		path = path.substring(42);
+		
+		System.out.println("[PATH]: " + path);
+		return retVal;
+		
+	}
+	
 	public static void searchByMetaData() {
 		String body = params.get("body");
 
@@ -508,6 +523,7 @@ public class Act extends Controller {
 		query += "FILTER ( ";
 		
 		if (body != null) {
+			System.out.println("[body]: " + body);
 			String datumKreiranjaOd = null;
 			String datumKreiranjaDo = null;
 			String datumUsvajanjaUNaceluOd = null;
@@ -537,7 +553,7 @@ public class Act extends Controller {
 				// TODO: handle exception
 			}
 			try{
-				datumUsvajanjaUNaceluDo = obj.getString("datumUsvajanjaUNaceluOd");
+				datumUsvajanjaUNaceluDo = obj.getString("datumUsvajanjaUNaceluDo");
 			}catch (Exception e) {
 				// TODO: handle exception
 			}

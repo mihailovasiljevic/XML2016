@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <akt:propis xmlns:ama="http://www.ftn.uns.ac.rs/amandman"
  xmlns:akt="http://www.ftn.uns.ac.rs/pravniAkt"
@@ -8,573 +7,705 @@
  xsi:schemaLocation="http://www.ftn.uns.ac.rs/pravniAkt file:/F:/Projects/XML/pinf_xws_docs/xml/schema/amandman.xsd" 
 xmlns:xs="http://www.w3.org/2001/XMLSchema#"
 xmlns="http://www.w3.org/ns/rdfa#"
-about="http://www.ftn.uns.ac.rs/pravniAkt/propis/3">
-    <akt:status>pojedinost</akt:status>
-    <akt:oznaka>3</akt:oznaka>
-    <akt:naziv>AKT3</akt:naziv>
-    <akt:predlagac>ksmfGpOIcHlhe5XZkptLEdFlAsK</akt:predlagac>
-    <akt:deo>
-        <akt:redniBroj>-720298309</akt:redniBroj>
-        <akt:simbolickiNaziv>kQt_MZw</akt:simbolickiNaziv>
-        <akt:naziv>w</akt:naziv>
-        <akt:clan id="18239536">
-            <akt:naziv>o9eMgx26Sce-YWfedY.</akt:naziv>
-            <akt:redniBroj>1360717598</akt:redniBroj>
-            <akt:simbolickiNaziv>csx_Jd5XfJ</akt:simbolickiNaziv>
-            <akt:tekst>
-                <akt:referenca href="ObBy6vojs95i6pZM">
-                </akt:referenca>
-                <akt:referenca href="bVrI-BtNRvx4tDGZEThsjFHUG">
-                </akt:referenca>
-            </akt:tekst>
-            <akt:tekst>
-                <akt:referenca href="vyCPgFk">
-                </akt:referenca>
-                <akt:referenca href="M2">
-                </akt:referenca>
-            </akt:tekst>
-        </akt:clan>
-        <akt:clan id="108623778">
-            <akt:naziv>NdQrnNQcArGs7AGXX9iRW</akt:naziv>
-            <akt:redniBroj>-1837353749</akt:redniBroj>
-            <akt:simbolickiNaziv>ywn.deeKSi51</akt:simbolickiNaziv>
-            <akt:tekst>
-                <akt:referenca href="x_M5aiK">
-                </akt:referenca>
-                <akt:referenca href="Y1suTHRD6p1BL1s1">
-                </akt:referenca>
-            </akt:tekst>
-            <akt:stav id="-1246269576">
-                <akt:redniBroj>-258222585</akt:redniBroj>
-                <akt:tekst>
-                    <akt:referenca href="yPbkzrnOqU4Tde6c46">
-                    </akt:referenca>
-                    <akt:referenca href="S-qvpt6-gzmxwfaAdQ-cuqs3Q">
-                    </akt:referenca>
-                </akt:tekst>
-                <akt:tacka id="-1388080856">
-                    <akt:redniBroj>-1999954520</akt:redniBroj>
-                    <akt:tekst>
-                        <akt:referenca href="AWQdchm">
-                        </akt:referenca>
-                        <akt:referenca href="rYLHSEa">
-                        </akt:referenca>
-                    </akt:tekst>
-                    <akt:podtacka id="-1669280968">
-                        <akt:redniBroj>-149668868</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="hkv8UEhHF4">
-                            </akt:referenca>
-                            <akt:referenca href="qG4BZQozqU6J8H6K-">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                    <akt:podtacka id="-1819811385">
-                        <akt:redniBroj>1344639347</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="obV.f">
-                            </akt:referenca>
-                            <akt:referenca href="hv_DZOabrH2BgbP3vgfiFs3yXJV">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                </akt:tacka>
-                <akt:tacka id="584618069">
-                    <akt:redniBroj>427009740</akt:redniBroj>
-                    <akt:tekst>
-                        <akt:referenca href="JWCXbpco13kGh5">
-                        </akt:referenca>
-                        <akt:referenca href="WmdKL0Dbogf_U4bB2TUJv_1JLRFu4z">
-                        </akt:referenca>
-                    </akt:tekst>
-                    <akt:podtacka id="-591384760">
-                        <akt:redniBroj>-164457598</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="OB1oMAED62">
-                            </akt:referenca>
-                            <akt:referenca href="U">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                    <akt:podtacka id="-1005210406">
-                        <akt:redniBroj>1115105362</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="B0jjQ.CiDDV">
-                            </akt:referenca>
-                            <akt:referenca href="DHKvt7-nX_2m42">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                </akt:tacka>
-            </akt:stav>
-            <akt:stav id="-243440021">
-                <akt:redniBroj>2136748805</akt:redniBroj>
-                <akt:tekst>
-                    <akt:referenca href="KLho84iZ">
-                    </akt:referenca>
-                    <akt:referenca href="WsXH86OAUuR5ha1CZervDFifXp">
-                    </akt:referenca>
-                </akt:tekst>
-                <akt:tacka id="1583972953">
-                    <akt:redniBroj>357229733</akt:redniBroj>
-                    <akt:tekst>
-                        <akt:referenca href="WVM6m.XX1GsqFOQn2qz8YyB">
-                        </akt:referenca>
-                        <akt:referenca href="Ld96jyT6e-bPFu_qaa3y">
-                        </akt:referenca>
-                    </akt:tekst>
-                    <akt:podtacka id="813722527">
-                        <akt:redniBroj>1928964303</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="teVyLbFE.N2Pkleky">
-                            </akt:referenca>
-                            <akt:referenca href="s88fX1BwL_d8sgh_vQrjzR">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                    <akt:podtacka id="243850852">
-                        <akt:redniBroj>-290093409</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="w3h_BA_GVGRpeTb95W">
-                            </akt:referenca>
-                            <akt:referenca href="R3Hxbs4">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                </akt:tacka>
-                <akt:tacka id="-1609470831">
-                    <akt:redniBroj>398697283</akt:redniBroj>
-                    <akt:tekst>
-                        <akt:referenca href="T2_d612BJGUFN.kQzRBXzRXJ">
-                        </akt:referenca>
-                        <akt:referenca href="x7fom9RYR1eEtyHo_A8ImqfaX6-a">
-                        </akt:referenca>
-                    </akt:tekst>
-                    <akt:podtacka id="2087522093">
-                        <akt:redniBroj>-1404140037</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="YwEoHJvgxqnIcDh1YHtNBk7Ej6hejH">
-                            </akt:referenca>
-                            <akt:referenca href="wrwFypBVP-3">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                    <akt:podtacka id="2060889332">
-                        <akt:redniBroj>-1753401778</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="YmPJC.">
-                            </akt:referenca>
-                            <akt:referenca href="s21Gy-L0hQKCA0PXZ95NJJc">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                </akt:tacka>
-            </akt:stav>
-        </akt:clan>
-    </akt:deo>
-    <akt:deo>
-        <akt:redniBroj>1168942309</akt:redniBroj>
-        <akt:simbolickiNaziv>UcMm</akt:simbolickiNaziv>
-        <akt:naziv>T77</akt:naziv>
-        <akt:clan id="1294108183">
-            <akt:naziv>f</akt:naziv>
-            <akt:redniBroj>-1799269273</akt:redniBroj>
-            <akt:simbolickiNaziv>Il3I6Oyt</akt:simbolickiNaziv>
-            <akt:tekst>
-                <akt:referenca href="bC6">
-                </akt:referenca>
-                <akt:referenca href="ex.TMg.lmIbHdm">
-                </akt:referenca>
-            </akt:tekst>
-            <akt:stav id="43119446">
-                <akt:redniBroj>6122814</akt:redniBroj>
-                <akt:tekst>
-                    <akt:referenca href="HbStHoUOesiiQH36uz">
-                    </akt:referenca>
-                    <akt:referenca href="cyAC3">
-                    </akt:referenca>
-                </akt:tekst>
-                <akt:tacka id="-2049317022">
-                    <akt:redniBroj>990356775</akt:redniBroj>
-                    <akt:tekst>
-                        <akt:referenca href="kDP0aV8XUdztag">
-                        </akt:referenca>
-                        <akt:referenca href="of6EnFvve86uTbQhvZbd6kHu">
-                        </akt:referenca>
-                    </akt:tekst>
-                    <akt:podtacka id="1035994468">
-                        <akt:redniBroj>-80734797</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="r7weVAyhC">
-                            </akt:referenca>
-                            <akt:referenca href="ixE6Up4baGhToOcezV9wcwzBGphg">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                    <akt:podtacka id="35680778">
-                        <akt:redniBroj>981851503</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="Lil7AAksL">
-                            </akt:referenca>
-                            <akt:referenca href="lSEz94UoPul1_GY11">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                </akt:tacka>
-                <akt:tacka id="1618512312">
-                    <akt:redniBroj>-127445688</akt:redniBroj>
-                    <akt:tekst>
-                        <akt:referenca href="va9T-uVuqHw_ILFx4J9luqf">
-                        </akt:referenca>
-                        <akt:referenca href="mS13">
-                        </akt:referenca>
-                    </akt:tekst>
-                    <akt:podtacka id="-1122356663">
-                        <akt:redniBroj>-1241438389</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="a57jg-n037zDtjyJWcwpw">
-                            </akt:referenca>
-                            <akt:referenca href="YpFG">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                    <akt:podtacka id="-1696954795">
-                        <akt:redniBroj>-200009927</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="SyX1IffPr0cUp">
-                            </akt:referenca>
-                            <akt:referenca href="wSVnOWR9gwQDRE_OFkYe">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                </akt:tacka>
-            </akt:stav>
-            <akt:stav id="1819609695">
-                <akt:redniBroj>-1422069089</akt:redniBroj>
-                <akt:tekst>
-                    <akt:referenca href="Q2">
-                    </akt:referenca>
-                    <akt:referenca href="vGGutw">
-                    </akt:referenca>
-                </akt:tekst>
-                <akt:tacka id="7670774">
-                    <akt:redniBroj>1946498992</akt:redniBroj>
-                    <akt:tekst>
-                        <akt:referenca href="HoXuYzg2UXxsfF3">
-                        </akt:referenca>
-                        <akt:referenca href="g0i925zz_K1E">
-                        </akt:referenca>
-                    </akt:tekst>
-                    <akt:podtacka id="1205319492">
-                        <akt:redniBroj>-1279173370</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="Ij82atnLMvVetRPcZ-1O">
-                            </akt:referenca>
-                            <akt:referenca href="lOL8hM8bs9GJBX">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                    <akt:podtacka id="-248369045">
-                        <akt:redniBroj>-1576207660</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="PChuebMx">
-                            </akt:referenca>
-                            <akt:referenca href="N9Tq">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                </akt:tacka>
-                <akt:tacka id="-1547435759">
-                    <akt:redniBroj>486991093</akt:redniBroj>
-                    <akt:tekst>
-                        <akt:referenca href="Lbz54JkEn4y">
-                        </akt:referenca>
-                        <akt:referenca href="MMDPJyZrR">
-                        </akt:referenca>
-                    </akt:tekst>
-                    <akt:podtacka id="-563255820">
-                        <akt:redniBroj>-1757849917</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="AhNnxK9HMlT5C18dZbKGW8FxyO">
-                            </akt:referenca>
-                            <akt:referenca href="qlyB6-0USGmCHr6AX0v0rMR">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                    <akt:podtacka id="-852593440">
-                        <akt:redniBroj>-1067595571</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="uutqa7B0-3mLOeabCpnE">
-                            </akt:referenca>
-                            <akt:referenca href="_U2Vom3llFEaz">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                </akt:tacka>
-            </akt:stav>
-        </akt:clan>
-        <akt:clan id="-307691045">
-            <akt:naziv>K_w4Os5ec94EJipBWJ</akt:naziv>
-            <akt:redniBroj>1271883207</akt:redniBroj>
-            <akt:simbolickiNaziv>ULGqNAZTNKC</akt:simbolickiNaziv>
-            <akt:stav id="1227315321">
-                <akt:redniBroj>1516448981</akt:redniBroj>
-                <akt:tekst>
-                    <akt:referenca href="ZUi6dq0c4EN">
-                    </akt:referenca>
-                    <akt:referenca href="AaU3UzVYj5MDqWT-bOZC">
-                    </akt:referenca>
-                </akt:tekst>
-                <akt:tacka id="751752771">
-                    <akt:redniBroj>1049066589</akt:redniBroj>
-                    <akt:tekst>
-                        <akt:referenca href="rSBjam._1J">
-                        </akt:referenca>
-                        <akt:referenca href="cSzKP8vnJKDw5KKTnjfqCb90D9xK">
-                        </akt:referenca>
-                    </akt:tekst>
-                    <akt:podtacka id="172932161">
-                        <akt:redniBroj>-975413019</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="gc5o">
-                            </akt:referenca>
-                            <akt:referenca href="bc-1kLg36UtHCmv6Lmtg6EfB">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                    <akt:podtacka id="953814476">
-                        <akt:redniBroj>401192918</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="p2RS91sfe29-QZ9-JoW-paHy7ah3UK">
-                            </akt:referenca>
-                            <akt:referenca href="QLI1bGkC5auuK">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                </akt:tacka>
-                <akt:tacka id="-1519570088">
-                    <akt:redniBroj>-1802401592</akt:redniBroj>
-                    <akt:tekst>
-                        <akt:referenca href="ZDJ-gM">
-                        </akt:referenca>
-                        <akt:referenca href="nltIx">
-                        </akt:referenca>
-                    </akt:tekst>
-                    <akt:podtacka id="1956147223">
-                        <akt:redniBroj>-1113206700</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="q0t6IFw375G6nlJi6bOvy">
-                            </akt:referenca>
-                            <akt:referenca href="qFCbY3Rc0g2.TwBJvo">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                    <akt:podtacka id="-1322529970">
-                        <akt:redniBroj>-43877721</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="TfUN8dJn">
-                            </akt:referenca>
-                            <akt:referenca href="ycaY5UMDXiQC.9RXlxg">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                </akt:tacka>
-            </akt:stav>
-            <akt:stav id="-1318529252">
-                <akt:redniBroj>-1030312654</akt:redniBroj>
-                <akt:tekst>
-                    <akt:referenca href="e1q">
-                    </akt:referenca>
-                    <akt:referenca href="CdYI6kD">
-                    </akt:referenca>
-                </akt:tekst>
-                <akt:tacka id="-155784951">
-                    <akt:redniBroj>970578489</akt:redniBroj>
-                    <akt:tekst>
-                        <akt:referenca href="P7DKsPAH7Xvy2t6INcv2VQbtg">
-                        </akt:referenca>
-                        <akt:referenca href="M">
-                        </akt:referenca>
-                    </akt:tekst>
-                    <akt:podtacka id="410509581">
-                        <akt:redniBroj>30767427</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="n52Akuyafd37hXS_LtAkOZrQFF">
-                            </akt:referenca>
-                            <akt:referenca href="qvGSSkkAGVtQs0Hbb">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                    <akt:podtacka id="964324726">
-                        <akt:redniBroj>961846854</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="LI3ck">
-                            </akt:referenca>
-                            <akt:referenca href="tNUnOo">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                </akt:tacka>
-                <akt:tacka id="-1197958180">
-                    <akt:redniBroj>360330117</akt:redniBroj>
-                    <akt:tekst>
-                        <akt:referenca href="fPddyAmwmh8DmKetf">
-                        </akt:referenca>
-                        <akt:referenca href="sjBGUYqbDi2rMjTHPWypGH.">
-                        </akt:referenca>
-                    </akt:tekst>
-                    <akt:podtacka id="1792187850">
-                        <akt:redniBroj>-563681953</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="oikASdFQKmmd1y3gJgY_pgua">
-                            </akt:referenca>
-                            <akt:referenca href="j5r4zMPOD-Y2gNVGriA5nOKXd">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                    <akt:podtacka id="-1224682720">
-                        <akt:redniBroj>1736828497</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="ThhZG">
-                            </akt:referenca>
-                            <akt:referenca href="XKO6Zk2twAel">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                </akt:tacka>
-            </akt:stav>
-            <akt:stav id="-452309637">
-                <akt:redniBroj>-1197702239</akt:redniBroj>
-                <akt:tekst>
-                    <akt:referenca href="TAvaK3HQvue">
-                    </akt:referenca>
-                    <akt:referenca href="RBSvVN7yip4Hi4PyrM">
-                    </akt:referenca>
-                </akt:tekst>
-                <akt:tacka id="-1017352261">
-                    <akt:redniBroj>1084991729</akt:redniBroj>
-                    <akt:tekst>
-                        <akt:referenca href="asxMUEx3o_FQKWLvS">
-                        </akt:referenca>
-                        <akt:referenca href="_fQNRuAeM_bc9r.8w4WOBhOzjab">
-                        </akt:referenca>
-                    </akt:tekst>
-                    <akt:podtacka id="281179446">
-                        <akt:redniBroj>1430686000</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="QmjL-">
-                            </akt:referenca>
-                            <akt:referenca href="mLPDZq">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                    <akt:podtacka id="127650119">
-                        <akt:redniBroj>-892820289</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="wZ7CfZbfgx7M3EJb">
-                            </akt:referenca>
-                            <akt:referenca href="C9BhHsZ">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                </akt:tacka>
-                <akt:tacka id="-1565128957">
-                    <akt:redniBroj>339547496</akt:redniBroj>
-                    <akt:tekst>
-                        <akt:referenca href="BypNu5JKZc">
-                        </akt:referenca>
-                        <akt:referenca href="yiXePoADyb43NuEUxvbBD5L">
-                        </akt:referenca>
-                    </akt:tekst>
-                    <akt:podtacka id="2060227153">
-                        <akt:redniBroj>1683789249</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="aGQxhUHPFs5OTYa6YRRyPO9">
-                            </akt:referenca>
-                            <akt:referenca href="qGpBc4b9rW7Ig0iD">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                    <akt:podtacka id="1613676478">
-                        <akt:redniBroj>-1138728643</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="aiKfxyyb_U22S-_c1TfJneRP">
-                            </akt:referenca>
-                            <akt:referenca href="Ur">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                </akt:tacka>
-            </akt:stav>
-            <akt:stav id="-2024134083">
-                <akt:redniBroj>981668965</akt:redniBroj>
-                <akt:tekst>
-                    <akt:referenca href="uC280GU.Z">
-                    </akt:referenca>
-                    <akt:referenca href="P-S.NLH6awmoFGEBciBnBqbaYk7AEG">
-                    </akt:referenca>
-                </akt:tekst>
-                <akt:tacka id="124787477">
-                    <akt:redniBroj>-1544593204</akt:redniBroj>
-                    <akt:tekst>
-                        <akt:referenca href="w5">
-                        </akt:referenca>
-                        <akt:referenca href="wy9gmGbAcyx7">
-                        </akt:referenca>
-                    </akt:tekst>
-                    <akt:podtacka id="-1715996634">
-                        <akt:redniBroj>-1446532213</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="oPHuHjVNW2sIVB">
-                            </akt:referenca>
-                            <akt:referenca href="Z.QZQsI4iqQiHR">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                    <akt:podtacka id="-1078845630">
-                        <akt:redniBroj>1904911841</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="wDUdIUtzkHgcN3bp0k">
-                            </akt:referenca>
-                            <akt:referenca href="s0sK0V3xxRmvju0Mz7nLtG8">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                </akt:tacka>
-                <akt:tacka id="1123260432">
-                    <akt:redniBroj>-1850509244</akt:redniBroj>
-                    <akt:tekst>
-                        <akt:referenca href="kNsSI">
-                        </akt:referenca>
-                        <akt:referenca href="RBG">
-                        </akt:referenca>
-                    </akt:tekst>
-                    <akt:podtacka id="1546100785">
-                        <akt:redniBroj>2127598464</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="sVfHvh8a">
-                            </akt:referenca>
-                            <akt:referenca href="VIblDKaa3oex7kqUP-f">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                    <akt:podtacka id="625534086">
-                        <akt:redniBroj>527220899</akt:redniBroj>
-                        <akt:tekst>
-                            <akt:referenca href="cftLq4ZPftbt0v1r9x6">
-                            </akt:referenca>
-                            <akt:referenca href="q3BGBkm2aoRURWJhTXiA">
-                            </akt:referenca>
-                        </akt:tekst>
-                    </akt:podtacka>
-                </akt:tacka>
-            </akt:stav>
-        </akt:clan>
-    </akt:deo>
-    <akt:datumKreiranja property="pred:datumKreiranja" datatype="xs:date">1990-11-16Z</akt:datumKreiranja>
-    <akt:datumUsvajanjaUNacelu property="pred:datumUsvajanjaUNacelu" datatype="xs:date">2013-03-23</akt:datumUsvajanjaUNacelu>
-    <akt:datumUsvajanjaUCelosti property="pred:datumUsvajanjaUCelosti" datatype="xs:date">2011-06-05</akt:datumUsvajanjaUCelosti>
-    <akt:glasaliZa property="pred:glasaliZa" datatype="xs:int">50</akt:glasaliZa>
-    <akt:glasaliProtiv property="pred:glasaliProtiv" datatype="xs:int">80</akt:glasaliProtiv>
-</akt:propis>
+about="http://ftn.uns.ac.rs/pravniAkt/propis/1">
 
+    <akt:status>nacelo</akt:status>
+    <akt:oznaka>1</akt:oznaka>
+    <akt:naziv>PqhAfV1sqM1w_QQR1RE</akt:naziv>
+    <akt:predlagac>ZtFHDCW7IMcJqD6dcLkdwisc</akt:predlagac>
+    <akt:deo>
+        <akt:redniBroj>1662022603</akt:redniBroj>
+        <akt:simbolickiNaziv>Qh-zxBe-y.</akt:simbolickiNaziv>
+        <akt:naziv>Bk2p0L</akt:naziv>
+        <akt:clan id="1558481763">
+            <akt:naziv>wGZtNzzBldBzy8</akt:naziv>
+            <akt:redniBroj>550399542</akt:redniBroj>
+            <akt:simbolickiNaziv>Avne0SVUWtTuhUtv</akt:simbolickiNaziv>
+            <akt:stav id="-184858055">
+                <akt:redniBroj>-2032719753</akt:redniBroj>
+                <akt:tekst>
+                    <akt:referenca href="WUqVmG5LKm">
+                    </akt:referenca>
+                    <akt:referenca href="nfgazR44aW">
+                    </akt:referenca>
+                </akt:tekst>
+                <akt:tacka id="906825582">
+                    <akt:redniBroj>-1044530399</akt:redniBroj>
+                    <akt:tekst>
+                        <akt:referenca href="p">
+                        </akt:referenca>
+                        <akt:referenca href="adDs9">
+                        </akt:referenca>
+                    </akt:tekst>
+                    <akt:podtacka id="-641468968">
+                        <akt:redniBroj>-224019779</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="ZcRAt-KcsG1QCQSvR-">
+                            </akt:referenca>
+                            <akt:referenca href="aNhqOfmwLhG6eZuJQ0ANPEyzG9G3">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                    <akt:podtacka id="540508223">
+                        <akt:redniBroj>1630701567</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="yCmZPQu.Je3UKAWSk8hVqm0Yj0v">
+                            </akt:referenca>
+                            <akt:referenca href="SkSkt98uC3Xn7IaTB">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                </akt:tacka>
+                <akt:tacka id="-577900007">
+                    <akt:redniBroj>-1321023190</akt:redniBroj>
+                    <akt:tekst>
+                        <akt:referenca href="QuzvOiT39gU">
+                        </akt:referenca>
+                        <akt:referenca href="vpAfKd8MqC9U_n">
+                        </akt:referenca>
+                    </akt:tekst>
+                    <akt:podtacka id="-1755675324">
+                        <akt:redniBroj>-1662988828</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="ml">
+                            </akt:referenca>
+                            <akt:referenca href="WDEs">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                    <akt:podtacka id="-84987679">
+                        <akt:redniBroj>1520412645</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="e0PS1DIlf3D9F_fjOIEpanVVWy">
+                            </akt:referenca>
+                            <akt:referenca href="bCGisLAD8UWbyLyqLlroEZWp">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                </akt:tacka>
+            </akt:stav>
+            <akt:stav id="-1895997394">
+                <akt:redniBroj>-1864589648</akt:redniBroj>
+                <akt:tekst>
+                    <akt:referenca href="rpYI4sg83kUk8c.9C">
+                    </akt:referenca>
+                    <akt:referenca href="w8JxvNA1W7C">
+                    </akt:referenca>
+                </akt:tekst>
+                <akt:tacka id="549375370">
+                    <akt:redniBroj>365876885</akt:redniBroj>
+                    <akt:tekst>
+                        <akt:referenca href="KDL">
+                        </akt:referenca>
+                        <akt:referenca href="MqXG">
+                        </akt:referenca>
+                    </akt:tekst>
+                    <akt:podtacka id="227836070">
+                        <akt:redniBroj>-1066739717</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="nDy6mLXnwTsRZPuDz">
+                            </akt:referenca>
+                            <akt:referenca href="FXW.1.-bpI-l9kXmGTxbI_eD">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                    <akt:podtacka id="1886102611">
+                        <akt:redniBroj>-197218901</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="ukc0XwxPawOpR">
+                            </akt:referenca>
+                            <akt:referenca href="dsb3_9vJyJvLD6C.5Cjnk1-u">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                </akt:tacka>
+                <akt:tacka id="2113850338">
+                    <akt:redniBroj>-1114033877</akt:redniBroj>
+                    <akt:tekst>
+                        <akt:referenca href="zPbtur">
+                        </akt:referenca>
+                        <akt:referenca href="Q_FIoBPY0">
+                        </akt:referenca>
+                    </akt:tekst>
+                    <akt:podtacka id="1458412916">
+                        <akt:redniBroj>-1479266582</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="MenKGbXVLiRWohvVKRlaEYT9G.T">
+                            </akt:referenca>
+                            <akt:referenca href="o1ggTU18gdc-2.McGpxpg5">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                    <akt:podtacka id="1101757982">
+                        <akt:redniBroj>1458490837</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="W8lR75_VTRXtRqo8_kir">
+                            </akt:referenca>
+                            <akt:referenca href="XJLcEteD.aniEwiLrgErtLG">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                </akt:tacka>
+            </akt:stav>
+            <akt:stav id="1234533392">
+                <akt:redniBroj>-1179824456</akt:redniBroj>
+                <akt:tekst>
+                    <akt:referenca href="FUXlvyviM1ekMx">
+                    </akt:referenca>
+                    <akt:referenca href="Lk">
+                    </akt:referenca>
+                </akt:tekst>
+                <akt:tacka id="-972599228">
+                    <akt:redniBroj>1879116106</akt:redniBroj>
+                    <akt:tekst>
+                        <akt:referenca href="vGl">
+                        </akt:referenca>
+                        <akt:referenca href="UO0-iJfHMIgFezO4eX1apHF7wFNi">
+                        </akt:referenca>
+                    </akt:tekst>
+                    <akt:podtacka id="1665723032">
+                        <akt:redniBroj>-514314102</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="Lv1y.8N8Zg-t">
+                            </akt:referenca>
+                            <akt:referenca href="O-Sj7-FvsCkcEicLrPFW.Vc">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                    <akt:podtacka id="-1262828733">
+                        <akt:redniBroj>1633891836</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="mwC8Le9pKfxuq0UYVw_QLKrKh6">
+                            </akt:referenca>
+                            <akt:referenca href="qJUdNYsQdl1sOzfsX99_qQdld1u1B">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                </akt:tacka>
+                <akt:tacka id="-642415489">
+                    <akt:redniBroj>-1125067796</akt:redniBroj>
+                    <akt:tekst>
+                        <akt:referenca href="VKwwqqyvLQlbY-muWqaHB">
+                        </akt:referenca>
+                        <akt:referenca href="OxZDj3Q">
+                        </akt:referenca>
+                    </akt:tekst>
+                    <akt:podtacka id="8025658">
+                        <akt:redniBroj>-1698795337</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="ANTMrPsrpFUC2HE0cWKgNdZ">
+                            </akt:referenca>
+                            <akt:referenca href="vxYT_XtUJb2kvK0f">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                    <akt:podtacka id="1078522386">
+                        <akt:redniBroj>647690674</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="vLZO">
+                            </akt:referenca>
+                            <akt:referenca href="PTGm0yDNZb4.Vs8a">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                </akt:tacka>
+            </akt:stav>
+            <akt:stav id="-907282417">
+                <akt:redniBroj>-1088139195</akt:redniBroj>
+                <akt:tekst>
+                    <akt:referenca href="ug">
+                    </akt:referenca>
+                    <akt:referenca href="DjANw0PwlIxEj8xPX_qZmxzQvQ">
+                    </akt:referenca>
+                </akt:tekst>
+                <akt:tacka id="858703670">
+                    <akt:redniBroj>1890381829</akt:redniBroj>
+                    <akt:tekst>
+                        <akt:referenca href="YjtifrN0GOOzj31MT7ZVk">
+                        </akt:referenca>
+                        <akt:referenca href="AzaE6LuiL82a91kDTyUnOWObctcbjO">
+                        </akt:referenca>
+                    </akt:tekst>
+                    <akt:podtacka id="261377098">
+                        <akt:redniBroj>1522262245</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="maGJZdOunnh2y9Ic1JmSTEekrXJG">
+                            </akt:referenca>
+                            <akt:referenca href="Jcum.D.H_N96hGlU-1aX7">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                    <akt:podtacka id="814330051">
+                        <akt:redniBroj>-228134994</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="zYeR">
+                            </akt:referenca>
+                            <akt:referenca href="wncciw0.qrtjRf.0o3sLG9vLM2">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                </akt:tacka>
+                <akt:tacka id="938020610">
+                    <akt:redniBroj>1677089190</akt:redniBroj>
+                    <akt:tekst>
+                        <akt:referenca href="Tjw1T4MCnUw0-Cn6">
+                        </akt:referenca>
+                        <akt:referenca href="cVU">
+                        </akt:referenca>
+                    </akt:tekst>
+                    <akt:podtacka id="1883729">
+                        <akt:redniBroj>-1132633483</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="gkakuX">
+                            </akt:referenca>
+                            <akt:referenca href="NHy8UboTSLIec4uq">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                    <akt:podtacka id="-1336627099">
+                        <akt:redniBroj>105225210</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="jdggMswD">
+                            </akt:referenca>
+                            <akt:referenca href="D7BL7NaaJeEo0nzNNq11MtW5h21z-b">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                </akt:tacka>
+            </akt:stav>
+        </akt:clan>
+        <akt:clan id="-480370051">
+            <akt:naziv>Ffm-8sgb7k4PI__</akt:naziv>
+            <akt:redniBroj>-1163437707</akt:redniBroj>
+            <akt:simbolickiNaziv>V4s</akt:simbolickiNaziv>
+            <akt:stav id="1067384040">
+                <akt:redniBroj>-2068795636</akt:redniBroj>
+                <akt:tekst>
+                    <akt:referenca href="B">
+                    </akt:referenca>
+                    <akt:referenca href="DTA1iuDaoAY0ET4nouoFXx2278">
+                    </akt:referenca>
+                </akt:tekst>
+                <akt:tacka id="1692911636">
+                    <akt:redniBroj>-1752468169</akt:redniBroj>
+                    <akt:tekst>
+                        <akt:referenca href="M80SCZQIIip6">
+                        </akt:referenca>
+                        <akt:referenca href="FGlYOnN">
+                        </akt:referenca>
+                    </akt:tekst>
+                    <akt:podtacka id="-1060284386">
+                        <akt:redniBroj>346762198</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="ERuRaCjnSjUcrRWfeBjSo2ILPlbn">
+                            </akt:referenca>
+                            <akt:referenca href="a1DQY5Xajhzt5OUJcUKUQ4zpkA65">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                    <akt:podtacka id="-2012021537">
+                        <akt:redniBroj>794505282</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="hvrzhC">
+                            </akt:referenca>
+                            <akt:referenca href="RNS76wUb_i4mZCaKzA6l5HVPRZQt">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                </akt:tacka>
+                <akt:tacka id="616561256">
+                    <akt:redniBroj>398775666</akt:redniBroj>
+                    <akt:tekst>
+                        <akt:referenca href="ILJPJsY8q265uHzRoSwM7KFPt-">
+                        </akt:referenca>
+                        <akt:referenca href="RGI">
+                        </akt:referenca>
+                    </akt:tekst>
+                    <akt:podtacka id="-395371634">
+                        <akt:redniBroj>-1475506209</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="ZYU89bQu4toV">
+                            </akt:referenca>
+                            <akt:referenca href="ZQsisgY_zxyxxUf.NAo">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                    <akt:podtacka id="482563542">
+                        <akt:redniBroj>1520368220</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="f9Ub-G">
+                            </akt:referenca>
+                            <akt:referenca href="xancW6cz_1kgs9T3XcF">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                </akt:tacka>
+            </akt:stav>
+            <akt:stav id="2021066460">
+                <akt:redniBroj>884879450</akt:redniBroj>
+                <akt:tekst>
+                    <akt:referenca href="mIkrNuyO55Naz9zN-XZMHlcm">
+                    </akt:referenca>
+                    <akt:referenca href="sakArvMUhdo8TMRnorNWPYHoZHHlDj">
+                    </akt:referenca>
+                </akt:tekst>
+                <akt:tacka id="777555051">
+                    <akt:redniBroj>-711169589</akt:redniBroj>
+                    <akt:tekst>
+                        <akt:referenca href="UUR4kzQmt_WcdlEglizZR_9Cvy.t">
+                        </akt:referenca>
+                        <akt:referenca href="RtpBfiotWy">
+                        </akt:referenca>
+                    </akt:tekst>
+                    <akt:podtacka id="622489383">
+                        <akt:redniBroj>-1438827451</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="yJdhkzI">
+                            </akt:referenca>
+                            <akt:referenca href="sEzCxnEGw1gsM-dCW7TPDfzTE">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                    <akt:podtacka id="-1516820039">
+                        <akt:redniBroj>12671899</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="xxwj1">
+                            </akt:referenca>
+                            <akt:referenca href="KWiARHYqqy1I4fi9D4H3">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                </akt:tacka>
+                <akt:tacka id="-539878231">
+                    <akt:redniBroj>450460015</akt:redniBroj>
+                    <akt:tekst>
+                        <akt:referenca href="xMWRq">
+                        </akt:referenca>
+                        <akt:referenca href="S0P0S03Bdq">
+                        </akt:referenca>
+                    </akt:tekst>
+                    <akt:podtacka id="-809072588">
+                        <akt:redniBroj>447023399</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="cetwq0ygZtyDZxFHBJSVMFC4">
+                            </akt:referenca>
+                            <akt:referenca href="EhX.AORsGRdtH">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                    <akt:podtacka id="2104433294">
+                        <akt:redniBroj>-123878982</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="jHS">
+                            </akt:referenca>
+                            <akt:referenca href="UQZ6imxeR">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                </akt:tacka>
+            </akt:stav>
+            <akt:stav id="1772505471">
+                <akt:redniBroj>-1065573902</akt:redniBroj>
+                <akt:tekst>
+                    <akt:referenca href="euS">
+                    </akt:referenca>
+                    <akt:referenca href="XjcuvWa">
+                    </akt:referenca>
+                </akt:tekst>
+                <akt:tacka id="-866104044">
+                    <akt:redniBroj>2144807493</akt:redniBroj>
+                    <akt:tekst>
+                        <akt:referenca href="Tf0OjmZYs">
+                        </akt:referenca>
+                        <akt:referenca href="GHj.3oO-AXKZ779U662">
+                        </akt:referenca>
+                    </akt:tekst>
+                    <akt:podtacka id="1073776081">
+                        <akt:redniBroj>1690506897</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="ljB.jWfBjiPZi0DrKtZbt">
+                            </akt:referenca>
+                            <akt:referenca href="GDnR">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                    <akt:podtacka id="-1061569891">
+                        <akt:redniBroj>-1207922765</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="Fx">
+                            </akt:referenca>
+                            <akt:referenca href="TyAQsuY9gXt15ZuRaho">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                </akt:tacka>
+                <akt:tacka id="-2146364909">
+                    <akt:redniBroj>-1736241849</akt:redniBroj>
+                    <akt:tekst>
+                        <akt:referenca href="kQsK71g5b7tcmN">
+                        </akt:referenca>
+                        <akt:referenca href="SjrdVCK4voGCieQ_PF">
+                        </akt:referenca>
+                    </akt:tekst>
+                    <akt:podtacka id="-451954310">
+                        <akt:redniBroj>675023071</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="F47xfi5ci0HEAR4">
+                            </akt:referenca>
+                            <akt:referenca href="F-9z16WQ6e8u4jMlBcDeGcVnoV3EM6">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                    <akt:podtacka id="1869585704">
+                        <akt:redniBroj>-1589072359</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="Y">
+                            </akt:referenca>
+                            <akt:referenca href="n1pL">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                </akt:tacka>
+            </akt:stav>
+            <akt:stav id="367401034">
+                <akt:redniBroj>1486752120</akt:redniBroj>
+                <akt:tekst>
+                    <akt:referenca href="Aq2cZXziw9uYImh">
+                    </akt:referenca>
+                    <akt:referenca href="Ly1NeYFjuMhGQi2">
+                    </akt:referenca>
+                </akt:tekst>
+                <akt:tacka id="893677466">
+                    <akt:redniBroj>-1355532495</akt:redniBroj>
+                    <akt:tekst>
+                        <akt:referenca href="hUjLB2elHbMagiCJfQhBz2vDv8Pa">
+                        </akt:referenca>
+                        <akt:referenca href="o7BmhjSXifudNHt-">
+                        </akt:referenca>
+                    </akt:tekst>
+                    <akt:podtacka id="-1163734868">
+                        <akt:redniBroj>-1029970469</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="ka1bL8MCH5v5o8D89vvlfmAj">
+                            </akt:referenca>
+                            <akt:referenca href="gDsVhxqYYL7ho277cGP-s">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                    <akt:podtacka id="505679525">
+                        <akt:redniBroj>1342606167</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="XVDtTlZZ1ArUdB6-BpqQNppHy">
+                            </akt:referenca>
+                            <akt:referenca href="h1Wzdi3annLLZ">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                </akt:tacka>
+                <akt:tacka id="-1558610597">
+                    <akt:redniBroj>1417363022</akt:redniBroj>
+                    <akt:tekst>
+                        <akt:referenca href="LnLAJ-msC_NXtx1w9Cv5V.t7nm6">
+                        </akt:referenca>
+                        <akt:referenca href="AG32j">
+                        </akt:referenca>
+                    </akt:tekst>
+                    <akt:podtacka id="499660536">
+                        <akt:redniBroj>983422265</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="WPprFM3dCQZ6">
+                            </akt:referenca>
+                            <akt:referenca href="LW5wbM9TIkPOXIDAp">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                    <akt:podtacka id="241424602">
+                        <akt:redniBroj>1302308895</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="XcMGb6hzDAE">
+                            </akt:referenca>
+                            <akt:referenca href="w1Ie46vPP8QQjJunrvd6zbqn-UuZ">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:podtacka>
+                </akt:tacka>
+            </akt:stav>
+        </akt:clan>
+    </akt:deo>
+    <akt:deo>
+        <akt:redniBroj>258923724</akt:redniBroj>
+        <akt:simbolickiNaziv>lKstae5U0CBu4vJ7oU9</akt:simbolickiNaziv>
+        <akt:naziv>MkbEq_77dVi_1rmaVVktMEveodUBSq</akt:naziv>
+        <akt:clan id="-293297129">
+            <akt:naziv>g9FH</akt:naziv>
+            <akt:redniBroj>-789228059</akt:redniBroj>
+            <akt:simbolickiNaziv>ZDrUo6-XlsIWjmDN.o2lu8FodTD</akt:simbolickiNaziv>
+            <akt:tekst>
+                <akt:referenca href="_9F5Y5m_ky0YTH0MMLTxB6yxzF_Op">
+                </akt:referenca>
+                <akt:referenca href="oUJnua">
+                </akt:referenca>
+            </akt:tekst>
+            <akt:tekst>
+                <akt:referenca href="RvEgnO5-BMOSVHS.6AWgi-">
+                </akt:referenca>
+                <akt:referenca href="JNGfbQqF74zHENXc2av">
+                </akt:referenca>
+            </akt:tekst>
+        </akt:clan>
+        <akt:glava tipOznacavanja="saTackom">
+            <akt:redniBroj>882076547</akt:redniBroj>
+            <akt:simbolickiNaziv>rPcywlvBPGOkuJ_4QEB4</akt:simbolickiNaziv>
+            <akt:naziv>CzsdaGnD</akt:naziv>
+            <akt:odeljak>
+                <akt:redniBroj>781813996</akt:redniBroj>
+                <akt:simbolickiNaziv>V83n6RSeGf.tp7EzTTGhp9QV1Rrl</akt:simbolickiNaziv>
+                <akt:naziv>Ska3s8XTvPD3e</akt:naziv>
+                <akt:pododeljak>
+                    <akt:rednoSlovo>nq9h8SU-0</akt:rednoSlovo>
+                    <akt:naziv>uKQ6WUFigc7X8h7Bs-yjH</akt:naziv>
+                    <akt:clan id="588903007">
+                        <akt:redniBroj>-705659263</akt:redniBroj>
+                        <akt:simbolickiNaziv>J13gu</akt:simbolickiNaziv>
+                        <akt:tekst>
+                            <akt:referenca href="F3CG3HVdvopDyqjJ">
+                            </akt:referenca>
+                            <akt:referenca href="IMGKhxjm">
+                            </akt:referenca>
+                        </akt:tekst>
+                        <akt:stav id="471099081">
+                            <akt:redniBroj>-861895953</akt:redniBroj>
+                            <akt:tekst>
+                                <akt:referenca href="zoxlkTtZPQDJdLV.H2Xj">
+                                </akt:referenca>
+                                <akt:referenca href="eC2BVnJd6.lsOgsoyPPi6aM">
+                                </akt:referenca>
+                            </akt:tekst>
+                        </akt:stav>
+                        <akt:stav id="-1534688803">
+                            <akt:redniBroj>-847894936</akt:redniBroj>
+                            <akt:tekst>
+                                <akt:referenca href="ana6eOoAoQxQi9t84R9V.xQ">
+                                </akt:referenca>
+                                <akt:referenca href="hxoj4fOLthXL2Ply">
+                                </akt:referenca>
+                            </akt:tekst>
+                        </akt:stav>
+                    </akt:clan>
+                </akt:pododeljak>
+                <akt:clan id="1886200293">
+                    <akt:naziv>lv41eZlEDXWlh7ShgXcrbqB</akt:naziv>
+                    <akt:redniBroj>853503974</akt:redniBroj>
+                    <akt:simbolickiNaziv>nA</akt:simbolickiNaziv>
+                    <akt:tekst>
+                        <akt:referenca href="a1.LK7Fx5021mUZg_dJ">
+                        </akt:referenca>
+                        <akt:referenca href="ab">
+                        </akt:referenca>
+                    </akt:tekst>
+                    <akt:stav id="-2082772173">
+                        <akt:redniBroj>649704169</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="JW">
+                            </akt:referenca>
+                            <akt:referenca href="Bd">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:stav>
+                    <akt:stav id="958602811">
+                        <akt:redniBroj>-1466095274</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="TsoKX-eC">
+                            </akt:referenca>
+                            <akt:referenca href="D4e">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:stav>
+                </akt:clan>
+            </akt:odeljak>
+            <akt:odeljak>
+                <akt:redniBroj>1631478159</akt:redniBroj>
+                <akt:simbolickiNaziv>lELIyoyo31qUcs-67</akt:simbolickiNaziv>
+                <akt:naziv>f6D25S3I.ZANn</akt:naziv>
+                <akt:clan id="1964361592">
+                    <akt:naziv>hOpLsi3pqg</akt:naziv>
+                    <akt:redniBroj>-1317476080</akt:redniBroj>
+                    <akt:simbolickiNaziv>jP2uWDlSOG4wzmdt40MI</akt:simbolickiNaziv>
+                    <akt:stav id="1420860223">
+                        <akt:redniBroj>-1908208494</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="MLc1Yx4iQv">
+                            </akt:referenca>
+                            <akt:referenca href="N296LaP5zQR50aZ_MssWrSNiaZx">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:stav>
+                    <akt:stav id="-863979883">
+                        <akt:redniBroj>-751182898</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="g5Ua-EXNb">
+                            </akt:referenca>
+                            <akt:referenca href="SDTrfGtZXtBaxuwFGv">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:stav>
+                    <akt:stav id="2071994303">
+                        <akt:redniBroj>847885998</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="pwJGYYvz">
+                            </akt:referenca>
+                            <akt:referenca href="h5c4iw3">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:stav>
+                    <akt:stav id="1752967972">
+                        <akt:redniBroj>-916389376</akt:redniBroj>
+                        <akt:tekst>
+                            <akt:referenca href="Ug0qh6TW">
+                            </akt:referenca>
+                            <akt:referenca href="Bz2grdEQ_LZw">
+                            </akt:referenca>
+                        </akt:tekst>
+                    </akt:stav>
+                </akt:clan>
+                <akt:pododeljak>
+                    <akt:rednoSlovo>HEppgKC9Y</akt:rednoSlovo>
+                    <akt:naziv>DTO3NYTLiDflLyB</akt:naziv>
+                    <akt:clan id="177790934">
+                        <akt:redniBroj>-304642529</akt:redniBroj>
+                        <akt:simbolickiNaziv>ARyjD6rMN5n10TOw9h</akt:simbolickiNaziv>
+                        <akt:tekst>
+                            <akt:referenca href="NCF921sN9Q9rcRoMeB_YiE9ogqhW3_">
+                            </akt:referenca>
+                            <akt:referenca href="_XomT1GZa6CblGpIEfsLIbdwq60hq3">
+                            </akt:referenca>
+                        </akt:tekst>
+                        <akt:stav id="1348694675">
+                            <akt:redniBroj>754596277</akt:redniBroj>
+                            <akt:tekst>
+                                <akt:referenca href="Yx0">
+                                </akt:referenca>
+                                <akt:referenca href="xqZGwm">
+                                </akt:referenca>
+                            </akt:tekst>
+                        </akt:stav>
+                        <akt:stav id="773530498">
+                            <akt:redniBroj>152080972</akt:redniBroj>
+                            <akt:tekst>
+                                <akt:referenca href="u15Z1KY-TC4owU.Mqci-F">
+                                </akt:referenca>
+                                <akt:referenca href="D-pz">
+                                </akt:referenca>
+                            </akt:tekst>
+                        </akt:stav>
+                    </akt:clan>
+                </akt:pododeljak>
+            </akt:odeljak>
+        </akt:glava>
+    </akt:deo>
+    <akt:datumKreiranja property="pred:datumKreiranja" datatype="xs:date">2017-01-01</akt:datumKreiranja>
+    <akt:datumUsvajanjaUNacelu property="pred:datumUsvajanjaUNacelu" datatype="xs:date">2017-06-07</akt:datumUsvajanjaUNacelu>
+    <akt:datumUsvajanjaUCelosti property="pred:datumUsvajanjaUCelosti" datatype="xs:date">2017-05-20</akt:datumUsvajanjaUCelosti>
+    <akt:glasaliZa property="pred:glasaliZa" datatype="xs:int">50</akt:glasaliZa>
+    <akt:glasaliProtiv property="pred:glasaliProtiv" datatype="xs:int">150</akt:glasaliProtiv>
+</akt:propis>

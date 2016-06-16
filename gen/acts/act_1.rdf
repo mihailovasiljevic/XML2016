@@ -1,0 +1,17 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml">
+  <rdf:Description rdf:about="http://ftn.uns.ac.rs/pravniAkt/propis/1">
+    <pred:datumKreiranja xmlns:pred="http://ftn.uns.ac.rs/pravniAkt/predicate/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-01-01</pred:datumKreiranja>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ftn.uns.ac.rs/pravniAkt/propis/1">
+    <pred:datumUsvajanjaUNacelu xmlns:pred="http://ftn.uns.ac.rs/pravniAkt/predicate/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-06-07</pred:datumUsvajanjaUNacelu>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ftn.uns.ac.rs/pravniAkt/propis/1">
+    <pred:datumUsvajanjaUCelosti xmlns:pred="http://ftn.uns.ac.rs/pravniAkt/predicate/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-20</pred:datumUsvajanjaUCelosti>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ftn.uns.ac.rs/pravniAkt/propis/1">
+    <pred:glasaliZa xmlns:pred="http://ftn.uns.ac.rs/pravniAkt/predicate/" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">50</pred:glasaliZa>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ftn.uns.ac.rs/pravniAkt/propis/1">
+    <pred:glasaliProtiv xmlns:pred="http://ftn.uns.ac.rs/pravniAkt/predicate/" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">150</pred:glasaliProtiv>
+  </rdf:Description>
+</rdf:RDF>
