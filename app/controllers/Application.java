@@ -20,6 +20,10 @@ import java.io.IOException;
 import java.security.cert.Certificate;
 import java.util.*;
 
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.FactoryConfigurationError;
@@ -42,6 +46,12 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.marklogic.client.DatabaseClient;
+import com.marklogic.client.DatabaseClientFactory;
+import com.marklogic.client.document.DocumentPatchBuilder;
+import com.marklogic.client.document.XMLDocumentManager;
+import com.marklogic.client.document.DocumentPatchBuilder.Position;
+import com.marklogic.client.io.marker.DocumentPatchHandle;
+import com.marklogic.client.util.EditableNamespaceContext;
 
 import database.XMLPartialUpdate;
 import database.XMLWriterUriTemplate;
@@ -116,15 +126,16 @@ public class Application extends Controller {
 			Document doc = dBuilder.parse(fXmlFile);
 			
 			
-			String result = params.get("body");
+			JSONObject obj = new JSONObject(params.get("body"));
+			System.out.println("JSON"+obj.toString());
+			if(obj.has("map"))
+				obj.remove("map");
+			String result = obj.toString();
+			System.out.println(result);
 	    	ObjectMapper mapper = new ObjectMapper();
 	    	User user;
-	    	
-	    	
-				
 					user = mapper.readValue(result, User.class);
-					
-					
+						
 					String username = user.getUsername();
 			 		String password = user.getPassword();
 			 		
@@ -159,40 +170,37 @@ public class Application extends Controller {
 						 
 						 System.out.println("Uspesan LOGIN");
 						 provera_password=true;
-						 session.put("korisnik", user);
+						 User loggedUser = new User(username, password, password,
+								 eElement.getElementsByTagName("Ime").item(0).getTextContent(), eElement.getElementsByTagName("Prezime").item(0).getTextContent()  , eElement.getElementsByTagName("Uloga").item(0).getTextContent()
+								 , eElement.getElementsByTagName("Email").item(0).getTextContent());
+						
+						 
+						 JSONObject user2 = new JSONObject(loggedUser);
+						 session.put("korisnik", user2);
 						 break;
 
 						}
 					}
-					 		
-				
-					 		
 
-
-					System.out.println("Staff id : " + eElement.getAttribute("id"));
-					System.out.println("KorisnickoIme : " + eElement.getElementsByTagName("KorisnickoIme").item(0).getTextContent());
-					System.out.println("Lozinka : " + eElement.getElementsByTagName("Lozinka").item(0).getTextContent());
-					System.out.println("Ime : " + eElement.getElementsByTagName("Ime").item(0).getTextContent());
-					System.out.println("Prezime : " + eElement.getElementsByTagName("Prezime").item(0).getTextContent());
-					System.out.println("Uloga : " + eElement.getElementsByTagName("Uloga").item(0).getTextContent());
-					System.out.println("Email : " + eElement.getElementsByTagName("Email").item(0).getTextContent());
 
 				}
 			}
 			
-			/*if(provera_username==false){
+			if(provera_username==false){
 				
 				renderJSON(new JSONObject("{'error':'Pogresan username.'}"));
 	
-			}*/
+			}
 			
 			if(provera_password==false){
 				
-			//	renderJSON(new JSONObject("{'error':'Pogresan password.'}"));
-				login();
+				renderJSON(new JSONObject("{'error':'Pogresan password.'}"));
+				//login();
 			}
 			
-			
+			if(provera_username && provera_password){
+				renderJSON(new JSONObject("{'error':''}"));
+			}
 			
 			
 			
@@ -252,35 +260,56 @@ public class Application extends Controller {
 	 //		String certificate = user.getCertificate();
 	 		
 	 		if(password.equalsIgnoreCase(repeat_password)){
-	 			
 	 			provera_password=true;
-	 			
-		 		 Korisnik kor = new Korisnik();
-				    kor.setKorisnickoIme(username);
-				    kor.setLozinka(password);
-				    kor.setIme(ime);
-				    kor.setPrezime(prezime);
-				    kor.setUloga(uloga);
-				    kor.setEmail(email);
-				    
-				    /*Integer rbr = FileWriterReader.read("rbr.txt");
-				    
-				    kor.setRbrPoruke(rbr);
-				    rbr++;
-				    FileWriterReader.write("rbr.txt", rbr);*/
-				    
-				    Date date = new Date();
-				    kor.setTimeStamp(date.toString());
-				    	Marshalling marsh = new Marshalling();
-				    	try {
-							marsh.test(kor);
-						} catch (Exception e) {
-							// TODO Auto-generated catch block
+				 Date date = new Date();   
+				    	String docUri = "/users.xml";
+						try {
+							client = DatabaseClientFactory.newClient(Util.loadProperties().host, Util.loadProperties().port,
+									Util.loadProperties().database, Util.loadProperties().user, Util.loadProperties().password,
+									Util.loadProperties().authType);
+						} catch (IOException e) {
 							e.printStackTrace();
 						}
-				    	
-		
-				    	
+
+						// Create a document manager to work with XML files.
+						XMLDocumentManager xmlManager = client.newXMLDocumentManager();
+
+						// Define a URI value for a document.
+						String docId = docUri;
+
+						// Defining namespace mappings
+						EditableNamespaceContext namespaces = new EditableNamespaceContext();
+						namespaces.put("b", "http://www.ftn.uns.ac.rs/korisnici");
+						namespaces.put("fn", "http://www.w3.org/2005/xpath-functions");
+
+						// Assigning namespaces to patch builder
+						DocumentPatchBuilder patchBuilder = xmlManager.newPatchBuilder();
+						patchBuilder.setNamespaces(namespaces);
+
+						String patch = 
+						"<b:Korisnik>\n"+
+						"\t<b:KorisnickoIme>"+username+"</b:KorisnickoIme>\n"+
+						"\t<b:Lozinka>"+password+"</b:Lozinka>\n"+
+						"\t<b:Ime>"+ime+"</b:Ime>\n"+
+						"\t<b:Prezime>"+prezime+"</b:Prezime>\n"+
+						"\t<b:Uloga>"+uloga+"</b:Uloga>\n"+
+						"\t<b:Email>"+email+"</b:Email>\n"+
+						"\t<b:TimeStamp>"+date+"</b:TimeStamp>\n"+
+						"\t</b:Korisnik>\n";
+
+						// Defining XPath context
+						String contextXPath1 = "/b:Korisnici";
+
+						patchBuilder.insertFragment(contextXPath1, Position.LAST_CHILD, patch);
+						DocumentPatchHandle patchHandle = patchBuilder.build();
+
+						System.out.println("[INFO] Inserting nodes to \"" + docId + "\".");
+						xmlManager.patch(docId, patchHandle);
+
+						// Release the client
+						client.release();
+						
+				    	/*
 				    if(new File(Application.projectPath+"/XML2016/data/"+certificate+".jks").exists()){
 
 				    	boolean povucen = false;
@@ -325,6 +354,7 @@ public class Application extends Controller {
 				   
 				  
 				    }
+				    /*
 				    
 				   /* Marshalling marsh1 = new Marshalling();
 			    	try {
@@ -334,7 +364,7 @@ public class Application extends Controller {
 						e.printStackTrace();
 					}*/
 		 		
-			    	 XMLWriter.run(Util.loadProperties());
+			    	 //XMLWriter.run(Util.loadProperties());
 	 		}
 	 		
 	 		if(provera_password==false){
@@ -352,10 +382,14 @@ public class Application extends Controller {
     	renderJSON(players);
     }
     
-    public static void getUsers() {
+    public static void getUser() {
 
-    	renderJSON(users);
+    	renderJSON(session.get("korisnik"));
     }
     
+    public static void logout(){
+    	session.put("korisnik",null);
+    
+    }
     
 }

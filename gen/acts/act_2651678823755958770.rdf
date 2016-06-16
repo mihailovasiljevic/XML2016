@@ -1,0 +1,6 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml">
+  <rdf:Description rdf:about="">
+    <pred:datumKreiranja xmlns:pred="http://ftn.uns.ac.rs/pravniAkt/predicate" rdf:datatype="date">2006-05-04
+</pred:datumKreiranja>
+  </rdf:Description>
+</rdf:RDF>
