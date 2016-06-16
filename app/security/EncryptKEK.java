@@ -59,7 +59,7 @@ public class EncryptKEK {
         org.apache.xml.security.Init.init();
     }
 	
-	public void testIt() {
+	public void testIt(int br) {
 		//ucitava se dokument
 		Document doc = loadDocument(IN_FILE);
 		//generise tajni kljuc
@@ -69,7 +69,7 @@ public class EncryptKEK {
 		Certificate cert = readCertificate();
 		//kriptuje se dokument
 		System.out.println("Encrypting....");
-		doc = encrypt(doc ,secretKey, cert);
+		doc = encrypt(doc ,secretKey, cert,br);
 		//snima se tajni kljuc
 		//snima se dokument
 		saveDocument(doc, OUT_FILE);
@@ -196,7 +196,7 @@ public class EncryptKEK {
 	/**
 	 * Kriptuje sadrzaj prvog elementa odsek
 	 */
-	private Document encrypt(Document doc, SecretKey key, Certificate certificate) {
+	private Document encrypt(Document doc, SecretKey key, Certificate certificate,int br) {
 		
 		try {
 			//cipher za kriptovanje tajnog kljuca,
@@ -223,10 +223,11 @@ public class EncryptKEK {
 			
 			//trazi se element ciji sadrzaj se kriptuje
 			NodeList odseci = doc.getElementsByTagName("Email");
-			Element odsek = (Element) odseci.item(0);
+			for(int i=0;i<=br;i++){
+			Element odsek = (Element) odseci.item(i);
 			
 			xmlCipher.doFinal(doc, odsek, true); //kriptuje sa sadrzaj
-			
+			}
 			return doc;
 			
 		} catch (XMLEncryptionException e) {

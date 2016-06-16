@@ -41,7 +41,7 @@ angular.module('user').controller('inputCtrl1', ['$scope','$state','User','UserR
 					console.log('usao1');
 					$scope.error = response.map.error;		
 				}*/
-			//	$state.go("main.show");
+				$state.go("main.show");
 			});
 		}
  }]);

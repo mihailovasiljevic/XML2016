@@ -58,7 +58,7 @@ public class Application extends Controller {
 	private static ArrayList<Player> players = new ArrayList<Player>();
 	private static ArrayList<User> users = new ArrayList<User>();
 //	private static  String IN_FILE = FilePaths.korisnici;
-	private static  String certificate = "sgns";
+//	private static  String certificate = "sgns";
 	
 	/** Ukoliko je potrebno koristiti sesiju to je moguce uz pomoc objekta session na sledeci nacin:
 	 * session.put(key, value). Sesija se preuzima sa session.get(value). 
@@ -232,12 +232,25 @@ public class Application extends Controller {
 		}
     }
     
-    public static void saveUsers() {
+    public static void saveUsers() throws ParserConfigurationException, SAXException, IOException {
     	System.out.println("save");
     	String result = params.get("body");
     	ObjectMapper mapper = new ObjectMapper();
     	User user;
     	boolean provera_password=false;
+    
+    	
+    	
+    	File fXmlFile = new File(Application.projectPath+"/XML2016/xml/users.xml");
+		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+		DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+		Document doc = dBuilder.parse(fXmlFile);
+		doc.getDocumentElement().normalize();		
+		NodeList nList = doc.getElementsByTagName("Korisnik");
+		int duzina= nList.getLength();
+				
+
+		
     	
 		try {
 			user = mapper.readValue(result, User.class);
@@ -321,8 +334,8 @@ public class Application extends Controller {
 						    enc.setIN_FILE(Application.projectPath+"/XML2016/xml/users.xml");
 						    enc.setOUT_FILE(Application.projectPath+"/XML2016/xml/users.xml");
 						    //   enc.setKEY_STORE_FILE(FilePaths.keystores+certificate+".jks");
-						    enc.testIt();
-				   
+						    enc.testIt(duzina);
+						    
 				   
 				  
 				    }
