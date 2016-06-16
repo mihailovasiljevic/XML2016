@@ -58,6 +58,7 @@ import play.exceptions.JavaExecutionException;
 import play.mvc.Controller;
 import play.mvc.Http;
 import rs.ac.uns.ftn.pravniakt.Propis;
+import security.SecurityUtils;
 import util.FileUtil;
 import xquery.XMLReader;
 import xslfo.XSLFOTransformer;
@@ -222,7 +223,9 @@ public class Act extends Controller {
     			e.printStackTrace();
     		}
         
+        	SecurityUtils.addTimestampAndNumberAct();
         	XMLValidation isValid = new XMLValidation();
+        	
         	boolean xmlValid = isValid.test(Application.projectPath+"/XML2016/data/akt.xsd","act");
         	if(xmlValid)
         		System.out.println("XML JE VALIDAN");
