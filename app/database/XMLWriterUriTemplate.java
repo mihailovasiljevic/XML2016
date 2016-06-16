@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-
+import javax.xml.bind.JAXBException;
 
 import com.marklogic.client.DatabaseClient;
 import com.marklogic.client.DatabaseClientFactory;
@@ -16,6 +16,7 @@ import com.marklogic.client.io.InputStreamHandle;
 
 import controllers.Application;
 import database.Util.ConnectionProperties;
+import rs.ac.uns.ftn.pravniakt.Propis;
 
 /**
  * 
@@ -60,6 +61,7 @@ public class XMLWriterUriTemplate {
 		DocumentUriTemplate template = xmlManager.newDocumentUriTemplate("xml");
 		template.setDirectory("/"+collectionName+"/");
 		
+		
 		// Create an input stream handle to hold XML content.
 		InputStreamHandle handle = new InputStreamHandle(new FileInputStream(Application.projectPath+"/XML2016/data/temp.xml"));
 		
@@ -69,20 +71,36 @@ public class XMLWriterUriTemplate {
 		
 		// Write the document to the database
 		System.out.println("[INFO] Inserting \"" + template.getDirectory() + "\" to \"" + props.database + "\" database.");
-		DocumentDescriptor desc = xmlManager.create(template, metadata, handle);
+		//DocumentDescriptor desc = xmlManager.create(template, metadata, handle);
+		// Definiše se JAXB kontekst (putanja do paketa sa JAXB bean-ovima)
+		javax.xml.bind.JAXBContext context;
+		Propis propis = null;
+		try {
+			context = javax.xml.bind.JAXBContext.newInstance("rs.ac.uns.ftn.pravniakt");
+			javax.xml.bind.Unmarshaller unmarshaller = context.createUnmarshaller();
+			java.io.File tmp = new java.io.File(Application.projectPath+"/XML2016/data/temp.xml");
+			propis = (Propis) unmarshaller.unmarshal(tmp);
+			xmlManager.write("/acts/"+propis.getOznaka()+".xml", metadata,handle);
+		} catch (JAXBException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		
+
 		
 		// Write the document to the database
 		
 		
-		System.out.println("[INFO] Generated URI: " + desc.getUri());
+		//System.out.println("[INFO] Generated URI: " + desc.getUri());
 		System.out.print("[INFO] Verify the content at: ");
-		System.out.println("http://" + props.host + ":8000/v1/documents?database=" + props.database + "&uri=" + desc.getUri());
+		System.out.println("http://" + props.host + ":8000/v1/documents?database=" + props.database + "&uri=" + propis.getOznaka());
 		
 		// Release the client
 		client.release();
 		
 		System.out.println("[INFO] End.");
-		return desc.getUri();
+		return "/acts/"+propis.getOznaka()+".xml";
 	}
 
 

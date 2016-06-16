@@ -11,6 +11,10 @@ angular.module('main').config(['$urlRouterProvider','$stateProvider',
         url: 'search',
         templateUrl: 'public/main/views/search.html'
       })
+      .state('main.metadata', {
+        url: 'search',
+        templateUrl: 'public/main/views/searchMetadata.html'
+      })
       .state('main.act', {
         url: 'acts/propose',
         templateUrl: 'public/act/views/addAct.html'

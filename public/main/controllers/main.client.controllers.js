@@ -1,7 +1,9 @@
 angular.module('main')
-  .controller('MainController', ['$scope', '$rootScope', '$timeout','$location','$state','$window','Main','Search','Propis','Xhtml', 'Pdf','UserLogout','User',
-    function($scope,$rootScope, $timeout,$location,$state,$window, Main, Search,Propis, Xhtml, Pdf,UserLogout,User){
+  .controller('MainController', ['$scope', '$rootScope', '$timeout','$location','$state','$window','Main','Search','Propis','Xhtml', 'Pdf','MetaData',
+    function($scope,$rootScope, $timeout,$location,$state,$window, Main, Search,Propis, Xhtml, Pdf,MetaData,UserLogout,User){
 
+
+         $scope.xhtmlDoc = {};
         //go on mainPage
         //$state.go("main");
         //show documents
@@ -52,7 +54,7 @@ angular.module('main')
                 else{
                     $scope.error = "";
                     $scope.results = response.myArrayList;
-
+                    $scope.resultsForShowing = $scope.results;
                 }
             })
         };
@@ -74,23 +76,43 @@ angular.module('main')
         
         
         $scope.withdrawAct = function(act){
-        	var index1 = $scope.listForShowing.indexOf(act);
-        	var index2 = $scope.acts.indexOf(act);
-        	act.uri=act.uri.replace('/acts/','');
-        	act.uri=act.uri.replace('.xml','');
-        	
-        	 propis = Propis.get({actId:act.uri},function(response){ 
-        	response.$update({actId:act.uri},function(response) {
-        		act.status="povucen";
-        		$scope.listForShowing.splice(index1,1);
-        		$scope.acts.splice(index2,1);
-        				
-        		
-				//Popraviti ovo
-				//if(response.map.error)
-				//	$scope.error = response.map.error;
-			});
-        	 });
+            if(act.map){
+                var index1 = $scope.resultsForShowing.indexOf(act);
+                var index2 = $scope.results.indexOf(act);
+                act.uri=act.map.uri.replace('/acts/','');
+                act.uri=act.map.uri.replace('.xml','');
+                
+                propis = Propis.get({actId:act.map.uri},function(response){ 
+                response.$update({actId:act.map.uri},function(response) {
+                    act.map.status="povucen";
+                    $scope.resultsForShowing.splice(index1,1);
+                    $scope.results.splice(index2,1);
+                            
+                    
+                    //Popraviti ovo
+                    //if(response.map.error)
+                    //	$scope.error = response.map.error;
+                });
+                });
+            }else{
+                var index1 = $scope.listForShowing.indexOf(act);
+                var index2 = $scope.acts.indexOf(act);
+                act.uri=act.uri.replace('/acts/','');
+                act.uri=act.uri.replace('.xml','');
+                
+                propis = Propis.get({actId:act.uri},function(response){ 
+                response.$update({actId:act.uri},function(response) {
+                    act.status="povucen";
+                    $scope.listForShowing.splice(index1,1);
+                    $scope.acts.splice(index2,1);
+                            
+                    
+                    //Popraviti ovo
+                    //if(response.map.error)
+                    //	$scope.error = response.map.error;
+                });
+                });
+            }
         };
         
         $scope.loggedIn = false;
@@ -120,6 +142,64 @@ angular.module('main')
                 $window.open('http://localhost:9000'+response.map.path, '_blank');
                 //$window.location.href = 'http://localhost:9000'+response.map.path;
             });
+        };
+        $scope.metadata = function(){
+            $state.go("main.metadata");
+        };
+        $scope.searchByMetadata = function(){
+            var metaData = new MetaData();
+            
+            if($scope.glasaloZaOd != null  && $scope.glasaloZaOd != undefined){
+                metaData.glasaliZaOd = $scope.glasaloZaOd ;
+            }
+            if($scope.glasaloZaDo != null  && $scope.glasaloZaDo != undefined){
+                metaData.glasaliZaDo = $scope.glasaloZaDo ;
+            }
+            if($scope.datumKreiranjaOd != null  && $scope.datumKreiranjaOd != undefined){
+                x = makeDate($scope.datumKreiranjaOd);
+                metaData.datumKreiranjaOd =  x;
+            }
+            if($scope.datumKreiranjaDo != null  && $scope.datumKreiranjaDo != undefined){
+                x = makeDate($scope.datumKreiranjaDo);
+                metaData.datumKreiranjaDo =x ;
+            }
+            if($scope.datumUsvajanjaUNaceluOd != null  && $scope.datumUsvajanjaUNaceluOd != undefined){
+                x = makeDate($scope.datumUsvajanjaUNaceluOd);
+                metaData.datumUsvajanjaUNaceluOd = x ;
+            }
+            if($scope.datumUsvajanjaUNaceluDo != null  && $scope.datumUsvajanjaUNaceluDo != undefined){
+                x = makeDate($scope.datumUsvajanjaUNaceluDo);
+                metaData.datumUsvajanjaUNaceluDo =x ;
+            }
+            if($scope.datumUsvajanjaUCelostiOd != null  && $scope.datumUsvajanjaUCelostiOd != undefined){
+                x = makeDate($scope.datumUsvajanjaUCelostiOd);
+                metaData.datumUsvajanjaUCelostiOd = x ;
+            }
+            if($scope.datumUsvajanjaUCelostiDo != null  && $scope.datumUsvajanjaUCelostiDo != undefined){
+                x = makeDate($scope.datumUsvajanjaUCelostiDo);
+                metaData.datumUsvajanjaUCelostiDo =x ;
+            }
+
+            metaData.$save(function(response){
+                alert("nesto");
+            }, function(errorResponse){
+               alert(errorResponse);
+            });
+            
+            
+        };
+
+        var makeDate = function(raw){
+            var x = new Date(raw);
+            year = x.getFullYear();
+            month = x.getMonth() + 1;
+            month = month+"";
+            if(month.length == 1){
+                month = "0"+month;
+            }
+            day = x.getDate();
+
+            return year+"-"+month+"-"+day;
         }
     }])
     .controller('SearchResultsController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search',
@@ -141,6 +221,25 @@ angular.module('main')
             for(var i = 0; i < $scope.acts.length; i++){
                     if($scope.acts[i].status == $scope.selected){
                        $scope.$parent.listForShowing.push($scope.acts[i]);
+                    }
+            }
+
+        }
+    }])
+    .controller('filterSearchController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search',
+    function($scope,$rootScope, $timeout,$location,$state, Main, Search){
+
+        $scope.results = $scope.$parent.results;
+
+        $scope.searchSelected = "";
+
+        $scope.filter = function(){
+
+            $scope.$parent.resultsForShowing = [];
+
+            for(var i = 0; i < $scope.results.length; i++){
+                    if($scope.results[i].map.status == $scope.searchSelected){
+                       $scope.$parent.resultsForShowing.push($scope.results[i]);
                     }
             }
 

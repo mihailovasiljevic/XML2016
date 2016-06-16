@@ -1,0 +1,83 @@
+
+<section ng-controller="MainController">
+    <h3>AKTI</h3>
+    <h2>Pretraga akata po metapodacima</h2>
+    <div>
+    <button type="button" class="btn btn-default btn-filter" ng-click="search()">Po sadržaju</button>
+    <button type="button" class="btn btn-info btn-filter" ng-click="metadata()" disabled>Po metapodacima</button>
+    </div>
+    <div>
+        <div class="row" ng-controller="filterSearchController">
+            <input type="radio" name="predlozen" value="predlozen" ng-click="filter()" ng-model="searchSelected"> <span>Predložen</span>
+            <input type="radio" name="nacelo" value="nacelo" ng-model="searchSelected" ng-click="filter()"> <span>Usvojen u načelu</span>
+            <input type="radio" name="celina" value="celina" ng-model="searchSelected" ng-click="filter()"> <span>Usvojen u celosti</span>
+        </div>
+    </div>
+    <div class="container" ui-view>
+        <div class="row">
+
+            <section class="content" ng-controller="MainController">
+                <div class="col-lg-6">
+                    <div class="form">
+                        <div class="col-lg-6">
+                            <input class="input-text animated wow flipInY delay-02s" type="text" name="glasaloZaOd" ng-model="glasaloZaOd" placeholder="Glasalo za od " onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                            <input class="input-text animated wow flipInY delay-04s" type="text" name="glasaloZaDo" ng-model="glasaloProtivOd" placeholder="Glasalo protiv od " onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">                    
+                        </div>
+                        <div class="col-lg-6">
+                            <input class="input-text animated wow flipInY delay-02s" type="text" name="glasaloZaDo" ng-model="glasaloZaDo" placeholder="Glasalo za do " onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                            <input class="input-text animated wow flipInY delay-04s" type="text" name="glasaloProtivDo" ng-model="glasaloProtivDo" placeholder="Glasalo Protiv do " onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">                    
+                        </div>
+                        <div class="col-lg-6">
+                            Datum kreiranja od<input class="input-text animated wow flipInY delay-02s" type="date" name="datumKreiranjaOd" ng-model="datumKreiranjaOd" placeholder="Datum kreiranja od " onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                            Datum usvajanja u nacelu od <input class="input-text animated wow flipInY delay-04s" type="date" name="datumUsvajanjaUNaceluOd" ng-model="datumUsvajanjaUNaceluOd" placeholder="Datum usvajanja u nacelu od " onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">                    
+                        </div>
+                        <div class="col-lg-6">
+                             Datum kreiranja do<input class="input-text animated wow flipInY delay-02s" type="date" name="datumKreiranjaDo" ng-model="datumKreiranjaDo" placeholder="Datum kreiranja do " onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                            Datum usvajanja u nacelu do<input class="input-text animated wow flipInY delay-04s" type="date" name="datumUsvajanjaUNaceluDo" ng-model="datumUsvajanjaUNaceluDo" placeholder="Datum usvajanja u nacelu do " onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">                    
+                        </div>
+                        <div class="col-lg-6">
+                            Datum usvajanja u celosti od<input class="input-text animated wow flipInY delay-02s" type="date" name="datumUsvajanajUCelostiOd" ng-model="datumUsvajanajUCelostiOd" placeholder="Datum kreiranja do " onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+                             <span>&nbsp;</span> 
+                        </div>
+                        <div class="col-lg-6">
+                           <span>&nbsp;</span>      
+                            Datum usvajanja u celosti do<input class="input-text animated wow flipInY delay-04s" type="date" name="datumUsvajanjaUCelostiDo" ng-model="datumUsvajanjaUCelostiDo" placeholder="Datum usvajanja u nacelu do " onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">           
+                        </div>
+                    </div>
+                <input class="input-btn" type="submit" value="Pretraga" ng-click="searchByMetadata();">
+                </div>
+                
+                <span ng-bind="error" style="color:red; font-weight:bold; font-size:20px; padding-left:30px;"></span>
+  
+                    <div class="table-container">
+                        <table class="table table-filter">
+                            <tbody>
+                                <tr ng-repeat="act in resultsForShowing">
+                                    <td>
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <span class="media-meta pull-right" ng-bind=""></span>
+                                                <h4>
+                                                    <span ng-bind="act.map.name" ng-click="showAct(act.uri)"></span>
+                                                    <span class="pull-right-pendiente"> <button type="button" class="btn btn-info btn-filter" ng-click="withdrawAct(act)">Povuci akt</button></span>
+                                                    <span class="pull-right pendiente"> 
+                                                        <button type="button" class="btn btn-info btn-filter" ng-click="xhtml(act.map.uri)">XHTML</button>
+                                                        <button type="button" class="btn btn-info btn-filter" ng-click="pdf(act.map.uri)">PDF</button> 
+                                                    </span>
+                                                    <span class="pull-right pendiente" ng-bind="act.map.status" style="padding-right:40px;font-weight:bold;font-size:18px;color:blue;"></span>
+
+                                                </h4>
+                                                <p class="summary" ng-bind=""></p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row" ng-bind-html="xhtmlDoc | unsafe" style="background-color:white;"></div>
+
+            </section>
+        </div>
+    </div> 
+</section>
