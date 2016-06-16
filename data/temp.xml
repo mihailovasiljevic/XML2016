@@ -1,0 +1,47 @@
+<?xml  version="1.0" encoding="UTF-8"?>
+<ama:Amandman xsi:schemaLocation="http://www.ftn.uns.ac.rs/amandman file:/F:/Projects/XML/pinf_xws_docs/xml/schema/amandman.xsd" xmlns:ama="http://www.ftn.uns.ac.rs/amandman" xmlns:akt="http://www.ftn.uns.ac.rs/pravniAkt" xmlns:preda="http://ftn.uns.ac.rs/amandman/predicate" xmlns:pred="http://ftn.uns.ac.rs/pravniAkt/predicate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ama:oznaka>767717073</ama:oznaka>
+<ama:status>predlozen</ama:status>
+<ama:zaglavlje>
+<ama:drzava>РЕПУБЛИКА СРБИЈА
+</ama:drzava>
+<ama:organ>НАРОДНА СКУПШТИНА
+</ama:organ>
+<ama:predlagac>aM3D9s
+</ama:predlagac>
+<ama:datum>2017-11-21
+</ama:datum>
+<ama:mesto>JpAdHZzdV-R96-
+</ama:mesto>
+</ama:zaglavlje>
+<ama:uvod>
+<ama:naslov>ПРЕДСЕДНИКУ НАРОДНЕ СКУПШТИНЕ
+</ama:naslov>
+<ama:tekst>gEO31l
+</ama:tekst>
+</ama:uvod>
+<ama:glavniDeo>
+<ama:naslov>АМАНДМАН
+</ama:naslov>
+<ama:sadrzaj>
+<ama:tekst>
+<ama:pododeljak rbr="1293152795">
+<ama:clan id="-151959004" ama:operacija="dodajeSe">
+</ama:clan>
+</ama:pododeljak>
+</ama:tekst>
+</ama:sadrzaj>
+</ama:glavniDeo>
+<ama:obrazlozenje>
+<ama:naslov>Ddtq9Wtto
+</ama:naslov>
+<ama:tekst>qI0IYSyZM4LSndb3yi8Qw9wDHbOD
+</ama:tekst>
+</ama:obrazlozenje>
+<ama:potpis>
+<ama:funkcija>L7APASCyLCovCcbTWa2melzIG5oe7
+</ama:funkcija>
+<ama:imeIPrezime>WS354.xRfLV
+</ama:imeIPrezime>
+</ama:potpis>
+</ama:Amandman>

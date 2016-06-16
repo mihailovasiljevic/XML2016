@@ -19,8 +19,9 @@ POST	/api/acts/search						Act.search
 
 #Amendments
 GET		/api/amendments								AmendmentServices.listAmendments
-POST	/api/amendment							AmendmentServices.saveAmendment
-GET 	/api/amendment							AmendmentServices.getAmendment
+POST	/api/amendments							AmendmentServices.saveAmendment
+GET 	/api/amendments/{uri}					AmendmentServices.getAmendment(uri)
+PUT 	/api/amendments/{uri}					AmendmentServices.updateAmendment(uri)
 
 GET		/api/acts/sending/{uri}					Act.sendingAct(uri)
 

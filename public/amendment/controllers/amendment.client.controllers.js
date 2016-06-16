@@ -75,6 +75,31 @@ angular.module('amendment')
 				if(response.map.error)
 					$scope.error = response.map.error;
 			});
+			
+			
 
         }
+        
+        
+        $scope.withdrawAmendment = function(amendment){
+        	var index1 = $scope.listForShowing.indexOf(amendment);
+        	var index2 = $scope.amendments.indexOf(amendment);
+        	amendment.uri=amendment.uri.replace('/acts/','');
+        	amendment.uri=amendment.uri.replace('.xml','');
+        	console.log(amendment.uri);
+        	Amandman.get({amendmentId:amendment.uri},function(response){ 
+        		console.log("USAO2!!!!")
+        	response.$update({amendmentId:amendment.uri},function(response) {
+        		amendment.status="povucen";
+        		$scope.listForShowing.splice(index1,1);
+        		$scope.amendments.splice(index2,1);
+        				
+   
+        		
+				//Popraviti ovo
+				//if(response.map.error)
+				//	$scope.error = response.map.error;
+			});
+        	 });
+        };
     }]);
