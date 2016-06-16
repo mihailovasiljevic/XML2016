@@ -5,6 +5,7 @@ import play.cache.Cache;
 import play.mvc.*;
 import rs.ac.uns.ftn.pravniakt.Propis;
 import security.EncryptKEK;
+import security.HashSalt;
 import security.KeyStoreReader;
 import security.SignEnveloped;
 import util.FileUtil;
@@ -155,7 +156,7 @@ public class Application extends Controller {
 					if(username.equals(eElement.getElementsByTagName("KorisnickoIme").item(0).getTextContent()) ){
 						 provera_username=true;
 						
-						if(password.equals(eElement.getElementsByTagName("Lozinka").item(0).getTextContent() )){
+						if(HashSalt.check(password,eElement.getElementsByTagName("Lozinka").item(0).getTextContent() )){
 						 
 						 System.out.println("Uspesan LOGIN");
 						 provera_password=true;
@@ -256,7 +257,12 @@ public class Application extends Controller {
 	 			
 		 		 Korisnik kor = new Korisnik();
 				    kor.setKorisnickoIme(username);
-				    kor.setLozinka(password);
+				    try {
+						kor.setLozinka(HashSalt.getSaltedHash(password));
+					} catch (Exception e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
 				    kor.setIme(ime);
 				    kor.setPrezime(prezime);
 				    kor.setUloga("gradjanin");
