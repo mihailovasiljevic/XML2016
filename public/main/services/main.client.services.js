@@ -41,5 +41,28 @@ angular.module('main').factory('Main',['$resource',
             session[pair[0]] = pair[1];
         });
         return session;
-    }]);
+    }])
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ .factory('UserLogout', ['$resource',
+                         	    function($resource){
+		return $resource('/api/userlogout/:userId', {
+    		userId : '@_id'
+           	  }, {
+     	    update : {
+	      method: 'PUT'
+	    }
+     });
+}]);;
+
+
+
+
   

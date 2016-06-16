@@ -1,6 +1,6 @@
 angular.module('main')
-  .controller('MainController', ['$scope', '$rootScope', '$timeout','$location','$state','$window','Main','Search','Propis','Xhtml', 'Pdf',
-    function($scope,$rootScope, $timeout,$location,$state,$window, Main, Search,Propis, Xhtml, Pdf){
+  .controller('MainController', ['$scope', '$rootScope', '$timeout','$location','$state','$window','Main','Search','Propis','Xhtml', 'Pdf','UserLogout','User',
+    function($scope,$rootScope, $timeout,$location,$state,$window, Main, Search,Propis, Xhtml, Pdf,UserLogout,User){
 
         //go on mainPage
         //$state.go("main");
@@ -92,6 +92,20 @@ angular.module('main')
 			});
         	 });
         };
+        
+        $scope.loggedIn = false;
+        User.get(function(response){
+        	$scope.loggedIn = true;
+        	
+        })
+       
+        
+        $scope.logout = function(){
+        	UserLogout.get(function(response){
+        		console.log(response);
+        		$scope.loggedIn = false;
+        	})
+        }
         $scope.xhtml = function(uri){
             var xhtml = new Xhtml();
             xhtml.$get({uri: uri}, function(response){

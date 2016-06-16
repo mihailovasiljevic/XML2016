@@ -253,6 +253,7 @@ public class Act extends Controller {
 					String uri = XMLWriterUriTemplate.run(Util.loadProperties(), "acts");
 					System.out.println("[URI of saved XML]: " + uri);
 					prepareRDF(uri);
+					renderJSON(new JSONObject("{'error':''}"));
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();

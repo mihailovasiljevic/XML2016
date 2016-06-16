@@ -8,5 +8,20 @@ angular.module('user').factory('User', ['$resource',
 		      method: 'PUT'
 		    }
 		  });
+}])	
+		
+.factory('UserRegister', ['$resource',
+	    function($resource){
+	    		return $resource('/api/userreg/:userId', {
+	        		userId : '@_id'
+	               	  }, {
+	         	    update : {
+	  	      method: 'PUT'
+       	    }
+ 	  });
 
-}]);
+	        }]);
+
+
+
+
