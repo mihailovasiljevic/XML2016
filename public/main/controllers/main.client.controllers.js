@@ -181,7 +181,8 @@ angular.module('main')
             }
 
             metaData.$save(function(response){
-                alert("nesto");
+               $scope.results = response.myArrayList;
+               $scope.resultsForShowing = response.myArrayList;
             }, function(errorResponse){
                alert(errorResponse);
             });
