@@ -6,7 +6,7 @@
 GET     /                                       Application.index
 
 
-POST	/api/user						   		Application.login
+POST	/api/user						   		Application.saveUsers
 GET		/api/user								Application.getUsers
 
 
