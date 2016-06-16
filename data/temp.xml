@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <akt:propis xmlns:ama="http://www.ftn.uns.ac.rs/amandman"
  xmlns:akt="http://www.ftn.uns.ac.rs/pravniAkt"
@@ -576,3 +577,4 @@ about="http://www.ftn.uns.ac.rs/pravniAkt/propis/3">
     <akt:glasaliZa property="pred:glasaliZa" datatype="xs:int">50</akt:glasaliZa>
     <akt:glasaliProtiv property="pred:glasaliProtiv" datatype="xs:int">80</akt:glasaliProtiv>
 </akt:propis>
+

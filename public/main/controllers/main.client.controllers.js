@@ -74,21 +74,17 @@ angular.module('main')
         
         
         $scope.withdrawAct = function(act){
+        	var index1 = $scope.listForShowing.indexOf(act);
+        	var index2 = $scope.acts.indexOf(act);
         	act.uri=act.uri.replace('/acts/','');
         	act.uri=act.uri.replace('.xml','');
-        	
-        	var index = $scope.acts.indexOf()
         	
         	 propis = Propis.get({actId:act.uri},function(response){ 
         	response.$update({actId:act.uri},function(response) {
         		act.status="povucen";
-        		for(var i=0; i<$scope.listForShowing.length; i++)
-        			{
-        			if($scope.listForShowing[i].status=="povucen")
-        				{
-        				$scope.listForShowing.splice(i,1);
-        				}
-        			}
+        		$scope.listForShowing.splice(index1,1);
+        		$scope.acts.splice(index2,1);
+        				
         		
 				//Popraviti ovo
 				//if(response.map.error)

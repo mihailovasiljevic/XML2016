@@ -14,11 +14,15 @@ import org.w3c.dom.Document;
 
 import com.marklogic.client.DatabaseClient;
 import com.marklogic.client.DatabaseClientFactory;
+import com.marklogic.client.document.DocumentPatchBuilder;
+import com.marklogic.client.document.XMLDocumentManager;
 import com.marklogic.client.io.SearchHandle;
+import com.marklogic.client.io.marker.DocumentPatchHandle;
 import com.marklogic.client.query.MatchDocumentSummary;
 import com.marklogic.client.query.MatchLocation;
 import com.marklogic.client.query.QueryManager;
 import com.marklogic.client.query.StringQueryDefinition;
+import com.marklogic.client.util.EditableNamespaceContext;
 
 import database.Util;
 import database.XMLWriterUriTemplate;
@@ -73,11 +77,33 @@ public class AmendmentServices extends Controller {
 
 	}
 
-    public static void getAmendment(){
-    	System.out.println("GET Amandman");
+    public static void getAmendment(String uri){
+    	// String bodyParams = params.get("body");
+    			// String url = Http.Request.current().path;
+    			String docUri = "/amendments/" + uri + ".xml";
+    			Document doc;
+    			try {
+    				doc = xquery.XMLReader.run(Util.loadProperties(), docUri);
+    				JAXBContext context;
+    				context = JAXBContext.newInstance("rs.ac.uns.ftn.amandman");
+    				Unmarshaller unmarshaller = context.createUnmarshaller();
+    				Amandman amandman = (Amandman) unmarshaller.unmarshal(doc);
+    				System.out.println("prosao");
+    				renderJSON(amandman);
+    			} catch (FileNotFoundException e) {
+    				// TODO Auto-generated catch block
+    				e.printStackTrace();
+    			} catch (IOException e) {
+    				// TODO Auto-generated catch block
+    				e.printStackTrace();
+    			} catch (JAXBException e) {
+    				// TODO Auto-generated catch block
+    				e.printStackTrace();
+    			}
     }
 	
 	public static void changeStateOfAct() {
+		//DELUJE SUVISNO OVA METODA
 		String actNum = "8505319148387349153";
 		String state = "nacelo";
 		
@@ -170,5 +196,48 @@ public class AmendmentServices extends Controller {
 
 		return splitted[2];
 	}
+	
+	
+	public static void updateAmendment(String uri) {
+		//promena statusa amandmanu, samo to radi ova metoda
+		String docUri = "/amendments/" + uri + ".xml";
+		try {
+			client = DatabaseClientFactory.newClient(Util.loadProperties().host, Util.loadProperties().port, Util.loadProperties().database, Util.loadProperties().user, Util.loadProperties().password,
+					Util.loadProperties().authType);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		// Create a document manager to work with XML files.
+		XMLDocumentManager xmlManager = client.newXMLDocumentManager();
+
+		// Define a URI value for a document.
+		String docId = docUri;
+
+		// Defining namespace mappings
+		EditableNamespaceContext namespaces = new EditableNamespaceContext();
+		namespaces.put("b", "http://www.ftn.uns.ac.rs/amandman");
+		namespaces.put("fn", "http://www.w3.org/2005/xpath-functions");
+
+		// Assigning namespaces to patch builder
+		DocumentPatchBuilder patchBuilder = xmlManager.newPatchBuilder();
+		patchBuilder.setNamespaces(namespaces);
+
+		String patch = "\t<b:status>povucen</b:status>\n";
+
+		// Defining XPath context
+		//
+		String contextXPath1 = "/b:amandman/b:status";
+
+		patchBuilder.replaceFragment(contextXPath1, patch);
+		DocumentPatchHandle patchHandle = patchBuilder.build();
+
+		System.out.println("[INFO] Inserting nodes to \"" + docId + "\".");
+		xmlManager.patch(docId, patchHandle);
+
+		// Release the client
+		client.release();
+	}
+	
 	
 }
