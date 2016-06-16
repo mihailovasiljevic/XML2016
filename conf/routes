@@ -17,6 +17,8 @@ PUT		/api/acts/{uri}							Act.updateAct(uri)
 POST	/api/acts								Act.saveAct
 POST	/api/acts/search						Act.search
 
+#Amendments
+GET		/api/amendments								AmendmentServices.listAmendments
 POST	/api/amendment							AmendmentServices.saveAmendment
 GET 	/api/amendment							AmendmentServices.getAmendment
 

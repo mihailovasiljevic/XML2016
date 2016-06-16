@@ -1,6 +1,6 @@
 angular.module('amendment')
-  .controller('AmendmentController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search','Amandman',
-    function($scope,$rootScope, $timeout,$location,$state, Main, Search,Amandman){
+  .controller('AmendmentController', ['$scope', '$rootScope', '$timeout','$location','$state','Search','Amandman',
+    function($scope,$rootScope, $timeout,$location,$state, Search,Amandman){
 
         //go on mainPage
         //$state.go("main");
@@ -11,9 +11,9 @@ angular.module('amendment')
     
 
         $scope.find = function(){
-            $scope.acts = Main.query(
+            $scope.amendments = Amandman.query(
                 function(response){
-                     $scope.listForShowing = $scope.acts;
+                     $scope.listForShowing = $scope.amendments;
             });
            
         };

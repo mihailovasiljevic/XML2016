@@ -26,13 +26,13 @@
                                         <div class="table-container">
                                             <table class="table table-filter">
                                                 <tbody>
-                                                    <tr class="selected" ng-repeat="act in acts">
+                                                    <tr ng-repeat="amendment in amendments">
                                                         <td>
                                                             <div class="media">
                                                                 <div class="media-body">
                                                                     <span class="media-meta pull-right" ng-bind=""></span>
                                                                     <h4>
-                                                                        <span ng-bind="act.name" ng-click="showAct(act.uri)"></span>
+                                                                        <span ng-bind="amendment.oznaka" ng-click="showAct(amendment.uri)"></span>
                                                                         <span class="pull-right pagado" ng-bind=""></span>
                                                                     </h4>
                                                                     <p class="summary" ng-bind=""></p>
