@@ -280,9 +280,10 @@ public class Application extends Controller {
 						}
 				    	
 		
-				 
+				    	
 				    if(new File(Application.projectPath+"/XML2016/data/"+certificate+".jks").exists()){
-
+				    	
+				    	/*
 				    	boolean povucen = false;
 				    	File f = new File(Application.projectPath+"/XML2016/data/"+"sgns-revoked.jks");
 						if(f.exists() && !f.isDirectory()) {
@@ -314,7 +315,7 @@ public class Application extends Controller {
 							    sign.setPass(certificate);
 							    sign.testIt();
 							}
-								
+							*/	
 					
 					    	EncryptKEK enc = new EncryptKEK();
 						    enc.setIN_FILE(Application.projectPath+"/XML2016/xml/users.xml");
