@@ -42,7 +42,7 @@ public class XMLWriterUriTemplate {
 
 	private static DatabaseClient client;
 	
-	public static void run(ConnectionProperties props,String collectionName) throws FileNotFoundException {
+	public static String run(ConnectionProperties props,String collectionName) throws FileNotFoundException {
 		
 		// Initialize the database client
 		if (props.database.equals("")) {
@@ -82,6 +82,7 @@ public class XMLWriterUriTemplate {
 		client.release();
 		
 		System.out.println("[INFO] End.");
+		return desc.getUri();
 	}
 
 

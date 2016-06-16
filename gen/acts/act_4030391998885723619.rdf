@@ -1,0 +1,17 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml">
+  <rdf:Description rdf:about="akt:oznaka:2066878116">
+    <pred:datumKreiranja xmlns:pred="http://ftn.uns.ac.rs/pravniAkt/predicate" rdf:datatype="date">2016-11-13Z</pred:datumKreiranja>
+  </rdf:Description>
+  <rdf:Description rdf:about="akt:oznaka:2066878116">
+    <pred:datumUsvajanjaUNacelu xmlns:pred="http://ftn.uns.ac.rs/pravniAkt/predicate" rdf:datatype="date">2018-02-10</pred:datumUsvajanjaUNacelu>
+  </rdf:Description>
+  <rdf:Description rdf:about="akt:oznaka:2066878116">
+    <pred:datumUsvajanjaUCelosti xmlns:pred="http://ftn.uns.ac.rs/pravniAkt/predicate" rdf:datatype="date">2017-07-15Z</pred:datumUsvajanjaUCelosti>
+  </rdf:Description>
+  <rdf:Description rdf:about="akt:oznaka:2066878116">
+    <pred:datumUsvajanjaUCelosti xmlns:pred="http://ftn.uns.ac.rs/pravniAkt/predicate" rdf:datatype="int">100</pred:datumUsvajanjaUCelosti>
+  </rdf:Description>
+  <rdf:Description rdf:about="akt:oznaka:2066878116">
+    <pred:datumUsvajanjaUCelosti xmlns:pred="http://ftn.uns.ac.rs/pravniAkt/predicate" rdf:datatype="int">50</pred:datumUsvajanjaUCelosti>
+  </rdf:Description>
+</rdf:RDF>

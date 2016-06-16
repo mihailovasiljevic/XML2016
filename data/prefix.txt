@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akt:propis xmlns:ama="http://www.ftn.uns.ac.rs/amandman"
+ xmlns:akt="http://www.ftn.uns.ac.rs/pravniAkt"
+ xmlns:preda="http://ftn.uns.ac.rs/amandman/predicate/"
+ xmlns:pred="http://ftn.uns.ac.rs/pravniAkt/predicate/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.ftn.uns.ac.rs/pravniAkt file:/F:/Projects/XML/pinf_xws_docs/xml/schema/amandman.xsd" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema#"
+xmlns="http://www.w3.org/ns/rdfa#"
+about="http://www.ftn.uns.ac.rs/pravniAkt/propis/01234">
