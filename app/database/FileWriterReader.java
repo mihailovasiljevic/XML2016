@@ -19,7 +19,7 @@ public class FileWriterReader {
 	
 	
 	
-/*
+
 	//OVERWRITE, ID
 	public static int write(String string, Integer id) {
 		System.out.println(path);
@@ -56,5 +56,5 @@ public class FileWriterReader {
 		
 		return null;
 	}
-	*/
+	
 }

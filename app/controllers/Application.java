@@ -17,6 +17,8 @@ import org.json.*;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.security.cert.Certificate;
 import java.util.*;
@@ -171,7 +173,7 @@ public class Application extends Controller {
 						 provera_password=true;
 						 User loggedUser = new User(username, password, password,
 						 eElement.getElementsByTagName("Ime").item(0).getTextContent(), eElement.getElementsByTagName("Prezime").item(0).getTextContent()  , eElement.getElementsByTagName("Uloga").item(0).getTextContent()
-								 , eElement.getElementsByTagName("Email").item(0).getTextContent());
+								 , eElement.getElementsByTagName("Email").item(0).getTextContent(),eElement.getElementsByTagName("Certificate").item(0).getTextContent());
 						loggedUser.setCertificate(eElement.getElementsByTagName("Certificate").item(0).getTextContent());	
 						 JSONObject user2 = new JSONObject(loggedUser);
 						 session.put("korisnik", user2);
@@ -246,10 +248,8 @@ public class Application extends Controller {
     
     	
     	
-    	File fXmlFile = new File(Application.projectPath+"/XML2016/xml/users.xml");
-		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-		DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-		Document doc = dBuilder.parse(fXmlFile);
+    	Document doc = XMLReader.run(Util.loadProperties(),"/security/users.xml");
+		
 		doc.getDocumentElement().normalize();		
 		NodeList nList = doc.getElementsByTagName("Korisnik");
 		int duzina= nList.getLength();
@@ -266,71 +266,42 @@ public class Application extends Controller {
 	 		String repeat_password = user.getRepeat_password();
 	 		String ime = user.getIme();
 	 		String prezime = user.getPrezime();
-	 		String email = user.getEmail();
 	 		String uloga = user.getUloga();
+	 		String email = user.getEmail();
 	 		String certificate = user.getCertificate();
 	 		
 	 		if(password.equalsIgnoreCase(repeat_password)){
 	 			
 	 			provera_password=true;
-	 			    
+	 			
+		 		 Korisnik kor = new Korisnik();
+				    kor.setKorisnickoIme(username);
+				    try {
+						kor.setLozinka(HashSalt.getSaltedHash(password));
+					} catch (Exception e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+				    kor.setIme(ime);
+				    kor.setPrezime(prezime);
+				    kor.setUloga(uloga);
+				    kor.setEmail(email);
+				    kor.setCertificate(certificate);
+				    
 				    
 				    Date date = new Date();
+				    kor.setTimeStamp(date.toString());
+				    	Marshalling marsh = new Marshalling();
+				    	try {
+							marsh.test(kor);
+						} catch (Exception e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
 				    	
-				    String docUri = "/security/users.xml";
-				    try {
-				    client = DatabaseClientFactory.newClient(Util.loadProperties().host, Util.loadProperties().port,
-				   Util.loadProperties().database, Util.loadProperties().user, Util.loadProperties().password,
-				    Util.loadProperties().authType);
-				    } catch (IOException e) {
-				    	e.printStackTrace();
-				     						}
-				    				    	
-				    // Create a document manager to work with XML files.
-				    XMLDocumentManager xmlManager = client.newXMLDocumentManager();
-				   
-				   // Define a URI value for a document.
-				    String docId = docUri;
-				    
-				    // Defining namespace mappings
-				    EditableNamespaceContext namespaces = new EditableNamespaceContext();
-				    namespaces.put("b", "http://www.ftn.uns.ac.rs/korisnici");
-				   namespaces.put("fn", "http://www.w3.org/2005/xpath-functions");
-				    
-				    // Assigning namespaces to patch builder
-				    DocumentPatchBuilder patchBuilder = xmlManager.newPatchBuilder();
-				    patchBuilder.setNamespaces(namespaces);
-				    
-				  String patch="";
-				try {
-					patch = "<b:Korisnik>\n"+
-				    "\t<b:KorisnickoIme>"+username+"</b:KorisnickoIme>\n"+
-				    "\t<b:Lozinka>"+HashSalt.getSaltedHash(password)+"</b:Lozinka>\n"+
-				    "\t<b:Ime>"+ime+"</b:Ime>\n"+
-				    "\t<b:Prezime>"+prezime+"</b:Prezime>\n"+
-				    "\t<b:Uloga>"+uloga+"</b:Uloga>\n"+
-				    "\t<b:Email>"+email+"</b:Email>\n"+
-				    "\t<b:Certificate>"+certificate+"</b:Certificate>\n"+
-				    "\t<b:TimeStamp>"+date+"</b:TimeStamp>\n"+
-				    "\t</b:Korisnik>\n";
-				} catch (Exception e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				   
-				   // Defining XPath context
-				    String contextXPath1 = "/b:Korisnici";
-				    
-				  patchBuilder.insertFragment(contextXPath1, Position.LAST_CHILD, patch);
-				    DocumentPatchHandle patchHandle = patchBuilder.build();
-				 
-				  System.out.println("[INFO] Inserting nodes to \"" + docId + "\".");
-				    xmlManager.patch(docId, patchHandle);
-				 
-				 // Release the client
-				    client.release();
-				    /*
-				    if(new File(Application.projectPath+"/XML2016/data/"+certificate+".jks").exists()){
+		
+				    	
+				    	/*   if(new File(Application.projectPath+"/XML2016/data/"+certificate+".jks").exists()){
 				    	
 				    	
 				    	boolean povucen = false;
@@ -364,7 +335,7 @@ public class Application extends Controller {
 							    sign.setPass(certificate);
 							    sign.testIt();
 							}
-								
+							*/	
 					
 					    	EncryptKEK enc = new EncryptKEK();
 						    enc.setIN_FILE(Application.projectPath+"/XML2016/xml/users.xml");
@@ -374,9 +345,8 @@ public class Application extends Controller {
 						    
 				   
 				  
-				    }
-	 		
-				    */
+				//    }
+				    
 				   /* Marshalling marsh1 = new Marshalling();
 			    	try {
 						marsh1.test(kor);
@@ -385,12 +355,14 @@ public class Application extends Controller {
 						e.printStackTrace();
 					}*/
 		 		
-			    	//XMLWriter.run(Util.loadProperties());
+			    	 XMLWriter.run(Util.loadProperties());
 	 		}
 	 		
 	 		if(provera_password==false){
-	 			saveUsers();
-	 	//		renderJSON(new JSONObject("{'error':'Sifre se moraju poklapati.'}"));
+	 				saveUsers();
+	 				//	renderJSON(new JSONObject("{'error':'Sifre se moraju poklapati.'}"));
+	 		}else{
+	 			//	renderJSON(new JSONObject("{'error':''}"));
 	 		}
 	 		
 		} catch (IOException e) {

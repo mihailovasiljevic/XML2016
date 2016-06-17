@@ -30,6 +30,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="Prezime" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="Uloga" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="Email" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *          &lt;element name="Certificate" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -46,6 +47,7 @@ import javax.xml.bind.annotation.XmlType;
     "prezime",
     "uloga",
     "email",
+    "certificate",
     "timeStamp",
     "rbrPoruke"
 })
@@ -63,6 +65,8 @@ public class Korisnik {
     protected String uloga;
     @XmlElement(name = "Email", required = true)
     protected String email;
+    @XmlElement(name = "Certificate", required = true)
+    protected String certificate;
     @XmlElement(name = "TimeStamp", required = true)
     protected String timeStamp;
    
@@ -231,5 +235,15 @@ public class Korisnik {
 	public void setRbrPoruke(Integer rbrPoruke) {
 			this.rbrPoruke = rbrPoruke;
 		}
+
+	public String getCertificate() {
+		return certificate;
+	}
+
+	public void setCertificate(String certificate) {
+		this.certificate = certificate;
+	}
+	
+	
 
 }

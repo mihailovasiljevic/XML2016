@@ -14,7 +14,7 @@ public class User implements Serializable{
 	private String certificate;
 
 	public User(String username, String password, String repeat_password,
-			String ime, String prezime, String uloga, String email) {
+			String ime, String prezime, String uloga, String email, String certificate) {
 		super();
 		this.username = username;
 		this.password = password;
@@ -23,6 +23,7 @@ public class User implements Serializable{
 		this.prezime = prezime;
 		this.uloga = uloga;
 		this.email = email;
+		this.certificate = certificate;
 	}
 
 	public String getRepeat_password() {
