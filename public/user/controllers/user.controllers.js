@@ -47,12 +47,13 @@ angular.module('user').controller('inputCtrl1', ['$scope','$state','User','UserR
 		}
  }]);
 
-angular.module('user').controller('inputCtrl2', ['$scope','$state','User',
-  function($scope,$state,User) {
+angular.module('user').controller('inputCtrl2', ['$scope','$state','User','$window','$timeout',
+  function($scope,$state,User,$window,$timeout) {
 	(User.get(function(response){
 		console.log(JSON.stringify(response));
 		if(response.uloga)
 		$state.go('main');
+		
 	}))
 	$scope.user = new User();
 	$scope.create = function() {
@@ -72,8 +73,15 @@ angular.module('user').controller('inputCtrl2', ['$scope','$state','User',
 				$scope.error = response.map.error;
 				
 			}
-			else
-				$state.go("main.show");				
+			else{
+
+					$timeout(function(){
+						$window.location.replace("http://localhost:9000");
+						
+					},0)
+					
+				
+			}
 		});
 		
 	
