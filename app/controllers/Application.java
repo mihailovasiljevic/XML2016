@@ -392,6 +392,42 @@ public class Application extends Controller {
     	}
     }
     
+    public static void getSednica(){
+    	if(session.get("sednica") != null)
+    		renderJSON(new JSONObject("{'session':'SESSION_STARTED'}"));
+    	else{
+    		renderJSON(new JSONObject("{'session':'SESSION_STOPPED'}"));
+    	}
+    }
+    
+    public static void setSednica(){
+    	String body = params.get("body");
+    	
+    	if(body!=null){
+    		JSONObject obj = new JSONObject(body);
+    		try{
+    			String data = obj.getString("data");
+    			if(data.equals("START")){
+    				String date = obj.getString("date");
+    				String time = obj.getString("time");
+    				JSONObject object = new JSONObject();
+    				object.put("session", "SESSION_STARTED");
+    				object.put("date", date);
+    				object.put("time", time);
+    				session.put("sednica", object);
+    				renderJSON(object);
+    				System.out.println(object);
+    			}else{
+    				session.remove("sednica");
+    				renderJSON(new JSONObject("{'session':'SESSION_STOPPED'}"));
+    				System.out.println("{'session':'SESSION_STOPPED'}");
+    			}
+    		}catch (Exception e) {
+				renderJSON(new JSONObject("{'error':'Morate uneti da li se sednica zatvara ili pocinje.'}"));
+			}
+    	}
+    }
+    
     public static void logout(){
     	session.put("korisnik",new JSONObject("{}"));
     

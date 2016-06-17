@@ -1,11 +1,15 @@
 
-<section ng-controller="SessionController as sc" ng-init="find();">
+<section ng-controller="VotingController as vc" ng-init="find();">
     <h3>SEDNICA</h3>
-    <h2>Vođenje sednice</h2>    
-    <div class="container" ui-view>
+    <h2>Vođenje sednice</h2>
+    <h4>Glasanje za prihvaćanje zakona: <b>{{act.map.naziv}}</b> u načelu.</h4>       
+    <div class="container" >
         <div class="row">
+            <input ng-model="glasaliZa" class="input-text" type="text" name="" placeholder="Koliko je glasalo za?" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+            <input ng-model="glasaliProtiv" class="input-text" type="text" name="" placeholder="Koliko je glasalo protiv?" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
+            <input type="button" value="Završi glasanje" ng-click="vote();" class="input-btn">
 
-            VOTING          
+                   
 
         </div>
     </div> 

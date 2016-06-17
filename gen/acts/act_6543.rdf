@@ -1,17 +1,17 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml">
-  <rdf:Description rdf:about="http://www.ftn.uns.ac.rs/pravniAkt/propis/2">
+  <rdf:Description rdf:about="http://www.ftn.uns.ac.rs/pravniAkt/propis/6543">
     <pred:datumKreiranja xmlns:pred="http://ftn.uns.ac.rs/pravniAkt/predicate/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-12-08</pred:datumKreiranja>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ftn.uns.ac.rs/pravniAkt/propis/2">
+  <rdf:Description rdf:about="http://www.ftn.uns.ac.rs/pravniAkt/propis/6543">
     <pred:datumUsvajanjaUNacelu xmlns:pred="http://ftn.uns.ac.rs/pravniAkt/predicate/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-03-28</pred:datumUsvajanjaUNacelu>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ftn.uns.ac.rs/pravniAkt/propis/2">
+  <rdf:Description rdf:about="http://www.ftn.uns.ac.rs/pravniAkt/propis/6543">
     <pred:datumUsvajanjaUCelosti xmlns:pred="http://ftn.uns.ac.rs/pravniAkt/predicate/" rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-08-02Z</pred:datumUsvajanjaUCelosti>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ftn.uns.ac.rs/pravniAkt/propis/2">
+  <rdf:Description rdf:about="http://www.ftn.uns.ac.rs/pravniAkt/propis/6543">
     <pred:glasaliZa xmlns:pred="http://ftn.uns.ac.rs/pravniAkt/predicate/" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">110162944</pred:glasaliZa>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.ftn.uns.ac.rs/pravniAkt/propis/2">
+  <rdf:Description rdf:about="http://www.ftn.uns.ac.rs/pravniAkt/propis/6543">
     <pred:glasaliProtiv xmlns:pred="http://ftn.uns.ac.rs/pravniAkt/predicate/" rdf:datatype="http://www.w3.org/2001/XMLSchema#int">-1057065940</pred:glasaliProtiv>
   </rdf:Description>
   <rdf:Description rdf:about="http://ftn.uns.ac.rs/pravniAkt/amandman/1">

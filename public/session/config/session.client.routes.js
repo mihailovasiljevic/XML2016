@@ -3,8 +3,8 @@ angular.module('main').config(['$urlRouterProvider','$stateProvider',
    
 	$urlRouterProvider.otherwise('/');
     $stateProvider
-      .state('main.session.voting', {
-        url: '/:actURI',
+      .state('main.voting', {
+        url: ':actURI',
         templateUrl: 'public/session/views/voting.html'
       })
      ;

@@ -104,6 +104,7 @@ public class XMLReader {
 	public static Propis getPropis(String docId) {
 		Propis propis = null;
 		try {
+			
 			Document doc = XMLReader.run(Util.loadProperties(), docId);
 			JAXBContext context;
 			context = JAXBContext.newInstance("rs.ac.uns.ftn.pravniakt");
@@ -140,6 +141,7 @@ public class XMLReader {
 	
 	public static Amandman getAmandman(String docId) {
 		Amandman amandman = null;
+		System.out.println("[INFO] cita amndman" + docId);
 		try {
 			Document doc = XMLReader.run(Util.loadProperties(), docId);
 			JAXBContext context;
