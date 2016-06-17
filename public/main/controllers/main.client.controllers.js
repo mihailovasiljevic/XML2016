@@ -69,8 +69,15 @@ angular.module('main')
         $scope.logout = function(){
 	        UserLogout.get(function(response){
 		        console.log(response);
+		        $timeout(function(){
+		        		$window.location.replace("http://localhost:9000");
+		        },0)
 		        $scope.loggedIn = false;
 	        })
+        }
+        
+        $scope.login = function(){
+        	$state.go('login');
         }
 
         $scope.selected = "";
@@ -144,5 +151,20 @@ angular.module('main')
             }
 
         }
-    }]);
+    }])
+
+
+.controller('sednicaController', ['$scope', '$rootScope', '$timeout','$location','$state','$window','Main','Search','User',
+                            function($scope,$rootScope, $timeout,$location,$state,$window, Main, Search,User){
+                             
+                    $scope.isPredsednik = false;
+                    User.get(function(response){
+                 	if(response.uloga)
+                    if(response.uloga=="predsednik"){
+                    $scope.isPredsednik = true;
+                                  	
+                 }
+                             
+      })
+}]);
 

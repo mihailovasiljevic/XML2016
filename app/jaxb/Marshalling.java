@@ -35,7 +35,7 @@ public class Marshalling {
 			// Unmarshaller je objekat zadužen za konverziju iz XML-a u objektni model
 			Unmarshaller unmarshaller = context.createUnmarshaller();
 
-			Korisnici Korisnici = (Korisnici) unmarshaller.unmarshal(new File(Application.projectPath+"/XML2016/xml/users.xml"));
+			Korisnici Korisnici = (Korisnici) unmarshaller.unmarshal(new File(Application.projectPath+"/XML2016/data/temp.xml"));
 			
 			// Izmena nad objektnim modelom dodavanjem novog odseka
 		
@@ -49,7 +49,7 @@ public class Marshalling {
 			marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 			
 			// Umesto System.out-a, može se koristiti FileOutputStream
-			marshaller.marshal(Korisnici, new File(Application.projectPath+"/XML2016/xml/users.xml"));
+			marshaller.marshal(Korisnici, new File(Application.projectPath+"/XML2016/data/temp.xml"));
 			marshaller.marshal(Korisnici, System.out);
 			
 			

@@ -60,7 +60,7 @@ public class XMLWriter {
 		String testDocId = "./data/probaaa3.xml";
 		
 		// Create an input stream handle to hold XML content.
-		InputStreamHandle handle = new InputStreamHandle(new FileInputStream(Application.projectPath+"/XML2016/xml/users.xml"));
+		InputStreamHandle handle = new InputStreamHandle(new FileInputStream(Application.projectPath+"/XML2016/data/temp.xml"));
 		
 		// Write the document to the database
 		System.out.println("[INFO] Inserting \"" + docId + "\" to \"" + props.database + "\" database.");

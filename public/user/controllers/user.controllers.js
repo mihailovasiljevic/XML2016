@@ -80,8 +80,11 @@ angular.module('user').controller('inputCtrl2', ['$scope','$state','User',
 				console.log(response);
 				$scope.error = response.map.error;		
 			}	
-			else 
-				$state.go("main.show");				
+			else {
+				$timeout(function(){
+					$window.location.replace("http://localhost:9000");
+				},0)	
+			}
 		});
 		
 	

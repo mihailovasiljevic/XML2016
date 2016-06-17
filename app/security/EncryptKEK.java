@@ -223,6 +223,7 @@ public class EncryptKEK {
 			
 			//trazi se element ciji sadrzaj se kriptuje
 			NodeList odseci = doc.getElementsByTagName("Email");
+			
 			for(int i=0;i<=br;i++){
 			Element odsek = (Element) odseci.item(i);
 			

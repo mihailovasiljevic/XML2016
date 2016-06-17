@@ -1,10 +1,18 @@
 angular.module('amendment')
-  .controller('AmendmentController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search','Amandman',
-    function($scope,$rootScope, $timeout,$location,$state, Main, Search,Amandman){
+  .controller('AmendmentController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search','Amandman','User',
+    function($scope,$rootScope, $timeout,$location,$state, Main, Search,Amandman,User){
 
         //go on mainPage
         //$state.go("main");
         //show documents
+	  $scope.loggedIn=false;
+	  	  	User.get(function(response){
+	  	  		if(response.uloga)
+	 	  			$scope.loggedIn = true;
+	  	  		else $scope.loggedIn = false;
+	  	  	})	
+	  
+	  
         $scope.propose = function(){
             $state.go('main.amendment');
         }

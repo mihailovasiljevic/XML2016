@@ -44,6 +44,7 @@ import org.xml.sax.SAXException;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.jamonapi.utils.FileUtils;
 import com.marklogic.client.DatabaseClient;
 import com.marklogic.client.DatabaseClientFactory;
 import com.marklogic.client.document.DocumentPatchBuilder;
@@ -85,6 +86,7 @@ public class Application extends Controller {
 			System.out.println("Project path is not valid");
 			e.printStackTrace();
 		}
+    	session.put("korisnik",new JSONObject("{}"));
 	}
 	
 	private static Document loadDocument(String file) {
@@ -245,11 +247,11 @@ public class Application extends Controller {
     	ObjectMapper mapper = new ObjectMapper();
     	User user;
     	boolean provera_password=false;
-    
-    	
     	
     	Document doc = XMLReader.run(Util.loadProperties(),"/security/users.xml");
+    	System.out.println(doc.getTextContent());
     	
+    	FileUtil.writeFile(Application.projectPath+"/XML2016/data/temp.xml",XMLReader.contentPS.toString());
     	JSONObject obj = new JSONObject(params.get("body"));
 		System.out.println("JSON"+obj.toString());
 		if(obj.has("map"))
@@ -344,8 +346,8 @@ public class Application extends Controller {
 							*/	
 					
 					    	EncryptKEK enc = new EncryptKEK();
-						    enc.setIN_FILE(Application.projectPath+"/XML2016/xml/users.xml");
-						    enc.setOUT_FILE(Application.projectPath+"/XML2016/xml/users.xml");
+						    enc.setIN_FILE(Application.projectPath+"/XML2016/data/temp.xml");
+						    enc.setOUT_FILE(Application.projectPath+"/XML2016/data/temp.xml");
 						    //   enc.setKEY_STORE_FILE(FilePaths.keystores+certificate+".jks");
 						    enc.testIt(duzina);
 						    

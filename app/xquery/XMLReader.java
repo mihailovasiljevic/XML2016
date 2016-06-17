@@ -55,6 +55,7 @@ public class XMLReader {
 	private static DatabaseClient client;
 	
 	private static TransformerFactory transformerFactory;
+	public static DOMHandle contentPS= new DOMHandle();
 	
 	static {
 		transformerFactory = TransformerFactory.newInstance();
@@ -91,10 +92,12 @@ public class XMLReader {
 				+ " database.");
 		
 		xmlManager.read(docId, metadata, content);
-
+		
 		// Retrieving a document node form DOM handle.
 		Document doc = content.get();
+		
 		client.release();
+		contentPS= content;
 		return doc;
 
 	}
