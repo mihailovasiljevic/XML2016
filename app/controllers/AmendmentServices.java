@@ -2,15 +2,19 @@ package controllers;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.transform.TransformerException;
 
 import org.json.JSONObject;
 import org.w3c.dom.Document;
+import org.xml.sax.SAXException;
 
 import com.marklogic.client.DatabaseClient;
 import com.marklogic.client.DatabaseClientFactory;
@@ -68,6 +72,15 @@ public class AmendmentServices extends Controller {
     				String uri = XMLWriterUriTemplate.run(Util.loadProperties(),"amendments");
     				//renderJSON(new JSONObject("{'error':'dsasadsadsadsd'"));
     				System.out.println("[URI OF SAVED AMENDMENT]: " + uri);
+    				
+    				try {
+    					System.out.println("[INFO] preparuje act za pisanje");
+						prepareAct(uri);
+						System.out.println("[INFO] zavrsio prepareAct()");
+					} catch (JAXBException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
     				renderJSON(new JSONObject("{'success':'"+uri+"'}"));
     			} catch (IOException e) {
     				// TODO Auto-generated catch block
@@ -79,7 +92,44 @@ public class AmendmentServices extends Controller {
     	}
 
 	}
-
+    
+    private static void prepareAct(String uri) throws JAXBException, FileNotFoundException{
+    	
+    	Amandman amandman = xquery.XMLReader.getAmandman(uri);
+    	System.out.println("[INFO] zavrsio citanje amandmana()");
+    	Propis propis = xquery.XMLReader.getPropis("/acts/"+amandman.getOAkta()+".xml");
+    	
+    	propis.setBrojAmandmana(propis.getBrojAmandmana()+1);
+    	JAXBContext context = JAXBContext.newInstance("rs.ac.uns.ftn.pravniakt");
+		Marshaller marshaller = context.createMarshaller();
+		StringWriter sw = new StringWriter();
+		marshaller.marshal(propis, sw);
+		System.out.println(sw.toString());
+		
+    	FileUtil.writeFile(Application.projectPath + "/XML2016/data/temp.xml", sw.toString());
+    	XMLValidation isValid = new XMLValidation();
+		boolean xmlValid = isValid.test(Application.projectPath + "/XML2016/data/akt.xsd", "act");
+		
+		if (xmlValid){
+			try {
+				XMLWriterUriTemplate.run(Util.loadProperties(), "acts");
+				System.out.println("[URI of saved XML]: " + uri);
+				Act.prepareRDF("/acts/"+propis.getOznaka()+".xml");
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (SAXException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (TransformerException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}			
+		}
+    }
+    
+    
+    
     public static void getAmendment(String uri){
     	// String bodyParams = params.get("body");
     			// String url = Http.Request.current().path;

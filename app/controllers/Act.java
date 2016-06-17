@@ -470,7 +470,7 @@ public class Act extends Controller {
 
 	}
 
-	private static void prepareRDF(String uri) throws IOException, SAXException, TransformerException {
+	static void prepareRDF(String uri) throws IOException, SAXException, TransformerException {
 		// String docUri = "/acts/" + uri + ".xml";
 
 		System.out.println("[INFO] " + Act.class.getSimpleName());

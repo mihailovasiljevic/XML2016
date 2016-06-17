@@ -104,6 +104,7 @@ public class XMLReader {
 	public static Propis getPropis(String docId) {
 		Propis propis = null;
 		try {
+			
 			Document doc = XMLReader.run(Util.loadProperties(), docId);
 			JAXBContext context;
 			context = JAXBContext.newInstance("rs.ac.uns.ftn.pravniakt");
@@ -124,7 +125,7 @@ public class XMLReader {
 		JAXBContext context;
 		StringWriter sw = null;
 		try {
-			context = JAXBContext.newInstance("rs.ac.uns.ftn.amandman");
+			context = JAXBContext.newInstance("rs.ac.uns.ftn.pravniakt");
 			Marshaller marshaller = context.createMarshaller();
 			sw = new StringWriter();
 			marshaller.marshal(propis, sw);
@@ -140,10 +141,11 @@ public class XMLReader {
 	
 	public static Amandman getAmandman(String docId) {
 		Amandman amandman = null;
+		System.out.println("[INFO] cita amndman" + docId);
 		try {
 			Document doc = XMLReader.run(Util.loadProperties(), docId);
 			JAXBContext context;
-			context = JAXBContext.newInstance("rs.ac.uns.ftn.pravniakt");
+			context = JAXBContext.newInstance("rs.ac.uns.ftn.amandman");
 			Unmarshaller unmarshaller = context.createUnmarshaller();
 			amandman = (Amandman) unmarshaller.unmarshal(doc);
 		} catch (FileNotFoundException e) {
