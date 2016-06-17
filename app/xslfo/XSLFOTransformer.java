@@ -104,5 +104,59 @@ public class XSLFOTransformer {
 		System.out.println("[INFO] End.");
 		return "/public/tmp/pdf/act_"+actId+".pdf";
 	}
+	
+	public String transofrmAma(String text, String actId) throws Exception {
+		System.out.println("[INFO] " + XSLFOTransformer.class.getSimpleName());
+		
+		// Point to the XSL-FO file
+		File xsltFile = new File("XML2016/data/amandman.xsl");
+
+		// Create transformation source
+		StreamSource transformSource = new StreamSource(xsltFile);
+		
+		// Initialize the transformation subject
+		//StreamSource source = new StreamSource(new File("XML2016/data/akt.xml"));
+		
+		//InputStream stream = new ByteArrayInputStream(text.getBytes("UTF-8"));
+		 
+		//StreamSource source = new StreamSource(stream);
+		File xmlFile = File.createTempFile("akttmp", ".html");
+		FileUtils.writeStringToFile(xmlFile, text);
+		StreamSource source = new StreamSource(xmlFile);
+		
+		//new StreamSource()
+		// Initialize user agent needed for the transformation
+		FOUserAgent userAgent = fopFactory.newFOUserAgent();
+		
+		// Create the output stream to store the results
+		ByteArrayOutputStream outStream = new ByteArrayOutputStream();
+
+		// Initialize the XSL-FO transformer object
+		Transformer xslFoTransformer = transformerFactory.newTransformer(transformSource);
+		xslFoTransformer.setOutputProperty("encoding", "UTF-8");
+		
+		// Construct FOP instance with desired output format
+		Fop fop = fopFactory.newFop(MimeConstants.MIME_PDF, userAgent, outStream);
+		
+		System.out.println("starting");
+
+		// Resulting SAX events 
+		Result res = new SAXResult(fop.getDefaultHandler());
+
+		// Start XSLT transformation and FOP processing
+		
+		xslFoTransformer.transform(source, res);
+		
+		// Generate PDF file
+		File pdfFile = new File("XML2016/public/tmp/pdf/amandman"+actId+".pdf");
+		OutputStream out = new BufferedOutputStream(new FileOutputStream(pdfFile));
+		out.write(outStream.toByteArray());
+	
+		System.out.println("[INFO] File \"" + pdfFile.getCanonicalPath() + "\" generated successfully.");
+		out.close();
+		System.out.println("[INFO] End.");
+		return "/public/tmp/pdf/amandman"+actId+".pdf";
+	}
+	
 
 }

@@ -40,4 +40,30 @@ public class XSLTransformer {
 		return back;
 	}
 	
+	public static String transformAma(String xml) {
+		
+		String result;
+		OutputStream stream;
+		String back = null;
+		System.out.println("ispred try");
+		try {
+			File tempFile = File.createTempFile("tempfile", ".html");
+			File xmlFile = File.createTempFile("akttmp", ".html");
+			
+			FileUtils.writeStringToFile(xmlFile, xml);
+			
+			TransformerFactory tFactory = TransformerFactory.newInstance();
+
+			Transformer transformer = tFactory.newTransformer(new StreamSource("XML2016/data/amandman_xhtml.xsl"));
+			transformer.transform(
+				   new StreamSource(xmlFile),
+			       new StreamResult(tempFile));
+			back = FileUtils.readFileToString(tempFile);
+	    }
+		catch (Exception e) {
+			e.printStackTrace( );
+	    }
+		return back;
+	}
+	
 }

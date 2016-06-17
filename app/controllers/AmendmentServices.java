@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 
 import javax.xml.bind.JAXBContext;
@@ -37,6 +38,8 @@ import rs.ac.uns.ftn.amandman.Amandman;
 import rs.ac.uns.ftn.pravniakt.Propis;
 import util.FileUtil;
 import xquery.XMLReader;
+import xslfo.XSLFOTransformer;
+import xslfo.XSLTransformer;
 
 public class AmendmentServices extends Controller {
 	
@@ -296,6 +299,39 @@ public class AmendmentServices extends Controller {
 	public static void genPdfAma(String uri) {
 		
 		System.out.println("url " + uri);
+		
+		String text = XMLReader.getAmandmanText("/amendments/"+uri+".xml");
+		
+		try {
+			XSLFOTransformer trans = new XSLFOTransformer();
+			String path = trans.transofrmAma(text, uri);
+			JSONObject obj = new JSONObject();
+			obj.put("path", path);
+			renderJSON(obj);
+
+		} catch (SAXException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public static void genXHTML(String uri) {
+		
+		String docId = "/amendments/" + uri + ".xml";
+		String text = XMLReader.getAmandmanText(docId);
+		String response = XSLTransformer.transformAma(text);
+
+		System.out.println("response " + response);
+		
+		JSONObject obj = new JSONObject();
+		obj.put("html", response);
+		renderHtml(response);
+		//renderJSON(obj);
+		System.out.println("xhtml is genereted.");
 		
 		
 		
