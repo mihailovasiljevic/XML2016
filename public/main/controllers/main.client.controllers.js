@@ -118,9 +118,9 @@ $scope.results = [];
         };
       //  alert($scope.$parent.isPredsednik);
         
-        $scope.loggedIn = true;
+        $scope.loggedIn = false;
 
-        /*User.get(function(response){
+        User.get(function(response){
         	if(response.uloga)
         	$scope.loggedIn = true;
         	else $scope.loggedIn=false;
@@ -148,7 +148,7 @@ $scope.results = [];
         		
         		
         	})
-        }*/
+        }
         $scope.xhtml = function(uri){
             
             var xhtml = new Xhtml();
