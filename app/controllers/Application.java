@@ -86,6 +86,8 @@ public class Application extends Controller {
 			System.out.println("Project path is not valid");
 			e.printStackTrace();
 		}
+    	
+    	session.put("korisnik",new JSONObject("{}"));
 	}
 	
 	private static Document loadDocument(String file) {
@@ -388,7 +390,7 @@ public class Application extends Controller {
     }
     
     public static void logout(){
-    	session.put("korisnik",null);
+    	session.put("korisnik",new JSONObject("{}"));
     
     }
     
