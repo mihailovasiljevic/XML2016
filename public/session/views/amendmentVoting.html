@@ -1,16 +1,13 @@
 
-<section ng-controller="VotingController as vc" ng-init="find();">
+<section ng-controller="AmendmentSessionController as vc" ng-init="initialize();">
     <h3>SEDNICA</h3>
     <h2>Vođenje sednice</h2>
-    <h4>Glasanje za prihvaćanje zakona: <b>{{act.map.naziv}}</b> u načelu.</h4>       
+    <h4>Glasanje za amandman <b>{{amendment.oznaka}}</b> na zakon <b>{{act.map.naziv}}</b></h4>       
     <div class="container" >
         <div class="row">
             <input ng-model="glasaliZa" class="input-text" type="number" name="" placeholder="Koliko je glasalo za?" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
             <input ng-model="glasaliProtiv" class="input-text" type="number" name="" placeholder="Koliko je glasalo protiv?" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
             <input type="button" value="Završi glasanje" ng-click="vote();" class="input-btn">
-
-                   
-
         </div>
     </div> 
 </section>

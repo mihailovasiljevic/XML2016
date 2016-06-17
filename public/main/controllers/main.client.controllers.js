@@ -115,7 +115,7 @@ angular.module('main')
             }
         };
       //  alert($scope.$parent.isPredsednik);
-        
+        /*
         $scope.loggedIn = false;
 
         User.get(function(response){
@@ -146,14 +146,14 @@ angular.module('main')
         		
         		
         	})
-        }
+        }*/
         $scope.xhtml = function(uri){
             var xhtml = new Xhtml();
             xhtml.$get({uri: uri}, function(response){
                 $scope.xhtmlDoc = response.map.html;
                 console.log(response);
             });
-        }
+        };
         $scope.pdf = function(uri){
             var pdf = new Pdf();
             pdf.$get({uri: uri}, function(response){

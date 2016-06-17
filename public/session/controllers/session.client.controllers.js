@@ -119,8 +119,8 @@ angular.module('session')
             $state.go('main.voting',{actURI:act.uri});
         }
     }])
-    .controller('VotingController', ['$scope', '$rootScope', '$timeout','$location','$state','$stateParams','Main','Search','SessionService',
-    function($scope,$rootScope, $timeout,$location,$state,$stateParams, Main, Search, SessionService){
+    .controller('VotingController', ['$scope', '$rootScope', '$timeout','$location','$state','$stateParams','Main','Search','SessionService','VoteService',
+    function($scope,$rootScope, $timeout,$location,$state,$stateParams, Main, Search, SessionService, VoteService){
 
 
 
@@ -132,5 +132,77 @@ angular.module('session')
             });
         }
 
+        $scope.vote = function(){
+            var vote = new VoteService({
+                glasaliZa : $scope.glasaliZa,
+                glasaliProtiv : $scope.glasaliProtiv
+            });
+
+            vote.$save({sessionId : $stateParams.actURI}, function(response){
+                if(response.map.success){
+                    $state.go("main.amendmentVoting", {actURI:$stateParams.actURI})
+                }else{  
+                    alert(response);
+                }
+            });
+        };
+
+    }])
+    .controller('AmendmentSessionController', ['$scope', '$rootScope', '$timeout','$location','$state','$stateParams','Main','Search','SessionService','VoteService','AmendmentFactory','Amandman','AmendmentVoteService',
+    function($scope,$rootScope, $timeout,$location,$state,$stateParams, Main, Search, SessionService, VoteService,AmendmentFactory, Amandman,AmendmentVoteService){
+
+
+
+        $scope.find = function(){
+            var act = new Main();
+            var amendments = new AmendmentFactory();
+            act.$get({uri:$stateParams.actURI}, function(response){
+                $scope.act = response;
+
+                console.log("URI " + $stateParams.actURI);
+                amendments.$get({amendmentId:$stateParams.actURI}, function(response){
+                    $scope.amendments = response.map.lista.myArrayList;
+                    alert(JSON.stringify(response));
+                }, function(errorResponse){
+                    alert(JSON.stringify(errorResponse));
+                });
+
+            });
+        }
+        $scope.initialize = function(){
+             var act = new Main();
+            
+            act.$get({uri:$stateParams.actURI}, function(response){
+                $scope.act = response;
+                var amendment = new Amandman();
+                amendment.$get({amendmentId:$stateParams.amendmentURI}, function(response){
+                    $scope.amendment = response;
+                });              
+            });
+
+
+
+
+
+        }
+        $scope.vote = function(){
+
+            var vote = new AmendmentVoteService({
+                glasaliZa : $scope.glasaliZa,
+                glasaliProtiv : $scope.glasaliProtiv
+            });
+
+            vote.$save({sessionId : $stateParams.actURI, amendmentId : $stateParams.amendmentURI}, function(response){
+                if(response.map.success){
+                    $state.go("main.amendmentVoting", {actURI:$stateParams.actURI})
+                }else{  
+                    alert(response);
+                }
+            });
+        };
+
+        $scope.amendmentVote = function(amendment){
+            $state.go("main.realAmendmentVoting",{actURI:$stateParams.actURI, amendmentURI:amendment.map.oznaka});
+        }
 
     }]);

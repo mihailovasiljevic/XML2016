@@ -226,6 +226,7 @@ public class AmendmentServices extends Controller {
 				LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
 				map.put("oznaka", oznaka);
 				map.put("uri", prepareURI(result.getUri()));
+				map.put("oznakaAkta", amandman.getOAkta()+"");
 				documentsURIs.add(map);
 			}
 			System.out.println(new JSONObject(documentsURIs));

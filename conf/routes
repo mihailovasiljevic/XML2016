@@ -36,6 +36,8 @@ GET     /input									Redirection.toForm
 #session
 GET 	/api/session							Application.getSednica
 POST  	/api/session							Application.setSednica
+POST  	/api/session/vote/{uri}					SessionService.vote(uri)
+GET  	/api/session/vote/amendments/{uri}		SessionService.getAmendments(uri)
 # Ignore favicon requests
 GET     /favicon.ico                            404
 
