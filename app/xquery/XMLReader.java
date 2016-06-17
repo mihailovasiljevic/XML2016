@@ -29,6 +29,8 @@ import org.w3c.dom.Node;
 
 
 
+
+import rs.ac.uns.ftn.amandman.Amandman;
 import rs.ac.uns.ftn.pravniakt.Propis;
 
 import com.marklogic.client.DatabaseClient;
@@ -122,10 +124,47 @@ public class XMLReader {
 		JAXBContext context;
 		StringWriter sw = null;
 		try {
-			context = JAXBContext.newInstance("rs.ac.uns.ftn.pravniakt");
+			context = JAXBContext.newInstance("rs.ac.uns.ftn.amandman");
 			Marshaller marshaller = context.createMarshaller();
 			sw = new StringWriter();
 			marshaller.marshal(propis, sw);
+		} catch (JAXBException e1) {
+			e1.printStackTrace();
+		}
+		if(sw != null) {
+			return sw.toString();
+		} else {
+			return null;
+		}
+	}
+	
+	public static Amandman getAmandman(String docId) {
+		Amandman amandman = null;
+		try {
+			Document doc = XMLReader.run(Util.loadProperties(), docId);
+			JAXBContext context;
+			context = JAXBContext.newInstance("rs.ac.uns.ftn.pravniakt");
+			Unmarshaller unmarshaller = context.createUnmarshaller();
+			amandman = (Amandman) unmarshaller.unmarshal(doc);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (JAXBException e) {
+			e.printStackTrace();
+		}
+		return amandman;
+	}
+	
+	public static String getAmandmanText(String docId) {
+		Amandman amandman = XMLReader.getAmandman(docId);
+		JAXBContext context;
+		StringWriter sw = null;
+		try {
+			context = JAXBContext.newInstance("rs.ac.uns.ftn.amandman");
+			Marshaller marshaller = context.createMarshaller();
+			sw = new StringWriter();
+			marshaller.marshal(amandman, sw);
 		} catch (JAXBException e1) {
 			e1.printStackTrace();
 		}

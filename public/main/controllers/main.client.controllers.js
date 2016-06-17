@@ -117,10 +117,15 @@ angular.module('main')
         
         $scope.loggedIn = false;
         User.get(function(response){
+        	if(response.uloga)
         	$scope.loggedIn = true;
+        	else $scope.loggedIn=false;
         	
         })
        
+        $scope.login = function(){
+        	$state.go('login');
+        }
         
         $scope.logout = function(){
         	UserLogout.get(function(response){

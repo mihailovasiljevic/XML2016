@@ -86,6 +86,8 @@ public class Application extends Controller {
 			System.out.println("Project path is not valid");
 			e.printStackTrace();
 		}
+    	
+    	session.put("korisnik",new JSONObject("{}"));
 	}
 	
 	private static Document loadDocument(String file) {
@@ -120,11 +122,11 @@ public class Application extends Controller {
 		try {
 
 	//		File fXmlFile = new File("/XML2016/xml/users.xml");
-			File fXmlFile = new File(Application.projectPath+"/XML2016/xml/users.xml");
-			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-			Document doc = dBuilder.parse(fXmlFile);
-			
+			//File fXmlFile = new File(Application.projectPath+"/XML2016/xml/users.xml");
+			//DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+			//DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+			//Document doc = dBuilder.parse(fXmlFile);
+			Document doc = XMLReader.run(Util.loadProperties(), "/users.xml");
 			
 			JSONObject obj = new JSONObject(params.get("body"));
 			System.out.println("JSON"+obj.toString());
@@ -391,7 +393,7 @@ public class Application extends Controller {
     }
     
     public static void logout(){
-    	session.put("korisnik",null);
+    	session.put("korisnik",new JSONObject("{}"));
     
     }
     

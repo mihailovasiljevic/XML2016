@@ -5,7 +5,6 @@
 *.ear
 
 #bower libraries
-/public/lib
 
 #ignore lib
 /lib
