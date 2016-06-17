@@ -3,15 +3,31 @@ package controllers;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.StringWriter;
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.LinkedHashMap;
+import java.util.Locale;
+import java.util.TimeZone;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.Duration;
+import javax.xml.datatype.XMLGregorianCalendar;
+import javax.xml.namespace.QName;
 import javax.xml.transform.TransformerException;
 
+import org.joda.time.DateTime;
+import org.joda.time.format.DateTimeFormat;
+import org.joda.time.format.DateTimeFormatter;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.w3c.dom.Document;
@@ -31,6 +47,10 @@ import jaxb.XMLValidation;
 import play.mvc.Controller;
 import rs.ac.uns.ftn.amandman.Amandman;
 import rs.ac.uns.ftn.pravniakt.Propis;
+import rs.ac.uns.ftn.pravniakt.Propis.DatumUsvajanjaUCelosti;
+import rs.ac.uns.ftn.pravniakt.Propis.DatumUsvajanjaUNacelu;
+import rs.ac.uns.ftn.pravniakt.Propis.GlasaliProtiv;
+import rs.ac.uns.ftn.pravniakt.Propis.GlasaliZa;
 import util.FileUtil;
 
 public class SessionService extends Controller{
@@ -51,7 +71,7 @@ public class SessionService extends Controller{
     				
     				String status = "";
     				
-    				
+    				System.out.println("[INFO]: za > protiv ? " + (glasaliZa > glasaliProtiv));
     				if(glasaliZa > glasaliProtiv){
     					status = "nacelo";
     				}else{
@@ -59,18 +79,52 @@ public class SessionService extends Controller{
     				}
     				
     				Propis propis = xquery.XMLReader.getPropis("/acts/"+uri+".xml");
-    				if(propis.getBrojAmandmana() > 0)
+    				if((propis.getBrojAmandmana() > 0))
     					propis.setStatus(status);
-    				else
+    				else if(propis.getBrojAmandmana() == 0 && status.equals("nacelo"))
     					propis.setStatus("celina");
+    				else
+    					propis.setStatus(status);
+    				
+    				GlasaliProtiv glPr = new GlasaliProtiv();
+    				glPr.setValue(glasaliProtiv);
+    				glPr.setProperty("pred:glasaliProtiv");
+    				glPr.setDatatype("xs:int");
+    				GlasaliZa glZa = new GlasaliZa();
+    				glZa.setValue(glasaliZa);
+    				glZa.setProperty("pred:glasaliZa");
+    				glZa.setDatatype("xs:int");
+    				propis.setGlasaliProtiv(glPr);
+    				propis.setGlasaliZa(glZa);
+    				if(propis.getStatus().equals("nacelo")){
+    					DatumUsvajanjaUNacelu dun = new DatumUsvajanjaUNacelu();
+    					GregorianCalendar gcal = new GregorianCalendar();
+    				      XMLGregorianCalendar xgcal = DatatypeFactory.newInstance()
+    				            .newXMLGregorianCalendar(gcal);
+    				    dun.setValue(xgcal);
+    				    dun.setProperty("pred:datumUsvajanjaUNacelu");
+    				    dun.setDatatype("xs:date");
+    				    propis.setDatumUsvajanjaUNacelu(dun);
+    				}else if(propis.getStatus().equals("celina")){
+    					DatumUsvajanjaUCelosti duc = new DatumUsvajanjaUCelosti();
+    					GregorianCalendar gcal = new GregorianCalendar();
+    				      XMLGregorianCalendar xgcal = DatatypeFactory.newInstance()
+    				            .newXMLGregorianCalendar(gcal);
+    				      duc.setValue(xgcal);
+    				      duc.setProperty("pred:datumUsvajanjaUCelosti");
+    				      duc.setDatatype("xs:date");
+    				    propis.setDatumUsvajanjaUCelosti(duc);   					
+    				}
     				try{
     					writePropis(propis);
     					if(propis.getStatus().equals("nacelo"))
     						renderJSON(new JSONObject("{'success':'NACELO'}"));
     					else if(propis.getStatus().equals("odbijen"))
     						renderJSON(new JSONObject("{'success':'ODBIJEN'}"));
-    					else
+    					else if(propis.getStatus().equals("celina"))
     						renderJSON(new JSONObject("{'success':'CELINA'}"));
+    					else
+    						renderJSON(new JSONObject("{'success':'GRESKA'}"));
     				}catch(Exception ex){
     					renderJSON(new JSONObject("{'error':'Greska prilikom upisa fajla!'}"));
     				}
@@ -237,6 +291,9 @@ public class SessionService extends Controller{
         					if(propis.getBrojAmandmana() == 0){
         						propis.setStatus("celina");
         						writePropis(propis);
+        						//Act.sendingAct(propisURI);
+        						renderJSON(new JSONObject("{'success':'CELINA'}"));
+        						return;
         					}else{
         						writePropis(propis);
         					}

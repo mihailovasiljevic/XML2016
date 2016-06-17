@@ -140,7 +140,17 @@ angular.module('session')
 
             vote.$save({sessionId : $stateParams.actURI}, function(response){
                 if(response.map.success){
-                    $state.go("main.amendmentVoting", {actURI:$stateParams.actURI})
+                    if(response.map.success=="NACELO")
+                        $state.go("main.amendmentVoting", {actURI:$stateParams.actURI});
+                    else{
+                        if(response.map.success=="CELINA"){
+                            alert("Posto nema amandmana na ovaj zakon on je usvojen u celosti.");
+                            $state.go("main.session");
+                        }else{
+                            alert("Zakon je odbijen i nece se raspravljati o njegovim amandmanima.");
+                            $state.go("main.session");                         
+                        }
+                    }
                 }else{  
                     alert(response);
                 }
@@ -194,6 +204,11 @@ angular.module('session')
 
             vote.$save({sessionId : $stateParams.actURI, amendmentId : $stateParams.amendmentURI}, function(response){
                 if(response.map.success){
+                    if(response.map.success == "celina"){
+                        alert("Proradjeni su svi amandmani za ovaj zakon. Zakon je usvojen u celini.");
+                        $state.go("main.session");
+                        return;
+                    }
                     $state.go("main.amendmentVoting", {actURI:$stateParams.actURI})
                 }else{  
                     alert(JSON.stringify(response));
