@@ -68,7 +68,7 @@ import xslfo.XSLTransformer;
 public class Act extends Controller {
 	private static String collectionName;
 	private static DatabaseClient client;
-	private final static String COLLECTION = "/acts";
+	private final static String COLLECTION = "/securityacts";
 	private static TransformerFactory transformerFactory;
 	static {
 		transformerFactory = TransformerFactory.newInstance();

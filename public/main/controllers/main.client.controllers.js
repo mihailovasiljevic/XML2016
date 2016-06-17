@@ -64,7 +64,7 @@ angular.module('main')
         	else $scope.loggedIn=false;
         	
         })
-     
+        
       
         $scope.logout = function(){
 	        UserLogout.get(function(response){
@@ -162,7 +162,8 @@ angular.module('main')
                  	if(response.uloga)
                     if(response.uloga=="predsednik"){
                     $scope.isPredsednik = true;
-                                  	
+                    
+                    console.log("SFSFDSDFSDFDFS");
                  }
                              
       })

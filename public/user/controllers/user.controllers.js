@@ -53,8 +53,8 @@ angular.module('user').controller('inputCtrl1', ['$scope','$state','User','UserR
 		}
  }]);
 
-angular.module('user').controller('inputCtrl2', ['$scope','$state','User',
-  function($scope,$state,User) {
+angular.module('user').controller('inputCtrl2', ['$scope','$state','User','$timeout','$window',
+  function($scope,$state,User,$timeout,$window) {
 	
 	User.get(function(response){
  		console.log(JSON.stringify(response));
