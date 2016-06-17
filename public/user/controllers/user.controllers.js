@@ -32,7 +32,12 @@ angular.module('user').controller('inputCtrl1', ['$scope','$state','User','UserR
 			}
 			
 			if(!$scope.user.email){
-				$scope.error = "Polje ne sme biti prazno. Unesite Email.";
+				$scope.error = "Email mora biti u formatu: __@__.__";
+				return;
+			}
+			
+			if(!$scope.user.certificate){
+				$scope.error = "Polje ne sme biti prazno. Unesite Certificate.";
 				return;
 			}
 			
