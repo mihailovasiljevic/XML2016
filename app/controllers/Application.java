@@ -88,6 +88,7 @@ public class Application extends Controller {
 			e.printStackTrace();
 		}
     	session.put("korisnik",new JSONObject("{}"));
+    	session.put("attemptNum", 0);
 	}
 	
 	private static Document loadDocument(String file) {
@@ -115,10 +116,16 @@ public class Application extends Controller {
 	
 	public static void login() throws FileNotFoundException, IOException {
 		
+		boolean povucen = false;
 		System.out.println("login");
 		boolean provera_username=false;
 		boolean provera_password=false;
+		Integer attemptNumber = Integer.parseInt(session.get("attemptNum"));
+		attemptNumber++;
+		session.put("attemptNum", attemptNumber);
+		boolean attempts = attemptNumber<6;
 		
+		if(attempts)
 		try {
 
 	//		File fXmlFile = new File("/XML2016/xml/users.xml");
@@ -170,18 +177,47 @@ public class Application extends Controller {
 					if(username.equals(eElement.getElementsByTagName("KorisnickoIme").item(0).getTextContent()) ){
 						 provera_username=true;
 						
-						if(HashSalt.check(password,eElement.getElementsByTagName("Lozinka").item(0).getTextContent() )){
+						if(HashSalt.check(password,eElement.getElementsByTagName("Lozinka").item(0).getTextContent())){
 						 
+							
+							
+							
+							
+					    	File f = new File(Application.projectPath+"/XML2016/data/"+"sgns-revoked.jks");
+							if(f.exists() && !f.isDirectory()) {
+									 KeyStoreReader ksr = new KeyStoreReader();
+									    ksr.setKeyStoreFile(Application.projectPath+"/XML2016/data/"+"sgns-revoked.jks");
+									    ksr.setPassword("sgns-revoked".toCharArray());
+									    ksr.setKeyPass("test10".toCharArray());
+									    HashMap<String,Certificate> sertifikati = ksr.readKeyStore();
+									    Iterator it =  sertifikati.keySet().iterator();
+									    while(it.hasNext())
+									    {
+									    	String sert = it.next().toString();
+									    	
+									    	if(sert.equals(eElement.getElementsByTagName("Certificate").item(0).getTextContent())){
+									    		System.out.println("SERTIFIKAT JE POVUCEN!!!");
+									    		povucen = true;
+									    		break;
+									    	}
+									    }
+									    
+								}
+							
+							
+						if(!povucen)	
+						{	
 						 System.out.println("Uspesan LOGIN");
 						 provera_password=true;
-						 User loggedUser = new User(username, password, password,
+						 User loggedUser = new User(username, eElement.getElementsByTagName("Lozinka").item(0).getTextContent(), eElement.getElementsByTagName("Lozinka").item(0).getTextContent(),
 						 eElement.getElementsByTagName("Ime").item(0).getTextContent(), eElement.getElementsByTagName("Prezime").item(0).getTextContent()  , eElement.getElementsByTagName("Uloga").item(0).getTextContent()
 								 , eElement.getElementsByTagName("Email").item(0).getTextContent(),eElement.getElementsByTagName("Certificate").item(0).getTextContent());
 						loggedUser.setCertificate(eElement.getElementsByTagName("Certificate").item(0).getTextContent());	
 						 JSONObject user2 = new JSONObject(loggedUser);
 						 session.put("korisnik", user2);
 						 break;
-
+						}
+						else renderJSON(new JSONObject("{'error':'Sertifikat ne postoji ili je povucen!'}"));
 						}
 					}
 					 	
@@ -191,19 +227,20 @@ public class Application extends Controller {
 			
 			if(provera_username==false){
 				
-				renderJSON(new JSONObject("{'error':'Pogresan username.'}"));
+				renderJSON(new JSONObject("{'error':'Pogresan username. Broj pokusaja: "+attemptNumber+"'}"));
 	
 			}
 			
 			if(provera_password==false){
 				
-				renderJSON(new JSONObject("{'error':'Pogresan password.'}"));
+				renderJSON(new JSONObject("{'error':'Pogresan password. Broj pokusaja: "+attemptNumber+"'}"));
 				
 			}
 			
 			
-			if(provera_username && provera_password){
+			if(provera_username && provera_password && !povucen){
 				renderJSON(new JSONObject("{'error':''}"));
+				session.put("attemptNum", 0);
 			}
 			
 			
@@ -211,6 +248,7 @@ public class Application extends Controller {
 		    } catch (Exception e) {
 			e.printStackTrace();
 		    }
+		else renderJSON(new JSONObject("{'error':'Iskoristili ste predvidjeni broj pokusaja'}"));
 		 }
 
     public static void index() {

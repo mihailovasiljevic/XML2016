@@ -97,9 +97,10 @@ angular.module('main')
         
         
         $scope.withdrawAct = function(act){
-        	act.uri=act.uri.replace('/acts/','');
+        	console.log("!!!!"+act.uri);
+        	act.uri=act.uri.replace('/acts/security/','');
         	act.uri=act.uri.replace('.xml','');
-        	
+        	console.log("!!!!"+act.uri);
         	var index = $scope.acts.indexOf()
         	
         	 propis = Propis.get({actId:act.uri},function(response){ 

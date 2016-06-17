@@ -17,25 +17,36 @@ import com.marklogic.client.io.StringHandle;
 import controllers.Application;
 import database.Util;
 import database.Util.ConnectionProperties;
+import rs.ac.uns.ftn.amandman.Amandman;
 import rs.ac.uns.ftn.pravniakt.Propis;
 
 public class SecurityUtils {
-	public static void addTimestampAndNumberAct(){
+	public static void addTimestampAndNumberAct(String type){
 		
 		try {
 			System.out.println("[INFO] Example 2: JAXB unmarshalling/marshalling.\n");
-			
+			JAXBContext context=null;
 			// Definiše se JAXB kontekst (putanja do paketa sa JAXB bean-ovima)
-			JAXBContext context = JAXBContext.newInstance("rs.ac.uns.ftn.pravniakt");
-			
+			if(type.equals("act"))
+			context = JAXBContext.newInstance("rs.ac.uns.ftn.pravniakt");
+			else context = JAXBContext.newInstance("rs.ac.uns.ftn.amandman");
 			// Unmarshaller je objekat zadužen za konverziju iz XML-a u objektni model
 			Unmarshaller unmarshaller = context.createUnmarshaller();
 
-			Propis propis = (Propis) unmarshaller.unmarshal(new File(Application.projectPath+"/XML2016/data/temp.xml"));
-			
-			// Izmena nad objektnim modelom dodavanjem novog odseka
 			Date vreme = new Date();
+			Propis propis = new Propis();
+			Amandman amandman = new Amandman();
+			if(type.equals("act")){
+			propis = (Propis) unmarshaller.unmarshal(new File(Application.projectPath+"/XML2016/data/temp.xml"));
 			propis.setVremeFormiranja(vreme.toString());
+			}
+			else{
+				amandman = (Amandman) unmarshaller.unmarshal(new File(Application.projectPath+"/XML2016/data/temp.xml"));
+				amandman.setVremeFormiranja(vreme.toString());
+			}
+			// Izmena nad objektnim modelom dodavanjem novog odseka
+			
+			
 			
 			// Marshaller je objekat zadužen za konverziju iz objektnog u XML model
 			Marshaller marshaller = context.createMarshaller();
@@ -77,10 +88,11 @@ public class SecurityUtils {
 			
 			// Assign some content
 			StringHandle content = new StringHandle();
-			docManager.read(docId,content);
-			System.out.println(content);	
+			docManager.read(docId,content);	
 		    
+			if(type.equals("act"))
 			propis.setRedniBroj(content.get());
+			else amandman.setRedniBroj(content.get());
 			
 			Integer rbr = Integer.parseInt(content.get());
 			rbr++;
@@ -94,8 +106,9 @@ public class SecurityUtils {
 			// Release the client
 			
 			// Umesto System.out-a, može se koristiti FileOutputStream
+			if(type.equals("act"))
 			marshaller.marshal(propis, new File(Application.projectPath+"/XML2016/data/temp.xml"));
-			
+			else marshaller.marshal(amandman, new File(Application.projectPath+"/XML2016/data/temp.xml"));
 			
 			
 			

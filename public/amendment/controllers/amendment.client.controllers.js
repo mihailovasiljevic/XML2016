@@ -15,6 +15,10 @@ angular.module('amendment')
 	  
         $scope.propose = function(){
             $state.go('main.amendment');
+            User.get(function(response){
+    			if(!response.uloga)
+    				$state.go('main');
+    		})
         }
     
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?><propis xmlns="http://www.ftn.uns.ac.rs/pravniAkt">
     <status>predlozen</status>
     <oznaka>842547790</oznaka>
@@ -92,3 +93,258 @@ U7SVVIEPYb9dwpOW6Iz+EYTlJGpyqOh2jg==
 </ds:KeyInfo>
 </ds:Signature></propis>
 
+=======
+<?xml version="1.0" encoding="UTF-8"?><Korisnici xmlns="http://www.ftn.uns.ac.rs/korisnici">
+    <Korisnik>
+        <KorisnickoIme>hh</KorisnickoIme>
+        <Lozinka>7cIAAMsTJMjnkIG9NwdbrkqNvZj86J2sC245Fw6e4ik=$0nbYsl1WRKQLsoJbGF+hq3ijGgDmQAkjF8M/ITQNRXA=</Lozinka>
+        <Ime>hh</Ime>
+        <Prezime>hh</Prezime>
+        <Uloga>predsednik</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>2jqXbs4Nd1SoMSIs0vt1Jg==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <TimeStamp>Fri Jun 17 11:02:26 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>rr</KorisnickoIme>
+        <Lozinka>Syp4SZ1BZHlYHMSba1CrUzRvxmCaAG9kr4N2Z1h5fa8=$OOHbKomJQj/LPa/ziLcolkxPHahk4wK5+UJWzprngCo=</Lozinka>
+        <Ime>aa</Ime>
+        <Prezime>dd</Prezime>
+        <Uloga>predsednik</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>9j4OIKKW0ITMwTSS0/WFEw==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <TimeStamp>Fri Jun 17 11:18:48 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>tt</KorisnickoIme>
+        <Lozinka>Tz+pWCUrMGpMUe5KI/Ygn4aJsWR6dTAZRQGXk61BRXo=$ayE3MKsHEeE5hYiovLqbGbNI2aQH/d9M5Kg06ZJ6gOA=</Lozinka>
+        <Ime>tt</Ime>
+        <Prezime>tt</Prezime>
+        <Uloga>tt</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>wPiG3C19PgAxTXR7pnCXyw==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <Certificate>tt</Certificate>
+        <TimeStamp>Fri Jun 17 11:37:10 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>gg</KorisnickoIme>
+        <Lozinka>hyKPtkX595STQDTDowVv10wf3M7BbbQyZ2yCkQ8LJvM=$J8iVxi0i8HhPJiFCI6wxd4qmpDJ4f9V6xtfmWpbvvVg=</Lozinka>
+        <Ime>gg</Ime>
+        <Prezime>gg</Prezime>
+        <Uloga>gg</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>UVyY2OTIKURsJqSlAvIMog==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <Certificate>gg</Certificate>
+        <TimeStamp>Fri Jun 17 11:39:22 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>aa</KorisnickoIme>
+        <Lozinka>S8KKKJrCp/Hf5i0f0Le5hQDPPXS1j06HhHzugkbsb+k=$uar+VFktjnXEn8q74HZfAZjw0MuxxlDquReHutYybAY=</Lozinka>
+        <Ime>dd</Ime>
+        <Prezime>dd</Prezime>
+        <Uloga>dd</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>Q344gPORhY3CFTd/iPGB+w==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <Certificate>aa</Certificate>
+        <TimeStamp>Fri Jun 17 11:46:20 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>vv</KorisnickoIme>
+        <Lozinka>owP1RqJKfBZcRYZpClR0Rlzg+PTGT4qNPpXr67UGWDc=$m5P+XizM7a4SXJANZmmDWlDZRW1kqfZTN2y5D6wPDM0=</Lozinka>
+        <Ime>vv</Ime>
+        <Prezime>vv</Prezime>
+        <Uloga>vv</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>WRc0FWyQF2miDz3WqQFSAw==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <Certificate>vv</Certificate>
+        <TimeStamp>Fri Jun 17 11:49:25 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>1</KorisnickoIme>
+        <Lozinka>yYXLVLgjO2EZFoR+XTb5zv62R/lvfy9NUpJJyi9GVr0=$dwjYMo8moR0nOHKorZP/Z2F6T3malJ5Zu1ruYuUzuUY=</Lozinka>
+        <Ime>3</Ime>
+        <Prezime>4</Prezime>
+        <Uloga>4</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>crNGPRbZk1VaYCUYKnrjaw==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <Certificate>6</Certificate>
+        <TimeStamp>Fri Jun 17 11:52:08 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>e</KorisnickoIme>
+        <Lozinka>x3+mTjK/47umwMdr2CsI+nO6vCIwQ9euwlZVetXN5ks=$XfWqG+clZ3ldNjDHzqWf6qSuKT56XU+R+ywjDwnsW+U=</Lozinka>
+        <Ime>e</Ime>
+        <Prezime>e</Prezime>
+        <Uloga>e</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>L7DDVhP6lHMFrlL4lZhh7Q==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <Certificate>e</Certificate>
+        <TimeStamp>Fri Jun 17 11:58:18 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>fds</KorisnickoIme>
+        <Lozinka>k3SN6tyY0P3kMId6poIXY/o+PyGZtOBgISCWIZN3dh8=$LBwrB6kBJBFN6F+KqV5ONFWep+0x8FweE8F6kSXDI38=</Lozinka>
+        <Ime>s</Ime>
+        <Prezime>sda</Prezime>
+        <Uloga>odbornik</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>VBn/GYgUZ/vOelyu12Dltw==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <Certificate>das</Certificate>
+        <TimeStamp>Fri Jun 17 12:01:17 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>asa</KorisnickoIme>
+        <Lozinka>50AfGYTHY1BsbX7cHmcFS9PcbEh/09pm9qsZJZUF8sY=$hXKvHNNw6e9CH24WjL4GnpkkmO+U3fusnjxXkuCUdQY=</Lozinka>
+        <Ime>sda</Ime>
+        <Prezime>das</Prezime>
+        <Uloga>odbornik</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>e/IXxwH3zA1lQVtNbhUCMQ==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <Certificate>dsa</Certificate>
+        <TimeStamp>Fri Jun 17 12:19:13 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>sa</KorisnickoIme>
+        <Lozinka>iJ0ZzCiP+FnRYa+SeT6GTWmCHxBZ8bV0KtE1b8edzls=$bvQForsjZUq+UiLsJriqGlRNPeHZ2pHf5qpG7nUFKvs=</Lozinka>
+        <Ime>sas</Ime>
+        <Prezime>sas</Prezime>
+        <Uloga>odbornik</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>LfA3EjHnqLaWaSeavDVgJw==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <Certificate>sad</Certificate>
+        <TimeStamp>Fri Jun 17 12:28:32 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>2</KorisnickoIme>
+        <Lozinka>fca2i4vN56yu7IwEDLIwg7pR8PIAIIhP6RxD20OIBs0=$47khVi47gjMTnau4bdRoj2HH9pCdjFYh2u99NExeFZs=</Lozinka>
+        <Ime>2</Ime>
+        <Prezime>2</Prezime>
+        <Uloga>odbornik</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>ZA55LDJSEESXNrE4aYjFxA==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <Certificate>2</Certificate>
+        <TimeStamp>Fri Jun 17 12:33:03 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>dsa</KorisnickoIme>
+        <Lozinka>C6mWuRrTJSCPw76EyzCEDSsgsDp4yr6meT25umE5eFM=$/VOA9bVqQCt7038eo9WdSbKeHVIztygkOynYRbFCVOg=</Lozinka>
+        <Ime>das</Ime>
+        <Prezime>dsa</Prezime>
+        <Uloga>odbornik</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>oYmfbtohv51GEonOyf6hwQ==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <TimeStamp>Fri Jun 17 12:47:08 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>sda</KorisnickoIme>
+        <Lozinka>0sIUQ8GojMNWXoe3zLqztJ2T+6bGSdxveBsDK5wVv3M=$65yYoCPztRPYR8vHX1hDIKa6RTRI1okq5P6x6pv9jxo=</Lozinka>
+        <Ime>a</Ime>
+        <Prezime>a</Prezime>
+        <Uloga>odbornik</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>h1z0t7pcDSCFcnxuTcCtgA==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <Certificate>saas</Certificate>
+        <TimeStamp>Fri Jun 17 12:50:49 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>rale</KorisnickoIme>
+        <Lozinka>7V3PuZRwg5OiFZzJkyXTjLVVXCrM6F5WvplGVg7DrXo=$bWogHBKnphC40ee7xcH3tJK1sO/2Tk9XLup9EBCqZbk=</Lozinka>
+        <Ime>Rajko</Ime>
+        <Prezime>ilic</Prezime>
+        <Uloga>predsednik</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>sWO8ZO7xpZfQG5hcZx6uMA==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <Certificate>dsa</Certificate>
+        <TimeStamp>Fri Jun 17 14:15:24 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>q</KorisnickoIme>
+        <Lozinka>XjiNL+8APR8DuaTQabCSpQEqj34lA0oG49x4cZLWgwQ=$9IjrBG3UAVVhl4kmxklZ3vXZcy028/tehOdLVCk8jXw=</Lozinka>
+        <Ime>q</Ime>
+        <Prezime>q</Prezime>
+        <Uloga>predsednik</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>c4au/yuT1hM5IV0vLzXPkg==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <Certificate>dsa</Certificate>
+        <TimeStamp>Fri Jun 17 14:17:51 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>aaaaa</KorisnickoIme>
+        <Lozinka>vz3Hbd5vxbRWNMoRkin/6RDKRHPeDQDJ7rQc59Spwdo=$gzq1YlcKLo0xe/il+2aiYcqVW7O4GmQWrND2hJIM83U=</Lozinka>
+        <Ime>sd</Ime>
+        <Prezime>dsa</Prezime>
+        <Uloga>predsednik</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>24tCSJ5+ENQwvnqnrKyJlQ==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <Certificate>dsa</Certificate>
+        <TimeStamp>Fri Jun 17 14:25:37 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>a</KorisnickoIme>
+        <Lozinka>pS7WQlhN/KGpfpYXEtfewbGnNdO3mlrLNTVZvmDT1WY=$boJtvE/fNX6QqBExfAMzG2yaKhSLdxVzqEzcWuq8zDk=</Lozinka>
+        <Ime>a</Ime>
+        <Prezime>a</Prezime>
+        <Uloga>predsednik</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>9SJ21KGZgjpYIu2xCLM1Ow==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <Certificate>asd</Certificate>
+        <TimeStamp>Fri Jun 17 15:29:50 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>d</KorisnickoIme>
+        <Lozinka>m2oU5Xs7atLhDYZPrq90XLhvUJLH/xSw5kCII743hKQ=$PboUiHN3tPcopgpcKhLaXg6Aauj11PFti4wqkaZr1Rc=</Lozinka>
+        <Ime>d</Ime>
+        <Prezime>d</Prezime>
+        <Uloga>odbornik</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>ym3Eh3RDNQvr07TGU3pRuQ==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <Certificate>dfddf</Certificate>
+        <TimeStamp>Fri Jun 17 16:26:03 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>milos321</KorisnickoIme>
+        <Lozinka>DAviWX2wBh4qnUBzYASO1uakHFIe02rcWivHS8RkhOM=$px3EVJ2nrLnIuJVjgYwxU3EjDp8/W/0PI3AR2gbpjAE=</Lozinka>
+        <Ime>milos</Ime>
+        <Prezime>savic</Prezime>
+        <Uloga>predsednik</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>eYWjIrOfsYBSSEfw/aOM9A==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <Certificate>mirjanamirkovic</Certificate>
+        <TimeStamp>Fri Jun 17 16:39:29 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>g</KorisnickoIme>
+        <Lozinka>PPxJ7oINcy1AI/s6h0Irq1BLvNmWuVR04Ak7uDBb8mQ=$GnT+OmzJ4na9f3mgiS/oWcScZXOi2ywMa5dDHKLdbHg=</Lozinka>
+        <Ime>dfdf</Ime>
+        <Prezime>dfdfdf</Prezime>
+        <Uloga>odbornik</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>975t6AaDaFbyo8ha/y+64g==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <Certificate>vbvbvb</Certificate>
+        <TimeStamp>Fri Jun 17 16:44:20 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>re</KorisnickoIme>
+        <Lozinka>V35nYkMONMIjAkMYZkcLQhMFGUk3l2LSejuvE8fsBFo=$4V8Z1C9vdMbi87mnZcUk8gODZ3wsqJgEiwxPYIAYNaw=</Lozinka>
+        <Ime>w</Ime>
+        <Prezime>w</Prezime>
+        <Uloga>predsednik</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>lMj2VAswTMchXoD1C30E+Q==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <Certificate>dsasd</Certificate>
+        <TimeStamp>Fri Jun 17 16:52:59 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>A</KorisnickoIme>
+        <Lozinka>vxb7h/XVgeid4iE6szOGgpTP7YbMO2mIg3B/iMDIy5E=$rFNsJfKVGwmYk5lhnT3vGkrsgBubDaRxekzAAnMdLfQ=</Lozinka>
+        <Ime>A</Ime>
+        <Prezime>A</Prezime>
+        <Uloga>predsednik</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>4a23ffsw33z7qA2UAkIwDw==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <Certificate>A</Certificate>
+        <TimeStamp>Fri Jun 17 16:56:49 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>rale</KorisnickoIme>
+        <Lozinka>GgOohqZICIKDlqVvuot5Y6ylD4VvEr0jXm68TSIlCas=$8GH/P2e8e4Ic+aJ/M84vYyxq7CnTagaSIY7vEX7XVCs=</Lozinka>
+        <Ime>ra</Ime>
+        <Prezime>ra</Prezime>
+        <Uloga>predsednik</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><xenc:CipherData><xenc:CipherValue>aNtJcFIHMHLVd2jtrfmb7g==</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <Certificate>sgns</Certificate>
+        <TimeStamp>Fri Jun 17 18:36:21 CEST 2016</TimeStamp>
+    </Korisnik>
+    <Korisnik>
+        <KorisnickoIme>milos1111</KorisnickoIme>
+        <Lozinka>qA+yanseZPA1tJJWVGLBxILvf/TzBh/kmST7Alx/yF4=$J6MZHjwS7pW/NeD6+KF4SYn3jpZWRrzksHkfun8ul6o=</Lozinka>
+        <Ime>milos</Ime>
+        <Prezime>savic</Prezime>
+        <Uloga>odbornik</Uloga>
+        <Email><xenc:EncryptedData xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" Type="http://www.w3.org/2001/04/xmlenc#Content"><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/><ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+<ds:KeyName>Kriptovani tajni kljuc</ds:KeyName>
+<xenc:EncryptedKey><xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-1_5"/><xenc:CipherData><xenc:CipherValue>loXVI0flQ+pU3AsGObqztb3Cjqfpj7w7JWNcNL4J9B3KBedM5FOQUIaCGSqzTtfbSb4NPA6IYFlC
++EM1NwoO+kWaFZYxJJyXyv3UQq7IQmz3zXV/rGbKIq8bIGQjeFqDAaQymnIvCwh1Qj2jDCkBxwde
+wyVDOFEaFgXbb/8Ff/w=</xenc:CipherValue></xenc:CipherData></xenc:EncryptedKey></ds:KeyInfo><xenc:CipherData><xenc:CipherValue>glWdPwIPOGOh51IEm4SG5A7a4AVCiB2X</xenc:CipherValue></xenc:CipherData></xenc:EncryptedData></Email>
+        <Certificate>milanamilankovic</Certificate>
+        <TimeStamp>Fri Jun 17 22:12:33 CEST 2016</TimeStamp>
+    </Korisnik>
+</Korisnici>
+>>>>>>> 9aad9a0c9950644993825e7f0fe93e746b3c71ed
