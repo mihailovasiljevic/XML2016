@@ -1,8 +1,8 @@
 angular.module('session')
-  .controller('SessionController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search','playSession',
-    function($scope,$rootScope, $timeout,$location,$state, Main, Search, playSession){
+  .controller('SessionController', ['$scope', '$rootScope', '$timeout','$location','$state','Main','Search',
+    function($scope,$rootScope, $timeout,$location,$state, Main, Search){
 
-        console.log(playSession);
+        //console.log(playSession);
         
         var acts = new Main({
             criteria: 'predlozen'

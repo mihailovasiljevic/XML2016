@@ -385,8 +385,11 @@ public class Application extends Controller {
     }
     
     public static void getUser() {
-
-    	renderJSON(session.get("korisnik"));
+    	if(session.get("korisnik") != null)
+    		renderJSON(session.get("korisnik"));
+    	else{
+    		renderJSON(null);
+    	}
     }
     
     public static void logout(){

@@ -74,12 +74,16 @@ angular.module('amendment')
 			$scope.error="";
 			$scope.amendment.$save(function(response) {
 				console.log(response);
-				$scope.amendment.text="";
-				if(response.map!=undefined)
-				if(response.map.error!=""){
-					$scope.error = response.map.error;
-					$scope.amendment.text = text;
-				}
+				if(response.map!=undefined){
+                    if(response.map.error!=""){
+                        $scope.error = response.map.error;
+                        $scope.amendment.text = text;
+                    }
+                    else{
+                     $scope.amendment.text="";
+                     $scope.error = "";
+                    }
+                }
 
 			});
 			

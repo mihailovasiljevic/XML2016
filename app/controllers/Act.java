@@ -74,6 +74,8 @@ import play.Play;
 import play.exceptions.JavaExecutionException;
 import play.mvc.Controller;
 import play.mvc.Http;
+import rs.ac.uns.ftn.amandman.Tacka;
+import rs.ac.uns.ftn.pravniakt.Clan;
 import rs.ac.uns.ftn.pravniakt.Propis;
 import util.FileUtil;
 import xquery.XMLReader;
@@ -293,7 +295,6 @@ public class Act extends Controller {
 					String uri = XMLWriterUriTemplate.run(Util.loadProperties(), "acts");
 					System.out.println("[URI of saved XML]: " + uri);
 					prepareRDF(uri);
-					renderJSON(new JSONObject("{'error':''}"));
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
