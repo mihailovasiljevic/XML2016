@@ -6,6 +6,7 @@ angular.module('user').controller('mainCtrl1', ['$scope','$state',
 angular.module('user').controller('inputCtrl1', ['$scope','$state','User','UserRegister',
 	 function($scope,$state,User,UserRegister) {
 		$scope.user = new UserRegister();
+		$scope.user.uloga = "odbornik";
 		$scope.create = function() {
 			if(!$scope.user.username){
 				$scope.error = "Polje ne sme biti prazno. Unesite Username.";
@@ -41,13 +42,19 @@ angular.module('user').controller('inputCtrl1', ['$scope','$state','User','UserR
 					console.log('usao1');
 					$scope.error = response.map.error;		
 				}*/
-				$state.go("main.show");
+				//$state.go("main.show");
 			});
 		}
  }]);
 
 angular.module('user').controller('inputCtrl2', ['$scope','$state','User',
   function($scope,$state,User) {
+	
+	(User.get(function(response){
+ 		console.log(JSON.stringify(response));
+		$state.go('main');
+ 	}))
+	
 	$scope.user = new User();
 	$scope.create = function() {
 		
@@ -62,11 +69,12 @@ angular.module('user').controller('inputCtrl2', ['$scope','$state','User',
 				
 		$scope.user.$save(function(response) {
 			
-			/*if(response.map.error){
-				console.log('usao1');
+			if(response.map.error){
+				console.log(response);
 				$scope.error = response.map.error;		
-			}*/	
-			$state.go("main.show");				
+			}	
+			else 
+				$state.go("main.show");				
 		});
 		
 	
@@ -75,6 +83,8 @@ angular.module('user').controller('inputCtrl2', ['$scope','$state','User',
 
 angular.module('user').controller('viewCtrl1', ['$scope','$state','User',
  	 function($scope,$state,User) {
+	
+	
 
 	$state.go("view.main");
 	

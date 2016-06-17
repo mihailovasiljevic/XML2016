@@ -70,10 +70,17 @@ angular.module('amendment')
 				$scope.error = "Polje ne sme biti prazno. Molim vas unesite dokument.";
 				return;
 			}
+			var text = $scope.amendment.text;
+			$scope.error="";
 			$scope.amendment.$save(function(response) {
-				console.log(response);
-				if(response.map.error)
-					$scope.error = response.map.error;
+			console.log(response);
+			if(response.map.error)
+			$scope.amendment.text="";
+			if(response.map!=undefined)
+			if(response.map.error!=""){
+			$scope.error = response.map.error;
+			$scope.amendment.text = text;
+			}
 			});
 
         }

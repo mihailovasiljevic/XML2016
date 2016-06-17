@@ -146,7 +146,11 @@ public class Act extends Controller {
 			Unmarshaller unmarshaller = context.createUnmarshaller();
 			Propis propis = (Propis) unmarshaller.unmarshal(doc);
 			System.out.println("prosao");
-			renderJSON(propis);
+			try {
+ 				renderJSON(propis);
+			}catch (Exception e) {
+				renderJSON(new JSONObject("{'naziv':'"+propis.getNaziv()+"'}"));
+			}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -230,7 +234,10 @@ public class Act extends Controller {
         	boolean xmlValid = isValid.test(Application.projectPath+"/XML2016/data/akt.xsd","act");
         	SignEnveloped senv = new SignEnveloped();
         	//senv.sign(LoggedUser.getCertificate);
-        	senv.sign("milanamilankovic");
+        	JSONObject loggedUser = new JSONObject(session.get("korisnik")); 
+        	String certName = loggedUser.getString("certificate");
+        	System.out.println(certName);
+        	senv.sign(certName);
         	if(xmlValid)
         		System.out.println("XML JE VALIDAN");
         	else 

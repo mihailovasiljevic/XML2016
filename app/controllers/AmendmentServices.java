@@ -47,6 +47,7 @@ public class AmendmentServices extends Controller {
         	if(xmlValid){
         		try {
     				XMLWriterUriTemplate.run(Util.loadProperties(),"amendments");
+    				renderJSON(new JSONObject("{'error':''"));
     			} catch (IOException e) {
     				// TODO Auto-generated catch block
     				e.printStackTrace();
