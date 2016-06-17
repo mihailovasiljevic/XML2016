@@ -117,10 +117,8 @@ public class Application extends Controller {
 		try {
 
 	//		File fXmlFile = new File("/XML2016/xml/users.xml");
-			File fXmlFile = new File(Application.projectPath+"/XML2016/xml/users.xml");
-			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-			Document doc = dBuilder.parse(fXmlFile);
+			
+			Document doc = XMLReader.run(Util.loadProperties(),"/security/users.xml");
 			
 			
 			JSONObject obj = new JSONObject(params.get("body"));
@@ -279,7 +277,7 @@ public class Application extends Controller {
 				    
 				    Date date = new Date();
 				    	
-				    String docUri = "/users.xml";
+				    String docUri = "/security/users.xml";
 				    try {
 				    client = DatabaseClientFactory.newClient(Util.loadProperties().host, Util.loadProperties().port,
 				   Util.loadProperties().database, Util.loadProperties().user, Util.loadProperties().password,
@@ -387,7 +385,7 @@ public class Application extends Controller {
 						e.printStackTrace();
 					}*/
 		 		
-			    	// XMLWriter.run(Util.loadProperties());
+			    	//XMLWriter.run(Util.loadProperties());
 	 		}
 	 		
 	 		if(provera_password==false){

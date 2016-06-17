@@ -56,7 +56,7 @@ public class XMLWriter {
 		XMLDocumentManager xmlManager = client.newXMLDocumentManager();
 		
 		// Define a URI value for a document.
-		String docId = "/users.xml";
+		String docId = "/security/users.xml";
 		String testDocId = "./data/probaaa3.xml";
 		
 		// Create an input stream handle to hold XML content.
