@@ -1,8 +1,3 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:h="http://www.w3.org/1999/xhtml">
-  <!--Could not produce the triple for: http://www.ftn.uns.ac.rs/pravniAkt/propis/2 - pred:datumKreiranja - 2017-12-08-->
-  <!--Could not produce the triple for: http://www.ftn.uns.ac.rs/pravniAkt/propis/2 - pred:datumUsvajanjaUNacelu - 2018-03-28-->
-  <!--Could not produce the triple for: http://www.ftn.uns.ac.rs/pravniAkt/propis/2 - pred:datumUsvajanjaUCelosti - 2017-08-02Z-->
-  <!--Could not produce the triple for: http://www.ftn.uns.ac.rs/pravniAkt/propis/2 - pred:glasaliZa - 110162944-->
-  <!--Could not produce the triple for: http://www.ftn.uns.ac.rs/pravniAkt/propis/2 - pred:glasaliProtiv - -1057065940-->
-  <!--Could not produce the triple for: http://ftn.uns.ac.rs/pravniAkt/amandman/1 - pred:parentOf - http://www.ftn.uns.ac.rs/pravniAkt/propis/2-->
+  <!--Could not produce the triple for: http://www.ftn.uns.ac.rs/pravniAkt/propis/2 - pred:datumKreiranja - 2017-01-04Z-->
 </rdf:RDF>

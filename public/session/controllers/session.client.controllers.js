@@ -36,7 +36,7 @@ angular.module('session')
 
                             $scope.listForShowing = [];
                             for(var i = 0; i < $scope.results.length; i++) {
-                                if($scope.results[i].status != "povucen") {
+                                if($scope.results[i].status != "povucen" && $scope.results[i].status != "celina" && $scope.results[i].status != "odbijen") {
                                     $scope.listForShowing.push($scope.results[i]);
                                 }
                             }
@@ -54,7 +54,7 @@ angular.module('session')
 
                             $scope.listForShowing = [];
                             for(var i = 0; i < $scope.results.length; i++) {
-                                if($scope.results[i].status != "povucen") {
+                                if($scope.results[i].status != "povucen" && $scope.results[i].status != "celina" && $scope.results[i].status != "odbijen") {
                                     $scope.listForShowing.push($scope.results[i]);
                                 }
                             }
@@ -196,8 +196,10 @@ angular.module('session')
                 if(response.map.success){
                     $state.go("main.amendmentVoting", {actURI:$stateParams.actURI})
                 }else{  
-                    alert(response);
+                    alert(JSON.stringify(response));
                 }
+            }, function(errorResponse){
+                 alert(JSON.stringify(errorResponse));
             });
         };
 

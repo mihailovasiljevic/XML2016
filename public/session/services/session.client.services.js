@@ -19,7 +19,7 @@ angular.module('main')
      });
 }])
  .factory('AmendmentVoteService', ['$resource',function($resource){
-		return $resource('/api/session/vote/:sessionId/amendment/:amendmentId', {
+		return $resource('/api/session/:sessionId/:amendmentId', {
     		sessionId : '@_id',
             amendmentId : '@_id'
            	  }, {

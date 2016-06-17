@@ -127,7 +127,7 @@ public class SessionService extends Controller{
 		
 		if (xmlValid){
 			try {
-				XMLWriterUriTemplate.run(Util.loadProperties(), "acts");
+				XMLWriterUriTemplate.run(Util.loadProperties(), "amendments");
 				System.out.println("[URI of saved XML]: " + amandman.getOznaka());
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
@@ -172,7 +172,7 @@ public class SessionService extends Controller{
 				context = JAXBContext.newInstance("rs.ac.uns.ftn.amandman");
 				Unmarshaller unmarshaller = context.createUnmarshaller();
 				Amandman amandman = (Amandman) unmarshaller.unmarshal(doc);
-				if(amandman.getOAkta() == Integer.parseInt(uri)){
+				if((amandman.getOAkta() == Integer.parseInt(uri)) && (amandman.getStatus().equals("predlozen"))){
 					System.out.println("prosao");
 					String oznaka = amandman.getOznaka()+"";
 					JSONObject obj = new JSONObject();
@@ -202,14 +202,18 @@ public class SessionService extends Controller{
 		return splitted[2];
 	}
 	
-	public static void amendmentVote(String propisURI, String amandmanURI){
+	public static void amendmentVote(String propisURI, String amendmentURI){
+		System.out.println("[INFO] amandmanURI : " + amendmentURI);
+		System.out.println("[INFO] propisURI : " + propisURI);
     	String body = params.get("body");
     	
     	if(body!=null){
     		JSONObject obj = new JSONObject(body);
     		try{
+    			System.out.println("[INFO]: " + "Pokusava da pokupi parametre");
     			int glasaliZa = obj.getInt("glasaliZa");
     			int glasaliProtiv = obj.getInt("glasaliProtiv");
+    			System.out.println("[INFO]: " + "Pokupio ih je");
     			try{
     				
     				String status = "";
@@ -220,7 +224,7 @@ public class SessionService extends Controller{
     				}else{
     					status = "odbijen";
     				}
-    				Amandman amandman = xquery.XMLReader.getAmandman("/amendments/"+amandmanURI+".xml");
+    				Amandman amandman = xquery.XMLReader.getAmandman("/amendments/"+amendmentURI+".xml");
     				amandman.setStatus(status);
     				
     				Propis propis = xquery.XMLReader.getPropis("/acts/"+propisURI+".xml");
