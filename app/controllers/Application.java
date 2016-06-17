@@ -173,7 +173,7 @@ public class Application extends Controller {
 						 
 						 System.out.println("Uspesan LOGIN");
 						 provera_password=true;
-						 User loggedUser = new User(username, password, password,
+						 User loggedUser = new User(username, eElement.getElementsByTagName("Lozinka").item(0).getTextContent(), eElement.getElementsByTagName("Lozinka").item(0).getTextContent(),
 						 eElement.getElementsByTagName("Ime").item(0).getTextContent(), eElement.getElementsByTagName("Prezime").item(0).getTextContent()  , eElement.getElementsByTagName("Uloga").item(0).getTextContent()
 								 , eElement.getElementsByTagName("Email").item(0).getTextContent(),eElement.getElementsByTagName("Certificate").item(0).getTextContent());
 						loggedUser.setCertificate(eElement.getElementsByTagName("Certificate").item(0).getTextContent());	

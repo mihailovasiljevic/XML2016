@@ -228,7 +228,7 @@ public class Act extends Controller {
     			e.printStackTrace();
     		}
         
-        	SecurityUtils.addTimestampAndNumberAct();
+        	SecurityUtils.addTimestampAndNumberAct("act");
         	XMLValidation isValid = new XMLValidation();
         	
         	boolean xmlValid = isValid.test(Application.projectPath+"/XML2016/data/akt.xsd","act");

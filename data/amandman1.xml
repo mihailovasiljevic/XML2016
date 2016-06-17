@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ama:Amandman xmlns:ama="http://www.ftn.uns.ac.rs/amandman" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ftn.uns.ac.rs/amandman amandman.xsd ">
+  <ama:oznaka>0</ama:oznaka>
+  <ama:zaglavlje>
+    <ama:drzava>РЕПУБЛИКА СРБИЈА</ama:drzava>
+    <ama:organ>НАРОДНА СКУПШТИНА</ama:organ>
+    <ama:predlagac>ama:predlagac</ama:predlagac>
+    <ama:mesto>ama:mesto</ama:mesto>
+    <ama:vremeFormiranja>ama:vremeFormiranja</ama:vremeFormiranja>
+    <ama:redniBroj>ama:redniBroj</ama:redniBroj>
+  </ama:zaglavlje>
+  <ama:uvod>
+    <ama:naslov>ПРЕДСЕДНИКУ НАРОДНЕ СКУПШТИНЕ</ama:naslov>
+    <ama:tekst>ama:tekst</ama:tekst>
+  </ama:uvod>
+  <ama:glavniDeo>
+    <ama:naslov>АМАНДМАН</ama:naslov>
+    <ama:sadrzaj>
+      <ama:tekst>
+        <ama:clan/>
+        <ama:operacija>menjaSe</ama:operacija>
+      </ama:tekst>
+    </ama:sadrzaj>
+  </ama:glavniDeo>
+  <ama:obrazlozenje>
+    <ama:naslov>ama:naslov</ama:naslov>
+    <ama:tekst>ama:tekst</ama:tekst>
+  </ama:obrazlozenje>
+  <ama:potpis>
+    <ama:funkcija>ama:funkcija</ama:funkcija>
+    <ama:imeIPrezime>ama:imeIPrezime</ama:imeIPrezime>
+  </ama:potpis>
+</ama:Amandman>

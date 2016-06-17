@@ -1,11 +1,16 @@
-angular.module('act').controller('actCtrl', ['$scope','$state','Propis',
-    function($scope,$state,Propis) {
+angular.module('act').controller('actCtrl', ['$scope','$state','Propis','User',
+    function($scope,$state,Propis,User) {
 		$scope.addAct = function(){
 			$state.go('view.addAct');
 		}
 		
-		$scope.act = new Propis();
+		User.get(function(response){
+			if(!response.uloga)
+				$state.go('main');
+		})
 		
+		
+		$scope.act = new Propis();
 		$scope.sendAct = function(){
 			if(!$scope.act.text){
 				$scope.error = "Polje ne sme biti prazno. Molim vas unesite dokument.";

@@ -16,6 +16,8 @@ import jaxb.XMLValidation;
 import play.exceptions.JavaExecutionException;
 import play.mvc.Controller;
 import rs.ac.uns.ftn.amandman.Amandman;
+import security.SecurityUtils;
+import security.SignEnveloped;
 import util.FileUtil;
 import xquery.XMLReader;
 
@@ -36,9 +38,16 @@ public class AmendmentServices extends Controller {
     			// TODO Auto-generated catch block
     			e.printStackTrace();
     		}
-        
+        	
+        	SecurityUtils.addTimestampAndNumberAct("amendment");
         	XMLValidation isValid = new XMLValidation();
         	boolean xmlValid = isValid.test(Application.projectPath+"/XML2016/data/amandman.xsd","amandman");
+        	SignEnveloped senv = new SignEnveloped();
+        	//senv.sign(LoggedUser.getCertificate);
+        	JSONObject loggedUser = new JSONObject(session.get("korisnik")); 
+        	String certName = loggedUser.getString("certificate");
+        	System.out.println(certName);
+        	senv.sign(certName);
         	if(xmlValid)
         		System.out.println("XML JE VALIDAN");
         	else 
@@ -47,7 +56,7 @@ public class AmendmentServices extends Controller {
         	if(xmlValid){
         		try {
     				XMLWriterUriTemplate.run(Util.loadProperties(),"amendments");
-    				renderJSON(new JSONObject("{'error':''"));
+    				renderJSON(new JSONObject("{'error':''}"));
     			} catch (IOException e) {
     				// TODO Auto-generated catch block
     				e.printStackTrace();
