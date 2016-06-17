@@ -15,8 +15,6 @@ angular.module('act').controller('actCtrl', ['$scope','$state','Propis',
 			$scope.error=""
 			$scope.act.$save(function(response) {
 			console.log(response);
-			if(response.map.error)
-			$scope.act.text="";
 			
 			if(response.map!=undefined)
 			if(response.map.error!==""){

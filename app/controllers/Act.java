@@ -246,6 +246,7 @@ public class Act extends Controller {
         	if(xmlValid){
         		try {
     				XMLWriterUriTemplate.run(Util.loadProperties(),"acts");
+    				renderJSON(new JSONObject("{'error':''}"));
     			} catch (IOException e) {
     				// TODO Auto-generated catch block
     				e.printStackTrace();
