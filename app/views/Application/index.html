@@ -61,24 +61,24 @@ function resizeText() {
 }
 </script>
 </head>
-<body>
+<body ng-controller="sednicaController">
 <!--Header_section-->
 <header id="header_outer">
   <div class="container">
     <div class="header_section">
       <div class="logo"><a href="#"><img src="public/img/logo.jpg" alt="" width="198px" height="99px"></a></div>
-      <nav class="nav" id="nav">
+      <nav  class="nav" id="nav">
         <ul class="toggle">
           <li><a href="#" ui-sref="main">Akti</a></li>
           <li><a href="#" ui-sref="main.amandmans">Amandmani</a></li>
-          <li><a href="#" ui-sref="main.session">Sednica</a></li>
+          <li ng-show="isPredsednik"><a href="#" ui-sref="main.session">Sednica</a></li>
           
         </ul>
 
         <ul class="">
           <li><a href="#" ui-sref="main">Akti</a></li>
           <li><a href="#" ui-sref="main.amandmans">Amandmani</a></li>
-          <li><a href="#" ui-sref="main.session">Sednica</a></li>
+          <li ng-show="isPredsednik"><a href="#" ui-sref="main.session">Sednica</a></li>
         </ul>
       </nav>
       <a class="res-nav_click animated wobble wow"  href="javascript:void(0)"><i class="fa-bars"></i></a> </div>
