@@ -16,6 +16,7 @@ import com.marklogic.client.io.InputStreamHandle;
 
 import controllers.Application;
 import database.Util.ConnectionProperties;
+import rs.ac.uns.ftn.amandman.Amandman;
 import rs.ac.uns.ftn.pravniakt.Propis;
 
 /**
@@ -74,33 +75,55 @@ public class XMLWriterUriTemplate {
 		//DocumentDescriptor desc = xmlManager.create(template, metadata, handle);
 		// Definiše se JAXB kontekst (putanja do paketa sa JAXB bean-ovima)
 		javax.xml.bind.JAXBContext context;
-		Propis propis = null;
-		try {
-			context = javax.xml.bind.JAXBContext.newInstance("rs.ac.uns.ftn.pravniakt");
-			javax.xml.bind.Unmarshaller unmarshaller = context.createUnmarshaller();
-			java.io.File tmp = new java.io.File(Application.projectPath+"/XML2016/data/temp.xml");
-			propis = (Propis) unmarshaller.unmarshal(tmp);
-			xmlManager.write("/acts/"+propis.getOznaka()+".xml", metadata,handle);
-		} catch (JAXBException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		if(collectionName.equals("acts")){
+			Propis propis = null;
+			try {
+				context = javax.xml.bind.JAXBContext.newInstance("rs.ac.uns.ftn.pravniakt");
+				javax.xml.bind.Unmarshaller unmarshaller = context.createUnmarshaller();
+				java.io.File tmp = new java.io.File(Application.projectPath+"/XML2016/data/temp.xml");
+				propis = (Propis) unmarshaller.unmarshal(tmp);
+				xmlManager.write("/acts/"+propis.getOznaka()+".xml", metadata,handle);
+			} catch (JAXBException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			//System.out.println("[INFO] Generated URI: " + desc.getUri());
+				System.out.print("[INFO] Verify the content at: ");
+				System.out.println("http://" + props.host + ":8000/v1/documents?database=" + props.database + "&uri=" + propis.getOznaka());
+				
+				// Release the client
+				client.release();
+				
+				System.out.println("[INFO] End.");
+				return "/acts/"+propis.getOznaka()+".xml";
+		}else{
+			Amandman amandman = null;
+			try {
+				context = javax.xml.bind.JAXBContext.newInstance("rs.ac.uns.ftn.amandman");
+				javax.xml.bind.Unmarshaller unmarshaller = context.createUnmarshaller();
+				java.io.File tmp = new java.io.File(Application.projectPath+"/XML2016/data/temp.xml");
+				amandman = (Amandman) unmarshaller.unmarshal(tmp);
+				xmlManager.write("/amendments/"+amandman.getOznaka()+".xml", metadata,handle);
+			} catch (JAXBException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}	
+			//System.out.println("[INFO] Generated URI: " + desc.getUri());
+			System.out.print("[INFO] Verify the content at: ");
+			System.out.println("http://" + props.host + ":8000/v1/documents?database=" + props.database + "&uri=" + amandman.getOznaka());
+			
+			// Release the client
+			client.release();
+			
+			System.out.println("[INFO] End.");
+			return "/amendments/"+amandman.getOznaka()+".xml";
 		}
-
 		
 
 		
 		// Write the document to the database
 		
-		
-		//System.out.println("[INFO] Generated URI: " + desc.getUri());
-		System.out.print("[INFO] Verify the content at: ");
-		System.out.println("http://" + props.host + ":8000/v1/documents?database=" + props.database + "&uri=" + propis.getOznaka());
-		
-		// Release the client
-		client.release();
-		
-		System.out.println("[INFO] End.");
-		return "/acts/"+propis.getOznaka()+".xml";
+
 	}
 
 

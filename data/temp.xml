@@ -1,61 +1,53 @@
-<?xml  version="1.0" encoding="UTF-8"?>
-<ama:Amandman xsi:schemaLocation="http://www.ftn.uns.ac.rs/amandman file:/C:/Users/Nemanja/Desktop/Sch/pinf_xws_docs/xml/schema/amandman.xsd" xmlns:ama="http://www.ftn.uns.ac.rs/amandman" xmlns:preda="http://ftn.uns.ac.rs/amandman/predicate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<ama:oznaka>0
-</ama:oznaka>
-<ama:zaglavlje>
-<ama:drzava>РЕПУБЛИКА СРБИЈА
-</ama:drzava>
-<ama:organ>НАРОДНА СКУПШТИНА
-</ama:organ>
-<ama:predlagac>predlagac0
-</ama:predlagac>
-<ama:mesto>mesto0
-</ama:mesto>
-</ama:zaglavlje>
-<ama:uvod>
-<ama:naslov>ПРЕДСЕДНИКУ НАРОДНЕ СКУПШТИНЕ
-</ama:naslov>
-<ama:tekst>tekst0
-</ama:tekst>
-</ama:uvod>
-<ama:zaAkt>0
-</ama:zaAkt>
-<ama:glavniDeo>
-<ama:naslov>АМАНДМАН
-</ama:naslov>
-<ama:sadrzaj>
-<ama:tekst>
-<ama:operacija>operacija0
-</ama:operacija>
-<ama:elemId>0
-</ama:elemId>
-<ama:clan id="0">
-<ama:redniBroj>0
-</ama:redniBroj>
-<ama:simbolickiNaziv>simbolickiNaziv0
-</ama:simbolickiNaziv>
-<ama:stav id="1">
-<ama:redniBroj>0
-</ama:redniBroj>
-<ama:tekst>
-</ama:tekst>
-</ama:stav>
-<ama:tekst>
-</ama:tekst>
-</ama:clan>
-</ama:tekst>
-</ama:sadrzaj>
-</ama:glavniDeo>
-<ama:obrazlozenje>
-<ama:naslov>naslov0
-</ama:naslov>
-<ama:tekst>tekst1
-</ama:tekst>
-</ama:obrazlozenje>
-<ama:potpis>
-<ama:funkcija>funkcija0
-</ama:funkcija>
-<ama:imeIPrezime>imeIPrezime0
-</ama:imeIPrezime>
-</ama:potpis>
+<?xml version="1.0" encoding="UTF-8"?>
+<ama:Amandman xmlns:ama="http://www.ftn.uns.ac.rs/amandman"
+ xmlns:akt="http://www.ftn.uns.ac.rs/pravniAkt"
+ xmlns:preda="http://ftn.uns.ac.rs/amandman/predicate"
+ xmlns:pred="http://ftn.uns.ac.rs/pravniAkt/predicate/"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.ftn.uns.ac.rs/amandman file:/F:/Projects/XML/pinf_xws_docs/xml/schema/amandman.xsd" about="mxpfngWP0OavvDg6" newAttribute="XpknWJIm" newAttribute1="ULEy">
+    <ama:oznaka>3</ama:oznaka>
+    <ama:zaglavlje>
+        <ama:drzava>РЕПУБЛИКА СРБИЈА</ama:drzava>
+        <ama:organ>НАРОДНА СКУПШТИНА</ama:organ>
+        <ama:predlagac>_KrhG_.ck</ama:predlagac>
+        <ama:datum>2018-04-25</ama:datum>
+        <ama:mesto>gMkyWiSp8USdFpjZR2RO5Sl0</ama:mesto>
+    </ama:zaglavlje>
+    <ama:uvod>
+        <ama:naslov>ПРЕДСЕДНИКУ НАРОДНЕ СКУПШТИНЕ</ama:naslov>
+        <ama:propis vocab="lk" about="g.Y_JHKUXOil0" rel="U77.90RVH20-dWiGs4KY7r" href="rRLq"/>
+    </ama:uvod>
+    <ama:oAkta>N0Ue-XosLa.fDW1Mc90NB4</ama:oAkta>
+    <ama:glavniDeo>
+        <ama:naslov>АМАНДМАН</ama:naslov>
+        <ama:clan id="2036915893" ama:operacija="dodajeSe">
+            <ama:stav id="-306060962" ama:operacija="dodajeSe">
+                <ama:tacka id="_ZVpupdQf.9X.08ZeFfrJen" ama:operacija="menjaSe">
+                    <ama:tekst>JozFs</ama:tekst>
+                </ama:tacka>
+                <ama:tacka id="FY8lqZzEz1rE2MlFMisGbQT" ama:operacija="dodajeSe">
+                    <ama:tekst>xgWYrrXW523j</ama:tekst>
+                </ama:tacka>
+                <ama:tekst>VEGSgbpZbz9LWyor</ama:tekst>
+            </ama:stav>
+            <ama:stav id="-1589892081" ama:operacija="briseSe">
+                <ama:tacka id="gpKCGpRqhmq8m1FuTN7IlHU.-BC" ama:operacija="dodajeSe">
+                    <ama:tekst>A2du3LN_n.Plm.bnR</ama:tekst>
+                </ama:tacka>
+                <ama:tacka id="NMGEa2Dl_TKy_XQx73DfNyo7pvl" ama:operacija="menjaSe">
+                    <ama:tekst>XfgVI8W4dPPAwJPrI2</ama:tekst>
+                </ama:tacka>
+                <ama:tekst>zkOlDA1kQK1W.28.b9_1_IH8wfpjg</ama:tekst>
+            </ama:stav>
+            <ama:tekst>KXCF-zLGu0.Thea</ama:tekst>
+        </ama:clan>
+    </ama:glavniDeo>
+    <ama:obrazlozenje>
+        <ama:naslov>NM93TltfYUHMla3f</ama:naslov>
+        <ama:tekst>GhMczC.wU5EQ7XztaQyLRIPI8ek</ama:tekst>
+    </ama:obrazlozenje>
+    <ama:potpis>
+        <ama:funkcija>szD7tNEXSthao4</ama:funkcija>
+        <ama:imeIPrezime>q5Mr</ama:imeIPrezime>
+    </ama:potpis>
 </ama:Amandman>
