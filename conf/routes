@@ -25,6 +25,7 @@ POST	/api/amendments							AmendmentServices.saveAmendment
 GET 	/api/amendments/{uri}					AmendmentServices.getAmendment(uri)
 PUT 	/api/amendments/{uri}					AmendmentServices.updateAmendment(uri)
 GET		/api/amandments/pdf/{uri}				AmendmentServices.genPdfAma(uri)
+GET		/api/amandments/xhtml/{uri}				AmendmentServices.genXHTML(uri)
 
 GET		/api/acts/sending/{uri}					Act.sendingAct(uri)
 
