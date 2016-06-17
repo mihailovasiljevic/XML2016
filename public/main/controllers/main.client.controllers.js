@@ -123,6 +123,9 @@ angular.module('main')
         	
         })
        
+        $scope.login = function(){
+        	$state.go('login');
+        }
         
         $scope.logout = function(){
         	UserLogout.get(function(response){
