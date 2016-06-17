@@ -241,7 +241,7 @@ public class Application extends Controller {
     
     public static void saveUsers() throws ParserConfigurationException, SAXException, IOException {
     	System.out.println("save");
-    	String result = params.get("body");
+  //  	String result = params.get("body");
     	ObjectMapper mapper = new ObjectMapper();
     	User user;
     	boolean provera_password=false;
@@ -249,6 +249,12 @@ public class Application extends Controller {
     	
     	
     	Document doc = XMLReader.run(Util.loadProperties(),"/security/users.xml");
+    	
+    	JSONObject obj = new JSONObject(params.get("body"));
+		System.out.println("JSON"+obj.toString());
+		if(obj.has("map"))
+			obj.remove("map");
+		String result = obj.toString();
 		
 		doc.getDocumentElement().normalize();		
 		NodeList nList = doc.getElementsByTagName("Korisnik");
@@ -359,11 +365,13 @@ public class Application extends Controller {
 	 		}
 	 		
 	 		if(provera_password==false){
-	 				saveUsers();
-	 				//	renderJSON(new JSONObject("{'error':'Sifre se moraju poklapati.'}"));
-	 		}else{
-	 			//	renderJSON(new JSONObject("{'error':''}"));
+	 	//			saveUsers();
+	 					renderJSON(new JSONObject("{'error':'Sifre se moraju poklapati.'}"));
 	 		}
+	 		
+	 		if(provera_password){
+				renderJSON(new JSONObject("{'error':''}"));
+			}
 	 		
 		} catch (IOException e) {
 			e.printStackTrace();

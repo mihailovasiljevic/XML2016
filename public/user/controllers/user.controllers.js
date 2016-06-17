@@ -43,11 +43,12 @@ angular.module('user').controller('inputCtrl1', ['$scope','$state','User','UserR
 			
 		
 			$scope.user.$save(function(response) {
-				/*if(response.map.error){
+				if(response.map.error){
 					console.log('usao1');
 					$scope.error = response.map.error;		
-				}*/
-				//$state.go("main.show");
+				}
+				else
+				 $state.go("main.show");
 			});
 		}
  }]);
