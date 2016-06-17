@@ -13,7 +13,7 @@ angular.module('user').controller('inputCtrl1', ['$scope','$state','User','UserR
 				return;
 			}
 			if(!$scope.user.password){
-				$scope.error = "Polje ne sme biti prazno. Unesite Password.";
+				$scope.error = "Sifra mora imati izmedju 8-20 znakova.Mora sadrzati makar jedno malo i makar jedno veliko slovo i non alpha karakter(broj ili simbol).";
 				return;
 			}
 			
