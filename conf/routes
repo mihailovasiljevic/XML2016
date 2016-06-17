@@ -39,6 +39,9 @@ GET	 	/api/pureAct/{uri}						ActProcessing.processAct(uri)
 #session
 GET 	/api/session							Application.getSednica
 POST  	/api/session							Application.setSednica
+POST  	/api/session/vote/{uri}					SessionService.vote(uri)
+GET  	/api/session/vote/amendments/{uri}		SessionService.getAmendments(uri)
+POST 	/api/session/{propisURI}/{amendmentURI} SessionService.amendmentVote(propisURI, amendmentURI)
 # Ignore favicon requests
 GET     /favicon.ico                            404
 

@@ -34,7 +34,8 @@
                                                                     <h4>
                                                                         <span ng-bind="amendment.oznaka" ng-click="showAct(amendment.uri)"></span>
                                                                          <span ng-show="loggedIn" class="pull-right-pendiente"> <button type="button" class="btn btn-info btn-filter" ng-click="withdrawAmendment(amendment)">Povuci amandman</button></span>
-                                                                        <span class="pull-right pagado" ng-bind=""></span>
+                                                                         <button type="button" class="btn btn-info btn-filter" ng-click="xhtml(amendment.oznaka)">XHTML</button>
+                                                                         <button type="button" class="btn btn-info btn-filter" ng-click="pdf(amendment.oznaka)">PDF</button> 
                                                                     </h4>
                                                                     <p class="summary" ng-bind=""></p>
                                                                 </div>

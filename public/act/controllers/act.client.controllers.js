@@ -1,5 +1,5 @@
-angular.module('act').controller('actCtrl', ['$scope','$state','Propis',
-    function($scope,$state,Propis) {
+angular.module('act').controller('actCtrl', ['$scope','$state','$timeout','$window','$location','Propis',
+    function($scope,$state,$timeout, $location,$window,Propis) {
 		$scope.addAct = function(){
 			$state.go('view.addAct');
 		}
@@ -17,13 +17,20 @@ angular.module('act').controller('actCtrl', ['$scope','$state','Propis',
 				console.log(response);
 				$scope.act.text="";
 				
-				if(response.map!=undefined)
-				if(response.map.error!==""){
-					$scope.error = response.map.error;
-					$scope.act.text = text;
-				
-			}
-				
+				if(response.map!=undefined){
+					if(response.map.error!==""){
+						$scope.error = response.map.error;
+						$scope.act.text = text;
+						return;
+					}
+				}else{
+					$scope.act.text="";
+					$scope.error = "Uspesno ste uneli akt.";
+					$timeout(function(){
+						$window.location.replace("http://localhost:9000");
+						
+					},0)
+				}
 			});
 		}
 		$scope.showForm = function(){

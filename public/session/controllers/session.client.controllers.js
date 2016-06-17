@@ -36,7 +36,7 @@ angular.module('session')
 
                             $scope.listForShowing = [];
                             for(var i = 0; i < $scope.results.length; i++) {
-                                if($scope.results[i].status != "povucen") {
+                                if($scope.results[i].status != "povucen" && $scope.results[i].status != "celina" && $scope.results[i].status != "odbijen") {
                                     $scope.listForShowing.push($scope.results[i]);
                                 }
                             }
@@ -54,7 +54,7 @@ angular.module('session')
 
                             $scope.listForShowing = [];
                             for(var i = 0; i < $scope.results.length; i++) {
-                                if($scope.results[i].status != "povucen") {
+                                if($scope.results[i].status != "povucen" && $scope.results[i].status != "celina" && $scope.results[i].status != "odbijen") {
                                     $scope.listForShowing.push($scope.results[i]);
                                 }
                             }
@@ -119,8 +119,8 @@ angular.module('session')
             $state.go('main.voting',{actURI:act.uri});
         }
     }])
-    .controller('VotingController', ['$scope', '$rootScope', '$timeout','$location','$state','$stateParams','Main','Search','SessionService',
-    function($scope,$rootScope, $timeout,$location,$state,$stateParams, Main, Search, SessionService){
+    .controller('VotingController', ['$scope', '$rootScope', '$timeout','$location','$state','$stateParams','Main','Search','SessionService','VoteService',
+    function($scope,$rootScope, $timeout,$location,$state,$stateParams, Main, Search, SessionService, VoteService){
 
 
 
@@ -132,5 +132,94 @@ angular.module('session')
             });
         }
 
+        $scope.vote = function(){
+            var vote = new VoteService({
+                glasaliZa : $scope.glasaliZa,
+                glasaliProtiv : $scope.glasaliProtiv
+            });
+
+            vote.$save({sessionId : $stateParams.actURI}, function(response){
+                if(response.map.success){
+                    if(response.map.success=="NACELO")
+                        $state.go("main.amendmentVoting", {actURI:$stateParams.actURI});
+                    else{
+                        if(response.map.success=="CELINA"){
+                            alert("Posto nema amandmana na ovaj zakon on je usvojen u celosti.");
+                            $state.go("main.session");
+                        }else{
+                            alert("Zakon je odbijen i nece se raspravljati o njegovim amandmanima.");
+                            $state.go("main.session");                         
+                        }
+                    }
+                }else{  
+                    alert(response);
+                }
+            });
+        };
+
+    }])
+    .controller('AmendmentSessionController', ['$scope', '$rootScope', '$timeout','$location','$state','$stateParams','Main','Search','SessionService','VoteService','AmendmentFactory','Amandman','AmendmentVoteService',
+    function($scope,$rootScope, $timeout,$location,$state,$stateParams, Main, Search, SessionService, VoteService,AmendmentFactory, Amandman,AmendmentVoteService){
+
+
+
+        $scope.find = function(){
+            var act = new Main();
+            var amendments = new AmendmentFactory();
+            act.$get({uri:$stateParams.actURI}, function(response){
+                $scope.act = response;
+
+                console.log("URI " + $stateParams.actURI);
+                amendments.$get({amendmentId:$stateParams.actURI}, function(response){
+                    $scope.amendments = response.map.lista.myArrayList;
+                    alert(JSON.stringify(response));
+                }, function(errorResponse){
+                    alert(JSON.stringify(errorResponse));
+                });
+
+            });
+        }
+        $scope.initialize = function(){
+             var act = new Main();
+            
+            act.$get({uri:$stateParams.actURI}, function(response){
+                $scope.act = response;
+                var amendment = new Amandman();
+                amendment.$get({amendmentId:$stateParams.amendmentURI}, function(response){
+                    $scope.amendment = response;
+                });              
+            });
+
+
+
+
+
+        }
+        $scope.vote = function(){
+
+            var vote = new AmendmentVoteService({
+                glasaliZa : $scope.glasaliZa,
+                glasaliProtiv : $scope.glasaliProtiv
+            });
+
+            vote.$save({sessionId : $stateParams.actURI, amendmentId : $stateParams.amendmentURI}, function(response){
+                if(response.map.success){
+                    if(response.map.success == "celina"){
+                        alert("Proradjeni su svi amandmani za ovaj zakon. Zakon je usvojen u celini.");
+                        $state.go("main.session");
+                        return;
+                    }
+                    $state.go("main.amendmentVoting", {actURI:$stateParams.actURI})
+                }else{  
+                    alert(JSON.stringify(response));
+                }
+            }, function(errorResponse){
+                 alert(JSON.stringify(errorResponse));
+            });
+        };
+
+        $scope.amendmentVote = function(amendment){
+            $state.go("main.realAmendmentVoting",{actURI:$stateParams.actURI, amendmentURI:amendment.map.oznaka});
+        }
 
     }]);

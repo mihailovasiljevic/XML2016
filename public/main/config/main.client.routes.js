@@ -38,7 +38,11 @@ angular.module('main').config(['$urlRouterProvider','$stateProvider',
       .state('main.session', {
         url: 'session',
         templateUrl: 'public/session/views/session.html'
-      });
+      })
+      .state('main.showXHTML', {
+        url: '/tmp/xhtml/tmp.xhtml',
+        templateUrl: 'public/tmp/xhtml/tmp.html'
+      })
      ;
   }
 ]);

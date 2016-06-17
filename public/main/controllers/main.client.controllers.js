@@ -33,11 +33,13 @@ angular.module('main')
         };
         $scope.criteria = "";
 
-
+$scope.resultsForShowing = [];
+$scope.results = [];
         $scope.searchActs = function(){
             
             if(!$scope.criteria){
                 $scope.error = "Morate uneti tekst pretrage.";
+                
                 return;
             }
             var searchCriteria = new Search({
@@ -148,12 +150,17 @@ angular.module('main')
         	})
         }*/
         $scope.xhtml = function(uri){
+            
             var xhtml = new Xhtml();
             xhtml.$get({uri: uri}, function(response){
-                $scope.xhtmlDoc = response.map.html;
+               // $scope.xhtmlDoc = response.map.html;
                 console.log(response);
+                $scope.path = response.map.html;
+                 $window.open('http://localhost:9000/public/tmp/xhtml/tmp.html', '_blank');
             });
-        }
+            
+
+        };
         $scope.pdf = function(uri){
             var pdf = new Pdf();
             pdf.$get({uri: uri}, function(response){
@@ -168,40 +175,46 @@ angular.module('main')
         $scope.searchByMetadata = function(){
             var metaData = new MetaData();
             
-            if($scope.glasaloZaOd != null  && $scope.glasaloZaOd != undefined){
+            if($scope.glasaloZaOd != null  && $scope.glasaloZaOd != undefined && $scope.glasaloZaOd!=""){
                 metaData.glasaliZaOd = $scope.glasaloZaOd ;
             }
-            if($scope.glasaloZaDo != null  && $scope.glasaloZaDo != undefined){
+            if($scope.glasaloZaDo != null  && $scope.glasaloZaDo != undefined && $scope.glasaloZaDo!=""){
                 metaData.glasaliZaDo = $scope.glasaloZaDo ;
             }
-            if($scope.datumKreiranjaOd != null  && $scope.datumKreiranjaOd != undefined){
+            if($scope.datumKreiranjaOd != null  && $scope.datumKreiranjaOd != undefined && $scope.datumKreiranjaOd!=""){
                 x = makeDate($scope.datumKreiranjaOd);
                 metaData.datumKreiranjaOd =  x;
             }
-            if($scope.datumKreiranjaDo != null  && $scope.datumKreiranjaDo != undefined){
+            if($scope.datumKreiranjaDo != null  && $scope.datumKreiranjaDo != undefined && $scope.datumKreiranjaDo!=""){
                 x = makeDate($scope.datumKreiranjaDo);
                 metaData.datumKreiranjaDo =x ;
             }
-            if($scope.datumUsvajanjaUNaceluOd != null  && $scope.datumUsvajanjaUNaceluOd != undefined){
+            if($scope.datumUsvajanjaUNaceluOd != null  && $scope.datumUsvajanjaUNaceluOd != undefined && $scope.datumUsvajanjaUNaceluOd!=""){
                 x = makeDate($scope.datumUsvajanjaUNaceluOd);
                 metaData.datumUsvajanjaUNaceluOd = x ;
             }
-            if($scope.datumUsvajanjaUNaceluDo != null  && $scope.datumUsvajanjaUNaceluDo != undefined){
+            if($scope.datumUsvajanjaUNaceluDo != null  && $scope.datumUsvajanjaUNaceluDo != undefined && $scope.datumUsvajanjaUNaceluDo!=""){
                 x = makeDate($scope.datumUsvajanjaUNaceluDo);
                 metaData.datumUsvajanjaUNaceluDo =x ;
             }
-            if($scope.datumUsvajanjaUCelostiOd != null  && $scope.datumUsvajanjaUCelostiOd != undefined){
+            if($scope.datumUsvajanjaUCelostiOd != null  && $scope.datumUsvajanjaUCelostiOd != undefined  && $scope.datumUsvajanjaUCelostiOd!=""){
                 x = makeDate($scope.datumUsvajanjaUCelostiOd);
                 metaData.datumUsvajanjaUCelostiOd = x ;
             }
-            if($scope.datumUsvajanjaUCelostiDo != null  && $scope.datumUsvajanjaUCelostiDo != undefined){
+            if($scope.datumUsvajanjaUCelostiDo != null  && $scope.datumUsvajanjaUCelostiDo != undefined  && $scope.datumUsvajanjaUCelostiDo!=""){
                 x = makeDate($scope.datumUsvajanjaUCelostiDo);
                 metaData.datumUsvajanjaUCelostiDo =x ;
             }
 
             metaData.$save(function(response){
-               $scope.results = response.myArrayList;
-               $scope.resultsForShowing = response.myArrayList;
+                if(response.map){
+                    $scope.metadataError = response.map.error;
+                    return;
+                }else{
+                    $scope.metadataError = "";
+                $scope.results = response.myArrayList;
+                $scope.resultsForShowing = response.myArrayList;
+               }
             }, function(errorResponse){
                alert(errorResponse);
             });
@@ -218,6 +231,10 @@ angular.module('main')
                 month = "0"+month;
             }
             day = x.getDate();
+            day = day+"";
+            if(day.length == 1){
+                day = "0"+day;
+            }
 
             return year+"-"+month+"-"+day;
         }

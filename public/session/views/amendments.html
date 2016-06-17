@@ -1,14 +1,11 @@
 
-<section ng-controller="SessionController as sc" ng-init="find();">
+<section ng-controller="AmendmentSessionController as asc" ng-init="find();">
     <h3>SEDNICA</h3>
-    <h2>Vođenje sednice</h2>    
+    <h2>Vođenje sednice</h2> 
+    <h4>Glasanje za prihvaćanje amandmana na akt: <b>{{act.map.naziv}}</b></h4>        
     <div class="container">
         <div class="row">
-        <div>
-          <button type="button" class="btn btn-success btn-filter" ng-click="start();" ng-if="!sessionStarted">Započni sednicu</button>
-          <button type="button" class="btn btn-danger btn-filter" ng-click="stop();" ng-if="sessionStarted">Završi sednicu</button>
-          <h3>{{sessionDescription}}</h3>
-        </div>
+
             <div class="content">
                 
                 <span ng-bind="error" style="color:red; font-weight:bold; font-size:20px; padding-left:30px;"></span>
@@ -16,15 +13,14 @@
                     <div class="table-container">
                         <table class="table table-filter">
                             <tbody>
-                                <tr ng-repeat="act in results">
+                                <tr ng-repeat="amendment in amendments">
                                     <td>
                                         <div class="media">
                                             <div class="media-body">
                                                 <span class="media-meta pull-right" ng-bind=""></span>
                                                 <h4>
-                                                    <span ng-bind="act.name"></span>
-                                                    <span class="pull-right pagado"><button type="button" class="btn btn-info btn-filter" ng-click="vote(act)" ng-disabled="!act.sessionStarted" ng-show="{{act.status != 'nacelo'}}">stavi na glasanje</button></span>
-                                                    <span class="pull-right pagado"><button type="button" class="btn btn-info btn-filter" ng-click="amendmentVote(act)" ng-disabled="!act.sessionStarted" ng-show="{{act.status == 'nacelo'}}">Pogledaj amandmane</button></span>
+                                                    <span ng-bind="amendment.map.oznaka"></span>
+                                                    <span class="pull-right pagado"><button type="button" class="btn btn-info btn-filter" ng-click="amendmentVote(amendment)" >Glasaj</button></span>
 
                                                 </h4>
                                                 <p class="summary" ng-bind=""></p>
@@ -37,7 +33,7 @@
                     </div>
 
 
-            </div>            
+            </div>        
 
         </div>
     </div> 

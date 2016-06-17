@@ -2,6 +2,7 @@ package controllers;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
+import java.io.BufferedWriter;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -452,14 +453,43 @@ public class Act extends Controller {
 		System.out.println("pdf is genereted. It can be found in \"gen\" directory.");
 	}
 
-	public static void xhtml(String uri) {
+	public static void xhtml(String uri) throws IOException {
 		String docId = "/acts/" + uri + ".xml";
 		String text = XMLReader.getPropisText(docId);
 		String response = XSLTransformer.transform(text);
+		
+		String path = Application.projectPath+"/XML2016/public/tmp/xhtml/tmp.html";
+		// Use relative path for Unix systems
+		File f = new File(path);
 
+		f.getParentFile().mkdirs(); 
+		f.createNewFile();
+		BufferedWriter writer = null;
+		try
+		{
+		    writer = new BufferedWriter( new FileWriter(f));
+		    writer.write(response);
+
+		}
+		catch ( IOException e)
+		{
+			e.printStackTrace();
+		}
+		finally
+		{
+		    try
+		    {
+		        if ( writer != null)
+		        writer.close( );
+		    }
+		    catch ( IOException e)
+		    {
+		    }
+		}
+		
 		HashMap<String, String> map = new HashMap<String, String>();
 		JSONObject obj = new JSONObject();
-		obj.put("html", response);
+		obj.put("html", "http://localhost:9000/tmp/xhtml/tmp.html");
 
 		renderJSON(obj);
 		System.out.println("xhtml is genereted.");
@@ -571,8 +601,7 @@ public class Act extends Controller {
 
 
 		String query = "PREFIX xs:     <http://www.w3.org/2001/XMLSchema#>\r\nSELECT * FROM </acts/sparql/metadata>\r\nWHERE {\r\n";
-		query += "\t?act <http://ftn.uns.ac.rs/pravniAkt/predicate/datumKreiranja> ?datumKreiranja .\r\n\t?act <http://ftn.uns.ac.rs/pravniAkt/predicate/datumUsvajanjaUNacelu> ?datumUsvajanjaUNacelu .\r\n  \t?act <http://ftn.uns.ac.rs/pravniAkt/predicate/datumUsvajanjaUCelosti> ?datumUsvajanjaUCelosti .\r\n  \t?act <http://ftn.uns.ac.rs/pravniAkt/predicate/glasaliZa> ?glasaliZa .\r\n  \t?act <http://ftn.uns.ac.rs/pravniAkt/predicate/glasaliProtiv> ?glasaliProtiv .";
-		query += "FILTER ( ";
+//		query += "FILTER ( ";
 		
 		if (body != null) {
 			System.out.println("[body]: " + body);
@@ -590,56 +619,71 @@ public class Act extends Controller {
 			
 			try{
 				datumKreiranjaOd = obj.getString("datumKreiranjaOd");
+				query += "\t?act <http://ftn.uns.ac.rs/pravniAkt/predicate/datumKreiranja> ?datumKreiranja .";
 			}catch (Exception e) {
 				// TODO: handle exception
 			}
 			try{
 				 datumKreiranjaDo = obj.getString("datumKreiranjaDo");
+				 if(datumKreiranjaOd == null)
+					 query += "\t?act <http://ftn.uns.ac.rs/pravniAkt/predicate/datumKreiranja> ?datumKreiranja .";
 			}catch (Exception e) {
 				// TODO: handle exception
 			}
 			
 			try{
 				datumUsvajanjaUNaceluOd = obj.getString("datumUsvajanjaUNaceluOd");
+				query += "\t?act <http://ftn.uns.ac.rs/pravniAkt/predicate/datumUsvajanjaUNacelu> ?datumUsvajanjaUNacelu .";
 			}catch (Exception e) {
 				// TODO: handle exception
 			}
 			try{
 				datumUsvajanjaUNaceluDo = obj.getString("datumUsvajanjaUNaceluDo");
+				 if(datumUsvajanjaUNaceluOd == null)
+					 query += "\t?act <http://ftn.uns.ac.rs/pravniAkt/predicate/datumUsvajanjaUNacelu> ?datumUsvajanjaUNacelu .";
 			}catch (Exception e) {
 				// TODO: handle exception
 			}
 			try{
 				datumUsvajanjaUCelostiOd = obj.getString("datumUsvajanjaUCelostiOd");
+				query += "\t?act <http://ftn.uns.ac.rs/pravniAkt/predicate/datumUsvajanjaUCelost> ?datumUsvajanjaUCelost .";
 			}catch (Exception e) {
 				// TODO: handle exception
 			}
 			try{
 				datumUsvajanjaUCelostiDo = obj.getString("datumUsvajanjaUCelostiDo");
+				 if(datumUsvajanjaUCelostiOd == null)
+					 query += "\t?act <http://ftn.uns.ac.rs/pravniAkt/predicate/datumUsvajanjaUCelost> ?datumUsvajanjaUCelost .";
 			}catch (Exception e) {
 				// TODO: handle exception
 			}
 			try{
 				glasaliZaOd = obj.getString("glasaliZaOd");
+				query += "\t?act <http://ftn.uns.ac.rs/pravniAkt/predicate/glasaliZa> ?glasaliZa .";
 			}catch (Exception e) {
 				// TODO: handle exception
 			}
 			try{
-				glasaliZaDo = obj.getString("glasaliZaDo");
+				glasaliZaOd = obj.getString("glasaliZaDo");
+				 if(datumUsvajanjaUCelostiOd == null)
+					 query += "\t?act <http://ftn.uns.ac.rs/pravniAkt/predicate/glasaliZa> ?glasaliZa .";
 			}catch (Exception e) {
 				// TODO: handle exception
 			}
 			try{
 				glasaliProtivOd = obj.getString("glasaliProtivOd");
+				query += "\t?act <http://ftn.uns.ac.rs/pravniAkt/predicate/glasaliProtiv> ?glasaliProtiv .";				
 			}catch (Exception e) {
 				// TODO: handle exception
 			}
 			try{
 				glasaliProtivDo = obj.getString("glasaliProtivDo");
+				 if(glasaliProtivOd == null)
+					 query += "\t?act <http://ftn.uns.ac.rs/pravniAkt/predicate/glasaliProtiv> ?glasaliProtiv .";	
 			}catch (Exception e) {
 				// TODO: handle exception
 			}
-			
+			query+="FILTER(";
 			boolean queryStarted = false;
 			if (datumKreiranjaOd != null || datumKreiranjaDo != null || datumUsvajanjaUNaceluOd != null
 					|| datumUsvajanjaUNaceluDo != null || datumUsvajanjaUCelostiOd != null
@@ -758,14 +802,17 @@ public class Act extends Controller {
 		JacksonHandle resultsHandle = new JacksonHandle();
 		resultsHandle.setMimetype(SPARQLMimeTypes.SPARQL_JSON);
 		
-
-		resultsHandle = sparqlQueryManager.executeSelect(sparqlQuery, resultsHandle);
-		JSONArray array = new JSONArray();
-		handleResults(resultsHandle, array);
-		renderJSON(array);
-		// Release the client
-		client.release();
-		
+		try{
+			resultsHandle = sparqlQueryManager.executeSelect(sparqlQuery, resultsHandle);
+			JSONArray array = new JSONArray();
+			handleResults(resultsHandle, array);
+			renderJSON(array);
+			// Release the client
+			client.release();
+		}catch (Exception e) {
+			// TODO: handle exception
+			renderJSON(new JSONObject("{'error':'Nema rezultate pretrage za dati kriterijum.'}"));
+		}
 		System.out.println("[INFO] End.");
 
 	}

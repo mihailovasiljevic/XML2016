@@ -1,6 +1,6 @@
 angular.module('amendment')
-  .controller('AmendmentController', ['$scope', '$rootScope', '$timeout','$location','$state','Search','Amandman','User',
-    function($scope,$rootScope, $timeout,$location,$state, Search,Amandman,User){
+  .controller('AmendmentController', ['$scope', '$rootScope', '$timeout','$location','$window','$state','Search','Amandman','User','AmandmanXhtml','AmandmanPdf',
+    function($scope,$rootScope, $timeout,$location,$window,$state, Search,Amandman,User,AmandmanXhtml,AmandmanPdf){
 
         //go on mainPage
         //$state.go("main");
@@ -93,6 +93,7 @@ angular.module('amendment')
                      $scope.error = "";
                     }
                 }
+                 $scope.error="USPESNO STE UNELI AMANDMAN";
 
 			});
 			
@@ -100,6 +101,26 @@ angular.module('amendment')
 
         }
         
+       $scope.xhtml = function(uri){
+            
+            var xhtml = new AmandmanXhtml();
+            xhtml.$get({uri: uri}, function(response){
+               // $scope.xhtmlDoc = response.map.html;
+                console.log(response);
+               // $scope.path = response.map.html;
+                 $window.open('http://localhost:9000/public/tmp/xhtml/tmp.html', '_blank');
+            });
+            
+
+        };
+        $scope.pdf = function(uri){
+            var pdf = new AmandmanPdf();
+            pdf.$get({uri: uri}, function(response){
+                $scope.path = response.map.path;
+                $window.open('http://localhost:9000'+response.map.path, '_blank');
+                //$window.location.href = 'http://localhost:9000'+response.map.path;
+            });
+        };
         
         $scope.withdrawAmendment = function(amendment){
         	var index1 = $scope.listForShowing.indexOf(amendment);

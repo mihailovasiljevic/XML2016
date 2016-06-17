@@ -1,6 +1,9 @@
 package controllers;
 
+import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.util.ArrayList;
@@ -229,6 +232,7 @@ public class AmendmentServices extends Controller {
 				LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
 				map.put("oznaka", oznaka);
 				map.put("uri", prepareURI(result.getUri()));
+				map.put("oznakaAkta", amandman.getOAkta()+"");
 				documentsURIs.add(map);
 			}
 			System.out.println(new JSONObject(documentsURIs));
@@ -318,16 +322,43 @@ public class AmendmentServices extends Controller {
 		
 	}
 	
-	public static void genXHTML(String uri) {
+	public static void genXHTML(String uri) throws IOException {
 		
 		String docId = "/amendments/" + uri + ".xml";
 		String text = XMLReader.getAmandmanText(docId);
 		String response = XSLTransformer.transformAma(text);
 
 		System.out.println("response " + response);
-		
+		String path = Application.projectPath+"/XML2016/public/tmp/xhtml/tmp.html";
+		// Use relative path for Unix systems
+		File f = new File(path);
+
+		f.getParentFile().mkdirs(); 
+		f.createNewFile();
+		BufferedWriter writer = null;
+		try
+		{
+		    writer = new BufferedWriter( new FileWriter(f));
+		    writer.write(response);
+
+		}
+		catch ( IOException e)
+		{
+			e.printStackTrace();
+		}
+		finally
+		{
+		    try
+		    {
+		        if ( writer != null)
+		        writer.close( );
+		    }
+		    catch ( IOException e)
+		    {
+		    }
+		}
 		JSONObject obj = new JSONObject();
-		obj.put("html", response);
+		obj.put("html", "http://localhost:9000/tmp/xhtml/tmp.html");
 		renderHtml(response);
 		//renderJSON(obj);
 		System.out.println("xhtml is genereted.");
