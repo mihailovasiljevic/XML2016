@@ -76,6 +76,7 @@ public class Application extends Controller {
 	/**
 	 * Kreira DOM od XML dokumenta
 	 */
+
 	
 	static {
     	File file = new File(".");
