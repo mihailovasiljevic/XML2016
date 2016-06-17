@@ -116,9 +116,9 @@ angular.module('main')
         };
       //  alert($scope.$parent.isPredsednik);
         
-        $scope.loggedIn = false;
+        $scope.loggedIn = true;
 
-        User.get(function(response){
+        /*User.get(function(response){
         	if(response.uloga)
         	$scope.loggedIn = true;
         	else $scope.loggedIn=false;
@@ -146,7 +146,7 @@ angular.module('main')
         		
         		
         	})
-        }
+        }*/
         $scope.xhtml = function(uri){
             var xhtml = new Xhtml();
             xhtml.$get({uri: uri}, function(response){

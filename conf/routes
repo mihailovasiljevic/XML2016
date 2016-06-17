@@ -34,6 +34,8 @@ GET		/api/acts/xhtml/{uri}					Act.xhtml(uri)
 
 GET     /input									Redirection.toForm
 
+GET	 	/api/pureAct/{uri}						ActProcessing.processAct(uri)
+
 #session
 GET 	/api/session							Application.getSednica
 POST  	/api/session							Application.setSednica

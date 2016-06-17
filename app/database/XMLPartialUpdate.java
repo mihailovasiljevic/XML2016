@@ -3,8 +3,6 @@ package database;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-
-
 import com.marklogic.client.DatabaseClient;
 import com.marklogic.client.DatabaseClientFactory;
 import com.marklogic.client.document.DocumentPatchBuilder;
@@ -93,6 +91,51 @@ public class XMLPartialUpdate {
 		System.out.println("[INFO] Inserting nodes to \"" + docId + "\".");
 		xmlManager.patch(docId, patchHandle);
 		
+		
+	}
+	
+	public static void modifyAct(ConnectionProperties props, String path, String patch, String docId) {
+		
+		
+		// Initialize the database client
+		if (props.database.equals("")) {
+			System.out.println("[INFO] Using default database.");
+			client = DatabaseClientFactory.newClient(props.host, props.port, props.user, props.password, props.authType);
+		} else {
+			System.out.println("[INFO] Using \"" + props.database + "\" database.");
+			client = DatabaseClientFactory.newClient(props.host, props.port, props.database, props.user, props.password, props.authType);
+		}
+		
+		// Create a document manager to work with XML files.
+		XMLDocumentManager xmlManager = client.newXMLDocumentManager();
+
+		
+		// Defining namespace mappings
+		EditableNamespaceContext namespaces = new EditableNamespaceContext();
+		namespaces.put("akt", "http://www.ftn.uns.ac.rs/pravniAkt");
+		//namespaces.put("fn", "http://www.w3.org/2005/xpath-functions");
+		
+		// Assigning namespaces to patch builder
+		DocumentPatchBuilder patchBuilder = xmlManager.newPatchBuilder();
+		patchBuilder.setNamespaces(namespaces);
+
+		
+		DocumentPatchHandle patchHandle = patchBuilder.build();
+		
+		System.out.println("[INFO] Inserting nodes to \"" + docId + "\".");
+		xmlManager.patch(docId, patchHandle);
+		
+		patchBuilder = xmlManager.newPatchBuilder();
+		patchBuilder.setNamespaces(namespaces);
+
+		
+		patchBuilder.replaceFragment(path, patch);
+
+		patchHandle = patchBuilder.build();
+		
+		xmlManager.patch(docId, patchHandle);
+		
+		client.release();
 		
 	}
 	
