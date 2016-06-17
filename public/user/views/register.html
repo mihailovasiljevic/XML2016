@@ -13,8 +13,8 @@ angular.module('user').controller('inputCtrl1', ['$scope',
 <table align="center" border="1">
 <tr><th colspan="2">Register</th></tr>
 <tr><td>Username:</td><td><input type="text" ng-model="user.username" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"></td></tr>
-<tr><td>Password:</td><td><input type="text" ng-model="user.password" ng-minlength="8" ng-maxlength="20" ng-pattern="/(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z])/" required></td></tr>
-<tr><td>Repeat password:</td><td><input type="text" ng-model="user.repeat_password" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"></td></tr>
+<tr><td>Password:</td><td><input type="password" ng-model="user.password" ng-minlength="8" ng-maxlength="20" ng-pattern="/(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z])/" required></td></tr>
+<tr><td>Repeat password:</td><td><input type="password" ng-model="user.repeat_password" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"></td></tr>
 <tr><td>Ime:</td><td><input type="text" ng-model="user.ime" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"></td></tr>
 <tr><td>Prezime:</td><td><input type="text" ng-model="user.prezime" cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;"></td></tr>
 <tr><td>Email:</td><td><input name="email" type="text" ng-model="user.email" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" required cols="0" rows="0" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;">
