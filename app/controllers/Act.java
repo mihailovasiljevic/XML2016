@@ -137,7 +137,7 @@ public class Act extends Controller {
 	public static void getAct(String uri) {
 		// String bodyParams = params.get("body");
 		// String url = Http.Request.current().path;
-		String docUri = "/acts/" + uri + ".xml";
+		String docUri = "/security/acts/" + uri + ".xml";
 		Document doc;
 		try {
 			doc = xquery.XMLReader.run(Util.loadProperties(), docUri);
@@ -166,13 +166,13 @@ public class Act extends Controller {
 	private static String prepareURI(String uri){
 		uri = uri.replace(".", "/");
 		String[] splitted = uri.split("/");
-		System.out.println(splitted[2]);
+		System.out.println(splitted[3]);
 
-		return splitted[2];
+		return splitted[3];
 	}
 
 	public static void updateAct(String uri) {
-		String docUri = "/acts/" + uri + ".xml";
+		String docUri = "/security/acts/" + uri + ".xml";
 		try {
 			client = DatabaseClientFactory.newClient(Util.loadProperties().host, Util.loadProperties().port, Util.loadProperties().database, Util.loadProperties().user, Util.loadProperties().password,
 					Util.loadProperties().authType);
