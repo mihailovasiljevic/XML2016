@@ -240,5 +240,12 @@ public class AmendmentServices extends Controller {
 		client.release();
 	}
 	
+	public static void genPdfAma(String uri) {
+		
+		System.out.println("url " + uri);
+		
+		
+		
+	}
 	
 }

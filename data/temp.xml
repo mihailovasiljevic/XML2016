@@ -1,61 +1,34 @@
-<?xml  version="1.0" encoding="UTF-8"?>
-<ama:Amandman xsi:schemaLocation="http://www.ftn.uns.ac.rs/amandman file:/C:/Users/Nemanja/Desktop/Sch/pinf_xws_docs/xml/schema/amandman.xsd" xmlns:ama="http://www.ftn.uns.ac.rs/amandman" xmlns:preda="http://ftn.uns.ac.rs/amandman/predicate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<ama:oznaka>0
-</ama:oznaka>
-<ama:zaglavlje>
-<ama:drzava>РЕПУБЛИКА СРБИЈА
-</ama:drzava>
-<ama:organ>НАРОДНА СКУПШТИНА
-</ama:organ>
-<ama:predlagac>predlagac0
-</ama:predlagac>
-<ama:mesto>mesto0
-</ama:mesto>
-</ama:zaglavlje>
-<ama:uvod>
-<ama:naslov>ПРЕДСЕДНИКУ НАРОДНЕ СКУПШТИНЕ
-</ama:naslov>
-<ama:tekst>tekst0
-</ama:tekst>
-</ama:uvod>
-<ama:zaAkt>0
-</ama:zaAkt>
-<ama:glavniDeo>
-<ama:naslov>АМАНДМАН
-</ama:naslov>
-<ama:sadrzaj>
-<ama:tekst>
-<ama:operacija>operacija0
-</ama:operacija>
-<ama:elemId>0
-</ama:elemId>
-<ama:clan id="0">
-<ama:redniBroj>0
-</ama:redniBroj>
-<ama:simbolickiNaziv>simbolickiNaziv0
-</ama:simbolickiNaziv>
-<ama:stav id="1">
-<ama:redniBroj>0
-</ama:redniBroj>
-<ama:tekst>
-</ama:tekst>
-</ama:stav>
-<ama:tekst>
-</ama:tekst>
-</ama:clan>
-</ama:tekst>
-</ama:sadrzaj>
-</ama:glavniDeo>
-<ama:obrazlozenje>
-<ama:naslov>naslov0
-</ama:naslov>
-<ama:tekst>tekst1
-</ama:tekst>
-</ama:obrazlozenje>
-<ama:potpis>
-<ama:funkcija>funkcija0
-</ama:funkcija>
-<ama:imeIPrezime>imeIPrezime0
-</ama:imeIPrezime>
-</ama:potpis>
+<?xml version="1.0" encoding="UTF-8"?>
+<ama:Amandman xmlns:akt="http://www.ftn.uns.ac.rs/pravniAkt"
+ xmlns:pred="http://ftn.uns.ac.rs/pravniAkt/predicate/"
+ xmlns:ama="http://www.ftn.uns.ac.rs/amandman"
+ xmlns:preda="http://ftn.uns.ac.rs/amandman/predicate"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.ftn.uns.ac.rs/amandman file:/C:/Users/Nemanja/Desktop/Sch/pinf_xws_docs/xml/schema/amandman.xsd">
+    <ama:oznaka>0</ama:oznaka>
+    <ama:zaglavlje>
+        <ama:drzava>РЕПУБЛИКА СРБИЈА</ama:drzava>
+        <ama:organ>НАРОДНА СКУПШТИНА</ama:organ>
+        <ama:predlagac>predlagac0</ama:predlagac>
+        <ama:mesto>mesto0</ama:mesto>
+    </ama:zaglavlje>
+    <ama:uvod>
+        <ama:naslov>ПРЕДСЕДНИКУ НАРОДНЕ СКУПШТИНЕ</ama:naslov>
+        <ama:propis/>
+    </ama:uvod>
+    <ama:oAkta>oAkta0</ama:oAkta>
+    <ama:glavniDeo>
+        <ama:naslov>АМАНДМАН</ama:naslov>
+        <ama:clan id="0">
+            <ama:tekst>tekst0</ama:tekst>
+        </ama:clan>
+    </ama:glavniDeo>
+    <ama:obrazlozenje>
+        <ama:naslov>naslov0</ama:naslov>
+        <ama:tekst>tekst1</ama:tekst>
+    </ama:obrazlozenje>
+    <ama:potpis>
+        <ama:funkcija>funkcija0</ama:funkcija>
+        <ama:imeIPrezime>imeIPrezime0</ama:imeIPrezime>
+    </ama:potpis>
 </ama:Amandman>
