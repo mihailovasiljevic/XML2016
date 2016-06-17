@@ -409,7 +409,7 @@ public class Application extends Controller {
     }
     
     public static void logout(){
-    	session.put("korisnik",null);
+    	session.put("korisnik",new JSONObject("{}"));
     	
      }
 }

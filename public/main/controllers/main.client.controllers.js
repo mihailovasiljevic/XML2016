@@ -59,8 +59,10 @@ angular.module('main')
         
         $scope.loggedIn = false;
         User.get(function(response){
+        	if(response.uloga)
         	$scope.loggedIn = true;
-           	
+        	else $scope.loggedIn=false;
+        	
         })
      
       
