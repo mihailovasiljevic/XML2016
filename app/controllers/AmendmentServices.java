@@ -326,7 +326,7 @@ public class AmendmentServices extends Controller {
 
 		System.out.println("response " + response);
 		
-		JSSONObject obj = new JSONObject();
+		JSONObject obj = new JSONObject();
 		obj.put("html", response);
 		renderHtml(response);
 		//renderJSON(obj);
