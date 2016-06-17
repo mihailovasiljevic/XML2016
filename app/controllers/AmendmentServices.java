@@ -244,7 +244,8 @@ public class AmendmentServices extends Controller {
 		
 		System.out.println("url " + uri);
 		
-		
+		Amandman ama = XMLReader.getAmandman(uri);
+		System.out.println(ama.getOznaka());
 		
 	}
 	
